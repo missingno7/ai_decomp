@@ -1,0 +1,114 @@
+{
+  "format": "ai-decomp-fleet-source-validation-v1",
+  "checked_at_utc": "2026-09-23T20:51:18.942437+00:00",
+  "authority": "read_only_reference_integrity_not_compiler_reproduction",
+  "manifests": [
+    {
+      "path": "research/fleet/stunts.json",
+      "sha256": "c33729b2836827f8909b9cdf2d99aa1e7ebc8596598b4174c18e0afb97f8fc4d",
+      "sources": 8
+    },
+    {
+      "path": "research/fleet/simant.json",
+      "sha256": "962b15993ce9fd08c2d69ec909291732c5672cf2479e0b58ccae84d1d68819fb",
+      "sources": 15
+    },
+    {
+      "path": "research/fleet/icy-empires.json",
+      "sha256": "aba2c9fa5128a786e5f051f9e9a3101c387ad112cc3241e0492d9aa900a58006",
+      "sources": 15
+    },
+    {
+      "path": "research/fleet/simant-job-census.json",
+      "sha256": "c33534d817689fc7983d75cd2c66d48043c8c9691d61872daad39f2b78f917ef",
+      "sources": 786
+    },
+    {
+      "path": "research/fleet/icy-mechanical-census.json",
+      "sha256": "e69ac0cb8fb1c17bff5c56f35155f4cc94ba979e121904d572006e588873c363",
+      "sources": 34
+    }
+  ],
+  "fleet_source_entries": {
+    "checked": 858,
+    "verified": 855,
+    "status_counts": {
+      "verified": 855,
+      "drifted": 3
+    },
+    "exceptions": [
+      {
+        "id": "simant-jobs:CopyMaskBitmap2-8c14b1df6d",
+        "status": "drifted",
+        "actual_sha256": "6bc6c36f964b48a2d5d934a8a0e69633bf34a9784af1e6d0a67873b2cde50186"
+      },
+      {
+        "id": "simant-jobs:MapToYard-b239e336a1",
+        "status": "drifted",
+        "actual_sha256": "cf092c6c0e5df375cd14f1ab94500c2917c6eac520a9f6f361108a56ec03ad52"
+      },
+      {
+        "id": "simant-jobs:TrapFill-5bf3d36db5",
+        "status": "drifted",
+        "actual_sha256": "d177240bdab6d9b342aaf7c4af7f3597a67462f91f63499d139aca6d87a1dd96"
+      }
+    ]
+  },
+  "original_catalog": {
+    "checked": 104,
+    "verified": 95,
+    "exceptions": [
+      {
+        "id": "stunts-src-2822ed9ca670",
+        "status": "drifted",
+        "actual_sha256": "4062dc177cddeae7c287cf04a58c266b4915f316ffc9b39a7c0d2c85044d5317"
+      },
+      {
+        "id": "stunts-src-751997278a68",
+        "status": "drifted",
+        "actual_sha256": "2592c278ab4e7772aedf777763285fbf49805860dbdb409243bbed9660aa231b"
+      },
+      {
+        "id": "stunts-src-331d37292052",
+        "status": "drifted",
+        "actual_sha256": "2bdc118a6a2c122a3a1757377d0958304d8856e25d79a0122b625a397a81055b"
+      },
+      {
+        "id": "stunts-src-763c07cddc94",
+        "status": "drifted",
+        "actual_sha256": "28749c48fbae86ac19ca431c59f328ae2ca3e0b1ef2622afcf2938797aaac126"
+      },
+      {
+        "id": "stunts-src-435992191ca3",
+        "status": "drifted",
+        "actual_sha256": "3adf015a78125c0f94ad13ee8a750ce604e0334b7864d78fdd7c88c86039a905"
+      },
+      {
+        "id": "simantw-src-ff521355e6a4",
+        "status": "drifted",
+        "actual_sha256": "e50e42e3fd172efd18d4f87b973d6edc5a61310c38581f6b60e0659e076cc38a"
+      },
+      {
+        "id": "simantw-src-97d9aa655d43",
+        "status": "drifted",
+        "actual_sha256": "d73e553216bf115dafd63e4a2a1cc122bcde195f4f097356c774f0c76c2d0075"
+      },
+      {
+        "id": "simantw-src-beaae9153adb",
+        "status": "drifted",
+        "actual_sha256": "9c14017cb5c7c6ef6575fba5accfff41dcab1c99a4da3874290096237acf97e9"
+      },
+      {
+        "id": "icytower-src-c69f69a480e1",
+        "status": "drifted",
+        "actual_sha256": "fa3441933bf1b55e4348be696a0dc527084f7ce8d6dba84dd30292f3e97653ba"
+      }
+    ]
+  },
+  "limitations": [
+    "Sources are read from active checkouts or exact Git blobs; reference hashes do not reproduce compiler claims.",
+    "Repeated source entries across a study and its census are counted as entries, not distinct files.",
+    "Working-tree drift is retained; old source manifests are not silently refreshed.",
+    "No sibling build, queue mutation, compiler execution or model call was performed."
+  ]
+}

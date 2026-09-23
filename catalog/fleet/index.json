@@ -1,0 +1,33 @@
+{
+  "format": "ai-decomp-fleet-study-index-v1",
+  "checked_date": "2026-09-23",
+  "authority": "evidence_review_and_experimental_policy_not_model_ranking",
+  "decision": "Bounded Luna-first trial supported; fleet scale, Sol advantage, redundancy economics and exceptional-only Astra remain working hypotheses.",
+  "studies": [
+    {"id": "stunts-routing", "document": "research/fleet/stunts.md", "record": "research/fleet/stunts.json", "source_field": "source_manifest"},
+    {"id": "simant-workflow", "document": "research/fleet/simant.md", "record": "research/fleet/simant.json", "source_field": "source_manifest"},
+    {"id": "icy-empires-workflow", "document": "research/fleet/icy-empires.md", "record": "research/fleet/icy-empires.json", "source_field": "source_manifest"}
+  ],
+  "censuses": [
+    {"id": "simant-jobs", "record": "research/fleet/simant-job-census.json", "source_field": "rows"},
+    {"id": "icy-mechanical", "record": "research/fleet/icy-mechanical-census.json", "source_field": "source_manifest"}
+  ],
+  "artifacts": [
+    "research/fleet/evaluation.md",
+    "knowledge/fleet-operation.md",
+    "experiments/fleet-results.md",
+    "experiments/fleet-schema.json",
+    "tools/fleet_report.py",
+    "research/fleet/stunts-replay.json",
+    "research/fleet/stunts-replay-summary.json",
+    "research/fleet/validation.md",
+    "research/fleet/validation.json"
+  ],
+  "boundaries": [
+    "No sibling mutation, compiler/model invocation or fleet launch.",
+    "Original local and external catalog snapshots are preserved.",
+    "Per-job compile locking is not durable worker ownership; SimAnt requires disjoint assignments today.",
+    "Model provenance is absent from most SimAnt/Icy recovery receipts.",
+    "External candidate search does not replace native strict proof and promotion."
+  ]
+}

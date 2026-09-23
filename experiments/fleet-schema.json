@@ -1,0 +1,495 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ai_decomp fleet result metadata v1",
+  "type": "object",
+  "required": [
+    "format",
+    "run_id",
+    "results",
+    "costs"
+  ],
+  "properties": {
+    "format": {
+      "const": "ai-decomp-fleet-results-v1"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "task",
+          "worker",
+          "analysis_level",
+          "stop_reason",
+          "strict_result",
+          "promotion",
+          "artifacts"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "task": {
+            "type": "object",
+            "required": [
+              "project",
+              "target",
+              "seed_id",
+              "context_id"
+            ],
+            "properties": {
+              "project": {
+                "type": "string",
+                "minLength": 1
+              },
+              "target": {
+                "type": "string",
+                "minLength": 1
+              },
+              "seed_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "context_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": true
+          },
+          "worker": {
+            "type": "object",
+            "required": [
+              "id",
+              "lineage_id",
+              "model",
+              "effort"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "lineage_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "model": {
+                "type": "string",
+                "minLength": 1
+              },
+              "effort": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": true
+          },
+          "analysis_level": {
+            "type": "string",
+            "minLength": 1
+          },
+          "stop_reason": {
+            "enum": [
+              "accepted",
+              "budget_censored",
+              "cancelled_redundant",
+              "evidence_blocked",
+              "interrupted",
+              "production_blocked",
+              "promotion_candidate",
+              "search_converged",
+              "systemic_mechanism_suspected",
+              "tooling_blocked",
+              "unknown"
+            ]
+          },
+          "strict_result": {
+            "type": "object",
+            "required": [
+              "status"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "pass",
+                  "fail",
+                  "not_run",
+                  "unknown"
+                ]
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1
+              },
+              "verifier": {
+                "type": "string",
+                "minLength": 1
+              },
+              "receipt": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": true,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "enum": [
+                        "pass",
+                        "fail"
+                      ]
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "scope",
+                    "verifier",
+                    "receipt"
+                  ]
+                }
+              }
+            ]
+          },
+          "promotion": {
+            "type": "object",
+            "required": [
+              "status"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "not_requested",
+                  "candidate",
+                  "queued",
+                  "promoted",
+                  "blocked",
+                  "unknown"
+                ]
+              },
+              "receipt": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": true,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "const": "promoted"
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "receipt"
+                  ]
+                }
+              }
+            ]
+          },
+          "counters": {
+            "type": "object",
+            "properties": {
+              "hypotheses": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "model_requests": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "reasoning_rounds": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "compiler_processes": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "unique_effective_outputs": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "information_experiments": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              }
+            }
+          },
+          "tokens": {
+            "type": "object",
+            "properties": {
+              "input": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "cached_input": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "output": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "reasoning_output": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              }
+            }
+          },
+          "artifacts": {
+            "type": "array",
+            "minItems": 1
+          },
+          "blocker": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "signature",
+                  "evidence"
+                ],
+                "properties": {
+                  "signature": {
+                    "type": "object",
+                    "required": [
+                      "compiler_profile",
+                      "abi",
+                      "analysis_level",
+                      "mismatch_family",
+                      "context_domain",
+                      "diagnostic_version"
+                    ],
+                    "properties": {
+                      "compiler_profile": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "abi": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "analysis_level": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "mismatch_family": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "context_domain": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "diagnostic_version": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "additionalProperties": true
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "minItems": 1
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "additionalProperties": true,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "stop_reason": {
+                  "enum": [
+                    "accepted",
+                    "promotion_candidate"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "strict_result": {
+                  "properties": {
+                    "status": {
+                      "const": "pass"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "promotion": {
+                  "properties": {
+                    "status": {
+                      "enum": [
+                        "candidate",
+                        "queued",
+                        "promoted"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "strict_result": {
+                  "properties": {
+                    "status": {
+                      "const": "pass"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "stop_reason": {
+                  "const": "accepted"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "promotion": {
+                  "properties": {
+                    "status": {
+                      "const": "promoted"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "stop_reason": {
+                  "const": "systemic_mechanism_suspected"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "blocker"
+              ],
+              "properties": {
+                "blocker": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "costs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "role",
+          "amount",
+          "unit",
+          "basis"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "enum": [
+              "worker",
+              "supervisor",
+              "preparation",
+              "review",
+              "infrastructure"
+            ]
+          },
+          "amount": {
+            "type": [
+              "string",
+              "number",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "basis": {
+            "type": "string",
+            "minLength": 1
+          },
+          "result_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$comment": "Offline summary only. Python additionally enforces conflicting-ID rejection, distinct verifier/promotion references, cost finiteness/nonnegativity, result links, token subsets and analysis-level consistency. No receipt or independence verification."
+}

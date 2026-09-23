@@ -79,3 +79,26 @@ mechanism/tool discovery while cheaper workers explore bounded verified
 hypotheses. Stunts motivates measuring this, but the present small cohort cannot
 establish the optimal routing policy. A useful next test measures all worker,
 supervisor and review overhead against effective new outcomes and strict solves.
+
+The [fleet falsification review](../research/fleet/evaluation.md) retains this
+as a **bounded Luna-first trial**, not a cross-project model-performance pattern.
+The matched Stunts cohort shows a 1.32x hypothesis-effort ratio and a 64.17x
+direct scenario-cost ratio, but equal outcomes on only four selected pairs,
+zero new production recovery and no Sol comparison. Supervisor cost exceeded
+combined worker cost. Neither a fixed 10x escalation threshold nor a large
+unattended fleet is validated.
+
+**GENERIC METHOD — escalate a mechanism question, preserve task ownership.**
+Prefer compatible recurring blocker evidence or one high-impact systemic
+question to an arbitrary failed-attempt count. Search convergence, budget,
+tooling, evidence and production blocks have different meanings. Native
+promotion remains serialized where required. SimAnt's compile locks do not
+claim a job across model reasoning intervals; autonomous consumption needs
+separate ownership and input-isolation guarantees.
+
+**GENERIC METHOD — return validated discoveries to workers.** Encode supported
+mechanisms as scoped diagnostics, generators, rules, context fields or tools,
+with controls and counterexamples. Existing project tools demonstrate this
+lifecycle; their authors' model identities are mostly unavailable. Strong-model
+discovery amortization is a useful policy, not measured model superiority.
+See [fleet operation](fleet-operation.md) for routing, recovery and reporting.

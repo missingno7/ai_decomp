@@ -20,8 +20,12 @@ unpriced review traffic. These are archived scenario calculations, not current
 model prices. Omitted-profile and parser/tool events must not count as model
 failure; unresolved runs did not exhaust the 15-hypothesis/20-process cap.
 No new C bytes or Astra-only class were established. Source: Stunts
-`recovery/evaluation/model-routing/decision.md` and results, pinned/hashes in
-[Stunts records](../research/stunts/records.json).
+raw results, usage and trial logs, re-read in the
+[fleet Stunts audit](../research/fleet/stunts.md). Across the eight completed
+runs, Luna used 25 hypotheses/67 requests/27 compiler processes; Astra used
+19/54/23. Each produced 15 run-local output classes. Meaningful reasoning
+rounds and useful information gain were not measured. Root supervision was
+4.95x the combined worker cost, with incomplete preparation/review pricing.
 
 **PROJECT FACT — Stunts batching pilot.** On one target, a batch used 23% fewer
 requests, 9% less wall time and 15% less direct-worker scenario cost, but yielded
@@ -51,3 +55,24 @@ Repeated diagnosis, identity grouping and attempt packaging are suitable for
 deterministic tools. Compiler experiments may be much cheaper than another
 reasoning round in a given setup—SimAnt's local service benchmark motivates
 measurement—but compare complete costs before asserting this elsewhere.
+
+The [bounded fleet workflow](fleet-operation.md) defines an experimental
+Luna-first queue, selective independent redundancy and compact mechanism
+escalations. Sol/high is a trial routing choice; no local matched comparison
+establishes its advantage. Astra needs a justified controlled investigation,
+not a routine hard-function assignment. Approximately 10x sustained matched
+search inflation is only an economic audit alarm, never a mandatory wait.
+
+An unresolved handoff must distinguish current-level convergence, budget
+censoring, tooling/evidence/production block, systemic mechanism suspicion and
+interruption. A strict candidate is distinct from a native production promotion.
+Healthy workers may consume further eligible tasks within the same global
+budget, using project-native ownership and isolation. Existing attempt locks
+alone do not establish an unattended shared queue.
+
+Keep full logs local. The [fleet result contract](../experiments/fleet-results.md)
+summarizes scoped results, cost coverage and compatible blocker reports without
+inventing causal clusters or independence. Send stronger-model supervisors a
+few representative mechanism packets; return validated insights as versioned
+worker capabilities. Measure total new strict yield and reusable information
+per cost before scaling the fleet.

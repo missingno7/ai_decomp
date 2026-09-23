@@ -34,6 +34,9 @@ def main():
     if ecosystem_path.exists():
         from check_ecosystem import check
         errors.extend(check(ROOT))
+    if (ROOT/'catalog/fleet/index.json').exists():
+        from check_fleet import check as check_fleet
+        errors.extend(check_fleet(ROOT))
     print(json.dumps({'catalog_counts':{k:len(v) for k,v in catalogs.items()},'errors':errors},indent=2))
     raise SystemExit(bool(errors))
 

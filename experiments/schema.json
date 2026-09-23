@@ -77,7 +77,10 @@
           "hypothesis_rejected",
           "search_converged",
           "tooling_blocked",
-          "unknown"
+          "unknown",
+          "promotion_candidate",
+          "production_blocked",
+          "systemic_mechanism_suspected"
         ]
       },
       "falsifier": {
@@ -194,6 +197,34 @@
       },
       "extensions": {
         "type": "object"
+      },
+      "fleet_context": {
+        "type": "object",
+        "required": [
+          "run_id",
+          "task_id",
+          "result_id",
+          "lineage_id"
+        ],
+        "properties": {
+          "run_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "task_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "result_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lineage_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true
       }
     },
     "additionalProperties": true,
@@ -202,7 +233,10 @@
         "if": {
           "properties": {
             "stop_reason": {
-              "const": "accepted"
+              "enum": [
+                "accepted",
+                "promotion_candidate"
+              ]
             }
           }
         },

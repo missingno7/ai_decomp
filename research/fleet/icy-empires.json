@@ -1,0 +1,220 @@
+{
+  "checked_date": "2026-09-23",
+  "scope": "Read-only falsification audit. Icy Tower is a changing working-tree snapshot; Empires is frozen at historical-exact-oracle-v1.",
+  "findings": [
+    {
+      "id": "icy-mechanical-outcomes",
+      "epistemic_class": "PROJECT FACT",
+      "claim": "The linked fresh census of 34 archived mechanical summaries contains 87 outcomes: 70 PROMOTED, 13 BLOCKED_SUPERVISOR, three STOPPED_FOR_REVIEW, and one RECOVERY_REQUIRED.",
+      "metrics": {
+        "summaries": 34,
+        "outcomes": 87,
+        "promoted": 70,
+        "blocked_supervisor": 13,
+        "stopped_for_review": 3,
+        "recovery_required": 1,
+        "interface": 44,
+        "type_view": 26,
+        "canonical_type": 13,
+        "source_order": 4
+      },
+      "limitations": "Bounded mechanical-task outcomes; not body-source recovery, model efficacy, or a rerun during this audit.",
+      "source_ids": [
+        "icy-mechanical-census",
+        "icy-mechanical-runner"
+      ]
+    },
+    {
+      "id": "icy-isolation-recovery",
+      "epistemic_class": "PROJECT FACT",
+      "claim": "Icy enforces one bounded source session, publication/recovery locks, a journal-backed rollback path, and distinct review/blocked terminal states.",
+      "limitations": "Checkout-local PID/filesystem locks do not establish distributed-worker safety or exactly-once reboot replay.",
+      "source_ids": [
+        "icy-grinder-task",
+        "icy-mechanical-runner",
+        "icy-promotion",
+        "icy-recovery"
+      ]
+    },
+    {
+      "id": "icy-model-attribution-unknown",
+      "epistemic_class": "UNKNOWN",
+      "claim": "The inspected research-luna receipts do not identify a model configuration or provide a controlled model comparison; model-specific effectiveness cannot be inferred.",
+      "counterevidence": "The draw receipt measures 23 probes, 21 effective outcomes and two new outputs, but no strict solve or fifth load.",
+      "source_ids": [
+        "icy-draw-receipt"
+      ]
+    },
+    {
+      "id": "icy-context-scope-pass-evidence",
+      "epistemic_class": "PROJECT FACT",
+      "claim": "Icy retains distinct GCC 4.4.1 evidence for predecessor/TU context, DWARF source order, compiler-pass diagnostics, and lexical storage scope; it records rejected scope and source-shape alternatives.",
+      "limitations": "Neither the mechanism nor a shared symptom group is portable to other compilers without a local discriminating experiment.",
+      "source_ids": [
+        "icy-context-evidence",
+        "icy-storage-evidence",
+        "icy-supervisor-queue"
+      ]
+    },
+    {
+      "id": "empires-frozen-closure",
+      "epistemic_class": "PROJECT FACT",
+      "claim": "Frozen Empires ACCEPTANCE records one TLINK link, 106 ordered relocations, full EXE hash, 37250 source-partitioned BSS bytes, zero raw fallback bytes, zero unresolved symbols, and no structural adapters.",
+      "source_ids": [
+        "empires-status"
+      ]
+    },
+    {
+      "id": "empires-no-frozen-fleet",
+      "epistemic_class": "PROJECT FACT",
+      "claim": "The frozen readiness record says run_started false with zero ready runtime and C cards; it is not evidence of a completed unattended fleet.",
+      "source_ids": [
+        "empires-readiness",
+        "empires-grinder-instructions"
+      ]
+    },
+    {
+      "id": "empires-worker-safety-limit",
+      "epistemic_class": "INFERENCE",
+      "claim": "The inspected frozen workflow requires one serial worker and implements scope/fingerprint/restore checks, but lacks inspected evidence of an OS lock, publication journal, or global worker coordinator.",
+      "limitations": "This describes the studied files, not impossibility of external coordination.",
+      "source_ids": [
+        "empires-grinder-instructions",
+        "empires-check-candidate",
+        "empires-build-production"
+      ]
+    },
+    {
+      "id": "empires-mechanism-rule-lifecycle",
+      "epistemic_class": "PROJECT FACT",
+      "claim": "Empires keeps bounded failure patterns, archived isolated attempts, range/task blocking, documented TASM rules, and a fresh whole-link promotion gate; isolated C evidence cannot promote a shared ordered-relocation module.",
+      "source_ids": [
+        "empires-grinder-instructions",
+        "empires-check-candidate",
+        "empires-closure-frontier"
+      ]
+    }
+  ],
+  "source_manifest": [
+    {
+      "id": "icy-mechanical-census",
+      "repository": "ai_decomp",
+      "path": "research/fleet/icy-mechanical-census.json",
+      "content_kind": "working_tree",
+      "ref": "working_tree",
+      "sha256": "e69ac0cb8fb1c17bff5c56f35155f4cc94ba979e121904d572006e588873c363"
+    },
+    {
+      "id": "icy-mechanical-runner",
+      "repository": "icytower_recon",
+      "path": "tools/mechanical_grinder.py",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "3bc2626870b0c0924b802c98ba5dcb6b0115d9055aa37a53237d70ade809f1ed"
+    },
+    {
+      "id": "icy-grinder-task",
+      "repository": "icytower_recon",
+      "path": "tools/grinder_task.py",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "03875dbcc239cf649e836caf899bf42f0202ae5d3eda612e7414f91d17da4ca9"
+    },
+    {
+      "id": "icy-promotion",
+      "repository": "icytower_recon",
+      "path": "tools/promote_function.py",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "e9bb554aaddc79d63d02556273165c3f3a3041af12593d8f5cdac51c8ea1105c"
+    },
+    {
+      "id": "icy-recovery",
+      "repository": "icytower_recon",
+      "path": "tools/recover_promotion.py",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "899a108516feac2d2d39d64f498975619dc051ad17bfc68fbc3c63010c3f2570"
+    },
+    {
+      "id": "icy-context-evidence",
+      "repository": "icytower_recon",
+      "path": "docs/compiler-context-evidence.md",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "0df1ce5b22a895dfd81c48cf0a4820cb4ba73d5989b86f381712c31467ca919b"
+    },
+    {
+      "id": "icy-storage-evidence",
+      "repository": "icytower_recon",
+      "path": "docs/storage-scope-evidence.md",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "934b284ca674644231e20d01c9620e660c1e8721465d9500d15a834089cbe18b"
+    },
+    {
+      "id": "icy-supervisor-queue",
+      "repository": "icytower_recon",
+      "path": "docs/current/supervisor-queue.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "1560fa86b8a8a0443e907bde4f692354807a80ab8734b5a2507ffd0f50ebe2ae"
+    },
+    {
+      "id": "icy-draw-receipt",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-luna-draw/status-pose-independent-20260923.md",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "c55e778daec2f76339556502c0159672e7b1a2c31bc3f64d5dda30497a5265d2"
+    },
+    {
+      "id": "empires-status",
+      "repository": "empires_reconstruction",
+      "path": "docs/current/status.json",
+      "content_kind": "git_blob",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "d05650faa9b2a2739add7cebbe130a377a103f28c8afa69a725e933563d5ab84"
+    },
+    {
+      "id": "empires-readiness",
+      "repository": "empires_reconstruction",
+      "path": "docs/current/grinder-readiness.json",
+      "content_kind": "git_blob",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "0282dee07e921aa2d59053b01b7182701ad97140afe5c55d2362397c4f8a6a1b"
+    },
+    {
+      "id": "empires-grinder-instructions",
+      "repository": "empires_reconstruction",
+      "path": "docs/current/grinder-instructions.md",
+      "content_kind": "git_blob",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "491266ce5abef74ee2d0a5a15103a4692f863cb68be594fd8bfc0e01cdac44b9"
+    },
+    {
+      "id": "empires-check-candidate",
+      "repository": "empires_reconstruction",
+      "path": "tools/check_candidate.py",
+      "content_kind": "git_blob",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "1765b71a47e2ca0dfaf781b1531f20b63965c762d26008e0288cebe72ac6585d"
+    },
+    {
+      "id": "empires-build-production",
+      "repository": "empires_reconstruction",
+      "path": "tools/build_production.py",
+      "content_kind": "git_blob",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "a4f736bb4a3ff5032f7a1314992707e4f591833822e599fe24df2a8c17860c05"
+    },
+    {
+      "id": "empires-closure-frontier",
+      "repository": "empires_reconstruction",
+      "path": "docs/current/closure-frontier.md",
+      "content_kind": "git_blob",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "51bdaaed025cc3114c6fd4a1d3efa1850e05185afda705d7f566d08ddb760d6b"
+    }
+  ]
+}

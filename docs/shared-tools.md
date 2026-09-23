@@ -3,13 +3,15 @@
 The [tool catalog](../knowledge/tools.md) records inspected source paths,
 inputs/outputs, dependencies, compiler/format assumptions and reuse classes.
 All upstream tools are references only; local availability is not a copying
-license. The two shared utilities below are new Python standard-library code
-written for this workspace, with synthetic fixtures only.
+license. The shared utilities below are new Python standard-library code
+written for this workspace. The fleet reducer includes a sanitized real Stunts
+metadata replay; experiment-matrix fixtures remain synthetic.
 
 | Operation | Best existing precedents | Decision |
 |---|---|---|
 | Context-scoped output grouping and outcome matrix | Stunts `research_batch.py`, SimAnt grinder/cache, Icy `effective_outcomes.py` | Implemented as `experiment_matrix.py`; accepts exported metadata, no compiler/parser coupling. |
 | Provenance manifest verification | Empires construction fingerprints/cache; Stunts snapshot locks; Icy hash-bound receipts | Implemented `provenance_check.py`; verifies Git/live content identity only. |
+| Compact fleet accounting and recurrence reports | Stunts raw worker/root usage; SimAnt durable jobs; Icy terminal outcomes | Implemented `fleet_report.py`; offline, idempotent metadata reducer with scoped proof and unknown-cost coverage. No scheduler or automatic causal classification. |
 | Candidate-parent-oracle structured delta | Stunts camera/family diagnostics and research batch; SimAnt `codegen_diff.py` | Contract provided in experiment records; decoder/binder-specific delta extraction remains local. |
 | Instruction alignment/mismatch islands | Stunts detailed anchors/families; Icy bounded alignment; SimAnt diagnostic diff | Conceptual reuse or adapter extraction; do not normalize away strict obligations. |
 | Whole-TU context probe | Empires route/group probes; Icy predecessor/source-order overlays; SimAnt composer | Share experimental recipe first; constructors and evidence semantics differ. |
@@ -41,6 +43,19 @@ repo, does not modify Git configuration, and performs no builds.
 
 `build_catalogs.py` is deliberately a workspace-specific importer for the four
 research handoffs. It is not classified as a shared decompilation utility.
+
+`fleet_report.py INPUT.json` aggregates terminal worker metadata, preserves
+native strict/promotion distinctions and groups explicitly supplied compatible
+blocker signatures. Stable result/cost IDs prevent duplicate ingestion; replicas
+do not multiply recovered target scopes. It neither authenticates receipts nor
+claims independent workers or proven mechanisms. It exposes unpriced/absent
+cost coverage. See the [contract and real replay](../experiments/fleet-results.md).
+
+The [external audit](../knowledge/ecosystem.md) favors learning from Mizuchi's
+model loop and reusing permuter/objdiff only where compiler/format adapters
+demonstrate value. Permuter's distributed candidate search does not provide
+native recovery-job ownership or strict production promotion. No full shared
+orchestrator or sibling production dependency is justified yet.
 
 ## Next test with the highest expected value
 

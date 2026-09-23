@@ -1,0 +1,478 @@
+{
+  "format": "ai-decomp-fleet-results-v1",
+  "run_id": "archived-stunts-matched-pilot-20260923",
+  "authority": "historical_metadata_replay_not_new_recovery",
+  "source_extraction_sha256": "0841b710e3c18dc475b74afd96b1dd59aacf3a6b07d3f71230f0042c2eaed37d",
+  "source_manifest": "research/fleet/stunts.json#source_manifest",
+  "mapping": "Eight completed matched runs only; no preflight launches, no new production promotions; unknown final strict verdict retained on unsolved runs.",
+  "results": [
+    {
+      "id": "copy_string-astra-approved",
+      "task": {
+        "project": "stunts_recon",
+        "target": "copy_string",
+        "seed_id": "approved-pilot-frozen-copy_string",
+        "context_id": "approved-pilot-matched-context-copy_string"
+      },
+      "worker": {
+        "id": "copy_string-astra-approved",
+        "lineage_id": "copy_string-astra-approved",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "analysis_level": "source_forms",
+      "stop_reason": "promotion_candidate",
+      "native_stop_reason": "STRICT_EXACT",
+      "classification_limit": "Historical capsule result; worker-reported exhausted source forms is scoped, not model exhaustion.",
+      "strict_result": {
+        "status": "pass",
+        "scope": "capsule_strict_hybrid_replay",
+        "verifier": "Stunts capsule strict helper with verification recompiles",
+        "receipt": "stunts_recon/recovery/evaluation/model-routing/results.json#copy_string-astra-approved/result/strict_receipt"
+      },
+      "promotion": {
+        "status": "candidate"
+      },
+      "counters": {
+        "hypotheses": 1,
+        "model_requests": 7,
+        "reasoning_rounds": null,
+        "compiler_processes": 3,
+        "unique_effective_outputs": 1,
+        "information_experiments": null
+      },
+      "tokens": {
+        "input": 212899,
+        "cached_input": 180736,
+        "output": 1444,
+        "reasoning_output": 45
+      },
+      "blocker": null,
+      "artifacts": [
+        "stunts-model-routing-results"
+      ]
+    },
+    {
+      "id": "copy_string-luna-approved2",
+      "task": {
+        "project": "stunts_recon",
+        "target": "copy_string",
+        "seed_id": "approved-pilot-frozen-copy_string",
+        "context_id": "approved-pilot-matched-context-copy_string"
+      },
+      "worker": {
+        "id": "copy_string-luna-approved2",
+        "lineage_id": "copy_string-luna-approved2",
+        "model": "gpt-6-luna",
+        "effort": "high"
+      },
+      "analysis_level": "source_forms",
+      "stop_reason": "promotion_candidate",
+      "native_stop_reason": "STRICT_EXACT",
+      "classification_limit": "Historical capsule result; worker-reported exhausted source forms is scoped, not model exhaustion.",
+      "strict_result": {
+        "status": "pass",
+        "scope": "capsule_strict_hybrid_replay",
+        "verifier": "Stunts capsule strict helper with verification recompiles",
+        "receipt": "stunts_recon/recovery/evaluation/model-routing/results.json#copy_string-luna-approved2/result/strict_receipt"
+      },
+      "promotion": {
+        "status": "candidate"
+      },
+      "counters": {
+        "hypotheses": 1,
+        "model_requests": 6,
+        "reasoning_rounds": null,
+        "compiler_processes": 3,
+        "unique_effective_outputs": 1,
+        "information_experiments": null
+      },
+      "tokens": {
+        "input": 152142,
+        "cached_input": 125440,
+        "output": 3042,
+        "reasoning_output": 1602
+      },
+      "blocker": null,
+      "artifacts": [
+        "stunts-model-routing-results"
+      ]
+    },
+    {
+      "id": "parse_shape2d_helper-astra-approved",
+      "task": {
+        "project": "stunts_recon",
+        "target": "parse_shape2d_helper",
+        "seed_id": "approved-pilot-frozen-parse_shape2d_helper",
+        "context_id": "approved-pilot-matched-context-parse_shape2d_helper"
+      },
+      "worker": {
+        "id": "parse_shape2d_helper-astra-approved",
+        "lineage_id": "parse_shape2d_helper-astra-approved",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "analysis_level": "source_forms",
+      "stop_reason": "search_converged",
+      "native_stop_reason": "SUPPORTED_EXPLANATIONS_EXHAUSTED",
+      "classification_limit": "Historical capsule result; worker-reported exhausted source forms is scoped, not model exhaustion.",
+      "strict_result": {
+        "status": "unknown"
+      },
+      "promotion": {
+        "status": "not_requested"
+      },
+      "counters": {
+        "hypotheses": 9,
+        "model_requests": 20,
+        "reasoning_rounds": null,
+        "compiler_processes": 9,
+        "unique_effective_outputs": 6,
+        "information_experiments": null
+      },
+      "tokens": {
+        "input": 1041955,
+        "cached_input": 978432,
+        "output": 8144,
+        "reasoning_output": 2257
+      },
+      "blocker": null,
+      "artifacts": [
+        "stunts-model-routing-results"
+      ]
+    },
+    {
+      "id": "parse_shape2d_helper-luna-approved",
+      "task": {
+        "project": "stunts_recon",
+        "target": "parse_shape2d_helper",
+        "seed_id": "approved-pilot-frozen-parse_shape2d_helper",
+        "context_id": "approved-pilot-matched-context-parse_shape2d_helper"
+      },
+      "worker": {
+        "id": "parse_shape2d_helper-luna-approved",
+        "lineage_id": "parse_shape2d_helper-luna-approved",
+        "model": "gpt-6-luna",
+        "effort": "high"
+      },
+      "analysis_level": "source_forms",
+      "stop_reason": "search_converged",
+      "native_stop_reason": "SUPPORTED_EXPLANATIONS_EXHAUSTED",
+      "classification_limit": "Historical capsule result; worker-reported exhausted source forms is scoped, not model exhaustion.",
+      "strict_result": {
+        "status": "unknown"
+      },
+      "promotion": {
+        "status": "not_requested"
+      },
+      "counters": {
+        "hypotheses": 9,
+        "model_requests": 18,
+        "reasoning_rounds": null,
+        "compiler_processes": 8,
+        "unique_effective_outputs": 4,
+        "information_experiments": null
+      },
+      "tokens": {
+        "input": 746144,
+        "cached_input": 682496,
+        "output": 15959,
+        "reasoning_output": 9218
+      },
+      "blocker": null,
+      "artifacts": [
+        "stunts-model-routing-results"
+      ]
+    },
+    {
+      "id": "rect_compare_point-astra-approved",
+      "task": {
+        "project": "stunts_recon",
+        "target": "rect_compare_point",
+        "seed_id": "approved-pilot-frozen-rect_compare_point",
+        "context_id": "approved-pilot-matched-context-rect_compare_point"
+      },
+      "worker": {
+        "id": "rect_compare_point-astra-approved",
+        "lineage_id": "rect_compare_point-astra-approved",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "analysis_level": "source_forms",
+      "stop_reason": "promotion_candidate",
+      "native_stop_reason": null,
+      "classification_limit": "Historical capsule result; worker-reported exhausted source forms is scoped, not model exhaustion.",
+      "strict_result": {
+        "status": "pass",
+        "scope": "capsule_strict_hybrid_replay",
+        "verifier": "Stunts capsule strict helper with verification recompiles",
+        "receipt": "stunts_recon/recovery/evaluation/model-routing/results.json#rect_compare_point-astra-approved/result/strict_receipt"
+      },
+      "promotion": {
+        "status": "candidate"
+      },
+      "counters": {
+        "hypotheses": 1,
+        "model_requests": 9,
+        "reasoning_rounds": null,
+        "compiler_processes": 3,
+        "unique_effective_outputs": 1,
+        "information_experiments": null
+      },
+      "tokens": {
+        "input": 288162,
+        "cached_input": 254720,
+        "output": 1626,
+        "reasoning_output": 79
+      },
+      "blocker": null,
+      "artifacts": [
+        "stunts-model-routing-results"
+      ]
+    },
+    {
+      "id": "rect_compare_point-luna-approved",
+      "task": {
+        "project": "stunts_recon",
+        "target": "rect_compare_point",
+        "seed_id": "approved-pilot-frozen-rect_compare_point",
+        "context_id": "approved-pilot-matched-context-rect_compare_point"
+      },
+      "worker": {
+        "id": "rect_compare_point-luna-approved",
+        "lineage_id": "rect_compare_point-luna-approved",
+        "model": "gpt-6-luna",
+        "effort": "high"
+      },
+      "analysis_level": "source_forms",
+      "stop_reason": "promotion_candidate",
+      "native_stop_reason": "STRICT_EXACT",
+      "classification_limit": "Historical capsule result; worker-reported exhausted source forms is scoped, not model exhaustion.",
+      "strict_result": {
+        "status": "pass",
+        "scope": "capsule_strict_hybrid_replay",
+        "verifier": "Stunts capsule strict helper with verification recompiles",
+        "receipt": "stunts_recon/recovery/evaluation/model-routing/results.json#rect_compare_point-luna-approved/result/strict_receipt"
+      },
+      "promotion": {
+        "status": "candidate"
+      },
+      "counters": {
+        "hypotheses": 4,
+        "model_requests": 13,
+        "reasoning_rounds": null,
+        "compiler_processes": 5,
+        "unique_effective_outputs": 3,
+        "information_experiments": null
+      },
+      "tokens": {
+        "input": 536363,
+        "cached_input": 481024,
+        "output": 8863,
+        "reasoning_output": 5188
+      },
+      "blocker": null,
+      "artifacts": [
+        "stunts-model-routing-results"
+      ]
+    },
+    {
+      "id": "unknown_libname_1-astra-approved",
+      "task": {
+        "project": "stunts_recon",
+        "target": "unknown_libname_1",
+        "seed_id": "approved-pilot-frozen-unknown_libname_1",
+        "context_id": "approved-pilot-matched-context-unknown_libname_1"
+      },
+      "worker": {
+        "id": "unknown_libname_1-astra-approved",
+        "lineage_id": "unknown_libname_1-astra-approved",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "analysis_level": "source_forms",
+      "stop_reason": "search_converged",
+      "native_stop_reason": "SUPPORTED_EXPLANATIONS_EXHAUSTED",
+      "classification_limit": "Historical capsule result; worker-reported exhausted source forms is scoped, not model exhaustion.",
+      "strict_result": {
+        "status": "unknown"
+      },
+      "promotion": {
+        "status": "not_requested"
+      },
+      "counters": {
+        "hypotheses": 8,
+        "model_requests": 18,
+        "reasoning_rounds": null,
+        "compiler_processes": 8,
+        "unique_effective_outputs": 7,
+        "information_experiments": null
+      },
+      "tokens": {
+        "input": 945596,
+        "cached_input": 874112,
+        "output": 7247,
+        "reasoning_output": 2240
+      },
+      "blocker": null,
+      "artifacts": [
+        "stunts-model-routing-results"
+      ]
+    },
+    {
+      "id": "unknown_libname_1-luna-approved",
+      "task": {
+        "project": "stunts_recon",
+        "target": "unknown_libname_1",
+        "seed_id": "approved-pilot-frozen-unknown_libname_1",
+        "context_id": "approved-pilot-matched-context-unknown_libname_1"
+      },
+      "worker": {
+        "id": "unknown_libname_1-luna-approved",
+        "lineage_id": "unknown_libname_1-luna-approved",
+        "model": "gpt-6-luna",
+        "effort": "high"
+      },
+      "analysis_level": "source_forms",
+      "stop_reason": "search_converged",
+      "native_stop_reason": "SUPPORTED_SOURCE_SHAPES_EXHAUSTED",
+      "classification_limit": "Historical capsule result; worker-reported exhausted source forms is scoped, not model exhaustion.",
+      "strict_result": {
+        "status": "unknown"
+      },
+      "promotion": {
+        "status": "not_requested"
+      },
+      "counters": {
+        "hypotheses": 11,
+        "model_requests": 30,
+        "reasoning_rounds": null,
+        "compiler_processes": 11,
+        "unique_effective_outputs": 7,
+        "information_experiments": null
+      },
+      "tokens": {
+        "input": 1811810,
+        "cached_input": 1715712,
+        "output": 26294,
+        "reasoning_output": 18196
+      },
+      "blocker": null,
+      "artifacts": [
+        "stunts-model-routing-results"
+      ]
+    }
+  ],
+  "costs": [
+    {
+      "id": "matched-primary:copy_string-astra-approved",
+      "role": "worker",
+      "amount": "0.574566",
+      "unit": "USD",
+      "basis": "stunts-2026-09-23-standard-equivalent-v1",
+      "result_ids": [
+        "copy_string-astra-approved"
+      ]
+    },
+    {
+      "id": "matched-primary:copy_string-luna-approved2",
+      "role": "worker",
+      "amount": "0.0054456",
+      "unit": "USD",
+      "basis": "stunts-2026-09-23-standard-equivalent-v1",
+      "result_ids": [
+        "copy_string-luna-approved2"
+      ]
+    },
+    {
+      "id": "matched-primary:parse_shape2d_helper-astra-approved",
+      "role": "worker",
+      "amount": "2.020862",
+      "unit": "USD",
+      "basis": "stunts-2026-09-23-standard-equivalent-v1",
+      "result_ids": [
+        "parse_shape2d_helper-astra-approved"
+      ]
+    },
+    {
+      "id": "matched-primary:parse_shape2d_helper-luna-approved",
+      "role": "worker",
+      "amount": "0.02116926",
+      "unit": "USD",
+      "basis": "stunts-2026-09-23-standard-equivalent-v1",
+      "result_ids": [
+        "parse_shape2d_helper-luna-approved"
+      ]
+    },
+    {
+      "id": "matched-primary:rect_compare_point-astra-approved",
+      "role": "worker",
+      "amount": "0.67044",
+      "unit": "USD",
+      "basis": "stunts-2026-09-23-standard-equivalent-v1",
+      "result_ids": [
+        "rect_compare_point-astra-approved"
+      ]
+    },
+    {
+      "id": "matched-primary:rect_compare_point-luna-approved",
+      "role": "worker",
+      "amount": "0.01477564",
+      "unit": "USD",
+      "basis": "stunts-2026-09-23-standard-equivalent-v1",
+      "result_ids": [
+        "rect_compare_point-luna-approved"
+      ]
+    },
+    {
+      "id": "matched-primary:unknown_libname_1-astra-approved",
+      "role": "worker",
+      "amount": "1.951302",
+      "unit": "USD",
+      "basis": "stunts-2026-09-23-standard-equivalent-v1",
+      "result_ids": [
+        "unknown_libname_1-astra-approved"
+      ]
+    },
+    {
+      "id": "matched-primary:unknown_libname_1-luna-approved",
+      "role": "worker",
+      "amount": "0.03991392",
+      "unit": "USD",
+      "basis": "stunts-2026-09-23-standard-equivalent-v1",
+      "result_ids": [
+        "unknown_libname_1-luna-approved"
+      ]
+    },
+    {
+      "id": "pilot-root-supervision",
+      "role": "supervisor",
+      "amount": "26.25143",
+      "unit": "USD",
+      "basis": "stunts-2026-09-23-standard-equivalent-v1"
+    },
+    {
+      "id": "remaining-preparation-excluding-root",
+      "role": "preparation",
+      "amount": null,
+      "unit": "USD",
+      "basis": "stunts-2026-09-23-standard-equivalent-v1",
+      "note": "Includes known and unpriced groups. No all-preparation subtotal added; root is already counted."
+    },
+    {
+      "id": "unpriced-review-coverage",
+      "role": "review",
+      "amount": null,
+      "unit": "USD",
+      "basis": "stunts-2026-09-23-standard-equivalent-v1"
+    },
+    {
+      "id": "compiler-host-cost-unavailable",
+      "role": "infrastructure",
+      "amount": null,
+      "unit": "USD",
+      "basis": "stunts-2026-09-23-standard-equivalent-v1"
+    }
+  ],
+  "source_extraction_hash_kind": "canonical-json-v1"
+}

@@ -1,0 +1,93 @@
+{
+  "schema": "ai_decomp.fleet-stunts-v1",
+  "title": "Stunts model-routing pilot: compact raw-derived extraction",
+  "checked_date": "2026-09-23",
+  "provenance_correction": "Final validation found a truncated worker-policy SHA256 transcription (missing f after 7a5807ec). Re-read the complete policy and corrected its digest; no claim or measurement was refreshed.",
+  "classification": "PROJECT FACT",
+  "scope": {
+    "project": "stunts_recon",
+    "head": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+    "cohort_definition": "Eight completed rows in model-routing/results.json where failed_preflight is false; five preflight-only rows excluded.",
+    "limitations": [
+      "The inspected completed cohort has no Sol run; this is not a claim about Sol capability or later project policy.",
+      "Pricing fields are report-defined alternative scenarios, not invoices.",
+      "Launcher elapsed time is host-specific and is not compared as portable wall time.",
+      "Effective-output identities are profile/flags/context scoped and are not global machine-code uniqueness."
+    ]
+  },
+  "matched_cohort": {
+    "model_effort": "high",
+    "excluded_preflight_row_count": 5,
+    "matched_run_count": 8,
+    "sum_hypothesis_count": 44,
+    "sum_request_count": 121,
+    "sum_compiler_processes": 50,
+    "strict_success_run_count": 4,
+    "sum_within_run_unique_output_count": 30,
+    "case_scoped_cross_model_unique_output_count": 24,
+    "case_output_counts": [
+      {"case": "copy_string", "within_run_sum": 2, "cross_model_union": 1},
+      {"case": "rect_compare_point", "within_run_sum": 4, "cross_model_union": 3},
+      {"case": "parse_shape2d_helper", "within_run_sum": 10, "cross_model_union": 8},
+      {"case": "unknown_libname_1", "within_run_sum": 14, "cross_model_union": 12}
+    ],
+    "raw_identity_caveat": "Counts above use result.unique_effective_outputs. Per-trial identities differ in coverage and must not replace those result-level counts.",
+    "trial_audit_reconciliation": {
+      "sum_trial_audit_compiler_processes": 50,
+      "matches_result_summary_compiler_processes": true,
+      "outcome_counts": {"PROMOTED": 4, "DIAGNOSTIC_COMPILE_ONLY": 11, "FAILED": 29},
+      "failure_class_counts": {"EXTENT_MISMATCH": 16, "BYTE_MISMATCH": 8, "optional_toolchain_profile_omitted": 2, "COMPILER_ERROR": 1, "BINDING_REVIEW_REQUIRED": 1, "UNSUPPORTED_OBJECT": 1},
+      "interpretation": "Trial audits support process reconciliation and failure separation; their identities do not replace result-level unique-output counts."
+    },
+    "matched_runs": [
+      {"case": "copy_string", "model": "gpt-6-astra", "effort": "high", "label": "copy_string-astra-approved", "hypothesis_count": 1, "request_count": 7, "compiler_processes": 3, "strict_success": true, "unique_output_count": 1, "usage": {"cache_write_input_tokens": 0, "cached_input_tokens": 180736, "uncached_input_tokens": 32163, "input_tokens": 212899, "output_tokens": 1444, "reasoning_output_tokens": 45, "total_tokens": 214343}, "standard_scenario_cost_usd": 0.574566, "stop_reason": "STRICT_EXACT", "evidence_refs": ["stunts-model-routing-results"]},
+      {"case": "copy_string", "model": "gpt-6-luna", "effort": "high", "label": "copy_string-luna-approved2", "hypothesis_count": 1, "request_count": 6, "compiler_processes": 3, "strict_success": true, "unique_output_count": 1, "usage": {"cache_write_input_tokens": 0, "cached_input_tokens": 125440, "uncached_input_tokens": 26702, "input_tokens": 152142, "output_tokens": 3042, "reasoning_output_tokens": 1602, "total_tokens": 155184}, "standard_scenario_cost_usd": 0.0054456, "stop_reason": "STRICT_EXACT", "evidence_refs": ["stunts-model-routing-results"]},
+      {"case": "parse_shape2d_helper", "model": "gpt-6-astra", "effort": "high", "label": "parse_shape2d_helper-astra-approved", "hypothesis_count": 9, "request_count": 20, "compiler_processes": 9, "strict_success": false, "unique_output_count": 6, "usage": {"cache_write_input_tokens": 0, "cached_input_tokens": 978432, "uncached_input_tokens": 63523, "input_tokens": 1041955, "output_tokens": 8144, "reasoning_output_tokens": 2257, "total_tokens": 1050099}, "standard_scenario_cost_usd": 2.020862, "stop_reason": "SUPPORTED_EXPLANATIONS_EXHAUSTED", "evidence_refs": ["stunts-model-routing-results"]},
+      {"case": "parse_shape2d_helper", "model": "gpt-6-luna", "effort": "high", "label": "parse_shape2d_helper-luna-approved", "hypothesis_count": 9, "request_count": 18, "compiler_processes": 8, "strict_success": false, "unique_output_count": 4, "usage": {"cache_write_input_tokens": 0, "cached_input_tokens": 682496, "uncached_input_tokens": 63648, "input_tokens": 746144, "output_tokens": 15959, "reasoning_output_tokens": 9218, "total_tokens": 762103}, "standard_scenario_cost_usd": 0.02116926, "stop_reason": "SUPPORTED_EXPLANATIONS_EXHAUSTED", "evidence_refs": ["stunts-model-routing-results"]},
+      {"case": "rect_compare_point", "model": "gpt-6-astra", "effort": "high", "label": "rect_compare_point-astra-approved", "hypothesis_count": 1, "request_count": 9, "compiler_processes": 3, "strict_success": true, "unique_output_count": 1, "usage": {"cache_write_input_tokens": 0, "cached_input_tokens": 254720, "uncached_input_tokens": 33442, "input_tokens": 288162, "output_tokens": 1626, "reasoning_output_tokens": 79, "total_tokens": 289788}, "standard_scenario_cost_usd": 0.67044, "stop_reason": null, "evidence_refs": ["stunts-model-routing-results"]},
+      {"case": "rect_compare_point", "model": "gpt-6-luna", "effort": "high", "label": "rect_compare_point-luna-approved", "hypothesis_count": 4, "request_count": 13, "compiler_processes": 5, "strict_success": true, "unique_output_count": 3, "usage": {"cache_write_input_tokens": 0, "cached_input_tokens": 481024, "uncached_input_tokens": 55339, "input_tokens": 536363, "output_tokens": 8863, "reasoning_output_tokens": 5188, "total_tokens": 545226}, "standard_scenario_cost_usd": 0.01477564, "stop_reason": "STRICT_EXACT", "evidence_refs": ["stunts-model-routing-results"]},
+      {"case": "unknown_libname_1", "model": "gpt-6-astra", "effort": "high", "label": "unknown_libname_1-astra-approved", "hypothesis_count": 8, "request_count": 18, "compiler_processes": 8, "strict_success": false, "unique_output_count": 7, "usage": {"cache_write_input_tokens": 0, "cached_input_tokens": 874112, "uncached_input_tokens": 71484, "input_tokens": 945596, "output_tokens": 7247, "reasoning_output_tokens": 2240, "total_tokens": 952843}, "standard_scenario_cost_usd": 1.951302, "stop_reason": "SUPPORTED_EXPLANATIONS_EXHAUSTED", "evidence_refs": ["stunts-model-routing-results"]},
+      {"case": "unknown_libname_1", "model": "gpt-6-luna", "effort": "high", "label": "unknown_libname_1-luna-approved", "hypothesis_count": 11, "request_count": 30, "compiler_processes": 11, "strict_success": false, "unique_output_count": 7, "usage": {"cache_write_input_tokens": 0, "cached_input_tokens": 1715712, "uncached_input_tokens": 96098, "input_tokens": 1811810, "output_tokens": 26294, "reasoning_output_tokens": 18196, "total_tokens": 1838104}, "standard_scenario_cost_usd": 0.03991392, "stop_reason": "SUPPORTED_SOURCE_SHAPES_EXHAUSTED", "evidence_refs": ["stunts-model-routing-results"]}
+    ],
+    "per_model": [
+      {"model": "gpt-6-astra", "run_count": 4, "hypothesis_count": 19, "request_count": 54, "compiler_processes": 23, "strict_success_run_count": 2, "within_run_unique_output_count": 15, "standard_scenario_cost_usd": 5.21717},
+      {"model": "gpt-6-luna", "run_count": 4, "hypothesis_count": 25, "request_count": 67, "compiler_processes": 27, "strict_success_run_count": 2, "within_run_unique_output_count": 15, "standard_scenario_cost_usd": 0.08130442}
+    ]
+  },
+  "cost_accounting": {
+    "actual_invoice": "unknown",
+    "direct_worker_standard_scenario_usd": 5.29847442,
+    "direct_worker_fast_scenario_usd": 10.59694884,
+    "astra_to_luna_direct_standard_ratio": 64.17,
+    "root_supervision": {"group_count": 1, "request_count": 182, "total_tokens": 20467474, "unpriced_group_count": 0, "standard_scenario_usd": 26.25143, "fast_scenario_usd": 52.50286, "standard_over_direct_ratio": 4.95},
+    "all_preparation_including_root": {"group_count": 10, "request_count": 471, "total_tokens": 47598518, "unpriced_group_count": 3, "standard_scenario_usd": null, "fast_scenario_usd": null},
+    "known_standard_lower_bound_direct_plus_root_usd": 31.54990442,
+    "interpretation": "Unpriced preparation prevents an end-to-end total; direct worker cost does not measure total fleet cost."
+  },
+  "batching_observation": {
+    "scope": "Separate gpt-6-luna/high unknown_libname_1 comparison; do not combine with matched cohort.",
+    "caps": {"hypotheses": 4, "compiler_processes": 8},
+    "sequential": {"request_count": 13, "hypothesis_count": 4, "compiler_processes": 4, "unique_output_count": 4, "strict_success": false, "standard_scenario_cost_usd": 0.01465454, "stop_reason": "HYPOTHESIS_CAP"},
+    "batched": {"request_count": 10, "hypothesis_count": 3, "compiler_processes": 3, "unique_output_count": 2, "strict_success": false, "standard_scenario_cost_usd": 0.0124246, "stop_reason": "REPEATED_EFFECTIVE_IDENTITY_WITHOUT_NEW_ANALYSIS_DIRECTION"},
+    "finding": "Fewer requests and lower direct scenario price coincided with fewer explored outputs; differing trajectories prevent a productivity conclusion."
+  },
+  "native_grinder": {
+    "classification": "PROJECT FACT",
+    "implementation_findings": [
+      "Eligibility and new-hypothesis-key checks occur before and after exclusive lock acquisition.",
+      "The grinder snapshots source and declared inputs, turns input drift during failure/error into an error, archives diagnostics/reports, refreshes state, and removes the lock in finally.",
+      "Transaction tests cover canonical failure restoration and unrelated-edit detection without erasure."
+    ],
+    "proof_boundary": "Implementation safeguards and their tests do not independently establish a historical match."
+  },
+  "source_manifest": [
+    {"id": "stunts-model-routing-results", "repository": "stunts_recon", "path": "recovery/evaluation/model-routing/results.json", "content_kind": "working_tree", "ref": "HEAD", "sha256": "fb803ad91fad49da0085c25c5d49aa56d210670c24c65878f5fc4d369ce5b4bd"},
+    {"id": "stunts-model-routing-usage", "repository": "stunts_recon", "path": "recovery/evaluation/model-routing/usage.json", "content_kind": "working_tree", "ref": "HEAD", "sha256": "8d09c68a3557b04e7c9e87770a4fb3983a3d801e60ba7f98a4dd536e2ed9ee9e"},
+    {"id": "stunts-batching-results", "repository": "stunts_recon", "path": "recovery/evaluation/model-routing/batching-results.json", "content_kind": "working_tree", "ref": "HEAD", "sha256": "8f91d34b3504f1e05086ed13e47369cc328ff9987dacf943e9274d526f59decc"},
+    {"id": "stunts-batching-usage", "repository": "stunts_recon", "path": "recovery/evaluation/model-routing/batching-usage.json", "content_kind": "working_tree", "ref": "HEAD", "sha256": "8ad77f035952e62adb184559cd528f9a1428e98606a40d3b6754fbf954fb9147"},
+    {"id": "stunts-batching-retrospective", "repository": "stunts_recon", "path": "recovery/evaluation/model-routing/batching-retrospective.json", "content_kind": "working_tree", "ref": "HEAD", "sha256": "5c8499a33ece529a712ba340c90e0b5e6a2a80356565ea89e3b28f283191033f"},
+    {"id": "stunts-native-grinder", "repository": "stunts_recon", "path": "tools/grind.py", "content_kind": "working_tree", "ref": "HEAD", "sha256": "a2e2d37e9d398fca73ca0e3db492bcfac436931883bba0105aee47d2ceaaab76"},
+    {"id": "stunts-promotion-transaction-tests", "repository": "stunts_recon", "path": "tests/test_promotion_transactions.py", "content_kind": "working_tree", "ref": "HEAD", "sha256": "5352e783b00c6b48ffed5779ac6f4478de0ab3b24aa8c42a284cde4e9552e876"},
+    {"id": "stunts-current-worker-policy", "repository": "stunts_recon", "path": "docs/current/worker-research.md", "content_kind": "working_tree", "ref": "HEAD", "sha256": "7a5807ecf03a2fcbc75195e7030ed79729255e8665d4b239a6fc3eb77f4a6208"}
+  ]
+}

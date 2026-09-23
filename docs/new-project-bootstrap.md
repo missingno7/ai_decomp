@@ -47,6 +47,15 @@ from outrunning its evidence. Choose the strict scope your target can justify.
     adaptive feedback. Protect exact neighbors, archive outcomes, and escalate
     repeated failure classes for tool/mechanism work. Measure total cost and
     information gained before changing routing policy.
+11. **Prove unattended ownership and recovery before adding workers.** Check
+    that claiming a task survives reasoning intervals and that candidate inputs
+    cannot race before compilation. Use isolated project-native research lanes
+    and serialized promotion; test interruption, stale context, pending journal,
+    compiler timeout and reboot recovery. Start with bounded disjoint work if
+    a durable shared queue is absent. Preserve global budgets across retries.
+    The [fleet guidance](../knowledge/fleet-operation.md) describes current
+    project boundaries, and the [compact result format](../experiments/fleet-results.md)
+    records model provenance, stop reasons, scoped proof and complete cost coverage.
 
 Sources: [Empires](../research/empires/dossier.md) for pinning/fresh closure and
 topology, [Stunts](../research/stunts/dossier.md) for coordinates and early

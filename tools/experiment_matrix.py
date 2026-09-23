@@ -19,7 +19,8 @@ REQUIRED = {
     'stop_reason', 'artifacts',
 }
 STOP_REASONS = {'accepted', 'budget_censored', 'search_converged', 'tooling_blocked',
-                'evidence_blocked', 'hypothesis_rejected', 'continue', 'unknown'}
+                'evidence_blocked', 'hypothesis_rejected', 'continue', 'unknown',
+                'promotion_candidate', 'production_blocked', 'systemic_mechanism_suspected'}
 
 def canonical(value):
     return json.dumps(value, sort_keys=True, separators=(',', ':'), ensure_ascii=False, allow_nan=False)
@@ -64,8 +65,8 @@ def validate(rows):
         identity = row['effective_output_identity']
         if strict['status'] == 'pass' and (process['status'] != 'success' or identity is None):
             raise ValueError(f'{row["id"]}: strict pass requires successful compilation and output identity')
-        if row['stop_reason'] == 'accepted' and strict['status'] != 'pass':
-            raise ValueError(f'{row["id"]}: accepted stop requires strict pass')
+        if row['stop_reason'] in ('accepted', 'promotion_candidate') and strict['status'] != 'pass':
+            raise ValueError(f'{row["id"]}: exact-result stop requires strict pass')
         if identity is not None:
             if process['status'] != 'success':
                 raise ValueError(f'{row["id"]}: output identity requires successful compilation')

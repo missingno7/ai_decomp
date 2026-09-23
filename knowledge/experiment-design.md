@@ -60,3 +60,27 @@ that compiler. Do not import GCC pass names as explanations for MSC results.
 The [minimal experiment contract](../experiments/README.md) records missing
 information explicitly. An old receipt can be useful historical evidence without
 inventing its absent prediction, falsifier, timing or parent identity.
+
+## Comparing worker policies
+
+Freeze the same evidence, tools, eligible task cohort and allowed runway;
+record model/effort and independent seed/lineage, including failed launches.
+Preregister native proof scope, stop rules and shared replica budgets. Report
+strict outcomes alongside hypotheses, model requests, meaningful reasoning
+rounds when identifiable, compiler processes, effective outputs and experiments
+that discriminate a stated hypothesis. These counters are not interchangeable.
+
+Separate preparation from recurring supervision/review, retain cached-token
+buckets without double counting, and leave unpriced costs unknown. Historical
+host timing is context, not a primary model comparison. Useful late solves and
+mechanisms need receipts; zero new solves cannot estimate cost per new solve.
+Search convergence is scoped to tested axes and evidence, not model exhaustion.
+The [fleet review](../research/fleet/evaluation.md) derives an accounting
+break-even and identifies what the small Stunts cohort cannot estimate.
+
+Two to four redundant cheap workers are an experiment, not a throughput rule.
+Use separate candidates and conversations, measure marginal output diversity
+and cost, and cancel remaining branches only after equivalent-scope native
+strict confirmation. Changing model or replica must not reset the task budget.
+Link per-experiment records through optional `fleet_context`; aggregate terminal
+task records through the separate [fleet contract](../experiments/fleet-results.md).

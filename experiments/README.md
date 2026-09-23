@@ -23,7 +23,8 @@ that provenance can be exported explicitly.
 | `structured_delta` | Separate `candidate_vs_parent`, `candidate_vs_oracle`, `protected_neighbors` and unresolved dimensions; project extensions allowed. No universal scalar similarity. |
 | `strict_result` | pass/fail/not_run/unknown, verifier, scope and receipt; freshness and unresolved obligations in extensions. |
 | `facts_learned` | Observations with epistemic label, context and source references. |
-| `stop_reason` | accepted, budget_censored, search_converged, tooling_blocked, evidence_blocked, hypothesis_rejected, continue, unknown. |
+| `stop_reason` | accepted, promotion_candidate, budget_censored, search_converged, tooling_blocked, evidence_blocked, production_blocked, systemic_mechanism_suspected, hypothesis_rejected, continue, unknown. |
+| `fleet_context` | Optional run/task/result/lineage IDs connecting this experiment to a terminal fleet handoff. |
 | `artifacts` | Repository-relative path + immutable ref/hash, content kind and role. No embedded oracle bytes. |
 | `extensions` | Project-specific fields; preserve semantics rather than forcing a lossy common denominator. |
 
@@ -49,3 +50,10 @@ No real attempts are imported into the utility yet: the catalogs preserve their
 original evidence instead. Synthetic fixture hashes and receipts are explicitly
 test data, not recovery claims. The next validation is a lossless read-only
 adapter for a small matched real cohort.
+
+The separate [fleet-result contract](fleet-results.md) summarizes terminal tasks
+and accounting rather than individual compiler experiments. Its real Stunts
+replay does not imply those attempts have been losslessly imported into this
+matrix. `promotion_candidate` requires a strict pass; only the fleet record
+additionally distinguishes a reported native promotion receipt from
+a candidate. Neither offline validator authenticates that receipt itself.

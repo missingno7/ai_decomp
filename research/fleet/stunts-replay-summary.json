@@ -1,0 +1,130 @@
+{
+  "format": "ai-decomp-fleet-summary-v1",
+  "run_id": "archived-stunts-matched-pilot-20260923",
+  "authority": "metadata_summary_only",
+  "results": 8,
+  "duplicate_result_records_ignored": 0,
+  "duplicate_cost_records_ignored": 0,
+  "workers": 8,
+  "targets": 4,
+  "stops": {
+    "promotion_candidate": 4,
+    "search_converged": 4
+  },
+  "strict_pass_results": 4,
+  "strict_target_scopes": [
+    [
+      "stunts_recon",
+      "copy_string",
+      "approved-pilot-matched-context-copy_string",
+      "capsule_strict_hybrid_replay"
+    ],
+    [
+      "stunts_recon",
+      "rect_compare_point",
+      "approved-pilot-matched-context-rect_compare_point",
+      "capsule_strict_hybrid_replay"
+    ]
+  ],
+  "strict_statuses": {
+    "pass": 4,
+    "unknown": 4
+  },
+  "promotions": {
+    "candidate": 4,
+    "not_requested": 4
+  },
+  "distinct_reported_promotion_transactions": [],
+  "counters": {
+    "hypotheses": {
+      "known_sum": 44,
+      "known_results": 8,
+      "unknown_results": 0
+    },
+    "model_requests": {
+      "known_sum": 121,
+      "known_results": 8,
+      "unknown_results": 0
+    },
+    "reasoning_rounds": {
+      "known_sum": 0,
+      "known_results": 0,
+      "unknown_results": 8
+    },
+    "compiler_processes": {
+      "known_sum": 50,
+      "known_results": 8,
+      "unknown_results": 0
+    },
+    "unique_effective_outputs": {
+      "known_sum": 30,
+      "known_results": 8,
+      "unknown_results": 0
+    },
+    "information_experiments": {
+      "known_sum": 0,
+      "known_results": 0,
+      "unknown_results": 8
+    }
+  },
+  "tokens": {
+    "input": {
+      "known_sum": 5735071,
+      "known_results": 8,
+      "unknown_results": 0
+    },
+    "cached_input": {
+      "known_sum": 5292672,
+      "known_results": 8,
+      "unknown_results": 0
+    },
+    "output": {
+      "known_sum": 72619,
+      "known_results": 8,
+      "unknown_results": 0
+    },
+    "reasoning_output": {
+      "known_sum": 38825,
+      "known_results": 8,
+      "unknown_results": 0
+    }
+  },
+  "costs": [
+    {
+      "basis": "stunts-2026-09-23-standard-equivalent-v1",
+      "unit": "USD",
+      "roles": {
+        "infrastructure": {
+          "known_amount": "0",
+          "unknown_items": 1
+        },
+        "preparation": {
+          "known_amount": "0",
+          "unknown_items": 1
+        },
+        "review": {
+          "known_amount": "0",
+          "unknown_items": 1
+        },
+        "supervisor": {
+          "known_amount": "26.25143",
+          "unknown_items": 0
+        },
+        "worker": {
+          "known_amount": "5.29847442",
+          "unknown_items": 0
+        }
+      },
+      "listed_items_priced": false,
+      "unreported_roles": []
+    }
+  ],
+  "blocker_clusters": [],
+  "limitations": [
+    "Receipts, independence and blocker classifications are not verified here.",
+    "Unique-output counter sum is within-result work, not cross-result novelty.",
+    "Reasoning tokens are a subset of output; cached input is a subset of input.",
+    "Cost bases are never combined; absent cost items are not known zero costs.",
+    "No scheduling, automatic escalation or production mutation."
+  ]
+}

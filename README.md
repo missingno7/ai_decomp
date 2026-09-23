@@ -25,6 +25,15 @@ project evidence. Pinned records live in `research/ecosystem/`, indexed by
 See the [ecosystem validation record](docs/ecosystem-validation.md) for checks
 and the limits of the source-only research pass.
 
+The [fleet architecture falsification review](research/fleet/evaluation.md)
+tests cheap-worker economics against raw Stunts measurements and current native
+locking/recovery code. It supports a bounded Luna-first trial while retaining
+the proposed model hierarchy and large-fleet economics as hypotheses. See
+[unattended workflow boundaries](knowledge/fleet-operation.md) and the
+[compact result/report contract](experiments/fleet-results.md).
+The [fleet validation record](research/fleet/validation.md) retains source drift
+and the limits of the metadata-only prototype.
+
 Every important claim retains one of four meanings:
 
 | Label | Meaning |
@@ -58,23 +67,27 @@ are first-class entries in [negative evidence](knowledge/negative-evidence.md).
 `catalog/` contains normalized projects, mechanisms, trajectories, negative
 evidence, tools and source manifests. `research/` retains authored extraction
 details. `knowledge/` contains synthesis and generated browsing pages.
-`experiments/` proposes a small metadata model with clearly synthetic examples.
+`experiments/` proposes small metadata contracts with clearly synthetic test
+examples; `research/fleet/` also includes a sanitized archived Stunts replay.
 Nothing requires the source repositories to adopt this model.
 The [initial validation report](docs/validation.md) records the extraction
 counts, utility checks and live-source drift limitations.
 
-Two small analysis tools are available; see [tool choices](docs/shared-tools.md):
+Small analysis tools are available; see [tool choices](docs/shared-tools.md):
 
 ```powershell
 python tools/experiment_matrix.py experiments/examples/synthetic.json
 python tools/provenance_check.py
+python tools/fleet_report.py research/fleet/stunts-replay.json
 python -m unittest discover -s tests
 ```
 
 The matrix clusters only context-compatible output identities and preserves
 individual strict results. The provenance checker reads Git blobs or live files
 and detects missing/drifted evidence; it cannot recreate uncommitted history.
-Neither tool compiles code or grants a match. No game assets, oracle byte ranges,
+The fleet reducer summarizes scoped results, explicit blocker signatures and
+cost coverage; it does not schedule workers. None compiles code or grants a match.
+No game assets, oracle byte ranges,
 historical tools, SDKs or copied upstream scripts are included.
 
 To maintain this workspace, update the relevant authored dossier/records with

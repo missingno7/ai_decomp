@@ -1,0 +1,954 @@
+{
+  "format": "ai-decomp-icy-mechanical-census-v1",
+  "checked_date": "2026-09-23",
+  "snapshot": "Fresh read-only working-tree census; archived receipts can change outside this workspace.",
+  "aggregation": {
+    "summary_count": 34,
+    "outcome_count": 87,
+    "state_counts": {
+      "BLOCKED_SUPERVISOR": 13,
+      "PROMOTED": 70,
+      "RECOVERY_REQUIRED": 1,
+      "STOPPED_FOR_REVIEW": 3
+    },
+    "kind_counts": {
+      "CANONICAL_TYPE": 13,
+      "INTERFACE": 44,
+      "SOURCE_ORDER": 4,
+      "TYPE_VIEW": 26
+    },
+    "outcomes_missing_kind": 0
+  },
+  "source_manifest": [
+    {
+      "id": "icy-mechanical-summary-01",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T010032429636Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "e0234cba311ec4fa5a0164d32e649f8d758597038b3dffbce7961a5031ebd3da",
+      "run": "20260921T010032429636Z",
+      "limit": 3,
+      "outcomes": [
+        {
+          "function": "get_url_filename",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "HTTPRequest",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "SplitURL",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-02",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T010629050381Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "97adefecd65dba121f4af5f92b76b4ff926321369fa95b29c69855bfb1c4c137",
+      "run": "20260921T010629050381Z",
+      "limit": 1,
+      "outcomes": [
+        {
+          "function": "check_dir",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-03",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T025253427012Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "146b6c77e1d7b9c5f34449504e61d16b3e4d5e2f36005a1155e714bf2dbf828a",
+      "run": "20260921T025253427012Z",
+      "limit": 1,
+      "outcomes": [
+        {
+          "function": "log2file",
+          "kind": "INTERFACE",
+          "state": "BLOCKED_SUPERVISOR",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-04",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T025523435528Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "d4bd0a8bcd9e9a114da406fc41cb51994254ca23675681326d8b073a69bc51c9",
+      "run": "20260921T025523435528Z",
+      "limit": 1,
+      "outcomes": [
+        {
+          "function": "handle_player_collision_combo",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-05",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T034656798785Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "ace4719d8e3053bb08993ac3f2695bcff755f168ad8f36b90c5b071394a3e5c8",
+      "run": "20260921T034656798785Z",
+      "limit": 8,
+      "outcomes": [
+        {
+          "function": "handle_player_collision_old",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "handle_player_collision_original",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "handle_player_collision_vector",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "handle_player_collision_vector_2",
+          "kind": "INTERFACE",
+          "state": "BLOCKED_SUPERVISOR",
+          "continue": true
+        },
+        {
+          "function": "my_alert",
+          "kind": "INTERFACE",
+          "state": "STOPPED_FOR_REVIEW",
+          "continue": false
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-06",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T035844954765Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "5209991bf15031429e7c5ac98a6a913a7b174d17e2eeb41af50a4f24e3347464",
+      "run": "20260921T035844954765Z",
+      "limit": 3,
+      "outcomes": [
+        {
+          "function": "open_web_browser",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "save_config",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "update_frame",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-07",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T041511469305Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "8793318da06ffb0e7afcde97f5c1cb58be755946c817ff3450d99175c7f0d5bb",
+      "run": "20260921T041511469305Z",
+      "limit": 5,
+      "outcomes": [
+        {
+          "function": "for_each_directory",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "is_up",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "Tcommandline",
+          "kind": "CANONICAL_TYPE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "Tavailable_profile",
+          "kind": "CANONICAL_TYPE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "Tcharacter",
+          "kind": "CANONICAL_TYPE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-08",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T044640328065Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "2306229e4294554c734a826a3a15aff7dfc77b63950a6206fe6bbca1fc695632",
+      "run": "20260921T044640328065Z",
+      "limit": 3,
+      "outcomes": [
+        {
+          "function": "load_replay",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "save_replay",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "Toptions",
+          "kind": "CANONICAL_TYPE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-09",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T051729772626Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "79f1ed6795e338bc498b8e64c079ecf44e752329cfaaf727f86811890b912fa5",
+      "run": "20260921T051729772626Z",
+      "limit": 10,
+      "outcomes": [
+        {
+          "function": "Tmenu_char_selection",
+          "kind": "CANONICAL_TYPE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "Tcustom",
+          "kind": "CANONICAL_TYPE",
+          "state": "BLOCKED_SUPERVISOR",
+          "continue": true
+        },
+        {
+          "function": "Tmenu_floor_selection",
+          "kind": "CANONICAL_TYPE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "Tmenu_selection",
+          "kind": "CANONICAL_TYPE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_profile_Tprofile_advanced",
+          "kind": "TYPE_VIEW",
+          "state": "BLOCKED_SUPERVISOR",
+          "continue": true
+        },
+        {
+          "function": "view_profile_Tprofile_basic",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_profile_Tprofile_checksum",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_profile_Tprofile_control",
+          "kind": "TYPE_VIEW",
+          "state": "BLOCKED_SUPERVISOR",
+          "continue": true
+        },
+        {
+          "function": "view_profile_Tprofile_load",
+          "kind": "TYPE_VIEW",
+          "state": "BLOCKED_SUPERVISOR",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-10",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T053640202075Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "8ee748fa0711e2ecde1df4492b2060e544993746cfbcd4ee1728988b6b53f710",
+      "run": "20260921T053640202075Z",
+      "limit": 1,
+      "outcomes": [
+        {
+          "function": "view_profile_Tprofile_advanced",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-11",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T083450098831Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "d86d6fb5d7f5a679881bef4b8cb8b5dbea1199310179959dcc255990d94f2726",
+      "run": "20260921T083450098831Z",
+      "limit": 6,
+      "outcomes": [
+        {
+          "function": "view_fld_adspot_FLDAdSpot",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_game_data_Tgd_combo",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_game_data_Tgd_jump_sequence",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_game_data_Tgame_data",
+          "kind": "TYPE_VIEW",
+          "state": "STOPPED_FOR_REVIEW",
+          "continue": false
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-12",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T084610902920Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "f9cecb794a3f099e9f0b7e0fd02051f83aabb3b3d353e7868de68ff57ea366e0",
+      "run": "20260921T084610902920Z",
+      "limit": 8,
+      "outcomes": [
+        {
+          "function": "view_game_data_Tgame_data",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_hisc_Thisc_post",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_hisc_Thisc_table",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "reset_hisc_table",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_httpget_HTTPHeader",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_httpget_HTTPResponse",
+          "kind": "TYPE_VIEW",
+          "state": "BLOCKED_SUPERVISOR",
+          "continue": true
+        },
+        {
+          "function": "view_options_Toptions",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-13",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T091423253620Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "79b01f0a3a1a7e26966bb2446161643f2ffaad742a0c8889e258e434562b8064",
+      "run": "20260921T091423253620Z",
+      "limit": 8,
+      "outcomes": [
+        {
+          "function": "get_controls",
+          "kind": "INTERFACE",
+          "state": "BLOCKED_SUPERVISOR",
+          "continue": true
+        },
+        {
+          "function": "poll_control",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "make_hisc_table",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_scores",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "destroy_hisc_table",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-14",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T092619596734Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "1282ec23dcb6a100738c3b6d6089a98cac8c405a0165d524b4d8745321f30311",
+      "run": "20260921T092619596734Z",
+      "limit": 8,
+      "outcomes": [
+        {
+          "function": "member_menu_Tmenu_params_font_bullet_data",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-15",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T094051769298Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "deff487972d81ee24d2ea4e84d0f716ba6402e694806facbf20377e7c2385923",
+      "run": "20260921T094051769298Z",
+      "limit": 12,
+      "outcomes": [
+        {
+          "function": "get_controls",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "Tcustom",
+          "kind": "CANONICAL_TYPE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "member_main_Tmenu_params_font_bullet_data",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "Tmenu_params",
+          "kind": "CANONICAL_TYPE",
+          "state": "BLOCKED_SUPERVISOR",
+          "continue": true
+        },
+        {
+          "function": "view_main_Tcmdline",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_main_Tjump_sequence",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_profile_Tprofile_control",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_profile_Tprofile_load",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-16",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T100731490118Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "956413976c407c55f220352818d3b968dbb115301ee7ce016f9b7000950bf3e6",
+      "run": "20260921T100731490118Z",
+      "limit": 10,
+      "outcomes": [
+        {
+          "function": "Tmenu_params",
+          "kind": "CANONICAL_TYPE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-17",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T102602206462Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "7be4f0a1823163e11699170d8605b9373eda089f2f0fac83a9e1b832477833a3",
+      "run": "20260921T102602206462Z",
+      "limit": 5,
+      "outcomes": [
+        {
+          "function": "move_main_draw_progress_bar",
+          "kind": "SOURCE_ORDER",
+          "state": "RECOVERY_REQUIRED",
+          "continue": false
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-18",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T102859974382Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "7fb271cd6e4c25f3c6a4decf0ce02b4990d26eaa49c8a4fc5f35f9ede6c234dd",
+      "run": "20260921T102859974382Z",
+      "limit": 1,
+      "outcomes": [
+        {
+          "function": "move_main_draw_progress_bar",
+          "kind": "SOURCE_ORDER",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-19",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T103516420092Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "e2ce695b860d62e86772d2861dd52b1386f5d78c09070e021f27a8ef80bc8609",
+      "run": "20260921T103516420092Z",
+      "limit": 3,
+      "outcomes": [
+        {
+          "function": "move_main_load_character",
+          "kind": "SOURCE_ORDER",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-20",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T104045112456Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "354852c02cc7e28ff6200c7063867b7c6488e68d31d5f6cb41e6b7a9d2f7c7b5",
+      "run": "20260921T104045112456Z",
+      "limit": 3,
+      "outcomes": [
+        {
+          "function": "move_main_startGameMusic",
+          "kind": "SOURCE_ORDER",
+          "state": "BLOCKED_SUPERVISOR",
+          "continue": false
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-21",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T104649541542Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "523098cd384ebabd893a444e6b6ac4a2fc69a5853909f46019d9a840607edcae",
+      "run": "20260921T104649541542Z",
+      "limit": 10,
+      "outcomes": [
+        {
+          "function": "view_main_Tprofile",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-22",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T110330888594Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "14c21b1e06acf7516e26a876e11f8334b1b8cc0fbe3495951071a8e9206369b5",
+      "run": "20260921T110330888594Z",
+      "limit": 6,
+      "outcomes": [
+        {
+          "function": "save_profile",
+          "kind": "INTERFACE",
+          "state": "BLOCKED_SUPERVISOR",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-23",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T110730652753Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "1482e340e3d15a9723d4d266c527b4942046233930e75fc5939757bdf8ae5228",
+      "run": "20260921T110730652753Z",
+      "limit": 4,
+      "outcomes": [
+        {
+          "function": "save_profile",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-24",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T113538469139Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "a9f14187698fb4e19ea67cdcfe0d950cd3a016cb9f3096e8084273f80e6d2400",
+      "run": "20260921T113538469139Z",
+      "limit": 3,
+      "outcomes": [
+        {
+          "function": "my_alert",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-25",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T115913221431Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "f074f19ffea770424b3a0eed0e9b61f5de46c945968976204813bb09ebc5a8a1",
+      "run": "20260921T115913221431Z",
+      "limit": 10,
+      "outcomes": [
+        {
+          "function": "Treplay",
+          "kind": "CANONICAL_TYPE",
+          "state": "BLOCKED_SUPERVISOR",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-26",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T121546067250Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "c65ac3a036fd653fb7bce5ed03c0d243faed8a7aeca97bba09641dc72c0874dd",
+      "run": "20260921T121546067250Z",
+      "limit": 10,
+      "outcomes": [
+        {
+          "function": "Treplay",
+          "kind": "CANONICAL_TYPE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "view_main_Tgame_data",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-27",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T122134774191Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "171ee87f6fd4c19210a87dbbf269d86e9b53336f59d7f55187748ddd0d477919",
+      "run": "20260921T122134774191Z",
+      "limit": 10,
+      "outcomes": [
+        {
+          "function": "draw_table",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "drawSlot",
+          "kind": "INTERFACE",
+          "state": "STOPPED_FOR_REVIEW",
+          "continue": false
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-28",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T122625969762Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "6b7a5f91c28adbaf4e677b9fdc69008779862ad0fa7212b23f68e9b8bc44037e",
+      "run": "20260921T122625969762Z",
+      "limit": 4,
+      "outcomes": [
+        {
+          "function": "drawSlot",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "destroy_game_data",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-29",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T124753965919Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "31adbd21528de213e071518306a6d481935ff2d0d494f2705d587bf9535d2e1f",
+      "run": "20260921T124753965919Z",
+      "limit": 12,
+      "outcomes": [
+        {
+          "function": "get_string",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "blit_to_screen",
+          "kind": "INTERFACE",
+          "state": "BLOCKED_SUPERVISOR",
+          "continue": true
+        },
+        {
+          "function": "draw_buffer",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "load_hisc_table",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "load_options",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "save_options",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "save_hisc_table",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-30",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T130729763075Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "8b0e130da5369c3788320c1dd4471cca49d2752cc8d31c38a27b46d76d88c6dd",
+      "run": "20260921T130729763075Z",
+      "limit": 4,
+      "outcomes": [
+        {
+          "function": "blit_to_screen",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-31",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T131209152025Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "f2d2a37fd02efc03161e73c81061bc8a7effd7c54c3fea275f4d855db47534fc",
+      "run": "20260921T131209152025Z",
+      "limit": 12,
+      "outcomes": [
+        {
+          "function": "view_profile_Tprofile_general",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-32",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T132211563026Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "f6b89f21473015b51b396b5279fb240445ead45a6744edd37d7f3d95b749155f",
+      "run": "20260921T132211563026Z",
+      "limit": 12,
+      "outcomes": [
+        {
+          "function": "view_httpget_HTTPResponse",
+          "kind": "TYPE_VIEW",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-33",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T132921607548Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "d78376f26e82057c6e4393de5323d9d9545b6c1a31b4d399bc3ed03979b24453",
+      "run": "20260921T132921607548Z",
+      "limit": 4,
+      "outcomes": [
+        {
+          "function": "log2file",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    },
+    {
+      "id": "icy-mechanical-summary-34",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/mechanical-runs/20260921T133956383611Z/summary.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "7c475cc86da6af4a677f4ba508bb652f0d12d2242a702689cdec9d0e648443cf",
+      "run": "20260921T133956383611Z",
+      "limit": 10,
+      "outcomes": [
+        {
+          "function": "handle_player_input",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "load_control",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        },
+        {
+          "function": "save_control",
+          "kind": "INTERFACE",
+          "state": "PROMOTED",
+          "continue": true
+        }
+      ]
+    }
+  ]
+}

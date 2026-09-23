@@ -43,3 +43,28 @@ reproduces native grouping without losing fixups/context, then measure whether
 the resulting handoff actually reduces redundant trials and supervisor work.
 Keep compiler services, object parsers and acceptance gates local until that
 evidence suggests a narrower common interface.
+
+## Fleet follow-up after the falsification review
+
+The smallest accounting component is now implemented: a
+[fleet-result contract and offline reducer](../experiments/fleet-results.md),
+replayed against eight archived Stunts runs. This demonstrates metadata
+consistency, not cheaper recovery. It complements the proposed compiler-response
+replay above; it does not yet import per-experiment deltas or schedule workers.
+
+Before unattended shared-queue trials, resolve ownership in the owning project.
+SimAnt's `next` is not a claim and candidate submission can race before the job
+lock; use externally disjoint assignments until claim/input isolation is fixed.
+Icy's mechanical serial lane and Stunts' isolated capsules have different safe
+boundaries. Frozen Empires has no eligible work. Retain project-native caps,
+transactions, recovery sentinels and serialized promotion.
+
+The next measurement should be a small preregistered, equal-tools/evidence/runway
+cohort with complete worker plus preparation/supervisor/review accounting.
+Include ordinary work, scoped systemic residue and a selective two-replica arm;
+count new native strict wins, information-producing tests and useful late solves.
+Do not begin by building a distributed scheduler or spending a larger-model
+budget. First establish native isolation/restart behavior and that compact
+reports actually reduce supervisor load. Model tier comparisons and a larger
+fleet remain experiments. See the [decision review](../research/fleet/evaluation.md)
+and [bounded workflow](../knowledge/fleet-operation.md).
