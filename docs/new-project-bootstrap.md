@@ -63,3 +63,13 @@ hybrid/agent measurement, [SimAnt](../research/simantw/dossier.md) for ABI/membe
 factory design, [Icy Tower](../research/icytower/dossier.md) for rich debug evidence,
 scope/context and exact-neighbor preservation. Their machine-readable source
 refs are in [catalog/sources.json](../catalog/sources.json).
+
+
+Before selecting a worker policy, measure both function-count and byte-count
+frontiers and record imported matching-source/tooling seeds. A selected hard tail
+is not a model benchmark. Keep artifact equality, contribution ownership and
+source/topology closure as separate milestones. Treat old blocker labels as
+context-qualified hypotheses; refresh evidence before escalating them.
+[Recovery scopes](../knowledge/recovery-levels.md) and the
+[adversarial review](../research/adversarial-synthesis-20260923.md) show why a
+function-only queue can conceal binding, data and compiler-context questions.

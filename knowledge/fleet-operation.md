@@ -144,3 +144,22 @@ The [fleet metadata contract](../experiments/fleet-results.md) implements only
 the shared representation and offline summary. Native execution, leases,
 transactions, budgets and promotion remain project-owned until a live trial
 demonstrates a narrower reusable boundary.
+
+## Adversarial constraints on task size and escalation
+
+The [new review](../research/adversarial-synthesis-20260923.md) does not strengthen
+the model hierarchy into a fact. Icy has a selected large-function tail; Empires
+had imported matching source; SimAnt blocker categories change under fresh context.
+These populations do not estimate worker intelligence or failure rates.
+
+A fleet report should distinguish observed residue clusters from supported causal
+mechanisms and capability blocks, including context/freshness and lineage. A model
+supervisor receives compatible evidence and a falsifiable mechanism question;
+repetition of an old classifier label is insufficient. Preserve earlier labels
+when a fresh report changes them. Do not silently relabel historical failures.
+
+Regions can reduce context presented to a worker while retaining whole-function/TU
+compilation. Their independence and safe merge boundaries remain unproven. Current
+Icy sidecars are not job leases, instruction ownership or promotion certificates.
+Do not expand fleet parallelism on the assumption that all giant functions have
+independent regions. Use [influence controls](large-function-regions.md) first.

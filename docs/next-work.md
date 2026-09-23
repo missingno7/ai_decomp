@@ -68,3 +68,27 @@ budget. First establish native isolation/restart behavior and that compact
 reports actually reduce supervisor load. Model tier comparisons and a larger
 fleet remain experiments. See the [decision review](../research/fleet/evaluation.md)
 and [bounded workflow](../knowledge/fleet-operation.md).
+
+
+## Priorities after adversarial review
+
+The [A–H review](../research/adversarial-synthesis-20260923.md) rejects a smooth
+gradient, immutable causal blockers, automatic region independence and model
+rankings inferred from project throughput. The next three discriminating tests are:
+
+1. **Icy region influence:** hash-bind the existing metadata, reproduce the native
+   whole-TU baseline/no-op, test two supported edits and their combination. The
+   [read-only inventory](../knowledge/large-function-regions.md) already detects
+   a stale draw sidecar; it does not establish independent region tasks.
+2. **Stunts capability cohort:** use the existing census, TU and extent tools on
+   selected verified boundaries; test a specific profile/binding/context cause
+   and distinguish reclassification, eligibility and native strict promotion.
+   Add only a demonstrated missing binder/contribution capability.
+3. **Historical replay feasibility:** audit the three exact snapshots in the
+   [replay design](historical-replay.md), then separately scope a matched trial.
+   Stage and seed-quality confounding are real; their quantitative model effect
+   remains unknown. No expensive comparison was run here.
+
+The compact cross-project response replay remains the next integration experiment.
+The new region inventory is a smaller read-only evidence diagnostic, not a competing
+scheduler or new source solver. Retain native oracles and project mutation boundaries.

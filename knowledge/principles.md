@@ -1,5 +1,9 @@
 # Principles with falsification boundaries
 
+The [adversarial A–H review](../research/adversarial-synthesis-20260923.md)
+retests these claims against newer native tooling, historical milestones and
+full Icy function-byte accounting. Its sources supplement the original catalogs.
+
 ## Supported cross-project patterns
 
 **CROSS-PROJECT PATTERN — compilation context can change the result of a
@@ -102,3 +106,30 @@ with controls and counterexamples. Existing project tools demonstrate this
 lifecycle; their authors' model identities are mostly unavailable. Strong-model
 discovery amortization is a useful policy, not measured model superiority.
 See [fleet operation](fleet-operation.md) for routing, recovery and reporting.
+
+## Additional boundaries established by the adversarial review
+
+**GENERIC METHOD — separate residue from cause.** A blocker describes the
+candidate/context/evidence/tool/proof state. Preserve observed residue, supported
+and rejected mechanisms, unresolved dimensions and capability/workflow blocks
+separately. SimAnt's fresh labels change without proving semantic causes;
+Stunts has overlapping categories and already implements transferred diagnostics.
+Do not convert repeated symptoms into one causal explanation.
+
+**GENERIC METHOD — choose the next scope from evidence.** Source regions can be
+useful research units while compilation and acceptance cover the enclosing
+function/TU. Data, fixups, profiles and protected peers form cross-cutting
+dependencies; a universal escalation tree loses information. Use the
+[scope graph guidance](recovery-levels.md) only where it reduces confusion.
+
+**WORKING HYPOTHESIS — independently grindable regions.** Icy has region authoring,
+machine chunks and line budgets, but semantic dependencies, peer regressions and
+stale sidecars contradict unconditional independence. The
+[region influence experiment](large-function-regions.md) must precede concurrent
+region ownership. Region exactness never grants function acceptance.
+
+**REJECTED / TOO STRONG:** a smooth compiler gradient, one permanent causal
+blocker per function, throughput-based historical model ranking, or Empires'
+convergence as proof that its entire post-bootstrap problem was easy. Retain
+scoped response maps, stage/seed confounders and the separation between artifact
+equality and natural source/topology closure instead.

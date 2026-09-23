@@ -1,5 +1,8 @@
 # Designing experiments that teach something
 
+The [adversarial synthesis](../research/adversarial-synthesis-20260923.md)
+adds region influence, fresh blocker capability and historical replay experiments.
+
 The procedures below are **GENERIC METHOD** proposals grounded in the
 [project trajectories](trajectories.md). Compiler effects remain **PROJECT
 FACTS** at their cited source context.
@@ -84,3 +87,29 @@ and cost, and cancel remaining branches only after equivalent-scope native
 strict confirmation. Changing model or replica must not reset the task budget.
 Link per-experiment records through optional `fleet_context`; aggregate terminal
 task records through the separate [fleet contract](../experiments/fleet-results.md).
+
+## Context, scope and response-map controls
+
+Name edit, compile, measurement, protected and acceptance scopes separately.
+Use [recovery scopes](recovery-levels.md) rather than assuming every experiment
+is a function-local mutation. Hypotheses can concern evidence or a binder, not
+only C spelling. A changed classifier requires a discriminating follow-up; it
+is not automatically a discovered cause.
+
+For regions, hash-bind source spans and retain possibly disjoint machine sets.
+Unknown liveness or source-to-instruction correspondence stays unknown. Reproduce
+the native whole-unit baseline and a no-op control before interpreting influence;
+annotation/inlining changes can alter budgets without improving code. Two local
+edits need a combined trial before assuming their effects compose. See the
+[five-compile proposal](large-function-regions.md).
+
+Prefer “empirical compiler response map” to “gradient.” Keep equal-output
+observations across deliberately varied contexts, but do not reuse a cache or
+proof across those contexts without its native identity contract. Compare
+output vectors and protected-state losses, not just target similarity.
+
+Stage/model comparisons require frozen tools/evidence and leakage controls;
+a worktree alone exposes future Git history. The
+[historical replay design](../docs/historical-replay.md) identifies exact
+pre-mechanism snapshots and scores strict recovery separately from validated
+mechanism fan-out. None has been executed here.

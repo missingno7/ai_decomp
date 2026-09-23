@@ -1,0 +1,218 @@
+{
+  "checked_date": "2026-09-23",
+  "scope": "Read-only Icy Tower hard-tail audit; no upstream build, verifier, or probe was run.",
+  "metrics": {
+    "denominator": "all 82 entries in docs/current/reports/game-main.json functions[], original_size",
+    "function_count": 82,
+    "function_match_count": 63,
+    "non_exact_count": 19,
+    "original_bytes": 64715,
+    "function_match_bytes": 11708,
+    "non_exact_bytes": 53007,
+    "mean_original_size": 789.21,
+    "median_original_size": 177,
+    "top_two": {
+      "functions": [
+        "play",
+        "draw_frame"
+      ],
+      "bytes": 25938,
+      "percent_of_original_bytes": 40.08
+    },
+    "regions": [
+      {
+        "function": "play",
+        "original_size": 17420,
+        "candidate_size": 17400,
+        "status": "DIFFER",
+        "difference_offset_count": 16145,
+        "difference_class": "STACK_FRAME_LAYOUT"
+      },
+      {
+        "function": "draw_frame",
+        "original_size": 8518,
+        "candidate_size": 8203,
+        "status": "DIFFER",
+        "difference_offset_count": 7788,
+        "difference_class": "STACK_FRAME_LAYOUT"
+      }
+    ]
+  },
+  "region_metadata": {
+    "source_spans": "see region-inventory.json",
+    "historical_play_census": {
+      "region_count": 43,
+      "machine_accounting": "historical offset spans, calls, data, loops and stack slots"
+    },
+    "candidate_region_accounting": "line_budget.py --regions diagnostic candidate byte attribution; invalidated by annotation/inlining caveats",
+    "cross_region": "midY W1b writer -> W2 reader"
+  },
+  "findings": [
+    {
+      "id": "hard-tail-concentration",
+      "epistemic_class": "PROJECT FACT",
+      "claim": "The two named hard-tail functions occupy 40.08% of the function-byte denominator and remain non-exact.",
+      "source_ids": [
+        "current-main-report"
+      ]
+    },
+    {
+      "id": "region-vs-tu-boundary",
+      "epistemic_class": "PROJECT FACT",
+      "claim": "Overlay and declaration-context controls can alter a target or unrelated neighbours, so regional attribution requires declared TU context.",
+      "source_ids": [
+        "play-control-flow",
+        "draw-status-pose"
+      ]
+    },
+    {
+      "id": "rtl-common-tail",
+      "epistemic_class": "PROJECT FACT",
+      "claim": "For the tested two-arm play source, GCC 4.4.1 commoned one new_rand suffix between RTL dse2 and csa.",
+      "source_ids": [
+        "play-rtl-common-tail"
+      ]
+    },
+    {
+      "id": "upstream-init-negative",
+      "epistemic_class": "PROJECT FACT",
+      "claim": "Six saved init_game-context probes converged to one effective load_character output and stopped without a discriminator.",
+      "source_ids": [
+        "init-context-status"
+      ]
+    },
+    {
+      "id": "prototype-boundary",
+      "epistemic_class": "GENERIC METHOD",
+      "claim": "Index metadata may expose size/status/delta/context identities but must retain scope and never treat count or size as acceptance.",
+      "source_ids": [
+        "current-main-report"
+      ]
+    }
+  ],
+  "source_manifest": [
+    {
+      "id": "current-main-report",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-main.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "e3dec7aab04f18ab06398870a92d063d0cbf0458fc3c6313ff98f50c1cce60fe"
+    },
+    {
+      "id": "play-control-flow",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/game-main/play-control-flow-20260923.md",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "35c8aa6837daad845c3f9bf9c601dd292e0e089c2d651468d5a828a46de9d803"
+    },
+    {
+      "id": "draw-status-pose",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-luna-draw/status-pose-independent-20260923.md",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "c55e778daec2f76339556502c0159672e7b1a2c31bc3f64d5dda30497a5265d2"
+    },
+    {
+      "id": "play-rtl-common-tail",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-supervisor-play/play-summary-rtl-common-tail-20260923.md",
+      "content_kind": "git_blob",
+      "ref": "b6cabab0d3e4287b0320edfc4bce0f4f346d638c",
+      "sha256": "c92bf81c8e25bd5d4b592f140b0af9216c4ac66d35e508b13d1ba24531a2d485"
+    },
+    {
+      "id": "init-context-status",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-luna-init-game-context/status.json",
+      "content_kind": "git_blob",
+      "ref": "b6cabab0d3e4287b0320edfc4bce0f4f346d638c",
+      "sha256": "b4105a952c25360351847228890e452c56e4d0a1e048605d92580ecb6c53c074"
+    },
+    {
+      "id": "merge-regions",
+      "repository": "icytower_recon",
+      "path": "tools/merge_regions.py",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "b648693c748352e164f5d9e5833a806366044d2edb97a44330ad0d28e6c55964"
+    },
+    {
+      "id": "function-lines",
+      "repository": "icytower_recon",
+      "path": "tools/function_lines.py",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "7a8460894cd08604cc0c7018af0987a1e4f340fe56cdd43ce6cd42ef5fc55d9e"
+    },
+    {
+      "id": "play-region-spans",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/game-main/play-merged.c.regions.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "24154b37d99cb7d576866ab9bd2f4e001db227f297117f163da189a57da36a66"
+    },
+    {
+      "id": "draw-region-spans",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/game-main/draw_frame-merged.c.regions.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "20832d96e6390a630ca602f327835b38a6b431dfc508c1db07c990f63e1f0378"
+    },
+    {
+      "id": "play-census",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/game-main/play-census.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "94a4329ac2b508723ea577194f27d83cabba4e251d22d14e52f29c8b50b56f68"
+    },
+    {
+      "id": "annotation-gaps",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/game-main/annotation-gaps.md",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "ae8e0361b82deb514fb859f18c1eed1903b879044fb1bddace1bb6c606053f17"
+    },
+    {
+      "id": "line-budget",
+      "repository": "icytower_recon",
+      "path": "tools/line_budget.py",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "3d426cac1951f24a1479d121ab405a9e3d7080d835ebf7c15581b433328a8a3a"
+    },
+    {
+      "id": "local-slot-trace",
+      "repository": "icytower_recon",
+      "path": "tools/local_slot_trace.py",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "cdbf9d14e0368ab4c969870de6dee70cf71b2302b85661793fbd57e44d71b8bf"
+    }
+  ],
+  "whole_project_census": "research/adversarial/icy-function-census.json (root-owned ledger-referenced unique-VA census; do not duplicate)",
+  "region_inventory": "research/adversarial/region-inventory.json (root-owned; authoritative region validation/inventory)",
+  "historical_git_correction": {
+    "atomic_tu_context_commit": "0b0269ce16a1ccf162cc523bb53d4d2a75b8d83b",
+    "atomic_parent": "d51f194d2cb370b513029f930f5577acf137b2d2",
+    "init_bug_commit": "524a8a21347b2a410fbe8bb9764a0a3958177000",
+    "init_bug_parent": "72267b1f6e53040e6aa4b50460145524cf71bcfb",
+    "init_bug_is_atomic_ancestor": false,
+    "replay_claim": "none; d51f194 requires separate availability/gate audit"
+  },
+  "provenance_corrections": [
+    {
+      "source_id": "play-control-flow",
+      "old_malformed_sha256": "35c8aa6837daaad845c3f9bf9c601dd292e0e089c2d651468d5a828a46de9d803",
+      "corrected_sha256": "35c8aa6837daad845c3f9bf9c601dd292e0e089c2d651468d5a828a46de9d803",
+      "basis": "2026-09-23 direct SHA-256 of the declared working-tree file; content still contains the cited play control-flow/pass evidence",
+      "limitation": "The prior malformed digest did not identify bytes; the file remains working-tree evidence."
+    }
+  ]
+}

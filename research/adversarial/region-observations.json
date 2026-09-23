@@ -1,0 +1,141 @@
+{
+  "format": "ai-decomp-region-observations-v1",
+  "authority": "curated_reported_evidence_not_automatic_causal_inference",
+  "observations": [
+    {
+      "id": "midY-consumer",
+      "kind": "reported_semantic_dependency",
+      "from": "play:source:W1b",
+      "to": [
+        "play:source:W2"
+      ],
+      "observation": "midY write has its consumers in W2; incomplete W2 makes the write dead.",
+      "effect": "producer emission depends on consumer reconstruction",
+      "evidence": [
+        "annotation"
+      ],
+      "limitations": [
+        "Reported coordinator finding; no automated def-use or edge-specific liveness certificate.",
+        "Merged line spans are not mapped to the historical instruction set."
+      ]
+    },
+    {
+      "id": "draw-independent-status",
+      "kind": "reported_compiler_context_effect",
+      "from": "draw_frame:status_pose_source_edit",
+      "to": [
+        "draw_frame",
+        "show_instructions",
+        "stopGameMusic"
+      ],
+      "observation": "Independent status tests changed draw from 8203 to 8137 bytes and exact TU functions from 62 to 60; two unchanged-body peers lost exactness.",
+      "effect": "cross_function",
+      "evidence": [
+        "draw"
+      ],
+      "limitations": [
+        "Same retained historical-order overlay cohort, not a new compiler replay.",
+        "An observed effect does not identify the responsible allocation/pass mechanism.",
+        "No complete source-region to emitted-region delta is archived in this metadata."
+      ]
+    },
+    {
+      "id": "draw-signed-speed",
+      "kind": "reported_compiler_context_effect",
+      "from": "draw_frame:status_and_speed_source_edit",
+      "to": [
+        "draw_frame",
+        "show_instructions",
+        "stopGameMusic"
+      ],
+      "observation": "Adding signed-speed arms emitted 8151 bytes, still four frame-zero loads and the same two lost peers.",
+      "effect": "cross_function",
+      "evidence": [
+        "draw"
+      ],
+      "limitations": [
+        "Two changed source dimensions; not an independent one-region intervention.",
+        "Source byte spelling changed but the fifth-load hypothesis was not satisfied."
+      ]
+    },
+    {
+      "id": "prototype-control",
+      "kind": "reported_TU_declaration_effect",
+      "from": "game-main:generated_prototypes",
+      "to": [
+        "play",
+        "other_unchanged_functions"
+      ],
+      "observation": "Default prototypes changed unchanged play 17400 to 17497 bytes; current-order no-prototypes reproduced 17400 with no unchanged-body changes.",
+      "effect": "cross_function",
+      "evidence": [
+        "play-context"
+      ],
+      "limitations": [
+        "Reported context-control comparison; additional changed peers are not enumerated here.",
+        "Do not combine with draw cohort or infer one persistent compiler-state cause."
+      ]
+    },
+    {
+      "id": "annotation-artifact",
+      "kind": "reported_measurement_artifact",
+      "from": "historical_line_annotation_placement",
+      "to": [
+        "play:source:W1b",
+        "select_profile:line_budget"
+      ],
+      "observation": "A trailing closing-line comment produced a false W1b deficit of 138 bytes; select_profile lost attribution for 105 of 118 statement bytes.",
+      "effect": "measurement_not_proven_codegen_change",
+      "evidence": [
+        "annotation",
+        "line-budget"
+      ],
+      "limitations": [
+        "Annotation is a source-author claim, not original DWARF identity.",
+        "No semantic or compiler-coupling edge follows from a diagnostic budget change."
+      ]
+    }
+  ],
+  "source_manifest": [
+    {
+      "id": "annotation",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/game-main/annotation-gaps.md",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "ae8e0361b82deb514fb859f18c1eed1903b879044fb1bddace1bb6c606053f17"
+    },
+    {
+      "id": "draw",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-luna-draw/status-pose-independent-20260923.md",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "c55e778daec2f76339556502c0159672e7b1a2c31bc3f64d5dda30497a5265d2"
+    },
+    {
+      "id": "play-context",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/game-main/play-control-flow-20260923.md",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "35c8aa6837daad845c3f9bf9c601dd292e0e089c2d651468d5a828a46de9d803"
+    },
+    {
+      "id": "line-budget",
+      "repository": "icytower_recon",
+      "path": "tools/line_budget.py",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "3d426cac1951f24a1479d121ab405a9e3d7080d835ebf7c15581b433328a8a3a"
+    },
+    {
+      "id": "slot-trace",
+      "repository": "icytower_recon",
+      "path": "tools/local_slot_trace.py",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "cdbf9d14e0368ab4c969870de6dee70cf71b2302b85661793fbd57e44d71b8bf"
+    }
+  ]
+}

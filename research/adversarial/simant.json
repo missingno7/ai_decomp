@@ -1,0 +1,268 @@
+{
+  "id": "adversarial-simant-stage-confounding-2026-09-23",
+  "project": "simantw_recon",
+  "checked_date": "2026-09-23",
+  "scope": "Read-only analysis of a live blocked-candidate reclassification and historical repository stages. No compiler, queue, model, build, or sibling mutation was run.",
+  "source_manifest": [
+    {
+      "id": "simant-blocked-reclassification",
+      "repository": "simantw_recon",
+      "path": "evidence/recovery/blocked-reclassification.json",
+      "content_kind": "working_tree",
+      "working_tree": false,
+      "ref": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "HEAD": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "sha256": "2d2d9fc4f98e1085f2ffeb4636623deaf2997ab5b27366d1d9fa16808f6c8989"
+    },
+    {
+      "id": "simant-blocked-reclassification-tool",
+      "repository": "simantw_recon",
+      "path": "tools/blocked_reclassification.py",
+      "content_kind": "working_tree",
+      "working_tree": false,
+      "ref": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "HEAD": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "sha256": "2c2c446d347eb99ed1eadff6cdb59c07543358483989e4472a0f15acd2345b50"
+    },
+    {
+      "id": "simant-expert-blocker-pass",
+      "repository": "simantw_recon",
+      "path": "docs/expert-blocker-pass.json",
+      "content_kind": "working_tree",
+      "working_tree": false,
+      "ref": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "HEAD": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "sha256": "b061db9ec031163a0066082dde6cb7114d8e8ad31e100ea3c52d61c0c9975566"
+    },
+    {
+      "id": "simant-factory",
+      "repository": "simantw_recon",
+      "path": "docs/factory.md",
+      "content_kind": "working_tree",
+      "working_tree": false,
+      "ref": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "HEAD": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "sha256": "8fa9113ddd578a0bad8af847c22c7b372e8bfce9f34977366cd46695f6b09952"
+    },
+    {
+      "id": "simant-tu-assembly",
+      "repository": "simantw_recon",
+      "path": "tools/tu_assembly.py",
+      "content_kind": "working_tree",
+      "working_tree": false,
+      "ref": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "HEAD": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "sha256": "e52361b9688cc50f27d1c69a834803b8a17cdfc01da7ca68fb7167a5abe9fada"
+    },
+    {
+      "id": "simant-build-topology",
+      "repository": "simantw_recon",
+      "path": "tools/build_topology.py",
+      "content_kind": "working_tree",
+      "working_tree": false,
+      "ref": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "HEAD": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "sha256": "ca2b7de1b446d70b261c46ec1ebf7ed580f5fd06e2676fc1c65e6c3dca12105a"
+    },
+    {
+      "id": "simant-pre-topology-workflow",
+      "repository": "simantw_recon",
+      "path": "tools/recovery_workflow.py",
+      "content_kind": "git_blob",
+      "ref": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "HEAD": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "sha256": "05ad0c26eef0c5f6ecceac91125dab2f1f5ac663d4b3d0f57b763c259abf720b"
+    },
+    {
+      "id": "simant-pre-topology-grinder",
+      "repository": "simantw_recon",
+      "path": "tools/codegen_grinder.py",
+      "content_kind": "git_blob",
+      "ref": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "HEAD": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "sha256": "58646d9391b73885cefb6e043dfb2cde90ebb9cd7aec062d07169145aa5d928f"
+    },
+    {
+      "id": "simant-pre-topology-matcher",
+      "repository": "simantw_recon",
+      "path": "tools/matcher.py",
+      "content_kind": "git_blob",
+      "ref": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "HEAD": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "sha256": "6a458de2d74483a6eeea9df27064dcefceace8cbcad5e42d20491a8b226c379a"
+    },
+    {
+      "id": "simant-pre-topology-gate",
+      "repository": "simantw_recon",
+      "path": "tools/recovery_gate.py",
+      "content_kind": "git_blob",
+      "ref": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "HEAD": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "sha256": "acfb8518a51afaedad6ef86e751798465453f168ce285701a1fc2b01206f7d03"
+    },
+    {
+      "id": "simant-pre-topology-api",
+      "repository": "simantw_recon",
+      "path": "tools/grind.py",
+      "content_kind": "git_blob",
+      "ref": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "HEAD": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "sha256": "5471e283b223be7409ee5c2f8999d1b9404cecb228dbb4795867368711121c5b"
+    },
+    {
+      "id": "simant-pre-topology-factory",
+      "repository": "simantw_recon",
+      "path": "docs/factory.md",
+      "content_kind": "git_blob",
+      "ref": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "HEAD": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "sha256": "09d8244ff7db02c226d9ad1fc6eb2661b491c6249c85b62c68f767ccb1b7ca55"
+    },
+    {
+      "id": "simant-pre-topology-validation",
+      "repository": "simantw_recon",
+      "path": "evidence/recovery/workflow/validation.json",
+      "content_kind": "git_blob",
+      "ref": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "HEAD": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "sha256": "e14024a152946fb2227d04369c268885fa0c1f07ac48c99400d9ffddade841d9"
+    },
+    {
+      "id": "simant-cheap-model-handoff",
+      "repository": "simantw_recon",
+      "path": "docs/cheap-model-handoff.md",
+      "content_kind": "working_tree",
+      "working_tree": false,
+      "ref": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "HEAD": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "sha256": "8ecc3780f52f767e78a7c403e48f936438f37abcb21a62373d318be56f577930"
+    },
+    {
+      "id": "simant-update-edit-binding-counterexample",
+      "repository": "simantw_recon",
+      "path": "evidence/recovery/workflow/jobs/UpdateEditIfBufInvalid-e0704d72b4/job.json",
+      "content_kind": "working_tree",
+      "working_tree": false,
+      "ref": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "HEAD": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "sha256": "148d3192223cac4be88bf06e645533073c1a2fc7f672db8ac7e35078ea3f126c"
+    },
+    {
+      "id": "fleet-census-cross-reference",
+      "repository": "ai_decomp",
+      "path": "research/fleet/simant-job-census.json",
+      "content_kind": "git_blob",
+      "ref": "3affb6661a36c263bf629c19728e45170d88e7f1",
+      "sha256": "3f027c4c956c4568ee41aa0f60e4a0c2c07fcd01168d482f0396738c17c40892",
+      "note": "Separate same-day snapshot used only for its stated later aggregate; see that record for its row hash. Resolved to the existing committed record after verifying exact text equality modulo checkout newlines; original inspected worktree hash retained.",
+      "inspected_worktree_sha256": "c33534d817689fc7983d75cd2c66d48043c8c9691d61872daad39f2b78f917ef",
+      "base_commit": "3affb6661a36c263bf629c19728e45170d88e7f1"
+    }
+  ],
+  "historical_stage": {
+    "pre_topology_commit": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+    "topology_introduction_commit": "4c5270d4c5b8c6f0f8cccf6626c8fe9d262c5019",
+    "pre_topology_available_tools": [
+      "tools/compiler.py",
+      "tools/codegen_grinder.py",
+      "tools/codegen_diff.py",
+      "tools/matcher.py",
+      "tools/recovery_gate.py",
+      "tools/recovery_workflow.py",
+      "tools/grind.py",
+      "tools/library_match.py",
+      "tools/verify_recovery.py"
+    ],
+    "absent_before_introduction": [
+      "tools/tu_assembly.py",
+      "tools/build_topology.py",
+      "tools/blocked_reclassification.py"
+    ],
+    "evidence_basis": "Read-only git tree inspection at the stated exact commits."
+  },
+  "metrics": {
+    "reclassification": {
+      "generated": "2026-09-23T20:27:39.429252+02:00",
+      "rows": 438,
+      "fresh_categories": {
+        "TRUE_SOURCE_SHAPE_MISMATCH": 399,
+        "ABI_TYPE_INFERENCE": 20,
+        "UNKNOWN": 13,
+        "BODY_EXACT_LAYOUT_BLOCKED": 4,
+        "PROFILE_CONTEXT_RETEST": 1,
+        "MIRRORED_SOURCE_PAIR": 1
+      },
+      "historical_labels_no_longer_descriptive": 75,
+      "multiple_previous_blocker_rows": 17,
+      "stale_profile_rows": 2,
+      "interpretation": "A live blocked-population triage snapshot; not a model benchmark or a causal estimate."
+    },
+    "expert_pass": {
+      "before_matched": 230,
+      "after_matched": 243,
+      "reported_promotions": 13,
+      "scope": "One documented expert pass; grouped outcomes mix mechanisms and tooling stages."
+    },
+    "fleet_cross_reference": {
+      "captured_at_utc": "2026-09-23T20:33:47.2787494Z",
+      "jobs": 786,
+      "recorded_attempts": 2683,
+      "late_case": "MagnifyMenu attempt 8 promotion after seven misses",
+      "warning": "Different later population from the 438 reclassification rows."
+    }
+  },
+  "findings": [
+    {
+      "label": "PROJECT FACT",
+      "claim": "The fresh tool preserves historical blockers but recomputes under the current profile, assigning one ordered triage category; the report contains 438 rows and calls 75 historical labels no longer descriptive.",
+      "sources": [
+        "simant-blocked-reclassification",
+        "simant-blocked-reclassification-tool"
+      ]
+    },
+    {
+      "label": "PROJECT FACT",
+      "claim": "The report contains both layout/TU residues and counterexamples: four exact-body layout rows, one mirrored derivation, while 26 of 27 rows formerly labelled translation-unit context freshly classify as source-shape mismatch.",
+      "sources": [
+        "simant-blocked-reclassification"
+      ]
+    },
+    {
+      "label": "PROJECT FACT",
+      "claim": "The documented expert pass reports 13 promotions, including six dialog, four map-stencil, two yard-state and one common-epilogue cases; it also retains the rejected four-member map TU and unresolved GrabMap counterexample.",
+      "sources": [
+        "simant-expert-blocker-pass"
+      ]
+    },
+    {
+      "label": "PROJECT FACT",
+      "claim": "Build-topology and TU assembly first appear together in 4c5270d4, whose exact parent lacks them and blocked reclassification; strict workflow, matcher, gate, grinder API, factory and validation artifacts already existed in the parent stage.",
+      "sources": [
+        "historical_stage",
+        "simant-pre-topology-workflow",
+        "simant-pre-topology-matcher",
+        "simant-pre-topology-gate",
+        "simant-pre-topology-api",
+        "simant-pre-topology-factory",
+        "simant-pre-topology-validation"
+      ]
+    },
+    {
+      "label": "INFERENCE",
+      "claim": "Recovery gains across these stages are confounded by new context knowledge, profiler assignment, binding/private-data analysis and admission routes; they cannot establish that a model tier solved a fixed task population better.",
+      "sources": [
+        "simant-blocked-reclassification",
+        "simant-expert-blocker-pass",
+        "simant-cheap-model-handoff",
+        "fleet-census-cross-reference"
+      ]
+    }
+  ],
+  "stunts_transfers": {
+    "mechanism": "Falsify stale blocker labels by retesting the frozen candidate under its evidenced current context; treat exact body/layout residue separately from source shape.",
+    "method": "Store previous label, fresh comparison, context signature, stage/tool identity, and an explicit discriminating next experiment.",
+    "tool": "Assess extension of Stunts' existing blocker census and TU-context machinery with source-bound frozen-body manifests; do not copy SimAnt tools or taxonomy.",
+    "assumption": "A context-looking mismatch may instead be symbolic-binding or semantic error, so Stunts must prove the route under its compiler and acceptance gate."
+  },
+  "leakage_rule": "A historical replay must freeze the source, compiler/context, tool revision, available bindings/neighbours and acceptance route at its stage. Later topology manifests, profile assignments, reconstructed neighbours, rules or evidence may inform a new experiment but cannot support a pre-stage model capability claim."
+}

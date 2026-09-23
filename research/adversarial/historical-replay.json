@@ -1,0 +1,158 @@
+{
+  "format": "ai-decomp-historical-replay-proposals-v1",
+  "authority": "inspected_snapshots_not_replayed_compiler_or_model_trials",
+  "snapshots": [
+    {
+      "id": "simant-pre-topology",
+      "repository": "simantw_recon",
+      "commit": "b3b04b8ef9351b64e7c32546d92e5f050d17c546",
+      "first_following_mechanism_commit": "4c5270d4c5b8c6f0f8cccf6626c8fe9d262c5019",
+      "evidence_record": "research/adversarial/simant.json",
+      "objective": "Recover strictly admissible contributions and validated reusable build-context mechanisms from the frozen blocker cohort."
+    },
+    {
+      "id": "icy-pre-tu-context",
+      "repository": "icytower_recon",
+      "commit": "d51f194d2cb370b513029f930f5577acf137b2d2",
+      "first_following_mechanism_commit": "0b0269ce16a1ccf162cc523bb53d4d2a75b8d83b",
+      "evidence_record": "research/adversarial/historical-replay.json",
+      "objective": "Recover handle_player_input without regressing exact checkMenuFocus; discover and validate context handling if necessary.",
+      "game_main_baseline": {
+        "functions": 82,
+        "function_matches": 54,
+        "large_functions": [
+          {
+            "name": "draw_frame",
+            "status": "DIFFER",
+            "original_size": 8518,
+            "candidate_size": 985
+          },
+          {
+            "name": "play",
+            "status": "DIFFER",
+            "original_size": 17420,
+            "candidate_size": 623
+          }
+        ]
+      },
+      "available_tools": [
+        "tools/recovery_pipeline.py",
+        "tools/refresh_recovery.py",
+        "tools/promote_function.py",
+        "tools/check_function.py",
+        "tools/compiler_context.py",
+        "tools/emission_order.py",
+        "tools/grinder_task.py"
+      ],
+      "absent_tools": [
+        "tools/tu_context_probe.py",
+        "tools/verify_recovery.py"
+      ],
+      "gate": "Existing promote_function.py: fresh_verify, eligible, no_regressions, acceptance tests, ordinary link guard and input revalidation. refresh_recovery.py --verify-all is a native mutating refresh, not executed here."
+    },
+    {
+      "id": "empires-pre-source-closure",
+      "repository": "empires_reconstruction",
+      "commit": "b4a0fc076372fb86387a3cdcede8485faa7d38a5",
+      "evidence_record": "research/adversarial/empires-convergence.json",
+      "objective": "Retire at least one declared topology/ownership debt while preserving the named exact structural route; report natural construction separately from equality."
+    }
+  ],
+  "source_manifest": [
+    {
+      "id": "replay-icy-00",
+      "repository": "icytower_recon",
+      "path": "README.md",
+      "content_kind": "git_blob",
+      "ref": "d51f194d2cb370b513029f930f5577acf137b2d2",
+      "sha256": "0f008cf982de00e08d91df460c41d2763ecd47318e7edd9dc293f56d265aea96"
+    },
+    {
+      "id": "replay-icy-01",
+      "repository": "icytower_recon",
+      "path": "src/recovery.json",
+      "content_kind": "git_blob",
+      "ref": "d51f194d2cb370b513029f930f5577acf137b2d2",
+      "sha256": "b229360aa76e99089e82de2046c4322d1aea5a832318e73c1c8836ce0dbdb628"
+    },
+    {
+      "id": "replay-icy-02",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-main.json",
+      "content_kind": "git_blob",
+      "ref": "d51f194d2cb370b513029f930f5577acf137b2d2",
+      "sha256": "98b6ae1eaef7da612af4e1ad20db91f077e514ae02112c073b93265edb91f535"
+    },
+    {
+      "id": "replay-icy-03",
+      "repository": "icytower_recon",
+      "path": "tools/recovery_pipeline.py",
+      "content_kind": "git_blob",
+      "ref": "d51f194d2cb370b513029f930f5577acf137b2d2",
+      "sha256": "439a1191dd71c2d130eb123f39046c860b405d8b5ca590e5ac8c0eadcde4c221"
+    },
+    {
+      "id": "replay-icy-04",
+      "repository": "icytower_recon",
+      "path": "tools/refresh_recovery.py",
+      "content_kind": "git_blob",
+      "ref": "d51f194d2cb370b513029f930f5577acf137b2d2",
+      "sha256": "75bdeab99261c0e6f7fbbb25ad4587937552caac558236aeae7f2113bd9f3ac8"
+    },
+    {
+      "id": "replay-icy-05",
+      "repository": "icytower_recon",
+      "path": "tools/promote_function.py",
+      "content_kind": "git_blob",
+      "ref": "d51f194d2cb370b513029f930f5577acf137b2d2",
+      "sha256": "ac687e91864550b8a1db54eb77520e6703a4dc14c288ca25fa76573764d821b4"
+    },
+    {
+      "id": "replay-icy-06",
+      "repository": "icytower_recon",
+      "path": "tools/check_function.py",
+      "content_kind": "git_blob",
+      "ref": "d51f194d2cb370b513029f930f5577acf137b2d2",
+      "sha256": "6e9f784b28c4369c2108e27df75719762b3480f46d520e996ed595fdcf75f2b1"
+    },
+    {
+      "id": "replay-icy-07",
+      "repository": "icytower_recon",
+      "path": "tools/compiler_context.py",
+      "content_kind": "git_blob",
+      "ref": "d51f194d2cb370b513029f930f5577acf137b2d2",
+      "sha256": "6545cbbc49de54d84b0acbb4dcd235ca498da5544badab870944409222189c24"
+    },
+    {
+      "id": "replay-icy-08",
+      "repository": "icytower_recon",
+      "path": "tools/emission_order.py",
+      "content_kind": "git_blob",
+      "ref": "d51f194d2cb370b513029f930f5577acf137b2d2",
+      "sha256": "9880040e74795a21acb5efdeca4793c9576002af07810030bf0034df5ca24e42"
+    },
+    {
+      "id": "replay-icy-09",
+      "repository": "icytower_recon",
+      "path": "tools/grinder_task.py",
+      "content_kind": "git_blob",
+      "ref": "d51f194d2cb370b513029f930f5577acf137b2d2",
+      "sha256": "03875dbcc239cf649e836caf899bf42f0202ae5d3eda612e7414f91d17da4ca9"
+    },
+    {
+      "id": "replay-icy-10",
+      "repository": "icytower_recon",
+      "path": "docs/current/functions/main/play.json",
+      "content_kind": "git_blob",
+      "ref": "d51f194d2cb370b513029f930f5577acf137b2d2",
+      "sha256": "3a0bf36df141c87e9b700cd0ad7df4651bf0d6506e50d08c42a42471688eefcc"
+    }
+  ],
+  "constraints": [
+    "No future Git objects, solutions, recovery reports or shared artifact directories visible to trial workers.",
+    "Original oracle evidence remains available for research; construction and independent verification use declared roles and inputs.",
+    "Preserve frozen baseline inputs and documented debt; forbid new oracle-derived byte patching.",
+    "Toolchain hashes and untracked input availability must be inventoried before execution; no reproducibility claim from tree presence.",
+    "No model trial or compiler execution performed by this review."
+  ]
+}

@@ -37,6 +37,9 @@ def main():
     if (ROOT/'catalog/fleet/index.json').exists():
         from check_fleet import check as check_fleet
         errors.extend(check_fleet(ROOT))
+    if (ROOT/'catalog/adversarial/index.json').exists():
+        from check_adversarial import check as check_adversarial
+        errors.extend(check_adversarial(ROOT))
     print(json.dumps({'catalog_counts':{k:len(v) for k,v in catalogs.items()},'errors':errors},indent=2))
     raise SystemExit(bool(errors))
 

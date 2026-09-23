@@ -1,0 +1,1404 @@
+{
+  "format": "ai-decomp-icy-region-inventory-v1",
+  "authority": "research_inventory_only",
+  "ledger_report_identity_equal": true,
+  "functions": [
+    {
+      "function": "play",
+      "current_function_report": {
+        "original_size": 17420,
+        "candidate_size": 17400,
+        "status": "DIFFER",
+        "source_body_sha256": "c45dd5172fa8d0435bd384abaca5cb1012ad7a358a784db5e2ab3a8dc8e16247"
+      },
+      "retained_merged_body_sha256": "c1286fe25b59d44118fc96fcc489567e19f8a53f5cda921ae70d63d9ff021f9f",
+      "declared_source_spans": {
+        "W1a": [
+          70,
+          145
+        ],
+        "W1b": [
+          146,
+          283
+        ],
+        "W2": [
+          284,
+          577
+        ],
+        "W3": [
+          578,
+          963
+        ],
+        "W4": [
+          964,
+          1246
+        ],
+        "W5": [
+          1247,
+          1651
+        ]
+      },
+      "body_line_count": 1667,
+      "source_regions": [
+        {
+          "id": "play:source:W1a",
+          "tag": "W1a",
+          "coordinate": "retained_merged_body_lines_inclusive",
+          "spans": [
+            [
+              70,
+              145
+            ]
+          ],
+          "line_count": 76,
+          "machine_membership": null,
+          "live_ins": null,
+          "live_outs": null,
+          "entry_edges": null,
+          "exit_edges": null,
+          "diagnostic_state": "REGION_UNRESOLVED"
+        },
+        {
+          "id": "play:source:W1b",
+          "tag": "W1b",
+          "coordinate": "retained_merged_body_lines_inclusive",
+          "spans": [
+            [
+              146,
+              283
+            ]
+          ],
+          "line_count": 138,
+          "machine_membership": null,
+          "live_ins": null,
+          "live_outs": null,
+          "entry_edges": null,
+          "exit_edges": null,
+          "diagnostic_state": "REGION_UNRESOLVED"
+        },
+        {
+          "id": "play:source:W2",
+          "tag": "W2",
+          "coordinate": "retained_merged_body_lines_inclusive",
+          "spans": [
+            [
+              284,
+              577
+            ]
+          ],
+          "line_count": 294,
+          "machine_membership": null,
+          "live_ins": null,
+          "live_outs": null,
+          "entry_edges": null,
+          "exit_edges": null,
+          "diagnostic_state": "REGION_UNRESOLVED"
+        },
+        {
+          "id": "play:source:W3",
+          "tag": "W3",
+          "coordinate": "retained_merged_body_lines_inclusive",
+          "spans": [
+            [
+              578,
+              963
+            ]
+          ],
+          "line_count": 386,
+          "machine_membership": null,
+          "live_ins": null,
+          "live_outs": null,
+          "entry_edges": null,
+          "exit_edges": null,
+          "diagnostic_state": "REGION_UNRESOLVED"
+        },
+        {
+          "id": "play:source:W4",
+          "tag": "W4",
+          "coordinate": "retained_merged_body_lines_inclusive",
+          "spans": [
+            [
+              964,
+              1246
+            ]
+          ],
+          "line_count": 283,
+          "machine_membership": null,
+          "live_ins": null,
+          "live_outs": null,
+          "entry_edges": null,
+          "exit_edges": null,
+          "diagnostic_state": "REGION_UNRESOLVED"
+        },
+        {
+          "id": "play:source:W5",
+          "tag": "W5",
+          "coordinate": "retained_merged_body_lines_inclusive",
+          "spans": [
+            [
+              1247,
+              1651
+            ]
+          ],
+          "line_count": 405,
+          "machine_membership": null,
+          "live_ins": null,
+          "live_outs": null,
+          "entry_edges": null,
+          "exit_edges": null,
+          "diagnostic_state": "REGION_UNRESOLVED"
+        }
+      ],
+      "source_span_validation": {
+        "status": "in_bounds_only_not_identity_verified"
+      },
+      "source_span_freshness": "unverified_sidecar_has_no_bound_body_hash",
+      "dwarf_lexical_blocks": 47,
+      "dwarf_locals": 110,
+      "dwarf_regions_with_multiple_ranges": 11,
+      "historical_to_candidate_region_map": null
+    },
+    {
+      "function": "draw_frame",
+      "current_function_report": {
+        "original_size": 8518,
+        "candidate_size": 8203,
+        "status": "DIFFER",
+        "source_body_sha256": "db3c1dcb0cac98da3c51a5f8f1fee40f2fa90c32910accbe961adf5243bb7c3a"
+      },
+      "retained_merged_body_sha256": "d3d323f4ad0960e9334a4f519e4942165880d4cf42f0659b176f8e484dc3a904",
+      "declared_source_spans": {
+        "D1": [
+          21,
+          142
+        ],
+        "D2": [
+          143,
+          364
+        ],
+        "D3": [
+          365,
+          477
+        ],
+        "D4": [
+          478,
+          586
+        ]
+      },
+      "body_line_count": 545,
+      "source_regions": null,
+      "source_span_validation": {
+        "status": "invalid_for_observed_body",
+        "reason": "Source span outside retained merged body"
+      },
+      "source_span_freshness": "unverified_sidecar_has_no_bound_body_hash",
+      "dwarf_lexical_blocks": 33,
+      "dwarf_locals": 24,
+      "dwarf_regions_with_multiple_ranges": 27,
+      "historical_to_candidate_region_map": null
+    }
+  ],
+  "play_machine_view": {
+    "regions": [
+      {
+        "id": "play:machine:00",
+        "label": "setup_prologue",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            0,
+            560
+          ]
+        ],
+        "bytes": 560,
+        "call_site_count": 8,
+        "call_kinds": {
+          "call": 8
+        },
+        "named_calls": [
+          "QueryPerformanceCounter",
+          "QueryPerformanceFrequency",
+          "clock",
+          "log2file",
+          "time",
+          "update_frame"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:01",
+        "label": "main_loop",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            560,
+            605
+          ]
+        ],
+        "bytes": 45,
+        "call_site_count": 0,
+        "call_kinds": {},
+        "named_calls": [],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:02",
+        "label": "gamedata_itr_accounting",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            605,
+            886
+          ]
+        ],
+        "bytes": 281,
+        "call_site_count": 3,
+        "call_kinds": {
+          "call": 3
+        },
+        "named_calls": [
+          "play_sample",
+          "startGameMusic",
+          "voice_get_position"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:03",
+        "label": "input",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            886,
+            1224
+          ]
+        ],
+        "bytes": 338,
+        "call_site_count": 0,
+        "call_kinds": {},
+        "named_calls": [],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:04",
+        "label": "input",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            1224,
+            1322
+          ]
+        ],
+        "bytes": 98,
+        "call_site_count": 0,
+        "call_kinds": {},
+        "named_calls": [],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:05",
+        "label": "input",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            1322,
+            1342
+          ]
+        ],
+        "bytes": 20,
+        "call_site_count": 1,
+        "call_kinds": {
+          "call": 1
+        },
+        "named_calls": [
+          "handle_player_input"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:06",
+        "label": "player_update",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            1342,
+            1428
+          ]
+        ],
+        "bytes": 86,
+        "call_site_count": 1,
+        "call_kinds": {
+          "call": 1
+        },
+        "named_calls": [
+          "update_player"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:07",
+        "label": "player_update",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            1428,
+            1760
+          ]
+        ],
+        "bytes": 332,
+        "call_site_count": 1,
+        "call_kinds": {
+          "call": 1
+        },
+        "named_calls": [
+          "update_particle"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:08",
+        "label": "scrolling_floor_generation",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            1760,
+            1880
+          ]
+        ],
+        "bytes": 120,
+        "call_site_count": 2,
+        "call_kinds": {
+          "call": 2
+        },
+        "named_calls": [
+          "add_floor",
+          "allegro_message"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:09",
+        "label": "scoring_combo",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            1880,
+            2416
+          ]
+        ],
+        "bytes": 536,
+        "call_site_count": 6,
+        "call_kinds": {
+          "call": 6
+        },
+        "named_calls": [
+          "add_combo",
+          "add_jump_sequence",
+          "play_sound",
+          "start_reward",
+          "time"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:10",
+        "label": "unknown",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            2416,
+            2602
+          ]
+        ],
+        "bytes": 186,
+        "call_site_count": 1,
+        "call_kinds": {
+          "call": 1
+        },
+        "named_calls": [
+          "stop_sample"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:11",
+        "label": "presentation_rendering",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            2602,
+            2698
+          ]
+        ],
+        "bytes": 96,
+        "call_site_count": 2,
+        "call_kinds": {
+          "call": 2
+        },
+        "named_calls": [
+          "log2file",
+          "update_frame"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:12",
+        "label": "pause_handling",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            2698,
+            2821
+          ]
+        ],
+        "bytes": 123,
+        "call_site_count": 1,
+        "call_kinds": {
+          "call": 1
+        },
+        "named_calls": [
+          "is_pause"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:13",
+        "label": "player_update",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            2821,
+            3183
+          ]
+        ],
+        "bytes": 362,
+        "call_site_count": 6,
+        "call_kinds": {
+          "call": 6
+        },
+        "named_calls": [
+          "handle_player_collision_combo",
+          "handle_player_collision_old",
+          "handle_player_collision_original",
+          "handle_player_collision_vector",
+          "handle_player_collision_vector_2",
+          "rest"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:14",
+        "label": "input",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            3183,
+            3700
+          ]
+        ],
+        "bytes": 517,
+        "call_site_count": 1,
+        "call_kinds": {
+          "call": 1
+        },
+        "named_calls": [
+          "poll_control"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:15",
+        "label": "scoring_combo",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            3700,
+            3982
+          ]
+        ],
+        "bytes": 282,
+        "call_site_count": 2,
+        "call_kinds": {
+          "call": 2
+        },
+        "named_calls": [
+          "add_jump_sequence",
+          "get_level"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:16",
+        "label": "player_update",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            3982,
+            4314
+          ]
+        ],
+        "bytes": 332,
+        "call_site_count": 5,
+        "call_kinds": {
+          "call": 5
+        },
+        "named_calls": [
+          "create_particle",
+          "new_rand",
+          "play_sound"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:17",
+        "label": "death_gameover_results",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            4314,
+            4944
+          ]
+        ],
+        "bytes": 630,
+        "call_site_count": 12,
+        "call_kinds": {
+          "call": 12
+        },
+        "named_calls": [
+          "QueryPerformanceCounter",
+          "clock",
+          "play_sound",
+          "stopGameMusic",
+          "take_screenshot",
+          "time",
+          "voice_get_position",
+          "voice_stop"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:18",
+        "label": "death_gameover_results",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            4944,
+            6539
+          ]
+        ],
+        "bytes": 1595,
+        "call_site_count": 41,
+        "call_kinds": {
+          "call": 37,
+          "indirect": 4
+        },
+        "named_calls": [
+          "QueryPerformanceCounter",
+          "blit",
+          "blit_to_screen",
+          "clear_keybuf",
+          "clock",
+          "draw_frame",
+          "is_any",
+          "is_pause",
+          "keypressed",
+          "log2file",
+          "play_sound",
+          "poll_control",
+          "rest",
+          "textout_centre_ex",
+          "time",
+          "voice_get_position"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:19",
+        "label": "death_gameover_results",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            6539,
+            7011
+          ]
+        ],
+        "bytes": 472,
+        "call_site_count": 20,
+        "call_kinds": {
+          "indirect": 2,
+          "call": 18
+        },
+        "named_calls": [
+          "blit_to_screen",
+          "clear_keybuf",
+          "is_any",
+          "is_pause",
+          "keypressed",
+          "play_sound",
+          "poll_control",
+          "rest",
+          "textout_centre_ex"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:20",
+        "label": "death_gameover_results",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            7011,
+            7406
+          ]
+        ],
+        "bytes": 395,
+        "call_site_count": 16,
+        "call_kinds": {
+          "call": 16
+        },
+        "named_calls": [
+          "QueryPerformanceCounter",
+          "clock",
+          "is_pause",
+          "log2file",
+          "start_reward",
+          "time",
+          "voice_get_position"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:21",
+        "label": "gamedata_itr_accounting",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            7406,
+            7961
+          ]
+        ],
+        "bytes": 555,
+        "call_site_count": 3,
+        "call_kinds": {
+          "call": 3
+        },
+        "named_calls": [
+          "getGameDataXML",
+          "printf",
+          "start_reward"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:22",
+        "label": "profile_highscore_update",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            7961,
+            8298
+          ]
+        ],
+        "bytes": 337,
+        "call_site_count": 5,
+        "call_kinds": {
+          "call": 5
+        },
+        "named_calls": [
+          "free",
+          "log2file",
+          "save_profile",
+          "stopGameMusic",
+          "voice_stop"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:23",
+        "label": "replay_recording",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            8298,
+            9246
+          ]
+        ],
+        "bytes": 948,
+        "call_site_count": 13,
+        "call_kinds": {
+          "call": 13
+        },
+        "named_calls": [
+          "calc_replay_checksum",
+          "clear_bitmap",
+          "file_exists",
+          "load_replay",
+          "mkdir",
+          "myDeleteFile",
+          "save_replay",
+          "sprintf"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:24",
+        "label": "profile_highscore_update",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            9246,
+            9483
+          ]
+        ],
+        "bytes": 237,
+        "call_site_count": 2,
+        "call_kinds": {
+          "call": 2
+        },
+        "named_calls": [
+          "destroy_replay",
+          "save_profile"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:25",
+        "label": "profile_highscore_update",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            9483,
+            9766
+          ]
+        ],
+        "bytes": 283,
+        "call_site_count": 6,
+        "call_kinds": {
+          "call": 6
+        },
+        "named_calls": [
+          "log2file",
+          "play_sound",
+          "qualify_hisc_table",
+          "save_config",
+          "stopGameMusic",
+          "voice_stop"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:26",
+        "label": "replay_playback",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            9766,
+            9843
+          ]
+        ],
+        "bytes": 77,
+        "call_site_count": 3,
+        "call_kinds": {
+          "call": 3
+        },
+        "named_calls": [
+          "do_replay_menu",
+          "log2file"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:27",
+        "label": "presentation_rendering",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            9843,
+            10261
+          ]
+        ],
+        "bytes": 418,
+        "call_site_count": 10,
+        "call_kinds": {
+          "call": 10
+        },
+        "named_calls": [
+          "create_particle",
+          "draw_frame",
+          "fadeIn",
+          "log2file",
+          "play_sample",
+          "play_sound",
+          "startGameMusic",
+          "time"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:28",
+        "label": "setup_prologue",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            10261,
+            10595
+          ]
+        ],
+        "bytes": 334,
+        "call_site_count": 8,
+        "call_kinds": {
+          "call": 8
+        },
+        "named_calls": [
+          "QueryPerformanceCounter",
+          "QueryPerformanceFrequency",
+          "clock",
+          "get_rank_id",
+          "log2file",
+          "poll_control",
+          "take_screenshot"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:29",
+        "label": "gamedata_itr_accounting",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            10595,
+            10890
+          ]
+        ],
+        "bytes": 295,
+        "call_site_count": 4,
+        "call_kinds": {
+          "call": 4
+        },
+        "named_calls": [
+          "QueryPerformanceCounter",
+          "clock",
+          "time"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:30",
+        "label": "profile_highscore_update",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            10890,
+            11085
+          ]
+        ],
+        "bytes": 195,
+        "call_site_count": 2,
+        "call_kinds": {
+          "call": 2
+        },
+        "named_calls": [
+          "play_sound",
+          "save_profile"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:31",
+        "label": "presentation_rendering",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            11085,
+            11384
+          ]
+        ],
+        "bytes": 299,
+        "call_site_count": 4,
+        "call_kinds": {
+          "call": 4
+        },
+        "named_calls": [
+          "my_alert",
+          "stricmp",
+          "update_frame",
+          "update_particle"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:32",
+        "label": "death_gameover_results",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            11384,
+            11911
+          ]
+        ],
+        "bytes": 527,
+        "call_site_count": 8,
+        "call_kinds": {
+          "call": 6,
+          "indirect": 2
+        },
+        "named_calls": [
+          "blit",
+          "draw_frame",
+          "draw_results",
+          "new_rand",
+          "play_sound",
+          "stop_sample"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:33",
+        "label": "scrolling_floor_generation",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            11911,
+            12023
+          ]
+        ],
+        "bytes": 112,
+        "call_site_count": 3,
+        "call_kinds": {
+          "call": 3
+        },
+        "named_calls": [
+          "clear_keybuf",
+          "init_scroller",
+          "scroll_scroller"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:34",
+        "label": "death_gameover_results",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            12023,
+            12493
+          ]
+        ],
+        "bytes": 470,
+        "call_site_count": 5,
+        "call_kinds": {
+          "call": 4,
+          "indirect": 1
+        },
+        "named_calls": [
+          "draw_frame",
+          "draw_results",
+          "get_rank_id",
+          "update_frame"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:35",
+        "label": "scrolling_floor_generation",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            12493,
+            13628
+          ]
+        ],
+        "bytes": 1135,
+        "call_site_count": 29,
+        "call_kinds": {
+          "call": 24,
+          "indirect": 5
+        },
+        "named_calls": [
+          "blit",
+          "blit_to_screen",
+          "draw_scroller",
+          "drawing_mode",
+          "keypressed",
+          "makecol",
+          "new_rand",
+          "play_sound",
+          "poll_control",
+          "rest",
+          "scroll_scroller",
+          "set_trans_blender",
+          "solid_mode",
+          "stop_sample",
+          "take_screenshot",
+          "textout_ex"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:36",
+        "label": "input",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            13628,
+            14050
+          ]
+        ],
+        "bytes": 422,
+        "call_site_count": 8,
+        "call_kinds": {
+          "call": 7,
+          "indirect": 1
+        },
+        "named_calls": [
+          "is_any",
+          "is_fire",
+          "is_left",
+          "is_right",
+          "keypressed",
+          "poll_control",
+          "restart_scroller"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:37",
+        "label": "profile_highscore_update",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            14050,
+            14910
+          ]
+        ],
+        "bytes": 860,
+        "call_site_count": 15,
+        "call_kinds": {
+          "call": 15
+        },
+        "named_calls": [
+          "enter_hisc_table",
+          "is_fire",
+          "myDeleteFile",
+          "save_replay",
+          "sort_hisc_table",
+          "sprintf",
+          "strcpy"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:38",
+        "label": "presentation_rendering",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            14910,
+            15238
+          ]
+        ],
+        "bytes": 328,
+        "call_site_count": 9,
+        "call_kinds": {
+          "call": 8,
+          "indirect": 1
+        },
+        "named_calls": [
+          "blit",
+          "drawing_mode",
+          "fadeOut",
+          "log2file",
+          "makecol",
+          "play_sound",
+          "save_replay",
+          "set_trans_blender"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:39",
+        "label": "presentation_rendering",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            15238,
+            15687
+          ]
+        ],
+        "bytes": 449,
+        "call_site_count": 7,
+        "call_kinds": {
+          "call": 6,
+          "indirect": 1
+        },
+        "named_calls": [
+          "fadeIn",
+          "play_sound",
+          "solid_mode",
+          "textout_centre_ex"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:40",
+        "label": "presentation_rendering",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            15687,
+            16921
+          ]
+        ],
+        "bytes": 1234,
+        "call_site_count": 13,
+        "call_kinds": {
+          "indirect": 1,
+          "call": 12
+        },
+        "named_calls": [
+          "myDeleteFile",
+          "new_rand",
+          "save_replay",
+          "sprintf",
+          "strcpy",
+          "textout_centre_ex"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:41",
+        "label": "input",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            16921,
+            17216
+          ]
+        ],
+        "bytes": 295,
+        "call_site_count": 3,
+        "call_kinds": {
+          "call": 3
+        },
+        "named_calls": [
+          "new_rand",
+          "textout_centre_ex"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      },
+      {
+        "id": "play:machine:42",
+        "label": "profile_highscore_update",
+        "coordinate": "original_function_byte_offsets_half_open",
+        "ranges": [
+          [
+            17216,
+            17420
+          ]
+        ],
+        "bytes": 204,
+        "call_site_count": 1,
+        "call_kinds": {
+          "call": 1
+        },
+        "named_calls": [
+          "readkey"
+        ],
+        "authority": "retained_census_annotation_not_independent_CFG_proof"
+      }
+    ],
+    "coverage": {
+      "covered_bytes": 17420,
+      "overlap_bytes_counted_with_multiplicity": 0,
+      "gaps": [],
+      "extent_bytes": 17420
+    },
+    "call_kinds_from_json": {
+      "call": 272,
+      "indirect": 18
+    },
+    "retained_census_candidate_size": 623,
+    "candidate_size_scope": "historical_census_baseline_not_current_report",
+    "data_reference_count": 145,
+    "reported_stack_slot_count": 66,
+    "multi_named_slot_count": 8,
+    "slot_read_write_counts_are_liveness": false
+  },
+  "reported_influences": [
+    {
+      "id": "midY-consumer",
+      "kind": "reported_semantic_dependency",
+      "from": "play:source:W1b",
+      "to": [
+        "play:source:W2"
+      ],
+      "observation": "midY write has its consumers in W2; incomplete W2 makes the write dead.",
+      "effect": "producer emission depends on consumer reconstruction",
+      "evidence": [
+        "annotation"
+      ],
+      "limitations": [
+        "Reported coordinator finding; no automated def-use or edge-specific liveness certificate.",
+        "Merged line spans are not mapped to the historical instruction set."
+      ]
+    },
+    {
+      "id": "draw-independent-status",
+      "kind": "reported_compiler_context_effect",
+      "from": "draw_frame:status_pose_source_edit",
+      "to": [
+        "draw_frame",
+        "show_instructions",
+        "stopGameMusic"
+      ],
+      "observation": "Independent status tests changed draw from 8203 to 8137 bytes and exact TU functions from 62 to 60; two unchanged-body peers lost exactness.",
+      "effect": "cross_function",
+      "evidence": [
+        "draw"
+      ],
+      "limitations": [
+        "Same retained historical-order overlay cohort, not a new compiler replay.",
+        "An observed effect does not identify the responsible allocation/pass mechanism.",
+        "No complete source-region to emitted-region delta is archived in this metadata."
+      ]
+    },
+    {
+      "id": "draw-signed-speed",
+      "kind": "reported_compiler_context_effect",
+      "from": "draw_frame:status_and_speed_source_edit",
+      "to": [
+        "draw_frame",
+        "show_instructions",
+        "stopGameMusic"
+      ],
+      "observation": "Adding signed-speed arms emitted 8151 bytes, still four frame-zero loads and the same two lost peers.",
+      "effect": "cross_function",
+      "evidence": [
+        "draw"
+      ],
+      "limitations": [
+        "Two changed source dimensions; not an independent one-region intervention.",
+        "Source byte spelling changed but the fifth-load hypothesis was not satisfied."
+      ]
+    },
+    {
+      "id": "prototype-control",
+      "kind": "reported_TU_declaration_effect",
+      "from": "game-main:generated_prototypes",
+      "to": [
+        "play",
+        "other_unchanged_functions"
+      ],
+      "observation": "Default prototypes changed unchanged play 17400 to 17497 bytes; current-order no-prototypes reproduced 17400 with no unchanged-body changes.",
+      "effect": "cross_function",
+      "evidence": [
+        "play-context"
+      ],
+      "limitations": [
+        "Reported context-control comparison; additional changed peers are not enumerated here.",
+        "Do not combine with draw cohort or infer one persistent compiler-state cause."
+      ]
+    },
+    {
+      "id": "annotation-artifact",
+      "kind": "reported_measurement_artifact",
+      "from": "historical_line_annotation_placement",
+      "to": [
+        "play:source:W1b",
+        "select_profile:line_budget"
+      ],
+      "observation": "A trailing closing-line comment produced a false W1b deficit of 138 bytes; select_profile lost attribution for 105 of 118 statement bytes.",
+      "effect": "measurement_not_proven_codegen_change",
+      "evidence": [
+        "annotation",
+        "line-budget"
+      ],
+      "limitations": [
+        "Annotation is a source-author claim, not original DWARF identity.",
+        "No semantic or compiler-coupling edge follows from a diagnostic budget change."
+      ]
+    }
+  ],
+  "unobserved_influence": "unknown_not_zero",
+  "source_manifest": [
+    {
+      "id": "icy-region-00",
+      "repository": "icytower_recon",
+      "path": "src/recovery.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "2f0710c753742dda1de1bb624cce6fa378ba14c6a205adb9e3552c67bbd8f360"
+    },
+    {
+      "id": "icy-region-01",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-main.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "e3dec7aab04f18ab06398870a92d063d0cbf0458fc3c6313ff98f50c1cce60fe"
+    },
+    {
+      "id": "icy-region-02",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/game-main/play-merged.c.regions.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "24154b37d99cb7d576866ab9bd2f4e001db227f297117f163da189a57da36a66"
+    },
+    {
+      "id": "icy-region-03",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/game-main/play-merged.c",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "c1286fe25b59d44118fc96fcc489567e19f8a53f5cda921ae70d63d9ff021f9f"
+    },
+    {
+      "id": "icy-region-04",
+      "repository": "icytower_recon",
+      "path": "docs/current/function-evidence/main/play.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "4d1d20f02f2816750b245c87df5c9a3ff7172f3db18298b458a8ca2da180cf3a"
+    },
+    {
+      "id": "icy-region-05",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/game-main/draw_frame-merged.c.regions.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "20832d96e6390a630ca602f327835b38a6b431dfc508c1db07c990f63e1f0378"
+    },
+    {
+      "id": "icy-region-06",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/game-main/draw_frame-merged.c",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "d3d323f4ad0960e9334a4f519e4942165880d4cf42f0659b176f8e484dc3a904"
+    },
+    {
+      "id": "icy-region-07",
+      "repository": "icytower_recon",
+      "path": "docs/current/function-evidence/main/draw_frame.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "a0bbccd886e1dff5eda33e72d9d3f514e20ee52fdf8090fdcda954454e007553"
+    },
+    {
+      "id": "icy-region-08",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/game-main/play-census.json",
+      "content_kind": "working_tree",
+      "ref": "fc2000225df112de2cf248d92d23da8e839ca108",
+      "sha256": "94a4329ac2b508723ea577194f27d83cabba4e251d22d14e52f29c8b50b56f68"
+    }
+  ],
+  "limitations": [
+    "No compilation, source editing, liveness inference or promotion.",
+    "Historical machine chunks and merged-source regions are distinct views.",
+    "A source span does not establish an instruction set, SESE region or independent task.",
+    "Reported influences are curated evidence, not automatically inferred causes.",
+    "Equal byte budgets do not prove equal code; annotation/inlining can distort attribution."
+  ]
+}

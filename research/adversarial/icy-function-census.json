@@ -1,0 +1,3160 @@
+{
+  "format": "ai-decomp-icy-function-census-v1",
+  "captured_at_utc": "2026-09-23T21:23:14.686883+00:00",
+  "scope": "One row per unique original VA in all 25 verified_report paths referenced by current src/recovery.json; not all PE bytes or whole-CU closure. No overlay/historical reports.",
+  "report_references": [
+    {
+      "source": "src/beta.c",
+      "report": "docs/current/reports/game-beta.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/control.c",
+      "report": "docs/current/reports/game-control.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/csv.c",
+      "report": "docs/current/reports/game-csv.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/custom.c",
+      "report": "docs/current/reports/game-custom.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/directories.c",
+      "report": "docs/current/reports/game-directories.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/fld_adspot.c",
+      "report": "docs/current/reports/game-fld-adspot.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/game_data.c",
+      "report": "docs/current/reports/game-game-data.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/hisc.c",
+      "report": "docs/current/reports/game-hisc.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/main.c",
+      "report": "docs/current/reports/game-main.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/map.c",
+      "report": "docs/current/reports/game-map.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/menu.c",
+      "report": "docs/current/reports/game-menu.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/options.c",
+      "report": "docs/current/reports/game-options.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/particle.c",
+      "report": "docs/current/reports/game-particle.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/replay.c",
+      "report": "docs/current/reports/game-replay.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/profile.c",
+      "report": "docs/current/reports/game-profile.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/scroller.c",
+      "report": "docs/current/reports/game-scroller.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/stars.c",
+      "report": "docs/current/reports/game-stars.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/timer.c",
+      "report": "docs/current/reports/game-timer.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/player.c",
+      "report": "docs/current/reports/game-player.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/httpget.c",
+      "report": "docs/current/reports/game-httpget.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/loadpng.c",
+      "report": "docs/current/reports/game-loadpng.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/savepng.c",
+      "report": "docs/current/reports/game-savepng.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/regpng.c",
+      "report": "docs/current/reports/game-regpng.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/strptime.c",
+      "report": "docs/current/reports/game-strptime.json",
+      "ledger_hash_matches_observed": true
+    },
+    {
+      "source": "src/timecompat.c",
+      "report": "docs/current/reports/game-timecompat.json",
+      "ledger_hash_matches_observed": true
+    }
+  ],
+  "aggregate": {
+    "functions": 253,
+    "original_bytes": 125641,
+    "status_counts": {
+      "FUNCTION_MATCH": 209,
+      "DIFFER": 42,
+      "CODEGEN_SIMILAR": 2
+    },
+    "matched": {
+      "functions": 209,
+      "bytes": 41876,
+      "mean_size": 200.36363636363637,
+      "median_size": 86
+    },
+    "nonexact": {
+      "functions": 44,
+      "bytes": 83765,
+      "mean_size": 1903.75,
+      "median_size": 1104.5
+    },
+    "function_completion_percent": 82.6086956521739,
+    "byte_completion_percent": 33.32988435303762,
+    "top_unresolved": [
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "play",
+        "va": 4266496,
+        "original_size": 17420,
+        "candidate_size": 17400,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "draw_frame",
+        "va": 4231836,
+        "original_size": 8518,
+        "candidate_size": 8203,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "init_game",
+        "va": 4253660,
+        "original_size": 5788,
+        "candidate_size": 5666,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "main_menu_callback",
+        "va": 4260088,
+        "original_size": 3741,
+        "candidate_size": 2903,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/replay.c",
+        "report_source_id": "icy-census-14",
+        "target": "game-replay",
+        "name": "draw_replay_selector",
+        "va": 4308568,
+        "original_size": 3726,
+        "candidate_size": 2751,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/profile.c",
+        "report_source_id": "icy-census-15",
+        "target": "game-profile",
+        "name": "select_profile",
+        "va": 4304064,
+        "original_size": 3070,
+        "candidate_size": 2706,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/replay.c",
+        "report_source_id": "icy-census-14",
+        "target": "game-replay",
+        "name": "replay_selector",
+        "va": 4313688,
+        "original_size": 2845,
+        "candidate_size": 2485,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "do_replay_menu",
+        "va": 4263832,
+        "original_size": 2661,
+        "candidate_size": 2643,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/hisc.c",
+        "report_source_id": "icy-census-08",
+        "target": "game-hisc",
+        "name": "view_scores",
+        "va": 4213816,
+        "original_size": 2552,
+        "candidate_size": 2498,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/profile.c",
+        "report_source_id": "icy-census-15",
+        "target": "game-profile",
+        "name": "view_profile",
+        "va": 4299500,
+        "original_size": 2249,
+        "candidate_size": 2160,
+        "status": "DIFFER"
+      }
+    ],
+    "unresolved_concentration": {
+      "1": {
+        "bytes": 17420,
+        "percent": 20.7962752939772
+      },
+      "2": {
+        "bytes": 25938,
+        "percent": 30.965200262639527
+      },
+      "5": {
+        "bytes": 39193,
+        "percent": 46.789231779382796
+      },
+      "10": {
+        "bytes": 52570,
+        "percent": 62.758908852145886
+      }
+    }
+  },
+  "game_main": {
+    "functions": 82,
+    "original_bytes": 64715,
+    "status_counts": {
+      "FUNCTION_MATCH": 63,
+      "CODEGEN_SIMILAR": 1,
+      "DIFFER": 18
+    },
+    "matched": {
+      "functions": 63,
+      "bytes": 11708,
+      "mean_size": 185.84126984126985,
+      "median_size": 120
+    },
+    "nonexact": {
+      "functions": 19,
+      "bytes": 53007,
+      "mean_size": 2789.842105263158,
+      "median_size": 1390
+    },
+    "function_completion_percent": 76.82926829268293,
+    "byte_completion_percent": 18.091632542687165,
+    "top_unresolved": [
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "play",
+        "va": 4266496,
+        "original_size": 17420,
+        "candidate_size": 17400,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "draw_frame",
+        "va": 4231836,
+        "original_size": 8518,
+        "candidate_size": 8203,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "init_game",
+        "va": 4253660,
+        "original_size": 5788,
+        "candidate_size": 5666,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "main_menu_callback",
+        "va": 4260088,
+        "original_size": 3741,
+        "candidate_size": 2903,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "do_replay_menu",
+        "va": 4263832,
+        "original_size": 2661,
+        "candidate_size": 2643,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "_mangled_main",
+        "va": 4284176,
+        "original_size": 1938,
+        "candidate_size": 1730,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "my_alert",
+        "va": 4246888,
+        "original_size": 1770,
+        "candidate_size": 1774,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "force_create_profile",
+        "va": 4248660,
+        "original_size": 1538,
+        "candidate_size": 1458,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "blit_to_screen",
+        "va": 4241084,
+        "original_size": 1415,
+        "candidate_size": 1239,
+        "status": "DIFFER"
+      },
+      {
+        "source": "src/main.c",
+        "report_source_id": "icy-census-09",
+        "target": "game-main",
+        "name": "handle_player_collision_combo",
+        "va": 4227928,
+        "original_size": 1390,
+        "candidate_size": 1381,
+        "status": "DIFFER"
+      }
+    ],
+    "unresolved_concentration": {
+      "1": {
+        "bytes": 17420,
+        "percent": 32.86358405493614
+      },
+      "2": {
+        "bytes": 25938,
+        "percent": 48.93315977135095
+      },
+      "5": {
+        "bytes": 38128,
+        "percent": 71.9301224366593
+      },
+      "10": {
+        "bytes": 46179,
+        "percent": 87.11868243816855
+      }
+    }
+  },
+  "rows": [
+    {
+      "source": "src/beta.c",
+      "report_source_id": "icy-census-01",
+      "target": "game-beta",
+      "name": "garble_string",
+      "va": 4199192,
+      "original_size": 41,
+      "candidate_size": 41,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/beta.c",
+      "report_source_id": "icy-census-01",
+      "target": "game-beta",
+      "name": "save_garbled_data",
+      "va": 4199236,
+      "original_size": 283,
+      "candidate_size": 283,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/beta.c",
+      "report_source_id": "icy-census-01",
+      "target": "game-beta",
+      "name": "read_line",
+      "va": 4199520,
+      "original_size": 80,
+      "candidate_size": 80,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/beta.c",
+      "report_source_id": "icy-census-01",
+      "target": "game-beta",
+      "name": "destroy_all",
+      "va": 4199600,
+      "original_size": 59,
+      "candidate_size": 59,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/beta.c",
+      "report_source_id": "icy-census-01",
+      "target": "game-beta",
+      "name": "create_post",
+      "va": 4199660,
+      "original_size": 157,
+      "candidate_size": 157,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/beta.c",
+      "report_source_id": "icy-census-01",
+      "target": "game-beta",
+      "name": "load_garbled_data",
+      "va": 4199820,
+      "original_size": 313,
+      "candidate_size": 313,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/beta.c",
+      "report_source_id": "icy-census-01",
+      "target": "game-beta",
+      "name": "load_plain_data",
+      "va": 4200136,
+      "original_size": 197,
+      "candidate_size": 197,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "init_control",
+      "va": 4200336,
+      "original_size": 67,
+      "candidate_size": 67,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "set_control",
+      "va": 4200404,
+      "original_size": 38,
+      "candidate_size": 38,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "get_gamepad",
+      "va": 4200444,
+      "original_size": 10,
+      "candidate_size": 10,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "check_control_key",
+      "va": 4200456,
+      "original_size": 58,
+      "candidate_size": 58,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "is_up",
+      "va": 4200516,
+      "original_size": 22,
+      "candidate_size": 22,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "is_down",
+      "va": 4200540,
+      "original_size": 22,
+      "candidate_size": 22,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "is_left",
+      "va": 4200564,
+      "original_size": 17,
+      "candidate_size": 17,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "is_right",
+      "va": 4200584,
+      "original_size": 22,
+      "candidate_size": 22,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "is_fire",
+      "va": 4200608,
+      "original_size": 22,
+      "candidate_size": 22,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "is_pause",
+      "va": 4200632,
+      "original_size": 22,
+      "candidate_size": 22,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "is_enter",
+      "va": 4200656,
+      "original_size": 22,
+      "candidate_size": 22,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "is_any",
+      "va": 4200680,
+      "original_size": 22,
+      "candidate_size": 22,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "load_control",
+      "va": 4200704,
+      "original_size": 42,
+      "candidate_size": 42,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "save_control",
+      "va": 4200748,
+      "original_size": 42,
+      "candidate_size": 42,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/control.c",
+      "report_source_id": "icy-census-02",
+      "target": "game-control",
+      "name": "poll_control",
+      "va": 4200792,
+      "original_size": 294,
+      "candidate_size": 294,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/csv.c",
+      "report_source_id": "icy-census-03",
+      "target": "game-csv",
+      "name": "csv_rewind",
+      "va": 4201088,
+      "original_size": 24,
+      "candidate_size": 24,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/csv.c",
+      "report_source_id": "icy-census-03",
+      "target": "game-csv",
+      "name": "csv_add_field",
+      "va": 4201112,
+      "original_size": 86,
+      "candidate_size": 86,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/csv.c",
+      "report_source_id": "icy-census-03",
+      "target": "game-csv",
+      "name": "csv_next",
+      "va": 4201200,
+      "original_size": 197,
+      "candidate_size": 197,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/csv.c",
+      "report_source_id": "icy-census-03",
+      "target": "game-csv",
+      "name": "csv_destroy",
+      "va": 4201400,
+      "original_size": 54,
+      "candidate_size": 54,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/csv.c",
+      "report_source_id": "icy-census-03",
+      "target": "game-csv",
+      "name": "csv_begin",
+      "va": 4201456,
+      "original_size": 106,
+      "candidate_size": 106,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/csv.c",
+      "report_source_id": "icy-census-03",
+      "target": "game-csv",
+      "name": "csv_open",
+      "va": 4201564,
+      "original_size": 204,
+      "candidate_size": 204,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/custom.c",
+      "report_source_id": "icy-census-04",
+      "target": "game-custom",
+      "name": "init_custom",
+      "va": 4201768,
+      "original_size": 175,
+      "candidate_size": 175,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/custom.c",
+      "report_source_id": "icy-census-04",
+      "target": "game-custom",
+      "name": "destroy_custom_data",
+      "va": 4201944,
+      "original_size": 486,
+      "candidate_size": 486,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/custom.c",
+      "report_source_id": "icy-census-04",
+      "target": "game-custom",
+      "name": "loadCustomSoundFILE",
+      "va": 4202432,
+      "original_size": 128,
+      "candidate_size": 128,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/custom.c",
+      "report_source_id": "icy-census-04",
+      "target": "game-custom",
+      "name": "loadCustomSoundDF",
+      "va": 4202560,
+      "original_size": 54,
+      "candidate_size": 54,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/custom.c",
+      "report_source_id": "icy-census-04",
+      "target": "game-custom",
+      "name": "clear_trailing_whitespace",
+      "va": 4202616,
+      "original_size": 90,
+      "candidate_size": 90,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/custom.c",
+      "report_source_id": "icy-census-04",
+      "target": "game-custom",
+      "name": "get_string_data",
+      "va": 4202708,
+      "original_size": 86,
+      "candidate_size": 86,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/custom.c",
+      "report_source_id": "icy-census-04",
+      "target": "game-custom",
+      "name": "load_sounds",
+      "va": 4202796,
+      "original_size": 1729,
+      "candidate_size": 1729,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/custom.c",
+      "report_source_id": "icy-census-04",
+      "target": "game-custom",
+      "name": "custom_alert",
+      "va": 4204528,
+      "original_size": 132,
+      "candidate_size": 132,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/custom.c",
+      "report_source_id": "icy-census-04",
+      "target": "game-custom",
+      "name": "load_frames",
+      "va": 4204660,
+      "original_size": 2392,
+      "candidate_size": 2392,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/custom.c",
+      "report_source_id": "icy-census-04",
+      "target": "game-custom",
+      "name": "load_character_bmp",
+      "va": 4207052,
+      "original_size": 1992,
+      "candidate_size": 1993,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/directories.c",
+      "report_source_id": "icy-census-05",
+      "target": "game-directories",
+      "name": "get_custom_characters_dir",
+      "va": 4209044,
+      "original_size": 13,
+      "candidate_size": 13,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/directories.c",
+      "report_source_id": "icy-census-05",
+      "target": "game-directories",
+      "name": "get_adcache_dir",
+      "va": 4209060,
+      "original_size": 39,
+      "candidate_size": 39,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/directories.c",
+      "report_source_id": "icy-census-05",
+      "target": "game-directories",
+      "name": "get_configfile_path",
+      "va": 4209100,
+      "original_size": 39,
+      "candidate_size": 39,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/directories.c",
+      "report_source_id": "icy-census-05",
+      "target": "game-directories",
+      "name": "get_logfile_path",
+      "va": 4209140,
+      "original_size": 39,
+      "candidate_size": 39,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/directories.c",
+      "report_source_id": "icy-census-05",
+      "target": "game-directories",
+      "name": "get_profiles_dir",
+      "va": 4209180,
+      "original_size": 39,
+      "candidate_size": 39,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/directories.c",
+      "report_source_id": "icy-census-05",
+      "target": "game-directories",
+      "name": "get_profile_dir_for_profile",
+      "va": 4209220,
+      "original_size": 63,
+      "candidate_size": 63,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/directories.c",
+      "report_source_id": "icy-census-05",
+      "target": "game-directories",
+      "name": "get_character_dir",
+      "va": 4209284,
+      "original_size": 67,
+      "candidate_size": 67,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/fld_adspot.c",
+      "report_source_id": "icy-census-06",
+      "target": "game-fld-adspot",
+      "name": "fldads_start",
+      "va": 4209352,
+      "original_size": 45,
+      "candidate_size": 45,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/fld_adspot.c",
+      "report_source_id": "icy-census-06",
+      "target": "game-fld-adspot",
+      "name": "fldads_get_random_ad",
+      "va": 4209400,
+      "original_size": 192,
+      "candidate_size": 192,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/fld_adspot.c",
+      "report_source_id": "icy-census-06",
+      "target": "game-fld-adspot",
+      "name": "fldads_destroy_cache",
+      "va": 4209592,
+      "original_size": 138,
+      "candidate_size": 138,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/fld_adspot.c",
+      "report_source_id": "icy-census-06",
+      "target": "game-fld-adspot",
+      "name": "fldads_get_local_cache_name",
+      "va": 4209732,
+      "original_size": 64,
+      "candidate_size": 64,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/fld_adspot.c",
+      "report_source_id": "icy-census-06",
+      "target": "game-fld-adspot",
+      "name": "fldads_dump_local_cache",
+      "va": 4209796,
+      "original_size": 156,
+      "candidate_size": 156,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/fld_adspot.c",
+      "report_source_id": "icy-census-06",
+      "target": "game-fld-adspot",
+      "name": "get_url_filename",
+      "va": 4209952,
+      "original_size": 42,
+      "candidate_size": 42,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/fld_adspot.c",
+      "report_source_id": "icy-census-06",
+      "target": "game-fld-adspot",
+      "name": "fldads_get_local_filename_from_url",
+      "va": 4209996,
+      "original_size": 26,
+      "candidate_size": 26,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/fld_adspot.c",
+      "report_source_id": "icy-census-06",
+      "target": "game-fld-adspot",
+      "name": "fldads_load_cache_from_csv",
+      "va": 4210024,
+      "original_size": 282,
+      "candidate_size": 282,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/fld_adspot.c",
+      "report_source_id": "icy-census-06",
+      "target": "game-fld-adspot",
+      "name": "fldads_load_local_cache",
+      "va": 4210308,
+      "original_size": 55,
+      "candidate_size": 55,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/fld_adspot.c",
+      "report_source_id": "icy-census-06",
+      "target": "game-fld-adspot",
+      "name": "fldads_update_local_adimg",
+      "va": 4210364,
+      "original_size": 230,
+      "candidate_size": 230,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/fld_adspot.c",
+      "report_source_id": "icy-census-06",
+      "target": "game-fld-adspot",
+      "name": "fldads_update_cache",
+      "va": 4210596,
+      "original_size": 110,
+      "candidate_size": 110,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/fld_adspot.c",
+      "report_source_id": "icy-census-06",
+      "target": "game-fld-adspot",
+      "name": "fldads_threadmain",
+      "va": 4210708,
+      "original_size": 223,
+      "candidate_size": 223,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/game_data.c",
+      "report_source_id": "icy-census-07",
+      "target": "game-game-data",
+      "name": "add_jump_sequence",
+      "va": 4210932,
+      "original_size": 87,
+      "candidate_size": 87,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/game_data.c",
+      "report_source_id": "icy-census-07",
+      "target": "game-game-data",
+      "name": "add_combo",
+      "va": 4211020,
+      "original_size": 62,
+      "candidate_size": 62,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/game_data.c",
+      "report_source_id": "icy-census-07",
+      "target": "game-game-data",
+      "name": "destroy_game_data",
+      "va": 4211084,
+      "original_size": 12,
+      "candidate_size": 12,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/game_data.c",
+      "report_source_id": "icy-census-07",
+      "target": "game-game-data",
+      "name": "create_game_data",
+      "va": 4211096,
+      "original_size": 186,
+      "candidate_size": 186,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/game_data.c",
+      "report_source_id": "icy-census-07",
+      "target": "game-game-data",
+      "name": "getGameDataXML",
+      "va": 4211284,
+      "original_size": 1855,
+      "candidate_size": 1855,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/hisc.c",
+      "report_source_id": "icy-census-08",
+      "target": "game-hisc",
+      "name": "qualify_hisc_table",
+      "va": 4213140,
+      "original_size": 39,
+      "candidate_size": 39,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/hisc.c",
+      "report_source_id": "icy-census-08",
+      "target": "game-hisc",
+      "name": "sort_hisc_table",
+      "va": 4213180,
+      "original_size": 147,
+      "candidate_size": 147,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/hisc.c",
+      "report_source_id": "icy-census-08",
+      "target": "game-hisc",
+      "name": "generate_checksum",
+      "va": 4213328,
+      "original_size": 44,
+      "candidate_size": 44,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/hisc.c",
+      "report_source_id": "icy-census-08",
+      "target": "game-hisc",
+      "name": "draw_table",
+      "va": 4213372,
+      "original_size": 441,
+      "candidate_size": 441,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/hisc.c",
+      "report_source_id": "icy-census-08",
+      "target": "game-hisc",
+      "name": "view_scores",
+      "va": 4213816,
+      "original_size": 2552,
+      "candidate_size": 2498,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/hisc.c",
+      "report_source_id": "icy-census-08",
+      "target": "game-hisc",
+      "name": "save_hisc_table",
+      "va": 4216368,
+      "original_size": 129,
+      "candidate_size": 129,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/hisc.c",
+      "report_source_id": "icy-census-08",
+      "target": "game-hisc",
+      "name": "load_hisc_table",
+      "va": 4216500,
+      "original_size": 155,
+      "candidate_size": 155,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/hisc.c",
+      "report_source_id": "icy-census-08",
+      "target": "game-hisc",
+      "name": "reset_hisc_table",
+      "va": 4216656,
+      "original_size": 64,
+      "candidate_size": 64,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/hisc.c",
+      "report_source_id": "icy-census-08",
+      "target": "game-hisc",
+      "name": "enter_hisc_table",
+      "va": 4216720,
+      "original_size": 136,
+      "candidate_size": 136,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/hisc.c",
+      "report_source_id": "icy-census-08",
+      "target": "game-hisc",
+      "name": "destroy_hisc_table",
+      "va": 4216856,
+      "original_size": 34,
+      "candidate_size": 34,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/hisc.c",
+      "report_source_id": "icy-census-08",
+      "target": "game-hisc",
+      "name": "make_hisc_table",
+      "va": 4216892,
+      "original_size": 84,
+      "candidate_size": 84,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "get_version_str",
+      "va": 4221280,
+      "original_size": 10,
+      "candidate_size": 10,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "get_demo",
+      "va": 4221292,
+      "original_size": 10,
+      "candidate_size": 10,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "get_controls",
+      "va": 4221304,
+      "original_size": 10,
+      "candidate_size": 10,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "new_rand",
+      "va": 4221316,
+      "original_size": 128,
+      "candidate_size": 128,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "new_srand",
+      "va": 4221444,
+      "original_size": 14,
+      "candidate_size": 14,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "syncProfileFromOptions",
+      "va": 4221460,
+      "original_size": 58,
+      "candidate_size": 58,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "ok_to_play",
+      "va": 4221520,
+      "original_size": 10,
+      "candidate_size": 10,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "switchedFromProgram",
+      "va": 4221532,
+      "original_size": 15,
+      "candidate_size": 15,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "switchedToProgram",
+      "va": 4221548,
+      "original_size": 15,
+      "candidate_size": 15,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "clickedCloseButton",
+      "va": 4221564,
+      "original_size": 15,
+      "candidate_size": 15,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "update_reward",
+      "va": 4221580,
+      "original_size": 55,
+      "candidate_size": 55,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "update_frame",
+      "va": 4221636,
+      "original_size": 120,
+      "candidate_size": 120,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "is_custom_replay",
+      "va": 4221756,
+      "original_size": 66,
+      "candidate_size": 66,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "line_intersect",
+      "va": 4221824,
+      "original_size": 302,
+      "candidate_size": 302,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "WinMain",
+      "va": 4222128,
+      "original_size": 50,
+      "candidate_size": 50,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "set_current_avatar",
+      "va": 4222180,
+      "original_size": 96,
+      "candidate_size": 96,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "show_name",
+      "va": 4222276,
+      "original_size": 36,
+      "candidate_size": 36,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "startMenuMusic",
+      "va": 4222312,
+      "original_size": 59,
+      "candidate_size": 59,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "play_sound",
+      "va": 4222372,
+      "original_size": 215,
+      "candidate_size": 215,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "play_menu_select",
+      "va": 4222588,
+      "original_size": 37,
+      "candidate_size": 37,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "play_menu_move",
+      "va": 4222628,
+      "original_size": 37,
+      "candidate_size": 37,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "play_jump_sound",
+      "va": 4222668,
+      "original_size": 141,
+      "candidate_size": 141,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "stopMenuMusic",
+      "va": 4222812,
+      "original_size": 25,
+      "candidate_size": 25,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "checkMenuFocus",
+      "va": 4222840,
+      "original_size": 59,
+      "candidate_size": 59,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "drawSlot",
+      "va": 4222900,
+      "original_size": 328,
+      "candidate_size": 328,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "draw_reward",
+      "va": 4223228,
+      "original_size": 581,
+      "candidate_size": 581,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "replaceBadCharacters",
+      "va": 4223812,
+      "original_size": 125,
+      "candidate_size": 125,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "pwd_garble_string",
+      "va": 4223940,
+      "original_size": 52,
+      "candidate_size": 52,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "replay_menu_callback",
+      "va": 4223992,
+      "original_size": 712,
+      "candidate_size": 712,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "draw_results",
+      "va": 4224704,
+      "original_size": 839,
+      "candidate_size": 839,
+      "status": "CODEGEN_SIMILAR"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "draw_progress_bar",
+      "va": 4225544,
+      "original_size": 486,
+      "candidate_size": 486,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "datafile_callback_slow",
+      "va": 4226032,
+      "original_size": 33,
+      "candidate_size": 33,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "datafile_callback",
+      "va": 4226068,
+      "original_size": 12,
+      "candidate_size": 12,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "color_map_callback",
+      "va": 4226080,
+      "original_size": 22,
+      "candidate_size": 22,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "start_reward",
+      "va": 4226104,
+      "original_size": 472,
+      "candidate_size": 472,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "handle_player_collision_original",
+      "va": 4226576,
+      "original_size": 456,
+      "candidate_size": 449,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "handle_player_collision_old",
+      "va": 4227032,
+      "original_size": 894,
+      "candidate_size": 961,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "handle_player_collision_combo",
+      "va": 4227928,
+      "original_size": 1390,
+      "candidate_size": 1381,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "handle_player_collision_vector_2",
+      "va": 4229320,
+      "original_size": 1086,
+      "candidate_size": 1057,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "handle_player_collision_vector",
+      "va": 4230408,
+      "original_size": 1071,
+      "candidate_size": 1021,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "line_alert",
+      "va": 4231480,
+      "original_size": 353,
+      "candidate_size": 353,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "draw_frame",
+      "va": 4231836,
+      "original_size": 8518,
+      "candidate_size": 8203,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "handle_player_input",
+      "va": 4240356,
+      "original_size": 728,
+      "candidate_size": 728,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "blit_to_screen",
+      "va": 4241084,
+      "original_size": 1415,
+      "candidate_size": 1239,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "get_string",
+      "va": 4242500,
+      "original_size": 790,
+      "candidate_size": 790,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "fadeOut",
+      "va": 4243292,
+      "original_size": 609,
+      "candidate_size": 609,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "fadeIn",
+      "va": 4243904,
+      "original_size": 424,
+      "candidate_size": 424,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "show_instructions",
+      "va": 4244328,
+      "original_size": 370,
+      "candidate_size": 370,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "show_credits",
+      "va": 4244700,
+      "original_size": 634,
+      "candidate_size": 654,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "rebuild_profile_list",
+      "va": 4245336,
+      "original_size": 198,
+      "candidate_size": 198,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "syncOptionsFromProfile",
+      "va": 4245536,
+      "original_size": 157,
+      "candidate_size": 157,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "add_profile",
+      "va": 4245696,
+      "original_size": 195,
+      "candidate_size": 195,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "get_gamepad_value",
+      "va": 4245892,
+      "original_size": 166,
+      "candidate_size": 166,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "getSampleFromOggDatafile",
+      "va": 4246060,
+      "original_size": 32,
+      "candidate_size": 32,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "load_sound",
+      "va": 4246092,
+      "original_size": 166,
+      "candidate_size": 166,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "stopGameMusic",
+      "va": 4246260,
+      "original_size": 58,
+      "candidate_size": 58,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "startGameMusic",
+      "va": 4246320,
+      "original_size": 144,
+      "candidate_size": 144,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "for_each_directory",
+      "va": 4246464,
+      "original_size": 109,
+      "candidate_size": 109,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "loadScrambled",
+      "va": 4246576,
+      "original_size": 247,
+      "candidate_size": 247,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "myDeleteFile",
+      "va": 4246824,
+      "original_size": 63,
+      "candidate_size": 63,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "my_alert",
+      "va": 4246888,
+      "original_size": 1770,
+      "candidate_size": 1774,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "force_create_profile",
+      "va": 4248660,
+      "original_size": 1538,
+      "candidate_size": 1458,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "log2file",
+      "va": 4250200,
+      "original_size": 189,
+      "candidate_size": 189,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "testWindowResolution",
+      "va": 4250392,
+      "original_size": 388,
+      "candidate_size": 388,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "new_game",
+      "va": 4250780,
+      "original_size": 1139,
+      "candidate_size": 1139,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "end_game",
+      "va": 4251920,
+      "original_size": 32,
+      "candidate_size": 32,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "save_config",
+      "va": 4251952,
+      "original_size": 154,
+      "candidate_size": 154,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "change_profile",
+      "va": 4252108,
+      "original_size": 188,
+      "candidate_size": 188,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "uninit_game",
+      "va": 4252296,
+      "original_size": 646,
+      "candidate_size": 646,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "open_web_browser",
+      "va": 4252944,
+      "original_size": 111,
+      "candidate_size": 111,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "check_beta_tester",
+      "va": 4253056,
+      "original_size": 254,
+      "candidate_size": 254,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "check_characters",
+      "va": 4253312,
+      "original_size": 345,
+      "candidate_size": 345,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "init_game",
+      "va": 4253660,
+      "original_size": 5788,
+      "candidate_size": 5666,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "load_character",
+      "va": 4259448,
+      "original_size": 330,
+      "candidate_size": 330,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "check_dir",
+      "va": 4259780,
+      "original_size": 103,
+      "candidate_size": 103,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "take_screenshot",
+      "va": 4259884,
+      "original_size": 203,
+      "candidate_size": 203,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "main_menu_callback",
+      "va": 4260088,
+      "original_size": 3741,
+      "candidate_size": 2903,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "do_replay_menu",
+      "va": 4263832,
+      "original_size": 2661,
+      "candidate_size": 2643,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "play",
+      "va": 4266496,
+      "original_size": 17420,
+      "candidate_size": 17400,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "run_demo",
+      "va": 4283916,
+      "original_size": 159,
+      "candidate_size": 159,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "load_new_ad_image",
+      "va": 4284076,
+      "original_size": 100,
+      "candidate_size": 100,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/main.c",
+      "report_source_id": "icy-census-09",
+      "target": "game-main",
+      "name": "_mangled_main",
+      "va": 4284176,
+      "original_size": 1938,
+      "candidate_size": 1730,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/map.c",
+      "report_source_id": "icy-census-10",
+      "target": "game-map",
+      "name": "reset_map",
+      "va": 4286116,
+      "original_size": 53,
+      "candidate_size": 53,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/map.c",
+      "report_source_id": "icy-census-10",
+      "target": "game-map",
+      "name": "is_solid",
+      "va": 4286172,
+      "original_size": 107,
+      "candidate_size": 107,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/map.c",
+      "report_source_id": "icy-census-10",
+      "target": "game-map",
+      "name": "get_level",
+      "va": 4286280,
+      "original_size": 40,
+      "candidate_size": 40,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/map.c",
+      "report_source_id": "icy-census-10",
+      "target": "game-map",
+      "name": "getFloorData",
+      "va": 4286320,
+      "original_size": 107,
+      "candidate_size": 107,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/map.c",
+      "report_source_id": "icy-census-10",
+      "target": "game-map",
+      "name": "add_floor",
+      "va": 4286428,
+      "original_size": 608,
+      "candidate_size": 608,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/menu.c",
+      "report_source_id": "icy-census-11",
+      "target": "game-menu",
+      "name": "get_slider_value",
+      "va": 4287036,
+      "original_size": 10,
+      "candidate_size": 10,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/menu.c",
+      "report_source_id": "icy-census-11",
+      "target": "game-menu",
+      "name": "set_slider_value",
+      "va": 4287048,
+      "original_size": 33,
+      "candidate_size": 33,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/menu.c",
+      "report_source_id": "icy-census-11",
+      "target": "game-menu",
+      "name": "get_selection_value",
+      "va": 4287084,
+      "original_size": 10,
+      "candidate_size": 10,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/menu.c",
+      "report_source_id": "icy-census-11",
+      "target": "game-menu",
+      "name": "set_selection_value",
+      "va": 4287096,
+      "original_size": 33,
+      "candidate_size": 33,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/menu.c",
+      "report_source_id": "icy-census-11",
+      "target": "game-menu",
+      "name": "key_to_str",
+      "va": 4287132,
+      "original_size": 2543,
+      "candidate_size": 2543,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/menu.c",
+      "report_source_id": "icy-census-11",
+      "target": "game-menu",
+      "name": "reset_menu",
+      "va": 4289676,
+      "original_size": 79,
+      "candidate_size": 79,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/menu.c",
+      "report_source_id": "icy-census-11",
+      "target": "game-menu",
+      "name": "build_menu_string",
+      "va": 4289756,
+      "original_size": 415,
+      "candidate_size": 415,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/menu.c",
+      "report_source_id": "icy-census-11",
+      "target": "game-menu",
+      "name": "draw_menu",
+      "va": 4290172,
+      "original_size": 1118,
+      "candidate_size": 956,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/menu.c",
+      "report_source_id": "icy-census-11",
+      "target": "game-menu",
+      "name": "update_game_menu",
+      "va": 4291292,
+      "original_size": 583,
+      "candidate_size": 582,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/menu.c",
+      "report_source_id": "icy-census-11",
+      "target": "game-menu",
+      "name": "handle_menu",
+      "va": 4291876,
+      "original_size": 1120,
+      "candidate_size": 1066,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/options.c",
+      "report_source_id": "icy-census-12",
+      "target": "game-options",
+      "name": "hash3",
+      "va": 4292996,
+      "original_size": 71,
+      "candidate_size": 71,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/options.c",
+      "report_source_id": "icy-census-12",
+      "target": "game-options",
+      "name": "generate_options_checksum",
+      "va": 4293068,
+      "original_size": 254,
+      "candidate_size": 254,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/options.c",
+      "report_source_id": "icy-census-12",
+      "target": "game-options",
+      "name": "reset_options",
+      "va": 4293324,
+      "original_size": 205,
+      "candidate_size": 205,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/options.c",
+      "report_source_id": "icy-census-12",
+      "target": "game-options",
+      "name": "load_options",
+      "va": 4293532,
+      "original_size": 70,
+      "candidate_size": 70,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/options.c",
+      "report_source_id": "icy-census-12",
+      "target": "game-options",
+      "name": "save_options",
+      "va": 4293604,
+      "original_size": 58,
+      "candidate_size": 58,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/particle.c",
+      "report_source_id": "icy-census-13",
+      "target": "game-particle",
+      "name": "reset_particles",
+      "va": 4293664,
+      "original_size": 27,
+      "candidate_size": 27,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/particle.c",
+      "report_source_id": "icy-census-13",
+      "target": "game-particle",
+      "name": "update_particle",
+      "va": 4293692,
+      "original_size": 83,
+      "candidate_size": 83,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/particle.c",
+      "report_source_id": "icy-census-13",
+      "target": "game-particle",
+      "name": "create_particle",
+      "va": 4293776,
+      "original_size": 192,
+      "candidate_size": 192,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "get_sort_method",
+      "va": 4307372,
+      "original_size": 10,
+      "candidate_size": 10,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "set_sort_method",
+      "va": 4307384,
+      "original_size": 13,
+      "candidate_size": 13,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "hash",
+      "va": 4307400,
+      "original_size": 71,
+      "candidate_size": 71,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "calc_replay_checksum_131",
+      "va": 4307472,
+      "original_size": 177,
+      "candidate_size": 177,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "calc_replay_checksum",
+      "va": 4307652,
+      "original_size": 676,
+      "candidate_size": 675,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "destroy_replay",
+      "va": 4308328,
+      "original_size": 54,
+      "candidate_size": 54,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "update_file_list",
+      "va": 4308384,
+      "original_size": 184,
+      "candidate_size": 184,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "draw_replay_selector",
+      "va": 4308568,
+      "original_size": 3726,
+      "candidate_size": 2751,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "create_replay",
+      "va": 4312296,
+      "original_size": 254,
+      "candidate_size": 254,
+      "status": "CODEGEN_SIMILAR"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "load_replay",
+      "va": 4312552,
+      "original_size": 1136,
+      "candidate_size": 1148,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "replay_selector",
+      "va": 4313688,
+      "original_size": 2845,
+      "candidate_size": 2485,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "save_replay",
+      "va": 4316536,
+      "original_size": 1227,
+      "candidate_size": 1227,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "get_replay_property",
+      "va": 4317764,
+      "original_size": 1147,
+      "candidate_size": 1147,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "my_strcmp",
+      "va": 4318912,
+      "original_size": 128,
+      "candidate_size": 123,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/replay.c",
+      "report_source_id": "icy-census-14",
+      "target": "game-replay",
+      "name": "add_itr_file",
+      "va": 4319040,
+      "original_size": 360,
+      "candidate_size": 357,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "hash2",
+      "va": 4295116,
+      "original_size": 71,
+      "candidate_size": 71,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "generate_profile_checksum",
+      "va": 4295188,
+      "original_size": 112,
+      "candidate_size": 112,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "get_rank_id",
+      "va": 4295300,
+      "original_size": 75,
+      "candidate_size": 75,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "get_rank",
+      "va": 4295376,
+      "original_size": 82,
+      "candidate_size": 82,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "set_next_rank_message",
+      "va": 4295460,
+      "original_size": 431,
+      "candidate_size": 431,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "draw_profile_selector",
+      "va": 4295892,
+      "original_size": 1268,
+      "candidate_size": 1242,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "draw_buffer",
+      "va": 4297160,
+      "original_size": 185,
+      "candidate_size": 181,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "profile_data_page_advanced",
+      "va": 4297348,
+      "original_size": 332,
+      "candidate_size": 332,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "profile_data_page_basic",
+      "va": 4297680,
+      "original_size": 637,
+      "candidate_size": 637,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "profile_data_page_extra",
+      "va": 4298320,
+      "original_size": 85,
+      "candidate_size": 85,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "profile_data_page_general",
+      "va": 4298408,
+      "original_size": 1091,
+      "candidate_size": 1082,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "view_profile",
+      "va": 4299500,
+      "original_size": 2249,
+      "candidate_size": 2160,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "save_profile",
+      "va": 4301752,
+      "original_size": 1073,
+      "candidate_size": 1073,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "load_profile",
+      "va": 4302828,
+      "original_size": 188,
+      "candidate_size": 188,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "delete_profile",
+      "va": 4303016,
+      "original_size": 222,
+      "candidate_size": 222,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "create_profile",
+      "va": 4303240,
+      "original_size": 823,
+      "candidate_size": 823,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/profile.c",
+      "report_source_id": "icy-census-15",
+      "target": "game-profile",
+      "name": "select_profile",
+      "va": 4304064,
+      "original_size": 3070,
+      "candidate_size": 2706,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/scroller.c",
+      "report_source_id": "icy-census-16",
+      "target": "game-scroller",
+      "name": "scroll_scroller",
+      "va": 4321472,
+      "original_size": 14,
+      "candidate_size": 14,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/scroller.c",
+      "report_source_id": "icy-census-16",
+      "target": "game-scroller",
+      "name": "restart_scroller",
+      "va": 4321488,
+      "original_size": 28,
+      "candidate_size": 28,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/scroller.c",
+      "report_source_id": "icy-census-16",
+      "target": "game-scroller",
+      "name": "draw_scroller",
+      "va": 4321516,
+      "original_size": 396,
+      "candidate_size": 396,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/scroller.c",
+      "report_source_id": "icy-census-16",
+      "target": "game-scroller",
+      "name": "init_scroller",
+      "va": 4321912,
+      "original_size": 200,
+      "candidate_size": 200,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/stars.c",
+      "report_source_id": "icy-census-17",
+      "target": "game-stars",
+      "name": "draw_star_field",
+      "va": 4322112,
+      "original_size": 199,
+      "candidate_size": 199,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/stars.c",
+      "report_source_id": "icy-census-17",
+      "target": "game-stars",
+      "name": "scroll_star_field",
+      "va": 4322312,
+      "original_size": 290,
+      "candidate_size": 290,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/stars.c",
+      "report_source_id": "icy-census-17",
+      "target": "game-stars",
+      "name": "init_star_field",
+      "va": 4322604,
+      "original_size": 151,
+      "candidate_size": 151,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/timer.c",
+      "report_source_id": "icy-census-18",
+      "target": "game-timer",
+      "name": "fps_counter",
+      "va": 4325028,
+      "original_size": 45,
+      "candidate_size": 45,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/timer.c",
+      "report_source_id": "icy-census-18",
+      "target": "game-timer",
+      "name": "cycle_counter",
+      "va": 4325076,
+      "original_size": 16,
+      "candidate_size": 16,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/timer.c",
+      "report_source_id": "icy-census-18",
+      "target": "game-timer",
+      "name": "install_timers",
+      "va": 4325092,
+      "original_size": 88,
+      "candidate_size": 88,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/player.c",
+      "report_source_id": "icy-census-19",
+      "target": "game-player",
+      "name": "reset_player",
+      "va": 4293968,
+      "original_size": 296,
+      "candidate_size": 296,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/player.c",
+      "report_source_id": "icy-census-19",
+      "target": "game-player",
+      "name": "jump_player",
+      "va": 4294264,
+      "original_size": 198,
+      "candidate_size": 198,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/player.c",
+      "report_source_id": "icy-census-19",
+      "target": "game-player",
+      "name": "update_player",
+      "va": 4294464,
+      "original_size": 651,
+      "candidate_size": 651,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/httpget.c",
+      "report_source_id": "icy-census-20",
+      "target": "game-httpget",
+      "name": "httpGetLastModified",
+      "va": 4216976,
+      "original_size": 126,
+      "candidate_size": 126,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/httpget.c",
+      "report_source_id": "icy-census-20",
+      "target": "game-httpget",
+      "name": "destroyHTTPResponse",
+      "va": 4217104,
+      "original_size": 116,
+      "candidate_size": 116,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/httpget.c",
+      "report_source_id": "icy-census-20",
+      "target": "game-httpget",
+      "name": "SplitURL",
+      "va": 4217220,
+      "original_size": 267,
+      "candidate_size": 267,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/httpget.c",
+      "report_source_id": "icy-census-20",
+      "target": "game-httpget",
+      "name": "extractHTTPResponse",
+      "va": 4217488,
+      "original_size": 923,
+      "candidate_size": 924,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/httpget.c",
+      "report_source_id": "icy-census-20",
+      "target": "game-httpget",
+      "name": "dumpHTTPResponse",
+      "va": 4218412,
+      "original_size": 99,
+      "candidate_size": 99,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/httpget.c",
+      "report_source_id": "icy-census-20",
+      "target": "game-httpget",
+      "name": "getSocketError",
+      "va": 4218512,
+      "original_size": 12,
+      "candidate_size": 12,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/httpget.c",
+      "report_source_id": "icy-census-20",
+      "target": "game-httpget",
+      "name": "HTTPFetchInternal",
+      "va": 4218524,
+      "original_size": 594,
+      "candidate_size": 594,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/httpget.c",
+      "report_source_id": "icy-census-20",
+      "target": "game-httpget",
+      "name": "HTTPRequest",
+      "va": 4219120,
+      "original_size": 136,
+      "candidate_size": 136,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/httpget.c",
+      "report_source_id": "icy-census-20",
+      "target": "game-httpget",
+      "name": "HTTPHead",
+      "va": 4219256,
+      "original_size": 27,
+      "candidate_size": 27,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/httpget.c",
+      "report_source_id": "icy-census-20",
+      "target": "game-httpget",
+      "name": "HTTPGet",
+      "va": 4219284,
+      "original_size": 27,
+      "candidate_size": 27,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/loadpng.c",
+      "report_source_id": "icy-census-21",
+      "target": "game-loadpng",
+      "name": "really_load_png",
+      "va": 4219312,
+      "original_size": 1106,
+      "candidate_size": 1106,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/loadpng.c",
+      "report_source_id": "icy-census-21",
+      "target": "game-loadpng",
+      "name": "load_memory_png",
+      "va": 4220420,
+      "original_size": 308,
+      "candidate_size": 308,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/loadpng.c",
+      "report_source_id": "icy-census-21",
+      "target": "game-loadpng",
+      "name": "read_data_memory",
+      "va": 4220728,
+      "original_size": 80,
+      "candidate_size": 80,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/loadpng.c",
+      "report_source_id": "icy-census-21",
+      "target": "game-loadpng",
+      "name": "load_png_pf",
+      "va": 4220808,
+      "original_size": 316,
+      "candidate_size": 316,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/loadpng.c",
+      "report_source_id": "icy-census-21",
+      "target": "game-loadpng",
+      "name": "read_data",
+      "va": 4221124,
+      "original_size": 76,
+      "candidate_size": 76,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/loadpng.c",
+      "report_source_id": "icy-census-21",
+      "target": "game-loadpng",
+      "name": "load_png",
+      "va": 4221200,
+      "original_size": 79,
+      "candidate_size": 79,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/savepng.c",
+      "report_source_id": "icy-census-22",
+      "target": "game-savepng",
+      "name": "flush_data",
+      "va": 4319400,
+      "original_size": 5,
+      "candidate_size": 5,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/savepng.c",
+      "report_source_id": "icy-census-22",
+      "target": "game-savepng",
+      "name": "really_save_png",
+      "va": 4319408,
+      "original_size": 1870,
+      "candidate_size": 1870,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/savepng.c",
+      "report_source_id": "icy-census-22",
+      "target": "game-savepng",
+      "name": "save_png",
+      "va": 4321280,
+      "original_size": 115,
+      "candidate_size": 115,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/savepng.c",
+      "report_source_id": "icy-census-22",
+      "target": "game-savepng",
+      "name": "write_data",
+      "va": 4321396,
+      "original_size": 76,
+      "candidate_size": 76,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/regpng.c",
+      "report_source_id": "icy-census-23",
+      "target": "game-regpng",
+      "name": "register_png_datafile_object",
+      "va": 4307136,
+      "original_size": 35,
+      "candidate_size": 35,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/regpng.c",
+      "report_source_id": "icy-census-23",
+      "target": "game-regpng",
+      "name": "destroy_datafile_png",
+      "va": 4307172,
+      "original_size": 22,
+      "candidate_size": 22,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/regpng.c",
+      "report_source_id": "icy-census-23",
+      "target": "game-regpng",
+      "name": "load_datafile_png",
+      "va": 4307196,
+      "original_size": 109,
+      "candidate_size": 109,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/regpng.c",
+      "report_source_id": "icy-census-23",
+      "target": "game-regpng",
+      "name": "register_png_file_type",
+      "va": 4307308,
+      "original_size": 36,
+      "candidate_size": 36,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/regpng.c",
+      "report_source_id": "icy-census-23",
+      "target": "game-regpng",
+      "name": "loadpng_init",
+      "va": 4307344,
+      "original_size": 27,
+      "candidate_size": 27,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/strptime.c",
+      "report_source_id": "icy-census-24",
+      "target": "game-strptime",
+      "name": "first_day",
+      "va": 4322756,
+      "original_size": 20,
+      "candidate_size": 20,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/strptime.c",
+      "report_source_id": "icy-census-24",
+      "target": "game-strptime",
+      "name": "match_string",
+      "va": 4322776,
+      "original_size": 103,
+      "candidate_size": 103,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/strptime.c",
+      "report_source_id": "icy-census-24",
+      "target": "game-strptime",
+      "name": "_strptime",
+      "va": 4322880,
+      "original_size": 2028,
+      "candidate_size": 2005,
+      "status": "DIFFER"
+    },
+    {
+      "source": "src/strptime.c",
+      "report_source_id": "icy-census-24",
+      "target": "game-strptime",
+      "name": "strptime",
+      "va": 4324908,
+      "original_size": 35,
+      "candidate_size": 35,
+      "status": "FUNCTION_MATCH"
+    },
+    {
+      "source": "src/timecompat.c",
+      "report_source_id": "icy-census-25",
+      "target": "game-timecompat",
+      "name": "timegm",
+      "va": 4324944,
+      "original_size": 84,
+      "candidate_size": 84,
+      "status": "FUNCTION_MATCH"
+    }
+  ],
+  "source_manifest": [
+    {
+      "id": "icy-census-00",
+      "repository": "icytower_recon",
+      "path": "src/recovery.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "2f0710c753742dda1de1bb624cce6fa378ba14c6a205adb9e3552c67bbd8f360"
+    },
+    {
+      "id": "icy-census-01",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-beta.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "1a8f1823f4519229d1daebc576b2ba06cdbaf9d48b801fd55e570cdeb2cd78c7"
+    },
+    {
+      "id": "icy-census-02",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-control.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "9f9bf95167eca7d4be594257cabaa0bf97bade0f698f6a84b74b2ba60a0f96c4"
+    },
+    {
+      "id": "icy-census-03",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-csv.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "e66b34cf1551a2898b8552e863286e330a0fe0e561fec4403e4190a8a5dcf661"
+    },
+    {
+      "id": "icy-census-04",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-custom.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "f1fcd6e5fe95117b0b50de11f6b31da20c6acde537ba27f7eb9846866464aed2"
+    },
+    {
+      "id": "icy-census-05",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-directories.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "5094f9b1add0cea76514b93697d5c25fa026f5b92b54ae96f044dd90278e226d"
+    },
+    {
+      "id": "icy-census-06",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-fld-adspot.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "eb19cd192bcaaaec9b3f3e4c7288a669a20154dfe732752f9c34549af1298434"
+    },
+    {
+      "id": "icy-census-07",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-game-data.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "6fefc36a07be91fe5aa28c87d6c3458ab4e2d0552dcacc5995bfd51820856958"
+    },
+    {
+      "id": "icy-census-08",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-hisc.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "5bcfce493a95ebd0f88a8ef54414ed8b567672e1a045b156276e3d3238018025"
+    },
+    {
+      "id": "icy-census-09",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-main.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "e3dec7aab04f18ab06398870a92d063d0cbf0458fc3c6313ff98f50c1cce60fe"
+    },
+    {
+      "id": "icy-census-10",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-map.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "6771006329e09ed46c6a52da8010ae114a9796344756b02dc6836c0c931874c6"
+    },
+    {
+      "id": "icy-census-11",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-menu.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "1cf6d2e3fe92bac918505c252007cc057b822e2aa95f5fac3dccdf43b8a6917c"
+    },
+    {
+      "id": "icy-census-12",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-options.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "a6ae1f34805848edb6b50920193cce6f7cad7e57699f487c73ac85245099e3d1"
+    },
+    {
+      "id": "icy-census-13",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-particle.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "fef17f27ae5e74d746de527c674628a6b3176a289617941a4b3512d2b6bcc31a"
+    },
+    {
+      "id": "icy-census-14",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-replay.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "ed96a6c2795288cddeb647172ea2eaf9ad58eda7d3cc30121f264d360c2c1d09"
+    },
+    {
+      "id": "icy-census-15",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-profile.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "2cfe97b6b974a77b9fa1b4d40e2107483fba9c2ade02922158cd88d81eba3fd8"
+    },
+    {
+      "id": "icy-census-16",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-scroller.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "92e76699b4cedfe0673ef04002663338deca045323880861f510cd152f017b55"
+    },
+    {
+      "id": "icy-census-17",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-stars.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "cd576af45781d8fdde761694714b56c72bdd8f582febac3c93e6cdc130ae33f2"
+    },
+    {
+      "id": "icy-census-18",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-timer.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "d948fdef390166090637860258463eb7417464c0d0062a12ec3571b4fff53afa"
+    },
+    {
+      "id": "icy-census-19",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-player.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "b3cc1e6488fefc3f39f6ddfb743ff6956c40a3c81b31ed36842e165ed0e091a4"
+    },
+    {
+      "id": "icy-census-20",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-httpget.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "5c0450ca54d1491c5cfdb08d90c56639e5c2aee00730bc9ac1a2379ce2f1adda"
+    },
+    {
+      "id": "icy-census-21",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-loadpng.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "476335085ab70cd5df6b030b9c284256ba321f1f128d4b316af9962f94bb8361"
+    },
+    {
+      "id": "icy-census-22",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-savepng.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "f1f31c36e2c1eb052fe0635dff0b7b89b5a4872b7ad638cf10ac8017923fbe24"
+    },
+    {
+      "id": "icy-census-23",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-regpng.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "b07eaeae709cabc114b6ff1d070ea5e89f5854d04a6970ac1591f391bab98d53"
+    },
+    {
+      "id": "icy-census-24",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-strptime.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "45a04dd25d50eab6f23281cd967c84ce9455a33f356e417d13952bc4b9299d0c"
+    },
+    {
+      "id": "icy-census-25",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-timecompat.json",
+      "content_kind": "working_tree",
+      "ref": "10d4c4c093942b589911191977fca34b095946ff",
+      "sha256": "1b0471fdee2e1bf34b54e2ac1d59f2637e5413f1952c48006340dac950a1389b"
+    }
+  ]
+}

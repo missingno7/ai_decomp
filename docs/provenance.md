@@ -75,3 +75,11 @@ New local evidence used in the ecosystem comparison has its own manifest in
 earlier dossier hashes or receipts. A worktree hash identifies but does not
 archive content. Use the report date, context and proof scope when comparing
 claims from different snapshots.
+
+
+The later adversarial pass has a separate `catalog/adversarial/index.json` and
+`research/adversarial/` records. Sanitized function/queue rows preserve the exact
+reported populations without copying source or oracle bytes. Derived region
+observations are marked as curated, and missing instruction/liveness mappings
+stay unknown. Historical replay proposals pin actual parent commits and available
+tools; they are not compiler reproductions. Old catalog hashes are not refreshed.

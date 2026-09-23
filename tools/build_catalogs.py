@@ -170,6 +170,8 @@ def main():
         lines = [f'# {title}', '', 'Generated from the authored research dossiers. Record IDs are stable within this initial catalog.',
                  'Sources resolve through [the provenance catalog](../catalog/sources.json); refs and content hashes are explicit.',
                  'Read the linked project dossier for the discovery context and limitations.', '']
+        if category in ('mechanisms', 'negative-evidence'):
+            lines.extend(['The [later adversarial review](../research/adversarial-synthesis-20260923.md) adds context-qualified blocker, convergence and region evidence without replacing these historical entries.', ''])
         for row in catalogs[category]:
             title = row.get('name',row.get('claim',row.get('statement',row.get('purpose',row['id']))))
             lines.extend([f'## {row["id"]}', '', f'**{row["epistemic_class"]} — {row["project"]}.** {title}', '',

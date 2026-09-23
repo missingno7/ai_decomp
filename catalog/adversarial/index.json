@@ -1,0 +1,118 @@
+{
+  "format": "ai-decomp-adversarial-study-index-v1",
+  "checked_date": "2026-09-23",
+  "authority": "adversarial_evidence_review_not_new_reconstruction_proof",
+  "records": [
+    {
+      "id": "empires-convergence",
+      "path": "research/adversarial/empires-convergence.json",
+      "source_field": "source_manifest"
+    },
+    {
+      "id": "historical-replay",
+      "path": "research/adversarial/historical-replay.json",
+      "source_field": "source_manifest"
+    },
+    {
+      "id": "icy-function-census",
+      "path": "research/adversarial/icy-function-census.json",
+      "source_field": "source_manifest"
+    },
+    {
+      "id": "icy-regions",
+      "path": "research/adversarial/icy-regions.json",
+      "source_field": "source_manifest"
+    },
+    {
+      "id": "region-inventory",
+      "path": "research/adversarial/region-inventory.json",
+      "source_field": "source_manifest"
+    },
+    {
+      "id": "region-observations",
+      "path": "research/adversarial/region-observations.json",
+      "source_field": "source_manifest"
+    },
+    {
+      "id": "simant",
+      "path": "research/adversarial/simant.json",
+      "source_field": "source_manifest"
+    },
+    {
+      "id": "stunts",
+      "path": "research/adversarial/stunts.json",
+      "source_field": "source_manifest"
+    }
+  ],
+  "artifacts": [
+    "research/adversarial-synthesis-20260923.md",
+    "knowledge/recovery-levels.md",
+    "knowledge/large-function-regions.md",
+    "docs/historical-replay.md",
+    "tools/region_inventory.py",
+    "tools/check_adversarial.py",
+    "tests/test_region_inventory.py",
+    "research/adversarial/empires-convergence.md",
+    "research/adversarial/icy-regions.md",
+    "research/adversarial/simant.md",
+    "research/adversarial/stunts.md",
+    "research/adversarial/validation.md",
+    "research/adversarial/validation.json"
+  ],
+  "hypothesis_groups": [
+    {
+      "id": "A",
+      "retained_class": "GENERIC METHOD",
+      "narrow_conclusion": "Scoped experimental procedure survives; universal solver and causal classifier do not.",
+      "full_analysis": "research/adversarial-synthesis-20260923.md"
+    },
+    {
+      "id": "B",
+      "retained_class": "PROJECT FACT",
+      "narrow_conclusion": "Empires artifact equality precedes source/topology closure; Icy current function-byte population is a selected hard tail.",
+      "full_analysis": "research/adversarial-synthesis-20260923.md"
+    },
+    {
+      "id": "C",
+      "retained_class": "WORKING HYPOTHESIS",
+      "narrow_conclusion": "Stage and seed quality plausibly explain some apparent model difference; fraction and ranking are unmeasured.",
+      "full_analysis": "research/adversarial-synthesis-20260923.md"
+    },
+    {
+      "id": "D",
+      "retained_class": "WORKING HYPOTHESIS",
+      "narrow_conclusion": "Regions are useful research scopes; independent task composition is not demonstrated.",
+      "full_analysis": "research/adversarial-synthesis-20260923.md"
+    },
+    {
+      "id": "E",
+      "retained_class": "GENERIC METHOD",
+      "narrow_conclusion": "Separate edit, compile, measurement, protected and acceptance scopes; use evidence-linked dependencies rather than a forced tree.",
+      "full_analysis": "research/adversarial-synthesis-20260923.md"
+    },
+    {
+      "id": "F",
+      "retained_class": "PROJECT FACT",
+      "narrow_conclusion": "Stunts already implements several transferred diagnostics; native evidence and binder/contribution gaps remain.",
+      "full_analysis": "research/adversarial-synthesis-20260923.md"
+    },
+    {
+      "id": "G",
+      "retained_class": "GENERIC METHOD",
+      "narrow_conclusion": "Use empirical response maps; reject a smooth or monotonic gradient.",
+      "full_analysis": "research/adversarial-synthesis-20260923.md"
+    },
+    {
+      "id": "H",
+      "retained_class": "WORKING HYPOTHESIS",
+      "narrow_conclusion": "A small control plane may reduce duplicated reasoning; native proof and execution semantics remain adapter-owned.",
+      "full_analysis": "research/adversarial-synthesis-20260923.md"
+    }
+  ],
+  "boundaries": [
+    "No sibling mutation, compiler/model trial or production promotion.",
+    "Old local/ecosystem/fleet snapshots retained.",
+    "New sanitized populations and region observations have explicit scopes and independent source manifests.",
+    "Genericity of metadata alone does not establish a useful common solver or controller."
+  ]
+}

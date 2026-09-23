@@ -76,3 +76,23 @@ inventing causal clusters or independence. Send stronger-model supervisors a
 few representative mechanism packets; return validated insights as versioned
 worker capabilities. Measure total new strict yield and reusable information
 per cost before scaling the fleet.
+
+## Scope and diagnosis after the adversarial review
+
+Use the [five diagnostic claim kinds](recovery-levels.md) in compact handoffs:
+residue, supported cause, rejected cause, unresolved dimension and capability
+block. A recurring label alone is insufficient for a systemic escalation.
+Include one controlled separating observation and the scope of its applicability.
+Refresh evidence/profile identity before declaring an old candidate exhausted.
+
+Region tasks are optional research scopes, not independently promotable fragments.
+The [Icy region audit](large-function-regions.md) found semantic dependencies,
+compiler peer effects and stale metadata. Share a frozen whole-TU baseline and
+protected peer set; do not assign overlapping mutations or assume independently
+produced source edits compose. Whole-unit integration remains project-native.
+
+Compare stage, seed quality and available capabilities before interpreting agent
+throughput. The [historical replay proposals](../docs/historical-replay.md) offer
+a controlled test; history alone cannot rank models. Transfer validated mechanisms
+as native diagnostics or tools, checking first whether the receiving project
+already has them, as current Stunts does for census/TU/extent analysis.

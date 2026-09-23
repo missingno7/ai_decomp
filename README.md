@@ -34,6 +34,16 @@ the proposed model hierarchy and large-fleet economics as hypotheses. See
 The [fleet validation record](research/fleet/validation.md) retains source drift
 and the limits of the metadata-only prototype.
 
+The [adversarial A–H review](research/adversarial-synthesis-20260923.md) tests
+genericity, blocker causes, convergence, project-stage bias and recovery regions.
+It includes a complete Icy function-byte census, historical Empires milestones,
+fresh Stunts/SimAnt tooling evidence, [frozen replay proposals](docs/historical-replay.md)
+and a [read-only region inventory](knowledge/large-function-regions.md).
+The review rejects several attractive generalizations and keeps independent
+region grinding and broad fleet economics as experiments.
+The [validation record](research/adversarial/validation.md) distinguishes passing
+metadata checks from drift in actively changing source snapshots.
+
 Every important claim retains one of four meanings:
 
 | Label | Meaning |

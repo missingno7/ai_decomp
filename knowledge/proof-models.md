@@ -37,3 +37,16 @@ For each strict result record the verifier, input identities, scope, receipt,
 freshness/cache policy and remaining obligations. Keep diagnostic and promotion
 states distinct. No shared tool in this workspace is authorized to translate
 another project's status into acceptance.
+
+
+The [historical convergence audit](../research/adversarial/empires-convergence.md)
+adds an important distinction: an exact construction with declared structural
+adapters is a different claim from natural source/topology closure. Preserve route,
+raw/synthetic ownership, adapter inventory and intentional ASM/runtime categories.
+A later source-quality claim does not retroactively change an earlier exact receipt.
+
+A **recovery region** is a research coordinate set, potentially noncontiguous.
+REGION_STABLE_EXACT requires a named instruction/fixup set and controls; it is not
+FUNCTION_MATCH and does not compose into one without the native whole-scope proof.
+Source-span bounds, byte budgets and DWARF names establish neither code equality
+nor liveness. See [region obligations](large-function-regions.md).

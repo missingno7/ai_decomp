@@ -4,6 +4,8 @@ Generated from the authored research dossiers. Record IDs are stable within this
 Sources resolve through [the provenance catalog](../catalog/sources.json); refs and content hashes are explicit.
 Read the linked project dossier for the discovery context and limitations.
 
+The [later adversarial review](../research/adversarial-synthesis-20260923.md) adds context-qualified blocker, convergence and region evidence without replacing these historical entries.
+
 ## empires-route-context
 
 **PROJECT FACT — empires.** Inline ASM selects a whole-TU assembler route

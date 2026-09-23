@@ -66,3 +66,19 @@ code/different-fixup and same-output/different-context controls. Then measure
 whether the handoff reduces repeated hypotheses and supervisor cost. Do this
 before extracting a runner or expanding the schema. Any adapter writes should
 be reviewed by the owning project; this pass does not change those repos.
+
+
+## Read-only region inventory
+
+[region_inventory.py](../tools/region_inventory.py) reads Icy's existing region
+sidecars, body hashes/lengths, DWARF function evidence and historical machine
+census. It preserves distinct coordinate systems, checks coverage and source
+bounds, and attaches curated observed influences. The retained
+[result](../research/adversarial/region-inventory.json) identifies stale draw
+spans and leaves instruction mapping/liveness unknown. No sibling script or
+compiler is executed. This adapter demonstrates an evidence-validation use,
+not independent region recovery or measured throughput improvement.
+
+See [region guidance](../knowledge/large-function-regions.md) for the input
+contract, limits and controlled next experiment. Native line_budget and slot
+tracing tools already exist; they are referenced, not reimplemented here.

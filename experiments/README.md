@@ -57,3 +57,26 @@ replay does not imply those attempts have been losslessly imported into this
 matrix. `promotion_candidate` requires a strict pass; only the fleet record
 additionally distinguishes a reported native promotion receipt from
 a candidate. Neither offline validator authenticates that receipt itself.
+
+
+## Scope and diagnosis extensions
+
+The [adversarial review](../research/adversarial-synthesis-20260923.md) narrows
+how records should be interpreted. Within `extensions`, an optional
+`research_scope` can hold `edit`, `compile`, `measurement`, `protected` and
+`acceptance` references, with context-qualified dependency/evidence edges.
+A source region is one possible edit scope; compilation usually stays larger.
+Unknown edges and live interfaces must remain null or explicitly unknown.
+
+Within `facts_learned` or a project extension, distinguish `observed_residue`,
+`supported_mechanism`, `rejected_mechanism`, `unresolved_dimension` and
+`workflow_capability_block`, each with evidence and applicability. Multiple kinds
+may coexist. These are recommended extension meanings, not a new mandatory
+classifier or a migration of old receipts. `REGISTER_ALLOCATION` alone conveys
+an observed/suspected dimension, not a causal finding.
+
+Use candidate-parent and candidate-oracle deltas as an empirical response map.
+Cross-context output equality can be a valuable observation while still being
+ineligible for context-equivalent cache/group reuse. Retain that distinction.
+Region states, byte budgets and repeated blocker signatures grant no new strict
+acceptance. See [scope guidance](../knowledge/recovery-levels.md).
