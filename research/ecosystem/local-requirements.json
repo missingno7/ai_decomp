@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-09-23",
+  "purpose": "Read-only local evidence extraction for ecosystem comparison; no sibling build, probe, refresh, or source mutation was run.",
+  "requirements": [
+    {
+      "project": "SimAnt",
+      "epistemic_class": "PROJECT FACT",
+      "context": "Win16 x86; MSC 7.00; OMF/NE strict member comparison; assigned /AL /G2 /Gs /Oeglw component profile.",
+      "observations": [
+        "_PlacePillTile: four isolated batches, 24 variants, three effective object hashes, zero exact candidates; all preserve 40-byte extent and two semantic bindings.",
+        "_MagnifyMenu: expression variants collapsed; a final local declaration-order change passed fresh exact admission after prior 156 opcode/46-fixup agreement with four literal differences."
+      ],
+      "shared_requirement": "Store profile-bound effective object identity, source axis, member delta and strict bytes/fixups verdict; stop a spelling sweep after output collapse."
+    },
+    {
+      "project": "Stunts",
+      "epistemic_class": "PROJECT FACT",
+      "context": "DOS x86 medium-model MSC; OMF/binding plus hybrid whole-image acceptance.",
+      "observations": [
+        "Matched pilot: 44 hypotheses, 40 identity-bearing results, 24 case/model-deduplicated effective identities, 10 within-run repeat occurrences; no Astra-only solve and zero new production C.",
+        "50 compiler processes took about 25.1 observed trial seconds versus about 2,342 seconds across eight model launches; observational cohort only.",
+        "Controlled unknown_libname_1 pair: sequential 4 candidates/4 outputs; bounded batch 3/2; neither strict-matched. Batch reduced requests 23%, wall 9% and direct model-equivalent cost 15%, while yielding fewer identities."
+      ],
+      "shared_requirement": "Use small preregistered independent batches with effective-output dedup; retain adaptive steps when the response determines the next hypothesis; measure supervisor cost separately."
+    },
+    {
+      "project": "Icy Tower",
+      "epistemic_class": "PROJECT FACT",
+      "context": "i386 TDM GCC 4.4.1; COFF/PE and DWARF evidence; strict function/object/CU/layout levels.",
+      "observations": [
+        "DWARF-guided localFilename scope repair preserved protected evidence and resolved four references; an analogous face scope move changed BSS/text and was rejected.",
+        "Unchanged targets HTTPFetchInternal and draw_scroller changed under bounded predecessor changes; draw_scroller source order restored offsets/text contribution without clearing six target differences.",
+        "play's duplicated source arm survives GIMPLE and RTL 179r.dse2 but converges at 181r.csa; the function remains DIFFER."
+      ],
+      "shared_requirement": "Carry lexical/type, peer-preservation, predecessor/TU and compiler-pass escalation states; do not treat source-level convergence as search exhaustion."
+    },
+    {
+      "project": "Empires",
+      "epistemic_class": "PROJECT FACT",
+      "context": "Frozen 8086 DOS Turbo C 2.0/TASM 1.0/TLINK 2.0 construction at 873d1df0f505601d760c6880cdea0c6ae3d81405.",
+      "observations": [
+        "Frozen acceptance records full executable identity, 106 ordered relocations, one linker invocation, zero raw fallback/unresolved symbols and 37,250 partitioned BSS bytes.",
+        "MUSIC's native pure-Turbo-C unit restored descending historical FIXUPP/relocation topology where a TASM route was wrong despite body evidence.",
+        "Inline asm causes whole-file -B routing; BOOTSEED asm sti explains GAME.C neighbor behavior, while -B intolerance/data continuity constrain TU membership."
+      ],
+      "shared_requirement": "Retain relocation order, compiler route, TU membership and link topology as acceptance dimensions independent of function-code equality."
+    }
+  ],
+  "source_manifest": [
+    {"repository": "simantw_recon", "base_commit": "cdf6af62cc67608f02c574e805d79cb413e330ef", "path": "evidence/experiments/place-pill-registers/README.md", "identity_kind": "inspected_worktree_sha256", "sha256": "cfd6c116cee20ffdde2a1643f93aa1cf9ac336aeb8d5a8668aab33d0afdd6d7a"},
+    {"repository": "simantw_recon", "base_commit": "cdf6af62cc67608f02c574e805d79cb413e330ef", "path": "docs/grinder-lessons.md", "identity_kind": "inspected_worktree_sha256", "sha256": "70f01eeb43c3b9057d78ec0ba4d179c6ab2601488241fcc5945305ece833e81d", "working_tree_status": "modified"},
+    {"repository": "stunts_recon", "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d", "path": "recovery/evaluation/model-routing/batching-retrospective.md", "identity_kind": "inspected_worktree_sha256", "sha256": "2439f7bc3929f5017058973cca8b95e235c22bc9ef50cfd3390463139f4f91ff"},
+    {"repository": "stunts_recon", "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d", "path": "recovery/evaluation/model-routing/decision.md", "identity_kind": "inspected_worktree_sha256", "sha256": "faa65f54889ae2ac1dd7fc40c9d05ab05d103f2adb59693eb3da334ba33e92be"},
+    {"repository": "stunts_recon", "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d", "path": "recovery/evaluation/model-routing/batching-decision.md", "identity_kind": "inspected_worktree_sha256", "sha256": "25fdeb09ffffa2dc7ef4c8093440f5693ebfb08ae5a7eb104c7004b3ba1ac7b1"},
+    {"repository": "icytower_recon", "base_commit": "1c46be4d80e3d5a66cb4d01bc43175fb3485e620", "path": "docs/compiler-context-evidence.md", "identity_kind": "inspected_worktree_sha256", "sha256": "0df1ce5b22a895dfd81c48cf0a4820cb4ba73d5989b86f381712c31467ca919b"},
+    {"repository": "icytower_recon", "base_commit": "1c46be4d80e3d5a66cb4d01bc43175fb3485e620", "path": "docs/storage-scope-evidence.md", "identity_kind": "inspected_worktree_sha256", "sha256": "934b284ca674644231e20d01c9620e660c1e8721465d9500d15a834089cbe18b"},
+    {"repository": "icytower_recon", "base_commit": "1c46be4d80e3d5a66cb4d01bc43175fb3485e620", "path": "docs/attempts/research-supervisor-play/play-summary-rtl-common-tail-20260923.md", "identity_kind": "inspected_worktree_sha256", "sha256": "c92bf81c8e25bd5d4b592f140b0af9216c4ac66d35e508b13d1ba24531a2d485"},
+    {"repository": "icytower_recon", "base_commit": "1c46be4d80e3d5a66cb4d01bc43175fb3485e620", "path": "docs/proof-levels.md", "identity_kind": "inspected_worktree_sha256", "sha256": "22d8fa50257bfd72dde96f6585ed6f9bbe3cc7d7a7b8635fc347744d0aa79284"},
+    {"repository": "empires_reconstruction", "commit": "873d1df0f505601d760c6880cdea0c6ae3d81405", "path": "docs/current/status.json", "identity_kind": "git_blob", "git_blob": "c0e451372d113190a09788ed92063bbad20d354a"},
+    {"repository": "empires_reconstruction", "commit": "873d1df0f505601d760c6880cdea0c6ae3d81405", "path": "docs/current/tu-structure.md", "identity_kind": "git_blob", "git_blob": "53f939c047597ea7de8d69e552cd09953d938768"},
+    {"repository": "empires_reconstruction", "commit": "873d1df0f505601d760c6880cdea0c6ae3d81405", "path": "docs/current/asm-provenance.json", "identity_kind": "git_blob", "git_blob": "931ab978e33a44464935ac559f8b41dd7fb32049"}
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-09-23",
+  "tools": [
+    {
+      "id": "mizuchi",
+      "name": "Mizuchi",
+      "repository": "https://github.com/macabeus/mizuchi",
+      "commit": "25eaef4214574cc20f376878dbc1b8099e97164e",
+      "commit_date": "2026-08-17T22:26:21+01:00",
+      "license": "MIT (upstream LICENSE, Copyright 2025 macabeus)",
+      "capabilities": {
+        "purpose": "Function-at-a-time matching-decompilation pipeline: optional m2c seed, project-script compilation, objdiff instruction comparison, Claude retry loop, and optional decomp-permuter.",
+        "target_architectures": {
+          "configured_platforms": [
+            "gba",
+            "nds",
+            "n3ds",
+            "n64",
+            "gc",
+            "wii",
+            "ps1",
+            "ps2",
+            "psp",
+            "win32",
+            "switch",
+            "android_x86",
+            "irix",
+            "saturn",
+            "dreamcast"
+          ],
+          "m2c_adapter": [
+            "ARM",
+            "MIPS/MIPSel",
+            "PowerPC"
+          ],
+          "permuter_adapter": [
+            "ARM",
+            "MIPS",
+            "PowerPC",
+            "SuperH",
+            "generic system-tool fallback"
+          ],
+          "x86_historical_compiler_support": "No shipped or tested x86/MSC/Turbo C recipe; an arbitrary Bash compiler template could theoretically invoke an adapter."
+        },
+        "target_languages": [
+          "C candidate output",
+          "GAS input assembly"
+        ],
+        "object_binary_formats": "Mizuchi supplies paths to objdiff-wasm and GNU map/nm tooling; this inspected pipeline does not itself state or prove OMF, NE, MZ, COFF/PE or linker-format coverage.",
+        "known_compiler": "Yes, operationally: a project-provided compilerScript is the forward compiler; version, flags and runner are not modeled as first-class proof fields.",
+        "compiler_specific_behavior": "m2c/permuter target mappings and permuter compiler-type weights are encoded; no historical x86 compiler model is encoded.",
+        "outputs_compilable_source": "Yes, C code extracted from m2c, Claude, or permuter output and compiled as a temporary object.",
+        "recompilation_feedback_loop": "Yes. Claude receives compiler errors or full formatted objdiff result and can call a compile-and-view-assembly MCP tool during an attempt.",
+        "automatic_retries": "Yes; sequential Claude conversation retries up to maxRetries (example 25), with session resume, timeout policies and a generic stall prompt.",
+        "candidate_comparison_score": "Instruction-row differenceCount plus matchingCount; zero instruction differences is pipeline success. Permuter has its own score.",
+        "structured_feedback": "Partly: instruction strings and five mismatch categories (insertion/deletion/replacement/opcode/argument), compiler errors and scalar counts. No typed parent/candidate/oracle relation across proof dimensions.",
+        "relocations_fixups": "Not an explicit Mizuchi acceptance dimension. The example passes objdiff functionRelocDiffs: none; no OMF/NE fixup or relocation-order proof model is present.",
+        "data_layout": "No candidate data/static-layout comparison or ownership proof in the function pipeline.",
+        "translation_unit_context": "User getContextScript generates a header-like context and compiler prepends it to one candidate function. There is no whole-TU reconstruction/compilation state.",
+        "cross_function_context": "Atlas prompt builder can provide declarations, types, callers, similar matched examples and map-file lookup; this is prompt context, not compile-time predecessor/TU evidence.",
+        "batch_candidate_exploration": "No AI beam/batch. One background permuter task may run for each non-worse unique submitted C string while the sequential Claude loop continues.",
+        "effective_output_deduplication": "No. Background permuter deduplicates exact submitted C strings; Claude cache keys prompts/follow-ups. Neither clusters equivalent compiler outputs.",
+        "ai_llms": "Claude Agent SDK only in current built-in AI runner; default claude-sonnet-4-6 and configurable model, soft-timeout model/effort override.",
+        "automation_human_loop": "Normal pipeline is automated and Claude is restricted to Read/Glob/Grep plus one MCP compile/diff tool. Prompts/config/context and optional post-match integration are human/project supplied.",
+        "history_provenance": "JSON/HTML reports retain attempts, plugin results, timing and chat sections; claude-cache.json stores replayable conversation trees. It has no persistent compiler-mechanism/negative-evidence database.",
+        "independent_acceptance": "No built-in strict independent proof. Optional integrator can run a project verification script only after instruction-level success."
+      },
+      "findings": [
+        {
+          "claim": "The live code runs setup context, optional m2c/compiler/objdiff and permuter programmatic stages, then sequential Claude/compiler/objdiff retries; a background permuter can terminate foreground work only with a perfect match.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [
+            {
+              "url": "https://github.com/macabeus/mizuchi/blob/25eaef4214574cc20f376878dbc1b8099e97164e/src/plugin-manager.ts#L167-L408",
+              "path": "src/plugin-manager.ts",
+              "commit": "25eaef4214574cc20f376878dbc1b8099e97164e",
+              "anchor": "L167-L408"
+            },
+            {
+              "url": "https://github.com/macabeus/mizuchi/blob/25eaef4214574cc20f376878dbc1b8099e97164e/src/commands/run.tsx#L802-L847",
+              "path": "src/commands/run.tsx",
+              "commit": "25eaef4214574cc20f376878dbc1b8099e97164e",
+              "anchor": "L802-L847"
+            },
+            {
+              "url": "https://github.com/macabeus/mizuchi/blob/25eaef4214574cc20f376878dbc1b8099e97164e/src/plugins/decomp-permuter/decomp-permuter-plugin.ts#L93-L168",
+              "path": "src/plugins/decomp-permuter/decomp-permuter-plugin.ts",
+              "commit": "25eaef4214574cc20f376878dbc1b8099e97164e",
+              "anchor": "L93-L168"
+            }
+          ]
+        },
+        {
+          "claim": "Pipeline success is defined by zero formatted instruction-row differences for one named function symbol, not by an explicit whole-object/link/data/fixup proof contract.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [
+            {
+              "url": "https://github.com/macabeus/mizuchi/blob/25eaef4214574cc20f376878dbc1b8099e97164e/src/plugins/objdiff/objdiff-plugin.ts#L57-L183",
+              "path": "src/plugins/objdiff/objdiff-plugin.ts",
+              "commit": "25eaef4214574cc20f376878dbc1b8099e97164e",
+              "anchor": "L57-L183"
+            },
+            {
+              "url": "https://github.com/macabeus/mizuchi/blob/25eaef4214574cc20f376878dbc1b8099e97164e/src/shared/objdiff.ts#L104-L200",
+              "path": "src/shared/objdiff.ts",
+              "commit": "25eaef4214574cc20f376878dbc1b8099e97164e",
+              "anchor": "L104-L200"
+            },
+            {
+              "url": "https://github.com/macabeus/mizuchi/blob/25eaef4214574cc20f376878dbc1b8099e97164e/mizuchi.example.yaml",
+              "path": "mizuchi.example.yaml",
+              "commit": "25eaef4214574cc20f376878dbc1b8099e97164e",
+              "anchor": "plugins.objdiff.diffSettings.functionRelocDiffs"
+            }
+          ]
+        },
+        {
+          "claim": "Claude feedback is raw recovered assembly plus scalar/count-labelled instruction differences; retries remember a best count but do not use output clustering, a beam, typed mismatch mechanisms, or analysis-level escalation.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [
+            {
+              "url": "https://github.com/macabeus/mizuchi/blob/25eaef4214574cc20f376878dbc1b8099e97164e/src/plugins/claude-runner/claude-runner-plugin.ts#L167-L286",
+              "path": "src/plugins/claude-runner/claude-runner-plugin.ts",
+              "commit": "25eaef4214574cc20f376878dbc1b8099e97164e",
+              "anchor": "L167-L286"
+            },
+            {
+              "url": "https://github.com/macabeus/mizuchi/blob/25eaef4214574cc20f376878dbc1b8099e97164e/src/plugins/claude-runner/claude-runner-plugin.ts#L680-L809",
+              "path": "src/plugins/claude-runner/claude-runner-plugin.ts",
+              "commit": "25eaef4214574cc20f376878dbc1b8099e97164e",
+              "anchor": "L680-L809"
+            },
+            {
+              "url": "https://github.com/macabeus/mizuchi/blob/25eaef4214574cc20f376878dbc1b8099e97164e/src/plugins/claude-runner/claude-runner-plugin.ts#L1751-L1855",
+              "path": "src/plugins/claude-runner/claude-runner-plugin.ts",
+              "commit": "25eaef4214574cc20f376878dbc1b8099e97164e",
+              "anchor": "L1751-L1855"
+            }
+          ]
+        },
+        {
+          "claim": "m2c is used as one initial candidate and the built-in adapter maps only ARM/MIPS/PowerPC families; no x86 historical-compiler implementation is present.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [
+            {
+              "url": "https://github.com/macabeus/mizuchi/blob/25eaef4214574cc20f376878dbc1b8099e97164e/src/plugins/m2c/m2c-plugin.ts#L17-L129",
+              "path": "src/plugins/m2c/m2c-plugin.ts",
+              "commit": "25eaef4214574cc20f376878dbc1b8099e97164e",
+              "anchor": "L17-L129"
+            },
+            {
+              "url": "https://github.com/macabeus/mizuchi/blob/25eaef4214574cc20f376878dbc1b8099e97164e/src/shared/m2c.ts#L14-L111",
+              "path": "src/shared/m2c.ts",
+              "commit": "25eaef4214574cc20f376878dbc1b8099e97164e",
+              "anchor": "L14-L111"
+            }
+          ]
+        },
+        {
+          "claim": "The author reports 74% average matching across three runs each of 30 selected Sonic Advance 3 and 30 Animal Forest functions, with Claude Sonnet 4.6 and 12 attempts; selection and context restrictions limit generalization.",
+          "epistemic_class": "AUTHOR CLAIM",
+          "sources": [
+            {
+              "url": "https://gambiconf.substack.com/p/can-llms-really-do-matching-decompilation",
+              "path": "author benchmark post",
+              "commit": "published 2026-03-10",
+              "anchor": "L32; L93-L150; L169-L220"
+            }
+          ]
+        },
+        {
+          "claim": "A compact compiler-response envelope that preserves local strict evidence and effective-output identity would complement Mizuchi's agent loop; replacing local acceptance with Mizuchi would weaken observed Empires/Stunts/SimAnt/Icy Tower proof boundaries.",
+          "epistemic_class": "INFERENCE",
+          "sources": [
+            {
+              "url": "research/ecosystem/mizuchi.md",
+              "path": "research/ecosystem/mizuchi.md",
+              "commit": "workspace working tree",
+              "anchor": "Comparison with local requirements"
+            },
+            {
+              "url": "knowledge/principles.md",
+              "path": "knowledge/principles.md",
+              "commit": "9d4b069e1a5438fcf3525531058a432ef325bfdc",
+              "anchor": "Supported cross-project patterns"
+            }
+          ]
+        }
+      ],
+      "reuse_decision": {
+        "decision": "Learn from and potentially adapt isolated concepts; do not integrate as an acceptance system or add a production dependency now.",
+        "reusable_parts": [
+          "phase orchestration",
+          "replayable agent conversation cache",
+          "constrained compile-and-diff tool",
+          "per-attempt resource provenance",
+          "background mechanical-search cancellation",
+          "attempt reporting"
+        ],
+        "retain_locally": [
+          "historical compiler/context fingerprint",
+          "effective compiler-output clustering",
+          "parent/candidate/oracle typed deltas",
+          "relocation/fixup/data/layout proof",
+          "TU/pass escalation",
+          "independent strict acceptance"
+        ],
+        "license_dependency_note": "Mizuchi is MIT, but direct reuse would also add Node, Anthropic Agent SDK, objdiff-wasm and m2c/decomp-permuter submodule dependency reviews."
+      },
+      "limitations": [
+        "The normal acceptance criterion is instruction-level named-symbol comparison rather than complete artifact proof.",
+        "No demonstrated historical x86 / MSC / Turbo C / OMF / NE adapter or test fixture.",
+        "No effective-output deduplication, multi-hypothesis beam, learned compiler rules, or persistent negative-evidence memory.",
+        "Context is user-provided header text; original translation-unit composition and linker environment are outside the pipeline.",
+        "Function prompts are processed sequentially; only background permuter work overlaps an active target.",
+        "Author documents duplicate Claude source submissions, generic stall handling and discarded partial permuter improvements."
+      ],
+      "inspected_dependency_pins": {
+        "m2c": "a21c1dcd7255b176c032bb932f521846e98d4372",
+        "decomp-permuter": "ec2efeebb33e2b1de81e39fbf7cbe3cd97350472"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "role": "upstream implementation",
+      "url": "https://github.com/macabeus/mizuchi/tree/25eaef4214574cc20f376878dbc1b8099e97164e",
+      "commit": "25eaef4214574cc20f376878dbc1b8099e97164e"
+    },
+    {
+      "role": "author benchmark",
+      "url": "https://gambiconf.substack.com/p/can-llms-really-do-matching-decompilation",
+      "published": "2026-03-10"
+    }
+  ]
+}

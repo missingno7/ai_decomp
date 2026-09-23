@@ -14,6 +14,17 @@ read [experiment design](knowledge/experiment-design.md) and
 Concrete [next-work recommendations](docs/next-work.md) connect the findings
 to the current Stunts, SimAnt and Icy Tower problems.
 
+The [matching-decompilation ecosystem study](knowledge/ecosystem.md) answers
+what already exists, what to reuse and what remains missing. It includes a
+[capability matrix](knowledge/ecosystem-capabilities.md), implementation studies
+of seven core tools, focused research prior art, and a
+[next-prototype specification](docs/compiler-response-prototype.md).
+External implementation facts and author claims stay separate from local
+project evidence. Pinned records live in `research/ecosystem/`, indexed by
+`catalog/ecosystem/index.json`; the original local catalogs remain unchanged.
+See the [ecosystem validation record](docs/ecosystem-validation.md) for checks
+and the limits of the source-only research pass.
+
 Every important claim retains one of four meanings:
 
 | Label | Meaning |

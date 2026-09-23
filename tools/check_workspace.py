@@ -22,12 +22,18 @@ def main():
             if kind in ('mechanisms','trajectories','negative-evidence','tools') and not row.get('sources'):
                 errors.append(f'{row["id"]}: missing sources')
     for path in ROOT.rglob('*.md'):
+        if any(part in {'.git', '.research-cache', '__pycache__'} for part in path.relative_to(ROOT).parts):
+            continue
         for target in re.findall(r'\[[^\]]*\]\(([^)]+)\)',path.read_text(encoding='utf-8-sig')):
             if re.match(r'^[a-zA-Z]+://',target) or target.startswith('#'): continue
             file=target.split('#')[0].strip('<>')
             if file and not (path.parent/file).exists(): errors.append(f'{path.relative_to(ROOT)}: broken link {target}')
     for path in (ROOT/'experiments/examples').glob('*.json'):
         validate(json.loads(path.read_text(encoding='utf-8')))
+    ecosystem_path=ROOT/'catalog/ecosystem/index.json'
+    if ecosystem_path.exists():
+        from check_ecosystem import check
+        errors.extend(check(ROOT))
     print(json.dumps({'catalog_counts':{k:len(v) for k,v in catalogs.items()},'errors':errors},indent=2))
     raise SystemExit(bool(errors))
 

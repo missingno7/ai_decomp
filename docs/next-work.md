@@ -1,5 +1,11 @@
 # Applying the memory to the active projects
 
+The subsequent [ecosystem study](../knowledge/ecosystem.md) supports a narrower
+next step: [replay two archived cohorts through a compact compiler-response
+envelope](compiler-response-prototype.md). Existing external search and diff
+components should be evaluated only after that common evidence contract
+preserves native output groups and acceptance scopes.
+
 These are **GENERIC METHOD** recommendations and **WORKING HYPOTHESES** to test
 in the owning projects. This extraction has not edited or promoted anything
 there. Sources are the named mechanisms/trajectories in the

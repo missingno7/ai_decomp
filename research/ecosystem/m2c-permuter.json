@@ -1,0 +1,287 @@
+{
+  "checked_date": "2026-09-23",
+  "scope": "Read-only upstream implementation study; no upstream code or dependencies copied or executed.",
+  "tools": [
+    {
+      "id": "m2c",
+      "name": "m2c",
+      "repository": "https://github.com/matt-kempster/m2c",
+      "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+      "checked_date": "2026-09-23",
+      "license": "GPL-3.0-only",
+      "capabilities": {
+        "purpose": "Deterministic matching-oriented GNU-as assembly-to-C source draft generator.",
+        "target_architectures": [
+          "MIPS O32",
+          "MIPSEL O32",
+          "MIPSEE eabi64",
+          "PowerPC",
+          "ARM",
+          "GBA ARM",
+          "SH2",
+          "SH4"
+        ],
+        "target_languages": [
+          "C",
+          "partial C++"
+        ],
+        "input_formats": [
+          "GNU as assembly",
+          "optional data/rodata/bss assembly",
+          "preprocessed C context"
+        ],
+        "output_formats": [
+          "C source",
+          "optional CFG DOT/SVG"
+        ],
+        "known_compiler_assumption": "Target selects IDO/GCC/MWCC/SHC defaults and target-specific patterns; does not invoke compiler.",
+        "models_compiler_specific_behavior": "yes, scoped to target architecture/compiler idioms",
+        "outputs_compilable_source": "best effort with valid-syntax; no recompilation guarantee",
+        "recompilation_feedback_loop": "no",
+        "automatic_retries": "no",
+        "candidate_scoring": "none",
+        "relocation_fixup_handling": "symbolic assembly/data expressions only; no object relocation comparison",
+        "translation_unit_context": "parsed declaration context and small cross-function type/output inference, no build/link model",
+        "data_layout_reasoning": "known globals/initializers from input sections; no object/link layout proof",
+        "batch_candidate_exploration": "no",
+        "equivalent_output_deduplication": "no",
+        "ai_llm": "no",
+        "automation_level": "automatic deterministic analysis under supplied context",
+        "historical_x86_feasibility": "architecture concepts reusable; 16/32-bit x86 segmented ABI/parser/pattern/OMF work would be substantial and still lacks oracle search",
+        "reuse_constraints": "GPL-3.0-only; reference/reimplement only pending licensing decision"
+      },
+      "findings": [
+        {
+          "claim": "Pipeline parses assembly/context, builds CFGs, iterates type inference and prints C without a compiler-oracle step.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [
+            {
+              "url": "https://github.com/matt-kempster/m2c/blob/708d2d2cb2698f091a92492b328f73b24209f72d/m2c/main.py#L123-L317",
+              "path": "m2c/main.py",
+              "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+              "anchor": "L123-L317"
+            }
+          ]
+        },
+        {
+          "claim": "CFG/IR architecture is reusable conceptually, whereas decoder, ABI and patterns are target-specific.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [
+            {
+              "url": "https://github.com/matt-kempster/m2c/blob/708d2d2cb2698f091a92492b328f73b24209f72d/m2c/flow_graph.py#L1746-L1783",
+              "path": "m2c/flow_graph.py",
+              "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+              "anchor": "L1746-L1783"
+            }
+          ]
+        },
+        {
+          "claim": "Type inference uses union-find unification across kind, signedness, size, pointer/function targets and access evidence; it can infer unknown struct fields by offset/size and later infer an unambiguous pointer target.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [
+            {
+              "url": "https://github.com/matt-kempster/m2c/blob/708d2d2cb2698f091a92492b328f73b24209f72d/m2c/types.py#L204-L306",
+              "path": "m2c/types.py",
+              "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+              "anchor": "L204-L306"
+            },
+            {
+              "url": "https://github.com/matt-kempster/m2c/blob/708d2d2cb2698f091a92492b328f73b24209f72d/m2c/types.py#L1354-L1462",
+              "path": "m2c/types.py",
+              "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+              "anchor": "L1354-L1462"
+            },
+            {
+              "url": "https://github.com/matt-kempster/m2c/blob/708d2d2cb2698f091a92492b328f73b24209f72d/m2c/translate.py#L4239-L4261",
+              "path": "m2c/translate.py",
+              "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+              "anchor": "L4239-L4261"
+            }
+          ]
+        },
+        {
+          "claim": "CFG reconstruction classifies branch kinds and symbolic jump tables, computes dominator/postdominator/natural-loop relationships, collapses reducible condition DAGs into if/else, recognises irregular switches and emits gotos when needed.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [
+            {
+              "url": "https://github.com/matt-kempster/m2c/blob/708d2d2cb2698f091a92492b328f73b24209f72d/m2c/flow_graph.py#L928-L1100",
+              "path": "m2c/flow_graph.py",
+              "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+              "anchor": "L928-L1100"
+            },
+            {
+              "url": "https://github.com/matt-kempster/m2c/blob/708d2d2cb2698f091a92492b328f73b24209f72d/m2c/if_statements.py#L629-L766",
+              "path": "m2c/if_statements.py",
+              "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+              "anchor": "L629-L766"
+            },
+            {
+              "url": "https://github.com/matt-kempster/m2c/blob/708d2d2cb2698f091a92492b328f73b24209f72d/m2c/if_statements.py#L1166-L1428",
+              "path": "m2c/if_statements.py",
+              "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+              "anchor": "L1166-L1428"
+            }
+          ]
+        },
+        {
+          "claim": "Compiler-idiom knowledge appears as explicit pattern rewrites, including MIPS IDO unrolled memcpy and PPC CodeWarrior struct-copy recognisers; it is not a generic historical compiler model.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [
+            {
+              "url": "https://github.com/matt-kempster/m2c/blob/708d2d2cb2698f091a92492b328f73b24209f72d/m2c/arch_mips.py#L544-L770",
+              "path": "m2c/arch_mips.py",
+              "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+              "anchor": "L544-L770"
+            },
+            {
+              "url": "https://github.com/matt-kempster/m2c/blob/708d2d2cb2698f091a92492b328f73b24209f72d/m2c/arch_ppc.py#L490-L566",
+              "path": "m2c/arch_ppc.py",
+              "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+              "anchor": "L490-L566"
+            }
+          ]
+        },
+        {
+          "claim": "LLM plus deterministic x86/OMF analysis is likely a more economical source prior for current local targets than a wholesale port, subject to measurement.",
+          "epistemic_class": "INFERENCE",
+          "sources": [
+            {
+              "url": "https://github.com/matt-kempster/m2c/blob/708d2d2cb2698f091a92492b328f73b24209f72d/m2c/main.py#L123-L143",
+              "path": "m2c/main.py",
+              "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+              "anchor": "L123-L143"
+            }
+          ]
+        }
+      ],
+      "reuse_decision": "Learn from parsed-asm/typed-IR/CFG/context architecture; do not vendor or port before evidence and licensing decision.",
+      "limitations": [
+        "No binary/object input",
+        "no compiler feedback",
+        "no hypotheses",
+        "no strict relocation/TU/link proof",
+        "no 16-bit x86 target"
+      ]
+    },
+    {
+      "id": "decomp-permuter",
+      "name": "decomp-permuter",
+      "repository": "https://github.com/simonlindholm/decomp-permuter",
+      "commit": "059609d4aec73eb0650726772954e1ad575825f8",
+      "checked_date": "2026-09-23",
+      "license": "MIT",
+      "capabilities": {
+        "purpose": "Compile-and-score exploration of variants of supplied C.",
+        "target_architectures": [
+          "documented MIPS",
+          "documented PowerPC",
+          "documented ARM32",
+          "implementation x86 ELF/EM_386 scorer plumbing"
+        ],
+        "target_languages": [
+          "C AST",
+          "limited C++ ignored-text escape hatch"
+        ],
+        "input_formats": [
+          "base.c",
+          "target.o",
+          "compile.sh",
+          "settings TOML",
+          "ELF object required by built-in scorer"
+        ],
+        "output_formats": [
+          "generated C",
+          "scalar score",
+          "source diff",
+          "normalized objdump diagnostic"
+        ],
+        "known_compiler_assumption": "real compiler supplied through compile.sh; compiler type selects IDO/MWCC/GCC weights",
+        "models_compiler_specific_behavior": "limited weights and architecture-specific disassembly/relocation formatting",
+        "outputs_compilable_source": "yes; candidates compile via compile.sh",
+        "recompilation_feedback_loop": "yes",
+        "automatic_retries": "yes; finite seed enumeration or indefinite random mutation",
+        "candidate_scoring": "normalized objdump mnemonic alignment with weighted stack/branch/register/reorder/insertion/deletion penalty",
+        "relocation_fixup_handling": "uses relocation text to rewrite printed instruction only; no raw relocation identity/order/count",
+        "translation_unit_context": "single function search; compile script may use context but no explicit TU model",
+        "data_layout_reasoning": "not found in inspected scorer paths",
+        "batch_candidate_exploration": "yes; multiprocessing, multiple directories and optional permuter@home",
+        "equivalent_output_deduplication": "source score cache up to 100k; selected non-zero normalized objdump hash",
+        "ai_llm": "no",
+        "automation_level": "automatic enumeration/randomization/compiler run; human supplies constraints and reviews",
+        "historical_x86_feasibility": "isolated 32-bit x86 ELF trial plausible; 16-bit OMF/NE/MZ and strict proof require adapters",
+        "reuse_constraints": "MIT, but normalized score must not replace strict project oracle"
+      },
+      "findings": [
+        {
+          "claim": "Manual macro spaces and weighted AST randomization provide exhaustive finite or stochastic candidate generation.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [
+            {
+              "url": "https://github.com/simonlindholm/decomp-permuter/blob/059609d4aec73eb0650726772954e1ad575825f8/src/perm/parse.py#L79-L94",
+              "path": "src/perm/parse.py",
+              "commit": "059609d4aec73eb0650726772954e1ad575825f8",
+              "anchor": "L79-L94"
+            },
+            {
+              "url": "https://github.com/simonlindholm/decomp-permuter/blob/059609d4aec73eb0650726772954e1ad575825f8/src/randomizer.py#L2592-L2630",
+              "path": "src/randomizer.py",
+              "commit": "059609d4aec73eb0650726772954e1ad575825f8",
+              "anchor": "L2592-L2630"
+            }
+          ]
+        },
+        {
+          "claim": "Score is normalized rendered objdump text rather than raw object equality.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [
+            {
+              "url": "https://github.com/simonlindholm/decomp-permuter/blob/059609d4aec73eb0650726772954e1ad575825f8/src/scorer.py#L11-L19",
+              "path": "src/scorer.py",
+              "commit": "059609d4aec73eb0650726772954e1ad575825f8",
+              "anchor": "L11-L19"
+            },
+            {
+              "url": "https://github.com/simonlindholm/decomp-permuter/blob/059609d4aec73eb0650726772954e1ad575825f8/src/scorer.py#L57-L326",
+              "path": "src/scorer.py",
+              "commit": "059609d4aec73eb0650726772954e1ad575825f8",
+              "anchor": "L57-L326"
+            }
+          ]
+        },
+        {
+          "claim": "Use only as a mechanical exploration layer after an adapter supplies context-aware identity and strict proof; it has no adaptive mechanism selection or retained diverse beam.",
+          "epistemic_class": "INFERENCE",
+          "sources": [
+            {
+              "url": "https://github.com/simonlindholm/decomp-permuter/blob/059609d4aec73eb0650726772954e1ad575825f8/src/permuter.py#L168-L258",
+              "path": "src/permuter.py",
+              "commit": "059609d4aec73eb0650726772954e1ad575825f8",
+              "anchor": "L168-L258"
+            }
+          ]
+        }
+      ],
+      "reuse_decision": "Consider only a small isolated compatible adapter trial; otherwise reuse exploration concepts, not the proof model.",
+      "limitations": [
+        "No decompilation/synthesis",
+        "no OMF/NE/MZ",
+        "normalizes proof-relevant distinctions",
+        "no raw relocation/data/layout proof",
+        "selective history",
+        "no AI/beam search"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "repository": "m2c",
+      "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+      "url": "https://github.com/matt-kempster/m2c/tree/708d2d2cb2698f091a92492b328f73b24209f72d"
+    },
+    {
+      "repository": "decomp-permuter",
+      "commit": "059609d4aec73eb0650726772954e1ad575825f8",
+      "url": "https://github.com/simonlindholm/decomp-permuter/tree/059609d4aec73eb0650726772954e1ad575825f8"
+    }
+  ]
+}

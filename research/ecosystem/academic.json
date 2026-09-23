@@ -1,0 +1,78 @@
+{
+  "checked_date": "2026-09-23",
+  "scope": "Mechanism-level prior art; no experiments reproduced. Unknown fields are not negative claims.",
+  "approaches": [
+    {
+      "id": "echo",
+      "title": "Echo: Learning-based Matching Decompilation using Trusted Back Translation",
+      "version": "arXiv:2609.18706v1",
+      "url": "https://arxiv.org/html/2609.18706v1",
+      "evidence": "AUTHOR CLAIM",
+      "artifact_status": "Paper artifact URL is a placeholder; implementation/license/checkpoints unverified",
+      "decision": "Architectural prior art; no integration"
+    },
+    {
+      "id": "bed",
+      "title": "Evolving Byte-Equivalent Decompilation from Big Code",
+      "version": "2018 full paper",
+      "url": "https://www.cs.unm.edu/~eschulte/data/bed-full.pdf",
+      "evidence": "AUTHOR CLAIM",
+      "artifact_status": "SEL available, dedicated BED runner not located in inspected tree",
+      "decision": "Learn diversity-preserving search"
+    },
+    {
+      "id": "sel",
+      "title": "Software Evolution Library",
+      "version": "6916d5d31385ed15f3f722b653aab77e715cb1b1",
+      "url": "https://github.com/GrammaTech/sel/tree/6916d5d31385ed15f3f722b653aab77e715cb1b1",
+      "license": "GPL-3.0-or-later",
+      "evidence": "EXTERNAL IMPLEMENTATION FACT",
+      "decision": "Reference; no new runtime stack"
+    },
+    {
+      "id": "pylingual",
+      "title": "PyLingual",
+      "version": "f001a75992316500ef1b3e37cf0a239a62182ef0",
+      "url": "https://github.com/syssec-utd/pylingual/tree/f001a75992316500ef1b3e37cf0a239a62182ef0",
+      "license": "GPL-3.0",
+      "evidence": "EXTERNAL IMPLEMENTATION FACT",
+      "decision": "Learn uncertainty-directed verification; not a native C adapter"
+    },
+    {
+      "id": "autodecompiler",
+      "title": "Binary Decompilation LLM with Feedback-Driven Multi-Turn Refinement",
+      "version": "arXiv:2606.16162v1",
+      "url": "https://arxiv.org/abs/2606.16162v1",
+      "evidence": "AUTHOR CLAIM",
+      "artifact_status": "Implementation/license not audited",
+      "decision": "Learn feedback training; semantic metric"
+    },
+    {
+      "id": "stoke",
+      "title": "STOKE",
+      "version": "develop documentation retrieved 2026-09-23; not source-audited",
+      "url": "https://github.com/StanfordPL/stoke",
+      "license": "Apache-2.0",
+      "evidence": "AUTHOR CLAIM",
+      "decision": "Learn exploration/verification separation"
+    },
+    {
+      "id": "szalinski",
+      "title": "Synthesizing Structured CAD Models with Equality Saturation and Inverse Transformations",
+      "version": "PLDI 2020 DOI 10.1145/3385412.3386012",
+      "url": "https://www.mwillsey.com/papers/pldi-szalinski",
+      "evidence": "AUTHOR CLAIM",
+      "artifact_status": "Implementation/license not audited",
+      "decision": "Conceptual alternative representation; no integration"
+    },
+    {
+      "id": "decompile-diverge",
+      "title": "When LLM Decompilers Recompile More and Preserve Less",
+      "version": "arXiv:2609.05370v1",
+      "url": "https://arxiv.org/html/2609.05370v1",
+      "evidence": "AUTHOR CLAIM",
+      "artifact_status": "Paper examined; implementation not audited",
+      "decision": "Evaluation caution; keep independent acceptance"
+    }
+  ]
+}

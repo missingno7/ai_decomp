@@ -1,0 +1,194 @@
+{
+  "checked_date": "2026-09-23",
+  "tools": [
+    {
+      "id": "decomp-me",
+      "name": "decomp.me",
+      "repository": "https://github.com/decompme/decomp.me",
+      "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+      "license": "MIT; historical compilers and dependencies separate",
+      "capabilities": {
+        "purpose": "Collaborative matching compiler scratch workbench",
+        "architectures": [
+          "MIPS variants",
+          "PPC",
+          "ARM/Thumb",
+          "AArch64",
+          "SH2/SH4",
+          "DOS x86",
+          "Win32/i686"
+        ],
+        "languages": "C/C++ and platform compiler-specific languages; m2c C seeds",
+        "formats": "ELF/COFF/OMF through configured assembler/objdump; function .text comparison",
+        "known_compiler": "User selects compiler ID and flags; installed compiler directory required",
+        "compiler_specific_behavior": "Recipes and flags, special IDO/MWCC and historical runner handling; not source-to-code inverse model",
+        "outputs_compilable_source": "Editable source and optional m2c seed; requires valid context",
+        "recompilation_feedback_loop": "Yes, compile edited scratch and show asm-differ",
+        "automatic_retries": "Recompile edits, no autonomous source revision/search",
+        "candidate_comparison_score": "asm-differ score/alignment; ignore_addr_diffs true; manual match override exists",
+        "relocations_fixups": "Platform disassembly relocation normalization, not raw ordered OMF/NE/MZ proof",
+        "translation_unit_context": "Context prepended to source; libraries/includes; no inferred TU topology",
+        "data_layout": "Not compared as complete private contribution or final layout",
+        "batch_candidate_exploration": "No adaptive batch search in inspected path",
+        "effective_output_deduplication": "Input compile cache/context and target hashes; not emitted output classes",
+        "ai_llms": "No built-in model in inspected scratch/compile/diff path",
+        "automation_human_loop": "Human editing/forking; automated builds/diffs/m2c seed",
+        "historical_x86": "Implemented MSC5.1 DOSEMU and DOS OMF; bcc2.0 is Borland C++ not Turbo C2.0; Win32 MSVC7 is not Win16 MSC7",
+        "history_provenance": "Saved scratch family/parent and current/saved/previous comparison; not causal experiment memory",
+        "independent_acceptance": "No; score zero or manual override marks scratch match"
+      },
+      "findings": [
+        {
+          "claim": "Implemented historical DOS compiler bench and three-way function diff can be reused diagnostically; scope excludes local full member/link acceptance.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [
+            {
+              "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/LICENSE",
+              "path": "LICENSE",
+              "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+              "anchor": "See named functions and detailed study"
+            },
+            {
+              "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/platforms.py",
+              "path": "backend/coreapp/platforms.py",
+              "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+              "anchor": "See named functions and detailed study"
+            },
+            {
+              "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/compilers.py",
+              "path": "backend/coreapp/compilers.py",
+              "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+              "anchor": "See named functions and detailed study"
+            },
+            {
+              "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/compiler_wrapper.py",
+              "path": "backend/coreapp/compiler_wrapper.py",
+              "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+              "anchor": "See named functions and detailed study"
+            },
+            {
+              "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/diff_wrapper.py",
+              "path": "backend/coreapp/diff_wrapper.py",
+              "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+              "anchor": "See named functions and detailed study"
+            },
+            {
+              "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/m2c_wrapper.py",
+              "path": "backend/coreapp/m2c_wrapper.py",
+              "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+              "anchor": "See named functions and detailed study"
+            },
+            {
+              "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/models/scratch.py",
+              "path": "backend/coreapp/models/scratch.py",
+              "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+              "anchor": "See named functions and detailed study"
+            },
+            {
+              "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/views/scratch.py",
+              "path": "backend/coreapp/views/scratch.py",
+              "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+              "anchor": "See named functions and detailed study"
+            },
+            {
+              "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/compilers/compilers.linux.yaml",
+              "path": "backend/compilers/compilers.linux.yaml",
+              "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+              "anchor": "See named functions and detailed study"
+            },
+            {
+              "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/Dockerfile",
+              "path": "backend/Dockerfile",
+              "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+              "anchor": "See named functions and detailed study"
+            },
+            {
+              "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/frontend/src/components/Diff/Diff.tsx",
+              "path": "frontend/src/components/Diff/Diff.tsx",
+              "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+              "anchor": "See named functions and detailed study"
+            }
+          ]
+        }
+      ],
+      "reuse_decision": "Learn recipes and feedback UI; optional scratch use. Do not duplicate workbench or replace local proof runners.",
+      "limitations": [
+        "No adaptive hypothesis controller",
+        "No compiled-output clustering",
+        "No whole-TU/layout proof"
+      ],
+      "inspected_dependency_pins": {
+        "m2c": "708d2d2cb2698f091a92492b328f73b24209f72d",
+        "asm-differ": "0dd09af8f8008f1f880327cf0aca3b26d2562ea2"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/LICENSE",
+      "path": "LICENSE",
+      "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+      "anchor": "See named functions and detailed study"
+    },
+    {
+      "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/platforms.py",
+      "path": "backend/coreapp/platforms.py",
+      "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+      "anchor": "See named functions and detailed study"
+    },
+    {
+      "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/compilers.py",
+      "path": "backend/coreapp/compilers.py",
+      "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+      "anchor": "See named functions and detailed study"
+    },
+    {
+      "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/compiler_wrapper.py",
+      "path": "backend/coreapp/compiler_wrapper.py",
+      "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+      "anchor": "See named functions and detailed study"
+    },
+    {
+      "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/diff_wrapper.py",
+      "path": "backend/coreapp/diff_wrapper.py",
+      "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+      "anchor": "See named functions and detailed study"
+    },
+    {
+      "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/m2c_wrapper.py",
+      "path": "backend/coreapp/m2c_wrapper.py",
+      "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+      "anchor": "See named functions and detailed study"
+    },
+    {
+      "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/models/scratch.py",
+      "path": "backend/coreapp/models/scratch.py",
+      "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+      "anchor": "See named functions and detailed study"
+    },
+    {
+      "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/coreapp/views/scratch.py",
+      "path": "backend/coreapp/views/scratch.py",
+      "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+      "anchor": "See named functions and detailed study"
+    },
+    {
+      "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/compilers/compilers.linux.yaml",
+      "path": "backend/compilers/compilers.linux.yaml",
+      "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+      "anchor": "See named functions and detailed study"
+    },
+    {
+      "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/backend/Dockerfile",
+      "path": "backend/Dockerfile",
+      "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+      "anchor": "See named functions and detailed study"
+    },
+    {
+      "url": "https://github.com/decompme/decomp.me/blob/b908a4f32af89721fc0db3d8155ffe9696a91c13/frontend/src/components/Diff/Diff.tsx",
+      "path": "frontend/src/components/Diff/Diff.tsx",
+      "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+      "anchor": "See named functions and detailed study"
+    }
+  ]
+}

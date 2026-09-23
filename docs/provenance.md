@@ -54,3 +54,24 @@ The four source repositories remain their owners' production workspaces.
 Recommendations here do not authorize changing their sources, queues, manifests,
 tools or evidence. Research-only compiler wrappers may still write `build/`;
 none were invoked by this extraction.
+# External ecosystem research
+
+The separate `research/ecosystem/` records distinguish **EXTERNAL IMPLEMENTATION
+FACT**, **AUTHOR CLAIM**, **INFERENCE** and **UNKNOWN**. Code studies pin a full
+upstream commit and source path/anchor; paper studies pin a revision/DOI and
+state artifact availability. Readable studies link those primary sources.
+`catalog/ecosystem/index.json` indexes these records without changing the
+original local-project catalog schema or its historical snapshots.
+
+Public source checkouts in ignored `.research-cache/` are temporary inspection
+inputs, not vendored dependencies or preserved evidence. No upstream program
+is executed merely to inspect it. License statements belong to the inspected
+revision; compiler packages and data require separate provenance. A source
+audit cannot establish that a hosted service or historical compiler recipe
+currently runs successfully.
+
+New local evidence used in the ecosystem comparison has its own manifest in
+`research/ecosystem/local-requirements.json`; it does not silently refresh
+earlier dossier hashes or receipts. A worktree hash identifies but does not
+archive content. Use the report date, context and proof scope when comparing
+claims from different snapshots.

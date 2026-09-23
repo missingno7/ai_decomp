@@ -1,0 +1,131 @@
+{
+  "format": "ai-decomp-ecosystem-index-v1",
+  "checked_date": "2026-09-23",
+  "authority": "research_index_not_acceptance",
+  "maintenance": "Authored study records are authoritative; update index commit/path when adding a new inspected snapshot. Existing local catalogs remain separate.",
+  "studies": [
+    {
+      "id": "academic",
+      "document": "research/ecosystem/academic.md",
+      "records": "research/ecosystem/academic.json"
+    },
+    {
+      "id": "decomp-me",
+      "document": "research/ecosystem/decomp-me.md",
+      "records": "research/ecosystem/decomp-me.json"
+    },
+    {
+      "id": "diff-tools",
+      "document": "research/ecosystem/diff-tools.md",
+      "records": "research/ecosystem/diff-tools.json"
+    },
+    {
+      "id": "local-requirements",
+      "document": "research/ecosystem/local-requirements.md",
+      "records": "research/ecosystem/local-requirements.json"
+    },
+    {
+      "id": "m2c-permuter",
+      "document": "research/ecosystem/m2c-permuter.md",
+      "records": "research/ecosystem/m2c-permuter.json"
+    },
+    {
+      "id": "mizuchi",
+      "document": "research/ecosystem/mizuchi.md",
+      "records": "research/ecosystem/mizuchi.json"
+    }
+  ],
+  "tools": [
+    {
+      "id": "decomp-me",
+      "name": "decomp.me",
+      "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13",
+      "repository": "https://github.com/decompme/decomp.me",
+      "license": "MIT; historical compilers and dependencies separate",
+      "record_file": "research/ecosystem/decomp-me.json",
+      "reuse_decision": "Learn recipes and feedback UI; optional scratch use. Do not duplicate workbench or replace local proof runners."
+    },
+    {
+      "id": "asm-differ",
+      "name": "asm-differ",
+      "commit": "0dd09af8f8008f1f880327cf0aca3b26d2562ea2",
+      "repository": "https://github.com/simonlindholm/asm-differ",
+      "license": "Unlicense/public-domain dedication",
+      "record_file": "research/ecosystem/diff-tools.json",
+      "reuse_decision": "Use as a UI/feedback-design reference or optional external viewer; do not use as strict oracle or OMF/MZ/NE proof parser."
+    },
+    {
+      "id": "objdiff",
+      "name": "objdiff",
+      "commit": "fba10a617154f19b3fc25c8817dc81f81d8489b5",
+      "repository": "https://github.com/encounter/objdiff",
+      "license": "MIT OR Apache-2.0",
+      "record_file": "research/ecosystem/diff-tools.json",
+      "reuse_decision": "Highest-value optional out-of-process adapter candidate for Icy Tower COFF/x86 diagnostics; preserve local raw identities and strict acceptance separately."
+    },
+    {
+      "id": "reccmp",
+      "name": "reccmp",
+      "commit": "e91a51bfadfbb600adfdc750589ac40ae9742883",
+      "repository": "https://github.com/isledecomp/reccmp",
+      "license": "AGPL-3.0",
+      "record_file": "research/ecosystem/diff-tools.json",
+      "reuse_decision": "Study/use as a standalone AGPL tool only for a future compatible old-MSVC/PDB project; do not copy/link into ai_decomp and do not use effective match as strict proof."
+    },
+    {
+      "id": "binutils-omf",
+      "name": "binutils-omf",
+      "commit": "f1b7e688723c883f61b6573e9f0cab12624dc320",
+      "repository": "https://github.com/decompals/binutils-omf",
+      "license": "GPL-2.0-or-later for inspected bfd/i386omf.c; repository-wide redistribution requires component audit",
+      "record_file": "research/ecosystem/diff-tools.json",
+      "reuse_decision": "Evaluate only as an invoked, GPL-separated disassembly/symbol diagnostic after corpus parity tests; do not copy or link the parser into ai_decomp."
+    },
+    {
+      "id": "m2c",
+      "name": "m2c",
+      "commit": "708d2d2cb2698f091a92492b328f73b24209f72d",
+      "repository": "https://github.com/matt-kempster/m2c",
+      "license": "GPL-3.0-only",
+      "record_file": "research/ecosystem/m2c-permuter.json",
+      "reuse_decision": "Learn from parsed-asm/typed-IR/CFG/context architecture; do not vendor or port before evidence and licensing decision."
+    },
+    {
+      "id": "decomp-permuter",
+      "name": "decomp-permuter",
+      "commit": "059609d4aec73eb0650726772954e1ad575825f8",
+      "repository": "https://github.com/simonlindholm/decomp-permuter",
+      "license": "MIT",
+      "record_file": "research/ecosystem/m2c-permuter.json",
+      "reuse_decision": "Consider only a small isolated compatible adapter trial; otherwise reuse exploration concepts, not the proof model."
+    },
+    {
+      "id": "mizuchi",
+      "name": "Mizuchi",
+      "commit": "25eaef4214574cc20f376878dbc1b8099e97164e",
+      "repository": "https://github.com/macabeus/mizuchi",
+      "license": "MIT (upstream LICENSE, Copyright 2025 macabeus)",
+      "record_file": "research/ecosystem/mizuchi.json",
+      "reuse_decision": {
+        "decision": "Learn from and potentially adapt isolated concepts; do not integrate as an acceptance system or add a production dependency now.",
+        "reusable_parts": [
+          "phase orchestration",
+          "replayable agent conversation cache",
+          "constrained compile-and-diff tool",
+          "per-attempt resource provenance",
+          "background mechanical-search cancellation",
+          "attempt reporting"
+        ],
+        "retain_locally": [
+          "historical compiler/context fingerprint",
+          "effective compiler-output clustering",
+          "parent/candidate/oracle typed deltas",
+          "relocation/fixup/data/layout proof",
+          "TU/pass escalation",
+          "independent strict acceptance"
+        ],
+        "license_dependency_note": "Mizuchi is MIT, but direct reuse would also add Node, Anthropic Agent SDK, objdiff-wasm and m2c/decomp-permuter submodule dependency reviews."
+      }
+    }
+  ]
+}

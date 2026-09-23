@@ -1,0 +1,163 @@
+{
+  "checked_date": "2026-09-23",
+  "scope": "External diff/oracle tool implementation study; no upstream tool executed.",
+  "tools": [
+    {
+      "id": "asm-differ",
+      "name": "asm-differ",
+      "repository": "https://github.com/simonlindholm/asm-differ",
+      "commit": "0dd09af8f8008f1f880327cf0aca3b26d2562ea2",
+      "license": "Unlicense/public-domain dedication",
+      "capabilities": {
+        "purpose": "Assembly diff viewer for matching decompilation",
+        "architectures": ["MIPS", "PPC", "ARM32", "AArch64", "SH2", "SH4", "m68k", "x86", "i686"],
+        "languages": "No source-language model",
+        "formats": ["external objdump binary/object text", "ELF symbol mode", "limited parsed x86 ELF/COFF/OMF-like relocation spellings"],
+        "known_compiler": false,
+        "compiler_specific_behavior": false,
+        "outputs_compilable_source": false,
+        "recompilation_feedback_loop": "Optional configured make and filesystem watch",
+        "automatic_retries": false,
+        "automatic_batch_exploration": false,
+        "output_deduplication": false,
+        "ai_llm": false,
+        "translation_unit_context": "Delegated to configured build command",
+        "data_layout": "Display-level sections/rodata references, no full object/layout proof",
+        "relocations": "Text normalization for selected architecture relocation records",
+        "scoring": "Weighted stack/register/reorder/insert/delete penalties",
+        "feedback": ["aligned instructions", "register and stack categories", "branch visualization", "source/line display when objdump supplies it", "JSON", "current/previous/base three-way"],
+        "historical_x86": "Limited x86/i686 parser includes 16-bit relocation spellings but is not an OMF/MZ/NE parser"
+      },
+      "findings": [
+        {
+          "claim": "Current upstream implements x86/i686 settings and an x86 relocation processor; README labels x86 support limited.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [{"url": "https://github.com/simonlindholm/asm-differ/blob/0dd09af8f8008f1f880327cf0aca3b26d2562ea2/diff.py#L2068-L2238", "path": "diff.py", "commit": "0dd09af8f8008f1f880327cf0aca3b26d2562ea2", "anchor": "L2068-L2238"}]
+        },
+        {
+          "claim": "The score separates stack and likely register-allocation differences from reordering and insertion/deletion, but is a heuristic display score rather than strict equality.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [{"url": "https://github.com/simonlindholm/asm-differ/blob/0dd09af8f8008f1f880327cf0aca3b26d2562ea2/diff.py#L3663-L3789", "path": "diff.py", "commit": "0dd09af8f8008f1f880327cf0aca3b26d2562ea2", "anchor": "L3663-L3789"}]
+        }
+      ],
+      "reuse_decision": "Use as a UI/feedback-design reference or optional external viewer; do not use as strict oracle or OMF/MZ/NE proof parser.",
+      "limitations": ["No source recovery/search", "no candidate history or output clustering", "no TU reasoning", "no raw ordered relocation proof"]
+    },
+    {
+      "id": "objdiff",
+      "name": "objdiff",
+      "repository": "https://github.com/encounter/objdiff",
+      "commit": "fba10a617154f19b3fc25c8817dc81f81d8489b5",
+      "license": "MIT OR Apache-2.0",
+      "capabilities": {
+        "purpose": "Relocatable-object code/data diff and project UI",
+        "architectures": ["ARM", "ARM64", "MIPS", "PPC", "SuperH", "x86", "x86-64"],
+        "languages": "No source reconstruction; C++ demangling",
+        "formats": ["relocatable objects; source uses object backend COFF and ELF relocation variants"],
+        "known_compiler": false,
+        "compiler_specific_behavior": "Format/compiler accommodations such as symbol handling, no compiler forward model",
+        "outputs_compilable_source": false,
+        "recompilation_feedback_loop": "Configured base/target builds plus file watch",
+        "automatic_retries": false,
+        "automatic_batch_exploration": false,
+        "output_deduplication": false,
+        "ai_llm": false,
+        "translation_unit_context": "Delegated to project build system",
+        "data_layout": "Code, data, BSS/common symbols and sections",
+        "relocations": "First-class type/target/addend records with configurable relaxation",
+        "scoring": "Typed instruction diff with weighted immediate/register/replace/insert-delete score and match percentage",
+        "feedback": ["instruction alignment", "argument mismatch indices", "branch from/to", "symbol/order", "data rows", "relocation rows", "one-shot bindings"],
+        "historical_x86": "Promising for COFF/x86 diagnostic use; no OMF reader found"
+      },
+      "findings": [
+        {
+          "claim": "ObjectDiff records typed instruction, branch, data and relocation differences; code comparison can relax relocation differences by configuration.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [{"url": "https://github.com/encounter/objdiff/blob/fba10a617154f19b3fc25c8817dc81f81d8489b5/objdiff-core/src/diff/mod.rs#L20-L145", "path": "objdiff-core/src/diff/mod.rs", "commit": "fba10a617154f19b3fc25c8817dc81f81d8489b5", "anchor": "L20-L145"}, {"url": "https://github.com/encounter/objdiff/blob/fba10a617154f19b3fc25c8817dc81f81d8489b5/objdiff-core/src/diff/code.rs#L299-L384", "path": "objdiff-core/src/diff/code.rs", "commit": "fba10a617154f19b3fc25c8817dc81f81d8489b5", "anchor": "L299-L384"}]
+        }
+      ],
+      "reuse_decision": "Highest-value optional out-of-process adapter candidate for Icy Tower COFF/x86 diagnostics; preserve local raw identities and strict acceptance separately.",
+      "limitations": ["No OMF/MZ/NE support found", "no candidate search, AI or clustering", "no TU synthesis", "percentages/relaxed relocations are not proof"]
+    },
+    {
+      "id": "reccmp",
+      "name": "reccmp",
+      "repository": "https://github.com/isledecomp/reccmp",
+      "commit": "e91a51bfadfbb600adfdc750589ac40ae9742883",
+      "license": "AGPL-3.0",
+      "capabilities": {
+        "purpose": "Annotated original/recompiled image comparison for decompilation projects",
+        "architectures": ["32-bit x86 old MSVC comparison path"],
+        "languages": ["C++", "old MSVC-focused"],
+        "formats": ["PE", "NE", "MZ images", "recompiled PDB/CV dump"],
+        "known_compiler": "Old MSVC knowledge through PDB/CV and matching rules, not a generic historical compiler model",
+        "compiler_specific_behavior": true,
+        "outputs_compilable_source": false,
+        "recompilation_feedback_loop": "Consumes already-built recompiled image/PDB",
+        "automatic_retries": false,
+        "automatic_batch_exploration": false,
+        "output_deduplication": "Aggregate selects/combines saved accuracy reports, not equivalent compiler-output clustering",
+        "ai_llm": false,
+        "translation_unit_context": "PDB/source annotation identification, no TU construction search",
+        "data_layout": "Functions, variables, vtables, imports/exports and sections",
+        "relocations": "Image parsers include PE/NE relocation structures; not an OMF object/fixup comparator",
+        "scoring": "Accuracy/match ratio plus semantic effective-match convention",
+        "feedback": ["raw aligned diffs", "register/operand-order effective fixes", "stackcmp", "datacmp", "vtable", "roadmap", "reports"],
+        "historical_x86": "Directly relevant only where the target is old 32-bit MSVC with a usable recompiled PDB"
+      },
+      "findings": [
+        {
+          "claim": "The comparison setup ingests a recompiled PDB through cvdump and source annotations, then matches entities; effective-match logic explicitly analyzes register/operand differences.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [{"url": "https://github.com/isledecomp/reccmp/blob/e91a51bfadfbb600adfdc750589ac40ae9742883/reccmp/compare/core.py#L302-L352", "path": "reccmp/compare/core.py", "commit": "e91a51bfadfbb600adfdc750589ac40ae9742883", "anchor": "L302-L352"}, {"url": "https://github.com/isledecomp/reccmp/blob/e91a51bfadfbb600adfdc750589ac40ae9742883/reccmp/compare/asm/fixes.py#L473-L535", "path": "reccmp/compare/asm/fixes.py", "commit": "e91a51bfadfbb600adfdc750589ac40ae9742883", "anchor": "L473-L535"}]
+        }
+      ],
+      "reuse_decision": "Study/use as a standalone AGPL tool only for a future compatible old-MSVC/PDB project; do not copy/link into ai_decomp and do not use effective match as strict proof.",
+      "limitations": ["No source hypothesis generation/retries", "semantic normalizations can mask strict differences", "no OMF object comparison", "AGPL reuse constraint"]
+    },
+    {
+      "id": "binutils-omf",
+      "name": "binutils-omf",
+      "repository": "https://github.com/decompals/binutils-omf",
+      "commit": "f1b7e688723c883f61b6573e9f0cab12624dc320",
+      "license": "GPL-2.0-or-later for inspected bfd/i386omf.c; repository-wide redistribution requires component audit",
+      "capabilities": {
+        "purpose": "GNU BFD/binutils fork with i386 OMF reading used by decomp.me for omf-nm and omf-objdump diagnostics",
+        "architectures": ["i386/8086-family OMF reader"],
+        "languages": "N/A: object inspection/disassembly, not source reconstruction",
+        "formats": ["Intel i386 OMF objects"],
+        "known_compiler": false,
+        "compiler_specific_behavior": false,
+        "outputs_compilable_source": false,
+        "recompilation_feedback_loop": false,
+        "automatic_retries": false,
+        "automatic_batch_exploration": false,
+        "output_deduplication": false,
+        "ai_llm": false,
+        "translation_unit_context": false,
+        "data_layout": "BFD object representation; no local proof of private-contribution or linker-topology semantics",
+        "relocations": "i386 OMF reader decodes FIXUPP/FIXUPP386 target/frame variants; raw record-order preservation was not established",
+        "scoring": "N/A",
+        "feedback": ["omf-nm symbols", "omf-objdump decoded disassembly/object information"],
+        "historical_x86": "Directly relevant diagnostic support for old x86 OMF; no demonstrated strict OMF/NE/MZ acceptance capability"
+      },
+      "findings": [
+        {
+          "claim": "The i386 OMF BFD reader defines FIXUPP/FIXUPP386 and implements decoding for FIXUPP target and frame methods.",
+          "epistemic_class": "EXTERNAL IMPLEMENTATION FACT",
+          "sources": [{"url": "https://github.com/decompals/binutils-omf/blob/f1b7e688723c883f61b6573e9f0cab12624dc320/bfd/i386omf.c#L43-L44", "path": "bfd/i386omf.c", "commit": "f1b7e688723c883f61b6573e9f0cab12624dc320", "anchor": "L43-L44"}, {"url": "https://github.com/decompals/binutils-omf/blob/f1b7e688723c883f61b6573e9f0cab12624dc320/bfd/i386omf.c#L1193-L1425", "path": "bfd/i386omf.c", "commit": "f1b7e688723c883f61b6573e9f0cab12624dc320", "anchor": "L1193-L1425"}],
+          "license_source": {"url": "https://github.com/decompals/binutils-omf/blob/f1b7e688723c883f61b6573e9f0cab12624dc320/bfd/i386omf.c#L7-L18", "path": "bfd/i386omf.c", "commit": "f1b7e688723c883f61b6573e9f0cab12624dc320", "anchor": "L7-L18"}
+        }
+      ],
+      "reuse_decision": "Evaluate only as an invoked, GPL-separated disassembly/symbol diagnostic after corpus parity tests; do not copy or link the parser into ai_decomp.",
+      "limitations": ["No source recovery or compile loop", "no AI/search/history/dedup", "raw FIXUPP record order and semantic equivalence unverified", "no NE/MZ linker closure proof"]
+    }
+  ],
+  "sources": [
+    {"repository": "https://github.com/simonlindholm/asm-differ", "commit": "0dd09af8f8008f1f880327cf0aca3b26d2562ea2"},
+    {"repository": "https://github.com/encounter/objdiff", "commit": "fba10a617154f19b3fc25c8817dc81f81d8489b5"},
+    {"repository": "https://github.com/isledecomp/reccmp", "commit": "e91a51bfadfbb600adfdc750589ac40ae9742883"},
+    {"repository": "https://github.com/decompme/decomp.me", "commit": "b908a4f32af89721fc0db3d8155ffe9696a91c13", "role": "Pins binutils-omf v0.4 as an MS-DOS objdump/nm diagnostic"},
+    {"repository": "https://github.com/decompals/binutils-omf", "commit": "f1b7e688723c883f61b6573e9f0cab12624dc320", "role": "GPL-2.0-or-later i386 OMF reader with FIXUPP/FIXUPP386 decoding"}
+  ]
+}
