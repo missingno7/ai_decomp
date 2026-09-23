@@ -1,0 +1,868 @@
+[
+  {
+    "id": "empires-build",
+    "project": "empires",
+    "path": "tools/build_production.py",
+    "purpose": "Strict source-to-executable acceptance",
+    "inputs": "production plan/source/toolchain/oracle metadata",
+    "outputs": "EXE and fingerprinted receipt",
+    "dependencies": "project compiler/linker/OMF/MZ stack",
+    "assumptions": "Empires exact MZ topology",
+    "reuse": "project_specific",
+    "alternative": "Consult SimAnt for member proof; do not replace this full-image gate",
+    "license_review": "No top-level source-tool license found; reference only. No code copied.",
+    "sources": [
+      {
+        "source_id": "empires-src-45cc7b345cd3",
+        "anchor": ""
+      }
+    ],
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-build"
+  },
+  {
+    "id": "empires-probe-tu",
+    "project": "empires",
+    "path": "tools/probe_tu.py",
+    "purpose": "Test contiguous whole-TU hypothesis",
+    "inputs": "module range, source overrides, compiler flags",
+    "outputs": "whole-run byte/binding report",
+    "dependencies": "project manifests/compiler runner/original EXE",
+    "assumptions": "Empires plan, _TEXT and private DATA model",
+    "reuse": "adapter_required",
+    "alternative": "Icy Tower predecessor/order probes cover different compiler-state questions",
+    "license_review": "No top-level source-tool license found; reference only. No code copied.",
+    "sources": [
+      {
+        "source_id": "empires-src-869276ee9754",
+        "anchor": ""
+      }
+    ],
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-probe-tu"
+  },
+  {
+    "id": "empires-probe-module",
+    "project": "empires",
+    "path": "tools/probe_module.py",
+    "purpose": "Single-module C/ASM probe",
+    "inputs": "owner and source override",
+    "outputs": "code/DATA/fixup comparison",
+    "dependencies": "project OMF binder and toolchain",
+    "assumptions": "Cannot alone bind two library/runtime cases",
+    "reuse": "adapter_required",
+    "alternative": "SimAnt strict member verifier has richer Win16 fixup semantics",
+    "license_review": "No top-level source-tool license found; reference only. No code copied.",
+    "sources": [
+      {
+        "source_id": "empires-src-de5f08712288",
+        "anchor": ""
+      }
+    ],
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-probe-module"
+  },
+  {
+    "id": "empires-relocation-audit",
+    "project": "empires",
+    "path": "tools/audit_relocation_topology.py",
+    "purpose": "Separate code equality from relocation route mismatch",
+    "inputs": "production plan, MZ and optional fresh objects",
+    "outputs": "direction/provenance audit",
+    "dependencies": "project MZ and OMF readers",
+    "assumptions": "TC2/TASM/TLINK observed ordering",
+    "reuse": "project_specific",
+    "alternative": "No generic direction rule across compilers",
+    "license_review": "No top-level source-tool license found; reference only. No code copied.",
+    "sources": [
+      {
+        "source_id": "empires-src-0502ff01d23b",
+        "anchor": ""
+      }
+    ],
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-relocation-audit"
+  },
+  {
+    "id": "empires-audit-flags",
+    "project": "empires",
+    "path": "tools/audit_tu_flags.py",
+    "purpose": "Explain compiler route flags by source",
+    "inputs": "plan and source",
+    "outputs": "unexplained flag audit",
+    "dependencies": "project source parser/plan",
+    "assumptions": "TC2 -B/-k semantics",
+    "reuse": "conceptually_reusable",
+    "alternative": "A compiler-specific context audit is preferable to shared flag rules",
+    "license_review": "No top-level source-tool license found; reference only. No code copied.",
+    "sources": [
+      {
+        "source_id": "empires-src-8ea8a1ea9951",
+        "anchor": ""
+      }
+    ],
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-audit-flags"
+  },
+  {
+    "id": "empires-cache",
+    "project": "empires",
+    "path": "tools/object_cache.py",
+    "purpose": "Content-addressed research compilation",
+    "inputs": "owner, includes, lock, driver",
+    "outputs": "cached object/receipt or fresh compile",
+    "dependencies": "reconstruct.py and local compiler",
+    "assumptions": "Owner/includes assumptions, acceptance disables cache",
+    "reuse": "adapter_required",
+    "alternative": "SimAnt persistent service addresses startup cost differently",
+    "license_review": "No top-level source-tool license found; reference only. No code copied.",
+    "sources": [
+      {
+        "source_id": "empires-src-e3a07a74275b",
+        "anchor": ""
+      }
+    ],
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-cache"
+  },
+  {
+    "id": "empires-fingerprint",
+    "project": "empires",
+    "path": "tools/factory_inputs.py",
+    "purpose": "Construction-input provenance fingerprint",
+    "inputs": "known source/layout/recipes/tool trees",
+    "outputs": "SHA256 aggregate",
+    "dependencies": "reconstruct.py and project DATA recipe",
+    "assumptions": "Hard-coded construction closure",
+    "reuse": "conceptually_reusable",
+    "alternative": "Shared provenance manifest can separate enumeration from hashing",
+    "license_review": "No top-level source-tool license found; reference only. No code copied.",
+    "sources": [
+      {
+        "source_id": "empires-src-585f2f7689d1",
+        "anchor": ""
+      }
+    ],
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-fingerprint"
+  },
+  {
+    "id": "empires-candidate",
+    "project": "empires",
+    "path": "tools/check_candidate.py",
+    "purpose": "Bounded FAST check and promotion/block logging",
+    "inputs": "task card and edited source interval",
+    "outputs": "diagnostic, archived attempt or acceptance",
+    "dependencies": "project factory/runtime assembler",
+    "assumptions": "All runtime bytes, publics, ordered fixups and strictly fewer unresolved bytes",
+    "reuse": "project_specific",
+    "alternative": "Stunts/SimAnt handoff and variant tools have different contracts",
+    "license_review": "No top-level source-tool license found; reference only. No code copied.",
+    "sources": [
+      {
+        "source_id": "empires-src-120338389bca",
+        "anchor": ""
+      }
+    ],
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-candidate"
+  },
+  {
+    "id": "empires-relocation-groups",
+    "project": "empires",
+    "path": "tools/discover_relocation_groups.py",
+    "purpose": "Suggest minimum shared-compilation runs",
+    "inputs": "MZ relocations and owner manifest",
+    "outputs": "candidate recipes and constraints",
+    "dependencies": "project MZ/compiler probes",
+    "assumptions": "512-byte header coordinate conversion, descending TC2 runs",
+    "reuse": "project_specific",
+    "alternative": "Concept of evidence-derived grouping transfers, implementation does not",
+    "license_review": "No top-level source-tool license found; reference only. No code copied.",
+    "sources": [
+      {
+        "source_id": "empires-src-aaa17885ef43",
+        "anchor": ""
+      }
+    ],
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-relocation-groups"
+  },
+  {
+    "path": "tools/coordinates.py",
+    "classification": "adapter_required",
+    "purpose": "checked explicit coordinate-space conversion",
+    "inputs": "coordinate, named space, optional segment, decompression mapping",
+    "outputs": "load-image or named-space coordinate",
+    "dependencies": "Python dataclasses; local common.require",
+    "assumptions": "specific spaces/header/base and the assertion dependency must be supplied by an adapter",
+    "license_review": "No repository LICENSE/COPYING/NOTICE found; reference only, no copying reviewed.",
+    "sources": [
+      {
+        "source_id": "stunts-src-a50e39e12237",
+        "anchor": "1-L48"
+      }
+    ],
+    "id": "stunts-coordinates",
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "coordinates",
+    "reuse": "adapter_required",
+    "synthesis_note": "Checked conversions are generic in concept; concrete spaces and common.require make the existing script adapter-dependent."
+  },
+  {
+    "path": "tools/diagnostics.py",
+    "classification": "conceptually_reusable",
+    "purpose": "pure stream alignment, anchors, mismatch islands and operand-family diagnostics",
+    "inputs": "target/candidate bytes, fixups, binding/context flags",
+    "outputs": "structured comparison and compact summary",
+    "dependencies": "Capstone 5.0.3; local common",
+    "assumptions": "x86 16-bit decoding and Stunts fixup meanings",
+    "license_review": "No repository LICENSE/COPYING/NOTICE found; reference only, no copying reviewed.",
+    "sources": [
+      {
+        "source_id": "stunts-src-ad637d16775d",
+        "anchor": "23-L28"
+      },
+      {
+        "source_id": "stunts-src-ad637d16775d",
+        "anchor": "410-L457"
+      }
+    ],
+    "id": "stunts-diagnostics",
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "diagnostics",
+    "reuse": "conceptually_reusable"
+  },
+  {
+    "path": "tools/research_batch.py",
+    "classification": "adapter_required",
+    "purpose": "archive preregistered hypotheses, ceiling compiler launches, cluster effective outputs and compare candidates",
+    "inputs": "Stunts context-index/card plus JSON manifest of 2-32 hypotheses/predictions/falsifiers",
+    "outputs": "private receipts, outcome matrix and pairwise diagnostic summary",
+    "dependencies": "Stunts compiler, MZ/oracle, context index/workflow/cards, diagnostics",
+    "assumptions": "Stunts evidence extent, recipe/snapshot/context-index and private build root",
+    "license_review": "Untracked working-tree tool; no repository license found; reference only.",
+    "sources": [
+      {
+        "source_id": "stunts-src-1b46d38619e0",
+        "anchor": "67-L223"
+      },
+      {
+        "source_id": "stunts-src-3f7f26d672ca",
+        "anchor": "15-L17"
+      }
+    ],
+    "id": "stunts-research-batch",
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "research_batch",
+    "reuse": "adapter_required"
+  },
+  {
+    "path": "tools/check_candidate.py",
+    "classification": "project_specific",
+    "purpose": "fresh FAST/staged/canonical candidate acceptance and promotion guard",
+    "inputs": "task, candidate source, workflow snapshot",
+    "outputs": "receipt or archived failure",
+    "dependencies": "Stunts exact build, workflow and oracle",
+    "assumptions": "serial Stunts promotion and manifest locks",
+    "license_review": "No repository license found; reference only.",
+    "sources": [
+      {
+        "source_id": "stunts-src-8d5b85ee6620",
+        "anchor": "13-L103"
+      }
+    ],
+    "id": "stunts-check-candidate",
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "check_candidate",
+    "reuse": "project_specific"
+  },
+  {
+    "path": "tools/oracle.py",
+    "classification": "adapter_required",
+    "purpose": "find, hash, lock and materialize pristine oracle inputs",
+    "inputs": "configured MCGA/oracle assets and lock file",
+    "outputs": "identity report and optional oracle materialization",
+    "dependencies": "Stunts assets, EXEPACK/MZ modules, layout lock",
+    "assumptions": "case-insensitive asset names and Stunts oracle layout",
+    "license_review": "No repository license found; reference only.",
+    "sources": [
+      {
+        "source_id": "stunts-src-c4ceae488459",
+        "anchor": "33-L76"
+      }
+    ],
+    "id": "stunts-oracle",
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "oracle",
+    "reuse": "adapter_required"
+  },
+  {
+    "path": "tools/inspect_object.py",
+    "classification": "project_specific",
+    "purpose": "inspect OMF code/fixups and archive a private research receipt",
+    "inputs": "OMF object, target bytes, Stunts evidence JSON",
+    "outputs": "research-object-inspection.json",
+    "dependencies": "Stunts omf reader/evidence/private-root policy",
+    "assumptions": "Microsoft OMF and Stunts segment semantics",
+    "license_review": "No repository license found; reference only.",
+    "sources": [
+      {
+        "source_id": "stunts-src-2fc663b6dc57",
+        "anchor": "22-L25"
+      },
+      {
+        "source_id": "stunts-src-2fc663b6dc57",
+        "anchor": "142-L252"
+      }
+    ],
+    "id": "stunts-inspect-object",
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "inspect_object",
+    "reuse": "project_specific"
+  },
+  {
+    "path": "tools/probe_tu.py",
+    "classification": "adapter_required",
+    "purpose": "controlled translation-unit compiler probe",
+    "inputs": "probe source and Stunts compiler/oracle context",
+    "outputs": "candidate/oracle comparison result",
+    "dependencies": "Stunts compiler.py and oracle.py",
+    "assumptions": "MSC runner and MZ oracle",
+    "license_review": "No repository license found; reference only.",
+    "sources": [
+      {
+        "source_id": "stunts-src-025bb1bafcdd",
+        "anchor": "1-L35"
+      }
+    ],
+    "id": "stunts-probe-tu",
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "probe_tu",
+    "reuse": "adapter_required"
+  },
+  {
+    "path": "tools/grind.py",
+    "classification": "project_specific",
+    "purpose": "budgeted attempt archival and guarded serial promotion workflow",
+    "inputs": "Stunts recovery candidate/card and command",
+    "outputs": "attempt ledger/report/promotion state",
+    "dependencies": "check_candidate, build_exact, reconstruction_factory, workflow",
+    "assumptions": "Stunts queue and recovery/candidates layout",
+    "license_review": "No repository license found; reference only.",
+    "sources": [
+      {
+        "source_id": "stunts-src-0099966f0e5d",
+        "anchor": "1-L113"
+      }
+    ],
+    "id": "stunts-grind",
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "grind",
+    "reuse": "project_specific"
+  },
+  {
+    "path": "tools/codegen_grinder.py",
+    "purpose": "bounded source-variant compile/score/archive runner with compact raw-OMF compiler-response classes",
+    "inputs": "spec, source/template, axes, flags",
+    "outputs": "candidate receipts, identities, comparisons, compiler_response classes",
+    "dependencies": "compiler, OMF/matcher, cache",
+    "assumptions": "MSC7 and SimAnt fixture/proof interfaces",
+    "reuse_classification": "adapter_required",
+    "related_mechanism_ids": [
+      "effective-output-collapse",
+      "complete-member-proof",
+      "msc7-declaration-order"
+    ],
+    "related_trajectory_ids": [
+      "flood-nest-mapb-effective-output-failure",
+      "magnify-menu-local-order-success"
+    ],
+    "provenance": {
+      "ref": "working-tree",
+      "base_ref": "cdf6af62cc67608f02c574e805d79cb413e330ef",
+      "anchor": 147,
+      "sha256": "d7b361c7fe079414335747884717562bbb8e4544968cc38c7478b303a4f3ef62",
+      "working_tree": true,
+      "status": "73 added / 1 removed versus cdf6af62 index"
+    },
+    "license_review": "reference only; repository license not established; do not copy",
+    "id": "simantw-codegen-grinder",
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-071808eb1c6d",
+        "anchor": null
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "codegen_grinder",
+    "reuse": "adapter_required"
+  },
+  {
+    "path": "tools/codegen_cache.py",
+    "purpose": "identity-validated compiler cache",
+    "inputs": "source/tool/compiler identity",
+    "outputs": "cached object/receipt",
+    "dependencies": "project compiler wrapper",
+    "assumptions": "SimAnt identity schema",
+    "reuse_classification": "conceptually_reusable",
+    "related_mechanism_ids": [
+      "effective-output-collapse"
+    ],
+    "related_trajectory_ids": [
+      "draw-for-sale-sequential-private-state-success"
+    ],
+    "provenance": {
+      "ref": "cdf6af62cc67608f02c574e805d79cb413e330ef",
+      "anchor": 1,
+      "sha256": "a8db25e4be045a39c372ea05d52a8e076f4734e275478374d9c7bc3c720ebcc4"
+    },
+    "license_review": "reference only; repository license not established; do not copy",
+    "id": "simantw-codegen-cache",
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-ebb8d5ca8d31",
+        "anchor": null
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "codegen_cache",
+    "reuse": "conceptually_reusable"
+  },
+  {
+    "path": "tools/codegen_diff.py",
+    "purpose": "instruction-aligned candidate diagnostic distinct from acceptance",
+    "inputs": "target/candidate code, bindings, closures",
+    "outputs": "feature categories and aligned diff",
+    "dependencies": "Capstone, project CFG/matcher data",
+    "assumptions": "16-bit decode plus known LINK transforms",
+    "reuse_classification": "adapter_required",
+    "related_mechanism_ids": [
+      "complete-member-proof"
+    ],
+    "related_trajectory_ids": [
+      "draw-for-sale-sequential-private-state-success",
+      "flood-nest-mapb-effective-output-failure"
+    ],
+    "provenance": {
+      "ref": "cdf6af62cc67608f02c574e805d79cb413e330ef",
+      "anchor": 68,
+      "sha256": "56943754bb2ff2ea040c5713549ac9f566a7cfae3e71da2daf06deaace576e7c"
+    },
+    "license_review": "reference only; repository license not established; do not copy",
+    "id": "simantw-codegen-diff",
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-b9e6348f699a",
+        "anchor": null
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "codegen_diff",
+    "reuse": "adapter_required"
+  },
+  {
+    "path": "tools/compiler_service.py",
+    "purpose": "persistent isolated historical compiler request service",
+    "inputs": "immutable request snapshots",
+    "outputs": "objects, receipts, worker state",
+    "dependencies": "DOSBox-X, Win3.x, MSC7 worker",
+    "assumptions": "SimAnt runner/mount/locks",
+    "reuse_classification": "project_specific",
+    "related_mechanism_ids": [
+      "effective-output-collapse"
+    ],
+    "related_trajectory_ids": [
+      "draw-for-sale-sequential-private-state-success"
+    ],
+    "provenance": {
+      "ref": "cdf6af62cc67608f02c574e805d79cb413e330ef",
+      "anchor": 44,
+      "sha256": "d1db7b7ae80512ba3e9dfd24969c0deb7d721deacbe6f38b41768895e288b288"
+    },
+    "license_review": "reference only; repository license not established; do not copy",
+    "id": "simantw-compiler-service",
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-7042abd78f7f",
+        "anchor": null
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "compiler_service",
+    "reuse": "project_specific"
+  },
+  {
+    "path": "tools/omf.py",
+    "purpose": "OMF record/member parser",
+    "inputs": "OMF bytes",
+    "outputs": "records, module structure",
+    "dependencies": "none apparent",
+    "assumptions": "OMF variant used by MSC7",
+    "reuse_classification": "adapter_required",
+    "related_mechanism_ids": [
+      "complete-member-proof"
+    ],
+    "related_trajectory_ids": [
+      "draw-for-sale-sequential-private-state-success"
+    ],
+    "provenance": {
+      "ref": "cdf6af62cc67608f02c574e805d79cb413e330ef",
+      "anchor": 14,
+      "sha256": "1406cce74ba52aaa9fe0f911fca63d78bc630c52f434efbe3cb833f6129d01a7"
+    },
+    "license_review": "reference only; repository license not established; do not copy",
+    "id": "simantw-omf",
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-db3807d912fa",
+        "anchor": null
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "omf",
+    "reuse": "adapter_required"
+  },
+  {
+    "path": "tools/tu_assembly.py",
+    "purpose": "compose verified sources, declaration order, pool/data scaffolds, strict unit tests",
+    "inputs": "component sources/topology/profile",
+    "outputs": "candidate TU, scaffold evidence, promotion inputs",
+    "dependencies": "SimAnt topology, matcher, compiler",
+    "assumptions": "MSC7 selector pools and MAPSYM",
+    "reuse_classification": "project_specific",
+    "related_mechanism_ids": [
+      "msc7-declaration-order",
+      "selector-pool-and-pointer-evidence",
+      "scaffolded-unit-assembly"
+    ],
+    "related_trajectory_ids": [
+      "draw-for-sale-sequential-private-state-success"
+    ],
+    "provenance": {
+      "ref": "cdf6af62cc67608f02c574e805d79cb413e330ef",
+      "anchor": 248,
+      "sha256": "e52361b9688cc50f27d1c69a834803b8a17cdfc01da7ca68fb7167a5abe9fada"
+    },
+    "license_review": "reference only; repository license not established; do not copy",
+    "id": "simantw-tu-assembly",
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-c2fb20671d05",
+        "anchor": null
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "tu_assembly",
+    "reuse": "project_specific"
+  },
+  {
+    "path": "tools/blocked_reclassification.py",
+    "purpose": "fresh current-profile blocker taxonomy",
+    "inputs": "jobs, preserved candidates, topology/profile",
+    "outputs": "root-cause report and optional write-back",
+    "dependencies": "SimAnt workflow/matcher",
+    "assumptions": "project categories and sources",
+    "reuse_classification": "conceptually_reusable",
+    "related_mechanism_ids": [
+      "scaffolded-unit-assembly"
+    ],
+    "related_trajectory_ids": [
+      "draw-for-sale-sequential-private-state-success"
+    ],
+    "provenance": {
+      "ref": "cdf6af62cc67608f02c574e805d79cb413e330ef",
+      "anchor": 79,
+      "sha256": "2c2c446d347eb99ed1eadff6cdb59c07543358483989e4472a0f15acd2345b50"
+    },
+    "license_review": "reference only; repository license not established; do not copy",
+    "id": "simantw-blocked-reclassification",
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-58d39ac26e79",
+        "anchor": null
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "blocked_reclassification",
+    "reuse": "conceptually_reusable"
+  },
+  {
+    "path": "tools/mirror_pairs.py",
+    "purpose": "derive/test constrained black-red source mirrors",
+    "inputs": "preserved source, MAPSYM twin map, target",
+    "outputs": "derived candidate/asymmetry record",
+    "dependencies": "SimAnt symbols/compiler/matcher",
+    "assumptions": "verified mirrored naming/layout",
+    "reuse_classification": "adapter_required",
+    "related_mechanism_ids": [
+      "scaffolded-unit-assembly"
+    ],
+    "related_trajectory_ids": [
+      "draw-for-sale-sequential-private-state-success"
+    ],
+    "provenance": {
+      "ref": "cdf6af62cc67608f02c574e805d79cb413e330ef",
+      "anchor": 77,
+      "sha256": "2814e957c0d009f3a323dbd2a2ded1e772ca0e2fae2bc2c7f47e1ceb60a9dab3"
+    },
+    "license_review": "reference only; repository license not established; do not copy",
+    "id": "simantw-mirror-pairs",
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-1d9821e62051",
+        "anchor": [
+          77
+        ]
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "mirror_pairs",
+    "reuse": "adapter_required"
+  },
+  {
+    "path": "tools/dwarf_locations.py",
+    "purpose": "decode and annotate DWARF local locations",
+    "inputs": "location lists, PC, frame/scopes",
+    "outputs": "location/scope annotations",
+    "dependencies": "DWARF expression format and project census",
+    "classification": "adapter_required",
+    "license_review": "reference_only; inspect parser provenance before extraction",
+    "sources": [
+      {
+        "source_id": "icytower-src-c196ae83cab0",
+        "anchor": "15-96"
+      },
+      {
+        "source_id": "icytower-src-c52e8cebd6cb",
+        "anchor": "98-103"
+      }
+    ],
+    "id": "icytower-dwarf-locations",
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "dwarf_locations",
+    "reuse": "adapter_required"
+  },
+  {
+    "path": "tools/compiler_probe.py",
+    "purpose": "bounded predecessor/type/flag compiler-context probes",
+    "inputs": "target/function/peer/type/flag variant",
+    "outputs": "hash-bound compiler and RTL evidence",
+    "dependencies": "locked TDM GCC and Icy Tower build layout",
+    "classification": "project_specific",
+    "license_review": "reference_only",
+    "sources": [
+      {
+        "source_id": "icytower-src-5691234f1115",
+        "anchor": "16-128"
+      },
+      {
+        "source_id": "icytower-src-43f744d0a15f",
+        "anchor": "53-65"
+      }
+    ],
+    "id": "icytower-compiler-probe",
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "compiler_probe",
+    "reuse": "project_specific"
+  },
+  {
+    "path": "tools/tu_context_probe.py",
+    "purpose": "full-CU overlay construction and focused comparison",
+    "inputs": "TU/spec/order/bodies/statics/prototypes",
+    "outputs": "compiled overlay and comparison receipt",
+    "dependencies": "Icy Tower units, ledger, GCC build",
+    "classification": "adapter_required",
+    "license_review": "reference_only",
+    "sources": [
+      {
+        "source_id": "icytower-src-93277837d0f9",
+        "anchor": "28-422"
+      },
+      {
+        "source_id": "icytower-src-43f744d0a15f",
+        "anchor": "38-51"
+      }
+    ],
+    "id": "icytower-tu-context-probe",
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "tu_context_probe",
+    "reuse": "adapter_required"
+  },
+  {
+    "path": "tools/source_order.py",
+    "purpose": "derive guarded source-order plans",
+    "inputs": "DWARF unit ledger",
+    "outputs": "task plans",
+    "dependencies": "unique DWARF lines and Icy Tower schema",
+    "classification": "conceptually_reusable",
+    "license_review": "reference_only",
+    "sources": [
+      {
+        "source_id": "icytower-src-9f47c890bb6a",
+        "anchor": "9-107"
+      },
+      {
+        "source_id": "icytower-src-43f744d0a15f",
+        "anchor": "38-51"
+      }
+    ],
+    "id": "icytower-source-order",
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "source_order",
+    "reuse": "conceptually_reusable"
+  },
+  {
+    "path": "tools/effective_outcomes.py",
+    "purpose": "group output-equivalent experiment attempts",
+    "inputs": "function attempt JSON",
+    "outputs": "effective output clusters",
+    "dependencies": "attempt record field schema",
+    "classification": "conceptually_reusable",
+    "license_review": "reference_only; candidate for adapter-neutral manifest",
+    "sources": [
+      {
+        "source_id": "icytower-src-4e248a49d0c7",
+        "anchor": "15-86"
+      },
+      {
+        "source_id": "icytower-src-22231bb443b7",
+        "anchor": "21-38"
+      }
+    ],
+    "id": "icytower-effective-outcomes",
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "effective_outcomes",
+    "reuse": "conceptually_reusable"
+  },
+  {
+    "path": "tools/instruction_alignment.py",
+    "purpose": "bounded decoded instruction correspondence",
+    "inputs": "comparison rows",
+    "outputs": "alignment analysis",
+    "dependencies": "Icy Tower row schema and x86 records",
+    "classification": "adapter_required",
+    "license_review": "reference_only",
+    "sources": [
+      {
+        "source_id": "icytower-src-0b2777a52740",
+        "anchor": "9-58"
+      },
+      {
+        "source_id": "icytower-src-b2d9dc482859",
+        "anchor": "25-27"
+      }
+    ],
+    "id": "icytower-instruction-alignment",
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "instruction_alignment",
+    "reuse": "adapter_required"
+  },
+  {
+    "path": "tools/rtl_evidence.py",
+    "purpose": "normalize/compare compiler pass dumps",
+    "inputs": "two dump trees",
+    "outputs": "changed-pass report",
+    "dependencies": "GCC dump naming/normalization",
+    "classification": "conceptually_reusable",
+    "license_review": "reference_only",
+    "sources": [
+      {
+        "source_id": "icytower-src-24b8112b067b",
+        "anchor": "8-29"
+      },
+      {
+        "source_id": "icytower-src-c517626b278f",
+        "anchor": "13-25"
+      }
+    ],
+    "id": "icytower-rtl-evidence",
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "rtl_evidence",
+    "reuse": "conceptually_reusable"
+  },
+  {
+    "path": "tools/check_function.py + tools/promote_function.py",
+    "purpose": "FAST diagnosis and strict, atomic proof promotion",
+    "inputs": "target/function/current receipts",
+    "outputs": "diagnostic or published recovery state",
+    "dependencies": "full Icy Tower verifier, COFF/DWARF resolvers, locks",
+    "classification": "project_specific",
+    "license_review": "reference_only; do not transplant gate",
+    "sources": [
+      {
+        "source_id": "icytower-src-3f1ce3a5c386",
+        "anchor": "10-150"
+      },
+      {
+        "source_id": "icytower-src-1a800deb70fe",
+        "anchor": "19-128"
+      },
+      {
+        "source_id": "icytower-src-0e77b5d3779f",
+        "anchor": "3-48"
+      }
+    ],
+    "id": "icytower-promote-function",
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "promote_function",
+    "reuse": "project_specific"
+  }
+]

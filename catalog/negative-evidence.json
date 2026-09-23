@@ -1,0 +1,331 @@
+[
+  {
+    "id": "empires-negative-negation",
+    "epistemic_class": "PROJECT FACT",
+    "project": "empires",
+    "hypothesis": "Ordinary C spelling can produce the observed neg ax fragment without extra work",
+    "conditions": "Pinned TC2 BOARD fragment; 28 standalone + eight context probes",
+    "result": "Tested routes emit neg al or add extension/spills",
+    "limitation": "Not an exhaustive impossibility proof",
+    "sources": [
+      {
+        "source_id": "empires-src-e7eb7bf0084c",
+        "anchor": ""
+      }
+    ],
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-negative-negation"
+  },
+  {
+    "id": "empires-negative-intrinsic",
+    "epistemic_class": "PROJECT FACT",
+    "project": "empires",
+    "hypothesis": "Replace BOOTSEED asm sti with intrinsic without changing peers",
+    "conditions": "GAME TU and pinned TC2 route",
+    "result": "TURNLOOP/LVLDRV cease matching",
+    "limitation": "Specific route/context; not an objection to intrinsics generally",
+    "sources": [
+      {
+        "source_id": "empires-src-f4a5acd7f619",
+        "anchor": ""
+      }
+    ],
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-negative-intrinsic"
+  },
+  {
+    "id": "empires-negative-merge-data",
+    "epistemic_class": "PROJECT FACT",
+    "project": "empires",
+    "hypothesis": "HUD through ANIMFRAM form one recovered TU",
+    "conditions": "Observed private DATA ownership/components",
+    "result": "PROMPTS and DLGELOST DATA are not contiguous",
+    "limitation": "Depends on evidenced DATA ownership",
+    "sources": [
+      {
+        "source_id": "empires-src-f4a5acd7f619",
+        "anchor": ""
+      }
+    ],
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-negative-merge-data"
+  },
+  {
+    "id": "empires-negative-merge-view",
+    "epistemic_class": "PROJECT FACT",
+    "project": "empires",
+    "hypothesis": "BOARD and GAME share a single common a74a2 declaration",
+    "conditions": "Tested 2-D/flat declaration views",
+    "result": "No tested single view preserves both exact members",
+    "limitation": "Byte-neutral extensions elsewhere remain possible",
+    "sources": [
+      {
+        "source_id": "empires-src-f4a5acd7f619",
+        "anchor": ""
+      }
+    ],
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-negative-merge-view"
+  },
+  {
+    "id": "empires-negative-flags",
+    "epistemic_class": "PROJECT FACT",
+    "project": "empires",
+    "hypothesis": "Pseudo-register FLAGS replaces BIOS immediate flag protocol for free",
+    "conditions": "TC2 INT16 helpers",
+    "result": "pushf/pop adds instructions",
+    "limitation": "Specific flag-return protocol",
+    "sources": [
+      {
+        "source_id": "empires-src-e7eb7bf0084c",
+        "anchor": ""
+      }
+    ],
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-negative-flags"
+  },
+  {
+    "id": "stunts-astra-first-unproven",
+    "claim": "No Astra-only strict solve in four matched pairs; no Astra-first class or population solve curve follows.",
+    "scope": "selected pilot only",
+    "sources": [
+      {
+        "source_id": "stunts-src-b952d44f21ac",
+        "anchor": "1-L29"
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "astra-first-unproven"
+  },
+  {
+    "id": "stunts-worker-cost-not-e2e",
+    "claim": "Direct worker cost omits material supervision/auto-review overhead; do not report it as end-to-end recovery economics.",
+    "scope": "recorded pilot/cohort accounting",
+    "sources": [
+      {
+        "source_id": "stunts-src-b952d44f21ac",
+        "anchor": "18-L29"
+      },
+      {
+        "source_id": "stunts-src-3f7f26d672ca",
+        "anchor": "39-L45"
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "worker-cost-not-e2e"
+  },
+  {
+    "id": "stunts-batching-productivity-unproven",
+    "claim": "One batch pair saved worker resources but found fewer outputs and no strict match; optimal batch size is unknown.",
+    "scope": "unknown_libname_1 pair",
+    "sources": [
+      {
+        "source_id": "stunts-src-8cbe4caead6b",
+        "anchor": "13-L28"
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "batching-productivity-unproven"
+  },
+  {
+    "id": "stunts-trailing-label-refuted",
+    "claim": "Early return and explicit trailing zero-return label emitted identical 38-byte MSC 5.1 fixtures.",
+    "scope": "two complete fixtures, not all control-flow spellings",
+    "sources": [
+      {
+        "source_id": "stunts-src-b5d04cafa334",
+        "anchor": "1-L7"
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "trailing-label-refuted"
+  },
+  {
+    "id": "stunts-camera-negative-polarity",
+    "claim": "With declaration order fixed, the tested negative-polarity condition emitted a third 194-byte output, lost two late anchors and did not reach the AL/CBW target sequence.",
+    "scope": "one source form under pinned MSC 5.1, not all return expressions or TU contexts",
+    "sources": [
+      {
+        "source_id": "stunts-src-435992191ca3",
+        "anchor": "13-L17"
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "camera-negative-polarity"
+  },
+  {
+    "id": "stunts-based-segment-unavailable",
+    "claim": "Tested _based/_segname forms were rejected by pinned MSC 5.10 and did not select the needed CODE-segment access.",
+    "scope": "sub_35DE6 tested forms/profile",
+    "sources": [
+      {
+        "source_id": "stunts-src-794e153ccdd3",
+        "anchor": "1-L24"
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "based-segment-unavailable"
+  },
+  {
+    "id": "simantw-flood-nest-row-cell",
+    "claim": "Ordinary/register row-cell forms collapse in this baseline isolated MSC7 probe; reversing order differs but does not match.",
+    "scope": "FloodNestB only.",
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-faf185b1fa1d",
+        "anchor": 13
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "flood-nest-row-cell"
+  },
+  {
+    "id": "simantw-change-directory-exhausted-forms",
+    "claim": "Tried parameter-order, separator, Dx8+offset and based forms did not recover ChangeDirectory.",
+    "scope": "Eight attempts under ANTEDIT baseline.",
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-4ea9c1c85cac",
+        "anchor": 12
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "change-directory-exhausted-forms"
+  },
+  {
+    "id": "simantw-procmenuhelp-alignment",
+    "claim": "Declaration width did not change extra C7 alignment before far call.",
+    "scope": "ProcMenuHelp baseline trial.",
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-db1245e440b9",
+        "anchor": 8
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "procmenuhelp-alignment"
+  },
+  {
+    "id": "simantw-ms-delay-expression-shapes",
+    "claim": "Start-tick materialization changes registers; combined expression changes extent/fixup placement.",
+    "scope": "ms_Delay baseline batch.",
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-4280bba8baf4",
+        "anchor": 1
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "ms-delay-expression-shapes"
+  },
+  {
+    "id": "simantw-profile-sweep-limits",
+    "claim": "Ox and MSC6 were worse than Oeglw on this parked set; separately, 100 exact-body escalations were selector-pool/private-placement cases. This does not negate the distinct 102-job code-shape sweep where Oeglw/Oegilw improved 28 and strictly matched two.",
+    "scope": "Tested SimAnt sources only; no universal profile inference.",
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-a90096b5859f",
+        "anchor": 20
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "profile-sweep-limits"
+  },
+  {
+    "id": "icytower-httpget-local-type-and-peers",
+    "statement": "Omitting extractHTTPResponse/getSocketError or correcting dataPtr type did not repair HTTPFetchInternal scratch-push mismatches.",
+    "scope": "Recorded GCC 4.4.1 full-CU probe.",
+    "sources": [
+      {
+        "source_id": "icytower-src-43f744d0a15f",
+        "anchor": "10-18"
+      }
+    ],
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "httpget_local_type_and_peers"
+  },
+  {
+    "id": "icytower-scroller-flag-trials",
+    "statement": "Omitting init_scroller, disabling scheduling, and disabling unit-at-a-time did not repair draw_scroller; one trial worsened neighbor exactness.",
+    "scope": "Recorded GCC 4.4.1 scroller TU probes.",
+    "sources": [
+      {
+        "source_id": "icytower-src-43f744d0a15f",
+        "anchor": "30-36"
+      }
+    ],
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "scroller_flag_trials"
+  },
+  {
+    "id": "icytower-draw-frame-surface-cfg",
+    "statement": "Independent status tests and signed speed arms did not create the fifth frame-zero load.",
+    "scope": "Historical-order overlay candidates only.",
+    "sources": [
+      {
+        "source_id": "icytower-src-22231bb443b7",
+        "anchor": "11-38"
+      }
+    ],
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "draw_frame_surface_cfg"
+  },
+  {
+    "id": "icytower-play-textual-duplication",
+    "statement": "Duplicating random-hint source paths still produced six calls because RTL common-tail convergence removed one.",
+    "scope": "GCC 4.4.1 -O2 diagnostic probe.",
+    "sources": [
+      {
+        "source_id": "icytower-src-c517626b278f",
+        "anchor": "7-25"
+      }
+    ],
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "play_textual_duplication"
+  },
+  {
+    "id": "icytower-face-scope-move",
+    "statement": "A similar lexical-scope move reordered BSS and text operands; gate restored source and marked the task blocked.",
+    "scope": "main_menu_callback declaration-only trial.",
+    "sources": [
+      {
+        "source_id": "icytower-src-6ab42ab0e653",
+        "anchor": "29-46"
+      }
+    ],
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "face_scope_move"
+  }
+]

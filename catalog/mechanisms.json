@@ -1,0 +1,817 @@
+[
+  {
+    "id": "empires-route-context",
+    "name": "Inline ASM selects a whole-TU assembler route",
+    "epistemic_class": "PROJECT FACT",
+    "projects": [
+      "empires"
+    ],
+    "compiler": "Turbo C 2.0 / TASM 1.0 / TLINK 2.0",
+    "signature": "A plain-C member needs -B to match; replacing a predecessor ASM instruction with an intrinsic changes neighbors.",
+    "causal_mechanism": "Turbo C restarts the entire unit through TASM on encountering inline ASM; branch relaxation differs from the native writer.",
+    "distinguishing_experiments": [
+      "Whole GAME.C probe with BOOTSEED asm sti",
+      "Intrinsic substitution breaks TURNLOOP/LVLDRV",
+      "HITTEST -B probe supplies a boundary"
+    ],
+    "negative_alternatives": [
+      "Do not invent arbitrary per-function -B flags",
+      "Byte-neutral grouping does not establish unique historical membership"
+    ],
+    "scope": "Pinned Empires Turbo C/TASM route only.",
+    "reusable_diagnostic": "Hold target body constant; change context or compilation route and measure every affected member.",
+    "automated": true,
+    "related_tools": [
+      "empires-probe-tu",
+      "empires-audit-flags"
+    ],
+    "sources": [
+      {
+        "source_id": "empires-src-f4a5acd7f619",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-e7eb7bf0084c",
+        "anchor": ""
+      }
+    ],
+    "project": "empires",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-route-context",
+    "related_tool_names": [
+      "empires-probe-tu",
+      "empires-audit-flags"
+    ],
+    "related_trajectories": [
+      "empires-game-tu"
+    ]
+  },
+  {
+    "id": "empires-ordered-relocations",
+    "name": "Ordered relocations distinguish compiler routes and TU hypotheses",
+    "epistemic_class": "PROJECT FACT",
+    "projects": [
+      "empires"
+    ],
+    "compiler": "Turbo C 2.0 / TASM 1.0 / TLINK 2.0",
+    "signature": "Same code can fail whole-image proof because relocation order differs.",
+    "causal_mechanism": "Observed TLINK output retains object/FIXUPP order; native Turbo C descending order differs from ordinary TASM ascending order.",
+    "distinguishing_experiments": [
+      "MUSIC native C recovery eliminates ordering accommodation",
+      "SLOTS/SLOTCOPY relocation order rejects merging"
+    ],
+    "negative_alternatives": [
+      "A same-code ASM representation is not automatically the historical route",
+      "Zero/one relocation gives no direction evidence"
+    ],
+    "scope": "Empires toolchain and measured objects; not a rule for MSC OMF or GCC COFF.",
+    "reusable_diagnostic": "Compare code, semantic binding and ordered topology separately before source-shape search.",
+    "automated": true,
+    "related_tools": [
+      "empires-relocation-audit"
+    ],
+    "sources": [
+      {
+        "source_id": "empires-src-0502ff01d23b",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-f4a5acd7f619",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-f826913e70b3",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-52636fd94b2d",
+        "anchor": ""
+      }
+    ],
+    "project": "empires",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-ordered-relocations",
+    "related_tool_names": [
+      "empires-relocation-audit"
+    ],
+    "related_trajectories": [
+      "empires-music",
+      "empires-final-freeze"
+    ]
+  },
+  {
+    "id": "empires-tu-constraints",
+    "name": "DATA continuity and incompatible declarations constrain TU boundaries",
+    "epistemic_class": "PROJECT FACT",
+    "projects": [
+      "empires"
+    ],
+    "compiler": "Turbo C 2.0 / TASM 1.0 / TLINK 2.0",
+    "signature": "A proposed shared unit cannot preserve all exact members.",
+    "causal_mechanism": "One recovered unit emits contiguous private DATA and requires mutually compatible declaration views.",
+    "distinguishing_experiments": [
+      "HUD..ANIMFRAM rejected for noncontiguous DATA",
+      "BOARD/GAME a74a2 2-D versus flat views",
+      "KEYIRQ handler interrupt view conflict"
+    ],
+    "negative_alternatives": [
+      "Adjacency alone is insufficient",
+      "Equal bytes for a merged run need not uniquely recover filenames"
+    ],
+    "scope": "Observed source/data model in Empires; apply analogous constraints only after format-specific verification.",
+    "reusable_diagnostic": "Probe full candidate unit, private segments, all member bytes and bindings.",
+    "automated": true,
+    "related_tools": [
+      "empires-probe-tu"
+    ],
+    "sources": [
+      {
+        "source_id": "empires-src-f4a5acd7f619",
+        "anchor": ""
+      }
+    ],
+    "project": "empires",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-tu-constraints",
+    "related_tool_names": [
+      "empires-probe-tu"
+    ],
+    "related_trajectories": [
+      "empires-game-tu"
+    ]
+  },
+  {
+    "id": "empires-asm-provenance",
+    "name": "Compiler probes distinguish retained ASM from unrecovered C",
+    "epistemic_class": "PROJECT FACT",
+    "projects": [
+      "empires"
+    ],
+    "compiler": "Turbo C 2.0 / TASM 1.0 / TLINK 2.0",
+    "signature": "Framed functions or fragments resist ordinary C shapes.",
+    "causal_mechanism": "Recorded prologue/register/flag protocols and controlled probes establish compiler incompatibilities in specific cases.",
+    "distinguishing_experiments": [
+      "28 standalone plus eight contextual byte-negation probes",
+      "FLAGS pseudo-register adds pushf/pop",
+      "Sound C wrappers introduce SI saves"
+    ],
+    "negative_alternatives": [
+      "An ASM reconstruction is not evidence of original ASM authorship"
+    ],
+    "scope": "Finite experiments support the current provenance decision, not mathematical impossibility of all C.",
+    "reusable_diagnostic": "Record exact unsupported behavior and retain minimal evidenced ASM; reclassify if a later probe succeeds.",
+    "automated": true,
+    "related_tools": [
+      "empires-probe-module"
+    ],
+    "sources": [
+      {
+        "source_id": "empires-src-e7eb7bf0084c",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-f4a5acd7f619",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-73ad44eed692",
+        "anchor": ""
+      }
+    ],
+    "project": "empires",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-asm-provenance",
+    "related_tool_names": [
+      "empires-probe-module"
+    ],
+    "related_trajectories": [
+      "empires-negation"
+    ]
+  },
+  {
+    "id": "empires-fresh-acceptance",
+    "name": "Research cache and fresh acceptance have different proof contracts",
+    "epistemic_class": "PROJECT FACT",
+    "projects": [
+      "empires"
+    ],
+    "compiler": "Turbo C 2.0 / TASM 1.0 / TLINK 2.0",
+    "signature": "An old successful receipt could survive a failed or changed build.",
+    "causal_mechanism": "Builder invalidates success first, checks input identities and plan, disables cache for acceptance, verifies full EXE and ordered relocations.",
+    "distinguishing_experiments": [
+      "Source inspection of build_production and object_cache",
+      "Frozen acceptance receipt"
+    ],
+    "negative_alternatives": [
+      "A RESEARCH build or previous PASS is not fresh ACCEPTANCE"
+    ],
+    "scope": "Implemented Empires contract; freshness is useful elsewhere but exact gate must stay project-specific.",
+    "reusable_diagnostic": "Bind success to input fingerprint and proof scope, explicitly record cache/freshness and invalidation.",
+    "automated": true,
+    "related_tools": [
+      "empires-build",
+      "empires-cache",
+      "empires-fingerprint"
+    ],
+    "sources": [
+      {
+        "source_id": "empires-src-9fd4ecf8eeed",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-45cc7b345cd3",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-e3a07a74275b",
+        "anchor": ""
+      }
+    ],
+    "project": "empires",
+    "dossier": "research/empires/dossier.md",
+    "original_record_id": "empires-fresh-acceptance",
+    "related_tool_names": [
+      "empires-build",
+      "empires-cache",
+      "empires-fingerprint"
+    ],
+    "related_trajectories": [
+      "empires-final-freeze"
+    ]
+  },
+  {
+    "id": "stunts-hybrid-proof-separation",
+    "kind": [
+      "PROJECT FACT",
+      "GENERIC METHOD"
+    ],
+    "claim": "Useful compiler/object evidence and strict recovery are different states; promotion requires immutable oracle inputs and fresh whole-image proof.",
+    "scope": "Method is reusable; Stunts MZ/OMF and queue contracts are not.",
+    "sources": [
+      {
+        "source_id": "stunts-src-751997278a68",
+        "anchor": "1-L32"
+      },
+      {
+        "source_id": "stunts-src-8d5b85ee6620",
+        "anchor": "13-L103"
+      },
+      {
+        "source_id": "stunts-src-794e153ccdd3",
+        "anchor": "1-L24"
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "hybrid-proof-separation",
+    "related_tool_names": [],
+    "related_tools": [
+      "stunts-check-candidate"
+    ],
+    "related_trajectories": [
+      "stunts-matched-luna-astra-routing"
+    ]
+  },
+  {
+    "id": "stunts-effective-output-convergence",
+    "kind": [
+      "PROJECT FACT",
+      "GENERIC METHOD"
+    ],
+    "claim": "After two source hypotheses yield the same profile/context-aware effective output, move to a different analysis level; changed source text is not progress.",
+    "scope": "Observed in Stunts; identity definition includes recipe context.",
+    "sources": [
+      {
+        "source_id": "stunts-src-3f7f26d672ca",
+        "anchor": "13-L17"
+      },
+      {
+        "source_id": "stunts-src-cb6b11074fad",
+        "anchor": "3-L11"
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "effective-output-convergence",
+    "related_tool_names": [],
+    "related_tools": [
+      "stunts-research-batch"
+    ],
+    "related_trajectories": [
+      "stunts-unknown-libname-batch-v-sequential"
+    ]
+  },
+  {
+    "id": "stunts-candidate-pair-diagnostics",
+    "kind": [
+      "PROJECT FACT",
+      "CONCEPTUALLY REUSABLE"
+    ],
+    "claim": "Candidate-vs-candidate deltas can isolate a coherent BP-home allocation effect without asserting source causality or acceptance.",
+    "scope": "The declaration-order result is one MSC 5.1 source/profile case.",
+    "sources": [
+      {
+        "source_id": "stunts-src-435992191ca3",
+        "anchor": "1-L6"
+      },
+      {
+        "source_id": "stunts-src-ad637d16775d",
+        "anchor": "227-L457"
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "candidate-pair-diagnostics",
+    "related_tool_names": [],
+    "related_tools": [
+      "stunts-diagnostics"
+    ],
+    "related_trajectories": [
+      "stunts-camera-declaration-and-return-negative"
+    ]
+  },
+  {
+    "id": "stunts-mismatch-islands-with-contradictions",
+    "kind": [
+      "PROJECT FACT",
+      "GENERIC METHOD"
+    ],
+    "claim": "Report anchors, islands, operand mappings, contradicting uses and residuals separately; a pattern is not variable identity or a repair.",
+    "scope": "Implementation assumes x86-16 decoding but evidence discipline is portable.",
+    "sources": [
+      {
+        "source_id": "stunts-src-2facbd66586a",
+        "anchor": "9-L15"
+      },
+      {
+        "source_id": "stunts-src-ad637d16775d",
+        "anchor": "410-L457"
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "mismatch-islands-with-contradictions",
+    "related_tool_names": [],
+    "related_tools": [
+      "stunts-diagnostics"
+    ],
+    "related_trajectories": [
+      "stunts-camera-declaration-and-return-negative"
+    ]
+  },
+  {
+    "id": "stunts-capability-and-binding-boundaries",
+    "kind": [
+      "PROJECT FACT"
+    ],
+    "claim": "Pinned compiler syntax limits and strict parser/binder omissions can be demonstrated blockers, distinct from a source-search or model limitation.",
+    "scope": "MSC 5.10 named based-segment and Stunts B4/B6 cases only.",
+    "sources": [
+      {
+        "source_id": "stunts-src-794e153ccdd3",
+        "anchor": "1-L24"
+      },
+      {
+        "source_id": "stunts-src-331d37292052",
+        "anchor": "15-L16"
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "capability-and-binding-boundaries",
+    "related_tool_names": [],
+    "related_tools": [],
+    "related_trajectories": [
+      "stunts-matched-luna-astra-routing"
+    ]
+  },
+  {
+    "id": "simantw-effective-output-collapse",
+    "kind": "GENERIC_METHOD",
+    "claim": "Cluster bounded candidate searches by compiler-output identity and use surviving deltas to choose the next analysis level.",
+    "observed_in": "SimAnt MSC 7 isolated probes",
+    "symptom": "Several source spellings provide no new OMF object.",
+    "causal_mechanism": "Established only as output equivalence in the recorded compiler/context, not semantic equivalence.",
+    "experiments": "FloodNestB: three candidates, two raw OMF classes; ordinary/register collapsed; reversed declaration order differed but did not match. The current archive emits compiler_response with raw-OMF classes and representative deltas.",
+    "scope": "Portable process; classes are compiler/context-specific.",
+    "reusable_diagnostic": "Hash source and raw object; group comparison outcomes by object hash; stop exhausted axes.",
+    "automated": true,
+    "related_tools": [
+      "simantw-codegen-grinder",
+      "simantw-codegen-cache"
+    ],
+    "project": "simantw",
+    "epistemic_class": "GENERIC METHOD",
+    "sources": [
+      {
+        "source_id": "simantw-src-faf185b1fa1d",
+        "anchor": 9
+      },
+      {
+        "source_id": "simantw-src-28415d4f6c1c",
+        "anchor": 128
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "effective-output-collapse",
+    "related_tool_names": [
+      "codegen_grinder",
+      "codegen_cache"
+    ],
+    "related_trajectories": [
+      "simantw-flood-nest-mapb-effective-output-failure"
+    ]
+  },
+  {
+    "id": "simantw-msc7-declaration-order",
+    "kind": "PROJECT_FACT",
+    "claim": "Recorded MSC7 declaration order can select operands after source expression form has converged: global extern order for documented unit pairs, and local stack order for MagnifyMenu.",
+    "observed_in": "PreDrawSpider, EatFood/TryEatFood, antedit balloons; MagnifyMenu locals",
+    "symptom": "Expression rewrites collapse while one declaration order changes the selected memory/stack operand.",
+    "causal_mechanism": "Two separately scoped MSC7 observations; do not assume identical causation.",
+    "experiments": "Recorded global before/after pairs; MagnifyMenu's final local reorder after seven controlled attempts and collapsed expression variants.",
+    "scope": "Only evidence-backed pairs and unit/function contexts; no general compiler rule.",
+    "reusable_diagnostic": "Try an explicit, bounded declaration-order pair after semantic shape converges.",
+    "automated": true,
+    "related_tools": [
+      "simantw-tu-assembly",
+      "simantw-codegen-grinder"
+    ],
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-97d9aa655d43",
+        "anchor": 129
+      },
+      {
+        "source_id": "simantw-src-97d9aa655d43",
+        "anchor": 211
+      },
+      {
+        "source_id": "simantw-src-4caa686b51f6",
+        "anchor": 1
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "msc7-declaration-order",
+    "related_tool_names": [
+      "declaration_order",
+      "tu_assembly",
+      "codegen_grinder"
+    ],
+    "related_trajectories": [
+      "simantw-magnify-menu-local-order-success",
+      "simantw-flood-nest-mapb-effective-output-failure"
+    ]
+  },
+  {
+    "id": "simantw-complete-member-proof",
+    "kind": "PROJECT_FACT",
+    "claim": "A body match is not a recovery: OMF/NE semantic fixups, private data, placement and full member extent remain acceptance obligations.",
+    "observed_in": "SimAnt OMF/NE member matcher",
+    "symptom": "Aligned instructions can coexist with wrong selector, data or member extent.",
+    "causal_mechanism": "Strict member matcher validates entire contribution and loader obligations.",
+    "experiments": "db_UnhookObject/db_PurgeObject complete matches; ProcMenuHelp rejected for one alignment byte.",
+    "scope": "Acceptance principle portable; exact OMF/NE rules project-specific.",
+    "reusable_diagnostic": "Report body diagnostics separately from unresolved member obligations.",
+    "automated": true,
+    "related_tools": [
+      "simantw-codegen-diff",
+      "simantw-omf"
+    ],
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-28415d4f6c1c",
+        "anchor": 41
+      },
+      {
+        "source_id": "simantw-src-47f5c8a50659",
+        "anchor": 4
+      },
+      {
+        "source_id": "simantw-src-db1245e440b9",
+        "anchor": 8
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "complete-member-proof",
+    "related_tool_names": [
+      "codegen_diff",
+      "omf",
+      "library_match"
+    ],
+    "related_trajectories": [
+      "simantw-draw-for-sale-sequential-private-state-success"
+    ]
+  },
+  {
+    "id": "simantw-selector-pool-and-pointer-evidence",
+    "kind": "PROJECT_FACT",
+    "claim": "Private CONST selector pools and pointer representation expose object/TU context, but equal selector or offset evidence alone does not establish object identity.",
+    "observed_in": "Win16 MSC7 large-model SimAnt",
+    "symptom": "Exact bodies fail because selector spacing/order or far/near/based spelling differs.",
+    "causal_mechanism": "Per-object first-use selector pool plus Win16 ABI and private DGROUP contributions.",
+    "experiments": "Named far-object probes; multimedia based-segment admissions; InitTree far-pointer contrast.",
+    "scope": "Win16 MSC7 ABI/object model only.",
+    "reusable_diagnostic": "Separate segment selector, offset, identity, and whole-contribution evidence.",
+    "automated": true,
+    "related_tools": [
+      "simantw-tu-assembly"
+    ],
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-d047b00272c6",
+        "anchor": 42
+      },
+      {
+        "source_id": "simantw-src-97d9aa655d43",
+        "anchor": 51
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "selector-pool-and-pointer-evidence",
+    "related_tool_names": [
+      "build_topology",
+      "tu_assembly",
+      "memory_model"
+    ],
+    "related_trajectories": [
+      "simantw-draw-for-sale-sequential-private-state-success"
+    ]
+  },
+  {
+    "id": "simantw-scaffolded-unit-assembly",
+    "kind": "PROJECT_FACT",
+    "claim": "Measured noncredited stand-ins can reconstruct missing selector-pool order so independently exact claimed bodies are admitted with strict checks.",
+    "observed_in": "SimAnt topology units",
+    "symptom": "Body is exact except unresolved selector/private binding contributions in an incomplete object.",
+    "causal_mechanism": "Unit composer reproduces observed pool order and retains claimed-member proof.",
+    "experiments": "31 conversion events reported; checkpoint total moved from 417 to 447 while supersessions/removals make that a +30 net, not one-to-one accounting.",
+    "scope": "Requires trustworthy topology/selector evidence and strict claimed-member matching; does not recover stand-ins or unique historical filenames.",
+    "reusable_diagnostic": "Classify exact-body binding blockers and assemble an evidence-bounded unit.",
+    "automated": true,
+    "related_tools": [
+      "simantw-tu-assembly",
+      "simantw-blocked-reclassification",
+      "simantw-mirror-pairs"
+    ],
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "sources": [
+      {
+        "source_id": "simantw-src-28415d4f6c1c",
+        "anchor": 8
+      },
+      {
+        "source_id": "simantw-src-97d9aa655d43",
+        "anchor": 115
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "scaffolded-unit-assembly",
+    "related_tool_names": [
+      "tu_assembly",
+      "blocked_reclassification",
+      "mirror_pairs"
+    ],
+    "related_trajectories": []
+  },
+  {
+    "id": "icytower-dwarf-source-structure",
+    "claim_kind": "PROJECT_FACT",
+    "statement": "DWARF function/type/local/lexical-scope/location evidence constrains source reconstruction and can distinguish scope/lifetime issues from absent code.",
+    "symptom": "A candidate has stack/register residue or an apparent missing-local/source-scope discrepancy.",
+    "discriminating_experiment": "Compare original and candidate locations/lexical ranges at the first decoded mismatch; make only a scope-constrained overlay when a declaration fact is independently evidenced.",
+    "negative_alternatives": "Absent/overlapping/unsupported location expression is unknown, not an optimized-out-local conclusion.",
+    "tool_ids": [
+      "dwarf_locations",
+      "check_function",
+      "promote_function"
+    ],
+    "scope": "Icy Tower DWARF-rich Win32/GCC context; unsupported or overlapping location expressions remain unknown.",
+    "diagnostic": "Compare original/candidate DWARF locations and lexical scope at the first decoded mismatch.",
+    "sources": [
+      {
+        "source_id": "icytower-src-c52e8cebd6cb",
+        "anchor": "98-103"
+      },
+      {
+        "source_id": "icytower-src-e48ebf518372",
+        "anchor": "51-53"
+      },
+      {
+        "source_id": "icytower-src-c196ae83cab0",
+        "anchor": "15-96"
+      }
+    ],
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "dwarf_source_structure",
+    "related_tool_names": [
+      "dwarf_locations",
+      "check_function",
+      "promote_function"
+    ],
+    "related_tools": [
+      "icytower-dwarf-locations",
+      "icytower-promote-function"
+    ],
+    "related_trajectories": [
+      "icytower-localfilename-scope"
+    ]
+  },
+  {
+    "id": "icytower-historical-definition-order",
+    "claim_kind": "PROJECT_FACT",
+    "statement": "Original DWARF declaration order restored scroller natural offsets while target register mismatch remained unresolved.",
+    "symptom": "Function extents/order differ despite retained body source, or a source-order task is proposed from executable address order.",
+    "discriminating_experiment": "Build a no-body-change full-CU overlay in unique DWARF definition order and compare target, full contribution, and exact neighbors.",
+    "negative_alternatives": "Historical order did not repair draw_scroller’s six register differences; another order task can lose accidental matches while predecessor code differs.",
+    "tool_ids": [
+      "source_order",
+      "tu_context_probe",
+      "promote_function"
+    ],
+    "scope": "GCC 4.4.1 full-CU source order; no per-function linker placement.",
+    "diagnostic": "Whole-CU historical-order overlay with body and exact-neighbor preservation checks.",
+    "sources": [
+      {
+        "source_id": "icytower-src-43f744d0a15f",
+        "anchor": "38-51"
+      },
+      {
+        "source_id": "icytower-src-5603b15defea",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-9f47c890bb6a",
+        "anchor": "9-107"
+      }
+    ],
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "historical_definition_order",
+    "related_tool_names": [
+      "source_order",
+      "tu_context_probe",
+      "promote_function"
+    ],
+    "related_tools": [
+      "icytower-source-order",
+      "icytower-tu-context-probe",
+      "icytower-promote-function"
+    ],
+    "related_trajectories": [
+      "icytower-scroller-order"
+    ]
+  },
+  {
+    "id": "icytower-predecessor-context-dependency",
+    "claim_kind": "PROJECT_FACT",
+    "statement": "Changing earlier definitions can change an unchanged downstream target body in GCC 4.4.1 diagnostic full-CU probes.",
+    "symptom": "Register/instruction residue persists after local body hypotheses converge, while a target body is textually unchanged.",
+    "discriminating_experiment": "Reproduce a full-CU baseline hash, then omit one explicit predecessor or vary one type/flag and compare target bytes and protected neighbors.",
+    "negative_alternatives": "HTTPFetchInternal peer/type alternatives and draw_scroller init/scheduling/unit-at-a-time trials did not repair their target residue; one trial caused collateral regressions.",
+    "tool_ids": [
+      "compiler_probe",
+      "tu_context_probe",
+      "rtl_evidence"
+    ],
+    "causal_status": "effect_observed; internal cause is a WORKING_HYPOTHESIS",
+    "cause_hypothesis": "GCC i386 peephole2 scratch-register search state retained across successful allocations; compatible with dumps and upstream source, not isolated by the probe.",
+    "scope": "Observed for HTTPFetchInternal and draw_scroller; neither the observed dependency nor the causal hypothesis is a universal register-mismatch attribution.",
+    "diagnostic": "Baseline-hash full-CU peer omission/type/flag overlays, then target and neighbor comparison.",
+    "sources": [
+      {
+        "source_id": "icytower-src-43f744d0a15f",
+        "anchor": "8-36,53-65"
+      },
+      {
+        "source_id": "icytower-src-c4d4e6eddf66",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-13acb948125f",
+        "anchor": null
+      }
+    ],
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "predecessor_context_dependency",
+    "related_tool_names": [
+      "compiler_probe",
+      "tu_context_probe",
+      "rtl_evidence"
+    ],
+    "related_tools": [
+      "icytower-compiler-probe",
+      "icytower-tu-context-probe",
+      "icytower-rtl-evidence"
+    ],
+    "related_trajectories": [
+      "icytower-scroller-order",
+      "icytower-draw-frame-predecessor"
+    ]
+  },
+  {
+    "id": "icytower-pass-stage-convergence",
+    "claim_kind": "PROJECT_FACT",
+    "statement": "A play source split retained seven calls through 179r.dse2; at 181r.csa one call disappeared and the surviving label gained a use, leaving CFG/liveness/context rather than spelling as the next hypothesis.",
+    "symptom": "Original/candidate call multiplicity differs after source duplication, and local spelling variants are no longer informative.",
+    "discriminating_experiment": "Compile the production-equivalent TU with diagnostic dumps; compare GIMPLE/RTL around both arms to locate the first observed convergence stage.",
+    "negative_alternatives": "Explicit duplicated non-guest hint arms still emit six final calls; a more precise optimizer-subpass cause and the historical non-merging distinction are not established.",
+    "tool_ids": [
+      "rtl_evidence",
+      "tu_context_probe",
+      "effective_outcomes"
+    ],
+    "causal_status": "pass-stage observation; common-tail explanation is supported but exact internal subpass is not identified",
+    "scope": "GCC 4.4.1 diagnostic dump result, not matching proof or generic pass behavior.",
+    "diagnostic": "Locate first divergent/convergent normalized compiler pass after source variants stop separating.",
+    "sources": [
+      {
+        "source_id": "icytower-src-c517626b278f",
+        "anchor": "7-25"
+      },
+      {
+        "source_id": "icytower-src-24b8112b067b",
+        "anchor": "8-29"
+      }
+    ],
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "pass_stage_convergence",
+    "related_tool_names": [
+      "rtl_evidence",
+      "tu_context_probe",
+      "effective_outcomes"
+    ],
+    "related_tools": [
+      "icytower-rtl-evidence",
+      "icytower-tu-context-probe",
+      "icytower-effective-outcomes"
+    ],
+    "related_trajectories": [
+      "icytower-play-pass-stage-convergence"
+    ]
+  },
+  {
+    "id": "icytower-body-layout-neighbor-separation",
+    "claim_kind": "GENERIC_METHOD",
+    "statement": "Keep resolved body proof, relocation/owner proof, same-CU layout, and collateral exact-neighbor preservation as separate acceptance dimensions.",
+    "symptom": "A body is byte-equal under resolved relocations but layout operands, ownership, or neighboring contributions remain unresolved or differ.",
+    "discriminating_experiment": "Run before/after contribution and protected-neighbor comparison, then require the explicit layout-blocked claim only when its narrow proof contract holds.",
+    "negative_alternatives": "Masked equality, size proximity, link closure, or a scope change that reorders BSS/text do not establish the needed proof level.",
+    "tool_ids": [
+      "check_function",
+      "promote_function",
+      "instruction_alignment"
+    ],
+    "scope": "The terminology and implementation are project-specific; separation of evidence is portable process advice.",
+    "diagnostic": "Before/after contribution plus protected-neighbor comparison; require explicit layout proof for a layout-blocked body.",
+    "sources": [
+      {
+        "source_id": "icytower-src-0e77b5d3779f",
+        "anchor": "3-48"
+      },
+      {
+        "source_id": "icytower-src-6ab42ab0e653",
+        "anchor": "11-46"
+      },
+      {
+        "source_id": "icytower-src-1a800deb70fe",
+        "anchor": "19-128"
+      }
+    ],
+    "project": "icytower",
+    "epistemic_class": "GENERIC METHOD",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "body_layout_neighbor_separation",
+    "related_tool_names": [
+      "check_function",
+      "promote_function",
+      "instruction_alignment"
+    ],
+    "related_tools": [
+      "icytower-promote-function",
+      "icytower-instruction-alignment"
+    ],
+    "related_trajectories": [
+      "icytower-localfilename-scope"
+    ]
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "empires",
+    "repository": "empires_reconstruction",
+    "head": "9f9adaf8c5c2b503eeecee7aa1291df5097ef77c",
+    "branch": "portable-sdl3",
+    "dirty": false,
+    "evidence_ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+    "evidence_tag": "historical-exact-oracle-v1",
+    "state": "frozen historical closure; live portable branch",
+    "compiler": "Turbo C 2.0 / TASM 1.0 / TLINK 2.0",
+    "architecture": "16-bit DOS real mode",
+    "formats": [
+      "OMF",
+      "MZ"
+    ],
+    "proof": "Full executable SHA256, 106 ordered relocations, one fresh TLINK; no structural adapters",
+    "workflow": "Historical queue closed; retained bounded FAST -> fresh ACCEPTANCE factory",
+    "sources": [
+      {
+        "source_id": "empires-src-3cbb23225b06",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-9fd4ecf8eeed",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-e7eb7bf0084c",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-2e83285a4c1c",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-5b7cf2dde588",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-f4a5acd7f619",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-0502ff01d23b",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-f826913e70b3",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-52636fd94b2d",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-73ad44eed692",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-45cc7b345cd3",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-e3a07a74275b",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-eb9a397c4ba3",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-6c1a9c760467",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-42ae8f8ac1d0",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-869276ee9754",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-de5f08712288",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-8ea8a1ea9951",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-585f2f7689d1",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-120338389bca",
+        "anchor": ""
+      },
+      {
+        "source_id": "empires-src-aaa17885ef43",
+        "anchor": ""
+      }
+    ],
+    "dossier": "research/empires/dossier.md",
+    "snapshot_date": "2026-09-23"
+  },
+  {
+    "id": "stunts",
+    "repository": "stunts_recon",
+    "head": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+    "branch": "main",
+    "dirty": {
+      "working_tree": true,
+      "tracked_unstaged_files": 620,
+      "untracked_files": 16,
+      "staged_files": 0,
+      "proof": "git status --porcelain=v1 and git diff --numstat observed 2026-09-23; source repository was read only"
+    },
+    "status": {
+      "compiler": "MSC 5.0/5.1 medium-model optimized; production pins 5.1, historical version/flags not unique",
+      "architecture": "DOS real mode / 16-bit x86",
+      "formats": [
+        "MZ executable/load image",
+        "Microsoft OMF object",
+        "EXEPACK-packed oracle input"
+      ],
+      "acceptance": "HYBRID_EXACT; pristine oracle plus object/fixup/binding evidence and fresh whole-image validation",
+      "current_validation": "Latest validation receipt: PASS, HYBRID_EXACT, 139 tests and 11 independently compiled active C functions. Separate generated status: full_image_status NOT_CURRENTLY_VERIFIED; 408 matching C bytes, 0 matching ASM bytes, 725 pinned runtime bytes; 605 supervisor tasks."
+    },
+    "proof_overview": "Strict promotion is serial and needs fresh candidate and whole-image checks. Isolated research may preserve parser-readable objects that the strict production reader rejects, but cannot promote them.",
+    "workflow_overview": "Compact diagnosis -> machine-level prediction/falsifier -> bounded batch or adaptive experiment -> effective-output grouping -> change analysis level on repeated outcomes -> strict grind/whole-image validation for promotion.",
+    "examined_at": "2026-09-23 (re-examined after live-evidence drift alert)",
+    "sources": [
+      {
+        "source_id": "stunts-src-2822ed9ca670",
+        "anchor": "L1-L60"
+      },
+      {
+        "source_id": "stunts-src-751997278a68",
+        "anchor": "L1-L32"
+      },
+      {
+        "source_id": "stunts-src-3f7f26d672ca",
+        "anchor": "L3-L17,L41-L45"
+      },
+      {
+        "source_id": "stunts-src-331d37292052",
+        "anchor": "L5-L16"
+      },
+      {
+        "source_id": "stunts-src-763c07cddc94",
+        "anchor": "L1-L79"
+      },
+      {
+        "source_id": "stunts-src-435992191ca3",
+        "anchor": "L1-L17"
+      },
+      {
+        "source_id": "stunts-src-1b46d38619e0",
+        "anchor": "L67-L223"
+      },
+      {
+        "source_id": "stunts-src-b952d44f21ac",
+        "anchor": "L1-L29"
+      },
+      {
+        "source_id": "stunts-src-8cbe4caead6b",
+        "anchor": "L1-L28"
+      },
+      {
+        "source_id": "stunts-src-cb6b11074fad",
+        "anchor": "L3-L15"
+      },
+      {
+        "source_id": "stunts-src-e649d1b0311c",
+        "anchor": "L1-L2956"
+      },
+      {
+        "source_id": "stunts-src-794e153ccdd3",
+        "anchor": "L1-L24"
+      },
+      {
+        "source_id": "stunts-src-0fc0f3a1d744",
+        "anchor": "L1-L5"
+      },
+      {
+        "source_id": "stunts-src-e9b681928b47",
+        "anchor": "L1-L9"
+      },
+      {
+        "source_id": "stunts-src-560f8e2b45d6",
+        "anchor": "L1-L16"
+      },
+      {
+        "source_id": "stunts-src-b5d04cafa334",
+        "anchor": "L1-L7"
+      },
+      {
+        "source_id": "stunts-src-2facbd66586a",
+        "anchor": "L9-L15,L28-L36,L62-L68"
+      },
+      {
+        "source_id": "stunts-src-a50e39e12237",
+        "anchor": "L1-L48"
+      },
+      {
+        "source_id": "stunts-src-ad637d16775d",
+        "anchor": "L23-L28,L227-L457"
+      },
+      {
+        "source_id": "stunts-src-8d5b85ee6620",
+        "anchor": "L13-L103"
+      },
+      {
+        "source_id": "stunts-src-c4ceae488459",
+        "anchor": "L33-L76"
+      },
+      {
+        "source_id": "stunts-src-2fc663b6dc57",
+        "anchor": "L22-L25,L142-L252"
+      },
+      {
+        "source_id": "stunts-src-025bb1bafcdd",
+        "anchor": "L1-L35"
+      },
+      {
+        "source_id": "stunts-src-0099966f0e5d",
+        "anchor": "L1-L113"
+      }
+    ],
+    "dossier": "research/stunts/dossier.md",
+    "snapshot_date": "2026-09-23"
+  },
+  {
+    "id": "simantw",
+    "repository": "simantw_recon",
+    "discovery": "Sibling repository found under the shared D:/Prog parent.",
+    "head": "cdf6af62cc67608f02c574e805d79cb413e330ef",
+    "branch": "codex/simantw-recovery",
+    "dirty": true,
+    "snapshot": {
+      "examined_at_utc": "2026-09-23T19:49:21.4199016Z",
+      "kind": "dirty working tree",
+      "base_ref": "cdf6af62cc67608f02c574e805d79cb413e330ef",
+      "note": "Point-in-time inspection only; later live drift must be detected by source hash."
+    },
+    "status": "517 MATCHED, 106 MATCH_READY, 440 MATCH_BLOCKED, 2 STRUCTURE_BLOCKED in the examined working-tree snapshot.",
+    "proof": "Fresh compiler output; full member scope, bytes, public placement, semantic OMF/NE fixups and private contributions. Structural certificates only authorize tests.",
+    "workflow": "Bounded recovery jobs; strict admission; current-profile reclassification; unit assembly/scaffolds; persistent historical compiler service.",
+    "sources": [
+      {
+        "source_id": "simantw-src-be11f9a479d8",
+        "anchor": 1
+      },
+      {
+        "source_id": "simantw-src-28415d4f6c1c",
+        "anchor": 1
+      },
+      {
+        "source_id": "simantw-src-ff521355e6a4",
+        "anchor": 7
+      },
+      {
+        "source_id": "simantw-src-faf185b1fa1d",
+        "anchor": 9
+      },
+      {
+        "source_id": "simantw-src-97d9aa655d43",
+        "anchor": 129
+      },
+      {
+        "source_id": "simantw-src-4caa686b51f6",
+        "anchor": 1
+      },
+      {
+        "source_id": "simantw-src-47f5c8a50659",
+        "anchor": 4
+      },
+      {
+        "source_id": "simantw-src-db1245e440b9",
+        "anchor": 8
+      },
+      {
+        "source_id": "simantw-src-d047b00272c6",
+        "anchor": 42
+      },
+      {
+        "source_id": "simantw-src-12c92ff6a3bb",
+        "anchor": 300
+      },
+      {
+        "source_id": "simantw-src-08ff8a83cd4a",
+        "anchor": 1
+      },
+      {
+        "source_id": "simantw-src-a7ff369a2aa8",
+        "anchor": 1
+      },
+      {
+        "source_id": "simantw-src-09e28abce707",
+        "anchor": 1
+      },
+      {
+        "source_id": "simantw-src-8442db997518",
+        "anchor": 2
+      },
+      {
+        "source_id": "simantw-src-b18777f42c27",
+        "anchor": 1
+      },
+      {
+        "source_id": "simantw-src-beaae9153adb",
+        "anchor": 1
+      },
+      {
+        "source_id": "simantw-src-f4529e5a4623",
+        "anchor": 1
+      },
+      {
+        "source_id": "simantw-src-4ea9c1c85cac",
+        "anchor": 12
+      },
+      {
+        "source_id": "simantw-src-4280bba8baf4",
+        "anchor": 1
+      },
+      {
+        "source_id": "simantw-src-a90096b5859f",
+        "anchor": 20
+      },
+      {
+        "source_id": "simantw-src-a6d7985aa16a",
+        "anchor": [
+          1
+        ]
+      },
+      {
+        "source_id": "simantw-src-6a26ddd43f5c",
+        "anchor": [
+          1
+        ]
+      },
+      {
+        "source_id": "simantw-src-8df1e02285b0",
+        "anchor": [
+          4
+        ]
+      },
+      {
+        "source_id": "simantw-src-1d9821e62051",
+        "anchor": [
+          77
+        ]
+      }
+    ],
+    "dossier": "research/simantw/dossier.md",
+    "snapshot_date": "2026-09-23"
+  },
+  {
+    "id": "icytower",
+    "repository": "icytower_recon",
+    "head": "e0522729b98f53e8afb50eca46bdd6a9fbd4f777",
+    "branch": "main",
+    "status": "working_tree_dirty_with_untracked_attempt_evidence",
+    "proof": {
+      "levels": [
+        "BEHAVIOR_EQUAL",
+        "CODEGEN_SIMILAR",
+        "FUNCTION_MATCH",
+        "OBJECT_MATCH",
+        "CU_MATCH",
+        "LINKED_LAYOUT_MATCH",
+        "PE_MATCH",
+        "WHOLE_EXE_MATCH"
+      ],
+      "function_match_contract": "Every machine byte after independently resolving COFF relocations and decoded same-CU direct transfers; BODY_MATCH_LAYOUT_BLOCKED is a separate workflow state.",
+      "scope": "PROJECT FACT: function counts and function bytes do not imply object, CU, layout, runtime, PE, or whole-executable closure."
+    },
+    "workflow": {
+      "authority": [
+        "src/recovery.json",
+        "docs/progress.json",
+        "docs/current/grinder-queue.json",
+        "docs/current/function cards"
+      ],
+      "fast": "python tools/check_function.py <target> <function>",
+      "acceptance": "python tools/promote_function.py <target> <function>",
+      "guards": [
+        "hash-bound receipts",
+        "protected exact-neighbor preservation",
+        "full-CU/contribution checks when applicable",
+        "atomic publication with rollback",
+        "retained failed attempts"
+      ]
+    },
+    "state": {
+      "compiler": "locked TDM GCC 4.4.1; usual evidence command -O2 -g -mfpmath=387",
+      "target": "Win32 i386; COFF objects and PE image",
+      "debug_evidence": "DWARF function/type/local/lexical-scope/location evidence paired with COFF linkage/address evidence",
+      "function_statuses": {
+        "FUNCTION_MATCH": 209,
+        "DIFFER": 42,
+        "CODEGEN_SIMILAR": 2
+      },
+      "game_function_bytes": {
+        "total": 116113,
+        "function_match": 35299,
+        "remaining": 80814
+      },
+      "live_label": "Read at 2026-09-23; generated experiments and attempt directories were dirty/untracked, so current-state claims are tied to paths and hashes below."
+    },
+    "dossier": "research/icytower/dossier.md",
+    "snapshot_date": "2026-09-23",
+    "sources": [
+      {
+        "source_id": "icytower-src-c52e8cebd6cb",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-3b40ad7aef43",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-c69f69a480e1",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-3b6e089d4c02",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-43f744d0a15f",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-2ed3389fb665",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-037b8ea1908c",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-4131d17dedce",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-0e77b5d3779f",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-b2d9dc482859",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-6ab42ab0e653",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-22231bb443b7",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-c517626b278f",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-e48ebf518372",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-c4d4e6eddf66",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-13acb948125f",
+        "anchor": null
+      }
+    ]
+  }
+]

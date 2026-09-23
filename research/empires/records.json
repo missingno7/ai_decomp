@@ -1,0 +1,966 @@
+{
+  "project": {
+    "id": "empires",
+    "repository": "empires_reconstruction",
+    "head": "9f9adaf8c5c2b503eeecee7aa1291df5097ef77c",
+    "branch": "portable-sdl3",
+    "dirty": false,
+    "evidence_ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+    "evidence_tag": "historical-exact-oracle-v1",
+    "state": "frozen historical closure; live portable branch",
+    "compiler": "Turbo C 2.0 / TASM 1.0 / TLINK 2.0",
+    "architecture": "16-bit DOS real mode",
+    "formats": [
+      "OMF",
+      "MZ"
+    ],
+    "proof": "Full executable SHA256, 106 ordered relocations, one fresh TLINK; no structural adapters",
+    "workflow": "Historical queue closed; retained bounded FAST -> fresh ACCEPTANCE factory",
+    "sources": [
+      {
+        "repository": "empires_reconstruction",
+        "path": "layout/toolchain.json",
+        "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+        "sha256": "e649f35ab5479327da9373dbfb4b4b6f261f7d47d056a6ad3f99876c7beb44f0",
+        "state": "frozen_git_blob",
+        "anchor": ""
+      },
+      {
+        "repository": "empires_reconstruction",
+        "path": "docs/current/status.json",
+        "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+        "sha256": "d05650faa9b2a2739add7cebbe130a377a103f28c8afa69a725e933563d5ab84",
+        "state": "frozen_git_blob",
+        "anchor": ""
+      },
+      {
+        "repository": "empires_reconstruction",
+        "path": "docs/current/closure-frontier.md",
+        "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+        "sha256": "51bdaaed025cc3114c6fd4a1d3efa1850e05185afda705d7f566d08ddb760d6b",
+        "state": "frozen_git_blob",
+        "anchor": ""
+      },
+      {
+        "repository": "empires_reconstruction",
+        "path": "docs/current/grinder-instructions.md",
+        "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+        "sha256": "491266ce5abef74ee2d0a5a15103a4692f863cb68be594fd8bfc0e01cdac44b9",
+        "state": "frozen_git_blob",
+        "anchor": ""
+      },
+      {
+        "repository": "empires_reconstruction",
+        "path": "docs/current/supervisor-instructions.md",
+        "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+        "sha256": "be924fecea280cd626c9a7e0937f5f81129affcaf71b1435e0152dfb5943493c",
+        "state": "frozen_git_blob",
+        "anchor": ""
+      }
+    ]
+  },
+  "mechanisms": [
+    {
+      "id": "empires-route-context",
+      "name": "Inline ASM selects a whole-TU assembler route",
+      "epistemic_class": "PROJECT FACT",
+      "projects": [
+        "empires"
+      ],
+      "compiler": "Turbo C 2.0 / TASM 1.0 / TLINK 2.0",
+      "signature": "A plain-C member needs -B to match; replacing a predecessor ASM instruction with an intrinsic changes neighbors.",
+      "causal_mechanism": "Turbo C restarts the entire unit through TASM on encountering inline ASM; branch relaxation differs from the native writer.",
+      "distinguishing_experiments": [
+        "Whole GAME.C probe with BOOTSEED asm sti",
+        "Intrinsic substitution breaks TURNLOOP/LVLDRV",
+        "HITTEST -B probe supplies a boundary"
+      ],
+      "negative_alternatives": [
+        "Do not invent arbitrary per-function -B flags",
+        "Byte-neutral grouping does not establish unique historical membership"
+      ],
+      "scope": "Pinned Empires Turbo C/TASM route only.",
+      "reusable_diagnostic": "Hold target body constant; change context or compilation route and measure every affected member.",
+      "automated": true,
+      "related_tools": [
+        "empires-probe-tu",
+        "empires-audit-flags"
+      ],
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/tu-structure.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "e4ce58b9db430a9de40ce9a3223ed2a563b5b6fe8b61bc7b0489408b3fcbac88",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/closure-frontier.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "51bdaaed025cc3114c6fd4a1d3efa1850e05185afda705d7f566d08ddb760d6b",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-ordered-relocations",
+      "name": "Ordered relocations distinguish compiler routes and TU hypotheses",
+      "epistemic_class": "PROJECT FACT",
+      "projects": [
+        "empires"
+      ],
+      "compiler": "Turbo C 2.0 / TASM 1.0 / TLINK 2.0",
+      "signature": "Same code can fail whole-image proof because relocation order differs.",
+      "causal_mechanism": "Observed TLINK output retains object/FIXUPP order; native Turbo C descending order differs from ordinary TASM ascending order.",
+      "distinguishing_experiments": [
+        "MUSIC native C recovery eliminates ordering accommodation",
+        "SLOTS/SLOTCOPY relocation order rejects merging"
+      ],
+      "negative_alternatives": [
+        "A same-code ASM representation is not automatically the historical route",
+        "Zero/one relocation gives no direction evidence"
+      ],
+      "scope": "Empires toolchain and measured objects; not a rule for MSC OMF or GCC COFF.",
+      "reusable_diagnostic": "Compare code, semantic binding and ordered topology separately before source-shape search.",
+      "automated": true,
+      "related_tools": [
+        "empires-relocation-audit"
+      ],
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "tools/audit_relocation_topology.py",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "75a321a597d3eed4ea81236df6d7f58550a97dd37300deb579dc585d410a87da",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/tu-structure.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "e4ce58b9db430a9de40ce9a3223ed2a563b5b6fe8b61bc7b0489408b3fcbac88",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "src/MUSIC.C",
+          "ref": "562905916f6aefe007a94cc605b2405610247c44",
+          "sha256": "c07354509ca4cbab9f24e39fb82c83e67cea35a9b7d3397fd3aa408fc3bd4e75",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "layout/production-plan.json",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "34c145b05229811200f6e120db5b0740b4690b82bbd4d7ed7509313292726ca7",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-tu-constraints",
+      "name": "DATA continuity and incompatible declarations constrain TU boundaries",
+      "epistemic_class": "PROJECT FACT",
+      "projects": [
+        "empires"
+      ],
+      "compiler": "Turbo C 2.0 / TASM 1.0 / TLINK 2.0",
+      "signature": "A proposed shared unit cannot preserve all exact members.",
+      "causal_mechanism": "One recovered unit emits contiguous private DATA and requires mutually compatible declaration views.",
+      "distinguishing_experiments": [
+        "HUD..ANIMFRAM rejected for noncontiguous DATA",
+        "BOARD/GAME a74a2 2-D versus flat views",
+        "KEYIRQ handler interrupt view conflict"
+      ],
+      "negative_alternatives": [
+        "Adjacency alone is insufficient",
+        "Equal bytes for a merged run need not uniquely recover filenames"
+      ],
+      "scope": "Observed source/data model in Empires; apply analogous constraints only after format-specific verification.",
+      "reusable_diagnostic": "Probe full candidate unit, private segments, all member bytes and bindings.",
+      "automated": true,
+      "related_tools": [
+        "empires-probe-tu"
+      ],
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/tu-structure.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "e4ce58b9db430a9de40ce9a3223ed2a563b5b6fe8b61bc7b0489408b3fcbac88",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-asm-provenance",
+      "name": "Compiler probes distinguish retained ASM from unrecovered C",
+      "epistemic_class": "PROJECT FACT",
+      "projects": [
+        "empires"
+      ],
+      "compiler": "Turbo C 2.0 / TASM 1.0 / TLINK 2.0",
+      "signature": "Framed functions or fragments resist ordinary C shapes.",
+      "causal_mechanism": "Recorded prologue/register/flag protocols and controlled probes establish compiler incompatibilities in specific cases.",
+      "distinguishing_experiments": [
+        "28 standalone plus eight contextual byte-negation probes",
+        "FLAGS pseudo-register adds pushf/pop",
+        "Sound C wrappers introduce SI saves"
+      ],
+      "negative_alternatives": [
+        "An ASM reconstruction is not evidence of original ASM authorship"
+      ],
+      "scope": "Finite experiments support the current provenance decision, not mathematical impossibility of all C.",
+      "reusable_diagnostic": "Record exact unsupported behavior and retain minimal evidenced ASM; reclassify if a later probe succeeds.",
+      "automated": true,
+      "related_tools": [
+        "empires-probe-module"
+      ],
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/closure-frontier.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "51bdaaed025cc3114c6fd4a1d3efa1850e05185afda705d7f566d08ddb760d6b",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/tu-structure.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "e4ce58b9db430a9de40ce9a3223ed2a563b5b6fe8b61bc7b0489408b3fcbac88",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/asm-provenance.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "cab29f8fb7f2faf9558f82d53842dc8364eaef6a9c7c3b540af0a0d529a47fb6",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-fresh-acceptance",
+      "name": "Research cache and fresh acceptance have different proof contracts",
+      "epistemic_class": "PROJECT FACT",
+      "projects": [
+        "empires"
+      ],
+      "compiler": "Turbo C 2.0 / TASM 1.0 / TLINK 2.0",
+      "signature": "An old successful receipt could survive a failed or changed build.",
+      "causal_mechanism": "Builder invalidates success first, checks input identities and plan, disables cache for acceptance, verifies full EXE and ordered relocations.",
+      "distinguishing_experiments": [
+        "Source inspection of build_production and object_cache",
+        "Frozen acceptance receipt"
+      ],
+      "negative_alternatives": [
+        "A RESEARCH build or previous PASS is not fresh ACCEPTANCE"
+      ],
+      "scope": "Implemented Empires contract; freshness is useful elsewhere but exact gate must stay project-specific.",
+      "reusable_diagnostic": "Bind success to input fingerprint and proof scope, explicitly record cache/freshness and invalidation.",
+      "automated": true,
+      "related_tools": [
+        "empires-build",
+        "empires-cache",
+        "empires-fingerprint"
+      ],
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/status.json",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "d05650faa9b2a2739add7cebbe130a377a103f28c8afa69a725e933563d5ab84",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "tools/build_production.py",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "a4f736bb4a3ff5032f7a1314992707e4f591833822e599fe24df2a8c17860c05",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "tools/object_cache.py",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "8d1c9a232cdbf39165f00004017394d8576b7863f9e8c9e180c309c74df25398",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    }
+  ],
+  "trajectories": [
+    {
+      "id": "empires-music",
+      "name": "MUSIC: body equality to native relocation topology",
+      "epistemic_class": "PROJECT FACT",
+      "project": "empires",
+      "outcome": "success",
+      "steps": [
+        "Exact arithmetic code through ASM still needed relocation accommodation",
+        "Inspect historical descending relocation run",
+        "Distinguish native writer from assembler route",
+        "Recover whole pure-C MUSIC including structured fdf98",
+        "Native descending FIXUPPs restore strict topology",
+        "Full EXE acceptance succeeds; encode topology audit"
+      ],
+      "mechanisms": [
+        "empires-ordered-relocations"
+      ],
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/exact-structural-link.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "c6034b69a44966809283d6e95d8d6e3ed7006138184cf1d5d20b2f0e600e3750",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/linker-adapter-ledger.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "f39becee5427c7b2481e94ee2f9b6491f469960594ab5144bba335d0774286e4",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "src/MUSIC.C",
+          "ref": "562905916f6aefe007a94cc605b2405610247c44",
+          "sha256": "c07354509ca4cbab9f24e39fb82c83e67cea35a9b7d3397fd3aa408fc3bd4e75",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "layout/production-plan.json",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "34c145b05229811200f6e120db5b0740b4690b82bbd4d7ed7509313292726ca7",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/status.json",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "d05650faa9b2a2739add7cebbe130a377a103f28c8afa69a725e933563d5ab84",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-game-tu",
+      "name": "GAME: local -B mismatch becomes whole-TU evidence",
+      "epistemic_class": "PROJECT FACT",
+      "project": "empires",
+      "outcome": "success",
+      "steps": [
+        "TURNLOOP/LVLDRV need assembler-shaped bytes",
+        "Local flags lack a source explanation",
+        "Group with BOOTSEED inline asm sti",
+        "Replacing ASM with intrinsic breaks neighbors",
+        "Whole-TU probe exact",
+        "Promote GAME.C, retain incompatible declaration/route boundaries"
+      ],
+      "mechanisms": [
+        "empires-route-context",
+        "empires-tu-constraints"
+      ],
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/tu-structure.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "e4ce58b9db430a9de40ce9a3223ed2a563b5b6fe8b61bc7b0489408b3fcbac88",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/closure-frontier.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "51bdaaed025cc3114c6fd4a1d3efa1850e05185afda705d7f566d08ddb760d6b",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "layout/production-plan.json",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "34c145b05229811200f6e120db5b0740b4690b82bbd4d7ed7509313292726ca7",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-negation",
+      "name": "BOARD byte negation: bounded negative result",
+      "epistemic_class": "PROJECT FACT",
+      "project": "empires",
+      "outcome": "negative",
+      "steps": [
+        "Target neg ax uses already-zero AH",
+        "Try 28 standalone source forms",
+        "Observe neg al or extension/spill sequence",
+        "Try eight context-preserving probes",
+        "No tested C route removes extra work",
+        "Retain evidenced inline ASM fragment under strict full acceptance"
+      ],
+      "mechanisms": [
+        "empires-asm-provenance"
+      ],
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/closure-frontier.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "51bdaaed025cc3114c6fd4a1d3efa1850e05185afda705d7f566d08ddb760d6b",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/history/probes/neg-ax-forms.C",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "86f019c1e5bf2e5f2aa86d7c84c16b92d80cc0bc8b446fe1e749cef9fe360ecc",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-final-freeze",
+      "name": "Exact structural output to adapter-free source closure",
+      "epistemic_class": "PROJECT FACT",
+      "project": "empires",
+      "outcome": "success",
+      "steps": [
+        "Historical TLINK produces exact image with accommodations",
+        "Replace copied DATA and aggregate BSS with source contributions",
+        "Replace injected publics and metadata with natural source declarations",
+        "Use whole modules and native MUSIC route",
+        "Fresh uncached acceptance plus provenance and topology audits",
+        "Freeze historical-exact-oracle-v1"
+      ],
+      "mechanisms": [
+        "empires-fresh-acceptance",
+        "empires-ordered-relocations"
+      ],
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/exact-structural-link.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "c6034b69a44966809283d6e95d8d6e3ed7006138184cf1d5d20b2f0e600e3750",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/linker-adapter-ledger.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "f39becee5427c7b2481e94ee2f9b6491f469960594ab5144bba335d0774286e4",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/closure-frontier.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "51bdaaed025cc3114c6fd4a1d3efa1850e05185afda705d7f566d08ddb760d6b",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/status.json",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "d05650faa9b2a2739add7cebbe130a377a103f28c8afa69a725e933563d5ab84",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        },
+        {
+          "repository": "empires_reconstruction",
+          "path": "layout/production-plan.json",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "34c145b05229811200f6e120db5b0740b4690b82bbd4d7ed7509313292726ca7",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    }
+  ],
+  "negatives": [
+    {
+      "id": "empires-negative-negation",
+      "epistemic_class": "PROJECT FACT",
+      "project": "empires",
+      "hypothesis": "Ordinary C spelling can produce the observed neg ax fragment without extra work",
+      "conditions": "Pinned TC2 BOARD fragment; 28 standalone + eight context probes",
+      "result": "Tested routes emit neg al or add extension/spills",
+      "limitation": "Not an exhaustive impossibility proof",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/closure-frontier.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "51bdaaed025cc3114c6fd4a1d3efa1850e05185afda705d7f566d08ddb760d6b",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-negative-intrinsic",
+      "epistemic_class": "PROJECT FACT",
+      "project": "empires",
+      "hypothesis": "Replace BOOTSEED asm sti with intrinsic without changing peers",
+      "conditions": "GAME TU and pinned TC2 route",
+      "result": "TURNLOOP/LVLDRV cease matching",
+      "limitation": "Specific route/context; not an objection to intrinsics generally",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/tu-structure.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "e4ce58b9db430a9de40ce9a3223ed2a563b5b6fe8b61bc7b0489408b3fcbac88",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-negative-merge-data",
+      "epistemic_class": "PROJECT FACT",
+      "project": "empires",
+      "hypothesis": "HUD through ANIMFRAM form one recovered TU",
+      "conditions": "Observed private DATA ownership/components",
+      "result": "PROMPTS and DLGELOST DATA are not contiguous",
+      "limitation": "Depends on evidenced DATA ownership",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/tu-structure.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "e4ce58b9db430a9de40ce9a3223ed2a563b5b6fe8b61bc7b0489408b3fcbac88",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-negative-merge-view",
+      "epistemic_class": "PROJECT FACT",
+      "project": "empires",
+      "hypothesis": "BOARD and GAME share a single common a74a2 declaration",
+      "conditions": "Tested 2-D/flat declaration views",
+      "result": "No tested single view preserves both exact members",
+      "limitation": "Byte-neutral extensions elsewhere remain possible",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/tu-structure.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "e4ce58b9db430a9de40ce9a3223ed2a563b5b6fe8b61bc7b0489408b3fcbac88",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-negative-flags",
+      "epistemic_class": "PROJECT FACT",
+      "project": "empires",
+      "hypothesis": "Pseudo-register FLAGS replaces BIOS immediate flag protocol for free",
+      "conditions": "TC2 INT16 helpers",
+      "result": "pushf/pop adds instructions",
+      "limitation": "Specific flag-return protocol",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "docs/current/closure-frontier.md",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "51bdaaed025cc3114c6fd4a1d3efa1850e05185afda705d7f566d08ddb760d6b",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "id": "empires-build",
+      "project": "empires",
+      "path": "tools/build_production.py",
+      "purpose": "Strict source-to-executable acceptance",
+      "inputs": "production plan/source/toolchain/oracle metadata",
+      "outputs": "EXE and fingerprinted receipt",
+      "dependencies": "project compiler/linker/OMF/MZ stack",
+      "assumptions": "Empires exact MZ topology",
+      "reuse": "project_specific",
+      "alternative": "Consult SimAnt for member proof; do not replace this full-image gate",
+      "license_review": "No top-level source-tool license found; reference only. No code copied.",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "tools/build_production.py",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "a4f736bb4a3ff5032f7a1314992707e4f591833822e599fe24df2a8c17860c05",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-probe-tu",
+      "project": "empires",
+      "path": "tools/probe_tu.py",
+      "purpose": "Test contiguous whole-TU hypothesis",
+      "inputs": "module range, source overrides, compiler flags",
+      "outputs": "whole-run byte/binding report",
+      "dependencies": "project manifests/compiler runner/original EXE",
+      "assumptions": "Empires plan, _TEXT and private DATA model",
+      "reuse": "adapter_required",
+      "alternative": "Icy Tower predecessor/order probes cover different compiler-state questions",
+      "license_review": "No top-level source-tool license found; reference only. No code copied.",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "tools/probe_tu.py",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "821eaa5f3676562d30dc77be32e1d3509e6b9f1fe2455df3dbdb1c20a443ea5d",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-probe-module",
+      "project": "empires",
+      "path": "tools/probe_module.py",
+      "purpose": "Single-module C/ASM probe",
+      "inputs": "owner and source override",
+      "outputs": "code/DATA/fixup comparison",
+      "dependencies": "project OMF binder and toolchain",
+      "assumptions": "Cannot alone bind two library/runtime cases",
+      "reuse": "adapter_required",
+      "alternative": "SimAnt strict member verifier has richer Win16 fixup semantics",
+      "license_review": "No top-level source-tool license found; reference only. No code copied.",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "tools/probe_module.py",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "4d460e36970694c4ac322cf4182b9713fa5c4b781ff18d4f0ec4213de2767b2c",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-relocation-audit",
+      "project": "empires",
+      "path": "tools/audit_relocation_topology.py",
+      "purpose": "Separate code equality from relocation route mismatch",
+      "inputs": "production plan, MZ and optional fresh objects",
+      "outputs": "direction/provenance audit",
+      "dependencies": "project MZ and OMF readers",
+      "assumptions": "TC2/TASM/TLINK observed ordering",
+      "reuse": "project_specific",
+      "alternative": "No generic direction rule across compilers",
+      "license_review": "No top-level source-tool license found; reference only. No code copied.",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "tools/audit_relocation_topology.py",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "75a321a597d3eed4ea81236df6d7f58550a97dd37300deb579dc585d410a87da",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-audit-flags",
+      "project": "empires",
+      "path": "tools/audit_tu_flags.py",
+      "purpose": "Explain compiler route flags by source",
+      "inputs": "plan and source",
+      "outputs": "unexplained flag audit",
+      "dependencies": "project source parser/plan",
+      "assumptions": "TC2 -B/-k semantics",
+      "reuse": "conceptually_reusable",
+      "alternative": "A compiler-specific context audit is preferable to shared flag rules",
+      "license_review": "No top-level source-tool license found; reference only. No code copied.",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "tools/audit_tu_flags.py",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "1a708ced1c5c680ddbe1e195e45615c55d922969959adbf566114aee4fce68d5",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-cache",
+      "project": "empires",
+      "path": "tools/object_cache.py",
+      "purpose": "Content-addressed research compilation",
+      "inputs": "owner, includes, lock, driver",
+      "outputs": "cached object/receipt or fresh compile",
+      "dependencies": "reconstruct.py and local compiler",
+      "assumptions": "Owner/includes assumptions, acceptance disables cache",
+      "reuse": "adapter_required",
+      "alternative": "SimAnt persistent service addresses startup cost differently",
+      "license_review": "No top-level source-tool license found; reference only. No code copied.",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "tools/object_cache.py",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "8d1c9a232cdbf39165f00004017394d8576b7863f9e8c9e180c309c74df25398",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-fingerprint",
+      "project": "empires",
+      "path": "tools/factory_inputs.py",
+      "purpose": "Construction-input provenance fingerprint",
+      "inputs": "known source/layout/recipes/tool trees",
+      "outputs": "SHA256 aggregate",
+      "dependencies": "reconstruct.py and project DATA recipe",
+      "assumptions": "Hard-coded construction closure",
+      "reuse": "conceptually_reusable",
+      "alternative": "Shared provenance manifest can separate enumeration from hashing",
+      "license_review": "No top-level source-tool license found; reference only. No code copied.",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "tools/factory_inputs.py",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "7d0cc85bf5a926ceb25ea72e129e31ee88961210fc96ce4af90081afbd79bd75",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-candidate",
+      "project": "empires",
+      "path": "tools/check_candidate.py",
+      "purpose": "Bounded FAST check and promotion/block logging",
+      "inputs": "task card and edited source interval",
+      "outputs": "diagnostic, archived attempt or acceptance",
+      "dependencies": "project factory/runtime assembler",
+      "assumptions": "All runtime bytes, publics, ordered fixups and strictly fewer unresolved bytes",
+      "reuse": "project_specific",
+      "alternative": "Stunts/SimAnt handoff and variant tools have different contracts",
+      "license_review": "No top-level source-tool license found; reference only. No code copied.",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "tools/check_candidate.py",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "1765b71a47e2ca0dfaf781b1531f20b63965c762d26008e0288cebe72ac6585d",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    },
+    {
+      "id": "empires-relocation-groups",
+      "project": "empires",
+      "path": "tools/discover_relocation_groups.py",
+      "purpose": "Suggest minimum shared-compilation runs",
+      "inputs": "MZ relocations and owner manifest",
+      "outputs": "candidate recipes and constraints",
+      "dependencies": "project MZ/compiler probes",
+      "assumptions": "512-byte header coordinate conversion, descending TC2 runs",
+      "reuse": "project_specific",
+      "alternative": "Concept of evidence-derived grouping transfers, implementation does not",
+      "license_review": "No top-level source-tool license found; reference only. No code copied.",
+      "sources": [
+        {
+          "repository": "empires_reconstruction",
+          "path": "tools/discover_relocation_groups.py",
+          "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+          "sha256": "79ceea46243dc7f947cd104b4e249c5c044231fd21c467c1483235281c06aa70",
+          "state": "frozen_git_blob",
+          "anchor": ""
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "repository": "empires_reconstruction",
+      "path": "docs/current/tu-structure.md",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "e4ce58b9db430a9de40ce9a3223ed2a563b5b6fe8b61bc7b0489408b3fcbac88",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "docs/current/closure-frontier.md",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "51bdaaed025cc3114c6fd4a1d3efa1850e05185afda705d7f566d08ddb760d6b",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "docs/current/status.json",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "d05650faa9b2a2739add7cebbe130a377a103f28c8afa69a725e933563d5ab84",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "tools/audit_relocation_topology.py",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "75a321a597d3eed4ea81236df6d7f58550a97dd37300deb579dc585d410a87da",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "layout/production-plan.json",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "34c145b05229811200f6e120db5b0740b4690b82bbd4d7ed7509313292726ca7",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "docs/current/grinder-instructions.md",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "491266ce5abef74ee2d0a5a15103a4692f863cb68be594fd8bfc0e01cdac44b9",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "docs/current/supervisor-instructions.md",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "be924fecea280cd626c9a7e0937f5f81129affcaf71b1435e0152dfb5943493c",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "layout/toolchain.json",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "e649f35ab5479327da9373dbfb4b4b6f261f7d47d056a6ad3f99876c7beb44f0",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "src/MUSIC.C",
+      "ref": "562905916f6aefe007a94cc605b2405610247c44",
+      "sha256": "c07354509ca4cbab9f24e39fb82c83e67cea35a9b7d3397fd3aa408fc3bd4e75",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "docs/current/asm-provenance.md",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "cab29f8fb7f2faf9558f82d53842dc8364eaef6a9c7c3b540af0a0d529a47fb6",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "tools/build_production.py",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "a4f736bb4a3ff5032f7a1314992707e4f591833822e599fe24df2a8c17860c05",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "tools/object_cache.py",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "8d1c9a232cdbf39165f00004017394d8576b7863f9e8c9e180c309c74df25398",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "docs/exact-structural-link.md",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "c6034b69a44966809283d6e95d8d6e3ed7006138184cf1d5d20b2f0e600e3750",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "docs/linker-adapter-ledger.md",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "f39becee5427c7b2481e94ee2f9b6491f469960594ab5144bba335d0774286e4",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "docs/history/probes/neg-ax-forms.C",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "86f019c1e5bf2e5f2aa86d7c84c16b92d80cc0bc8b446fe1e749cef9fe360ecc",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "tools/probe_tu.py",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "821eaa5f3676562d30dc77be32e1d3509e6b9f1fe2455df3dbdb1c20a443ea5d",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "tools/probe_module.py",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "4d460e36970694c4ac322cf4182b9713fa5c4b781ff18d4f0ec4213de2767b2c",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "tools/audit_tu_flags.py",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "1a708ced1c5c680ddbe1e195e45615c55d922969959adbf566114aee4fce68d5",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "tools/factory_inputs.py",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "7d0cc85bf5a926ceb25ea72e129e31ee88961210fc96ce4af90081afbd79bd75",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "tools/check_candidate.py",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "1765b71a47e2ca0dfaf781b1531f20b63965c762d26008e0288cebe72ac6585d",
+      "state": "frozen_git_blob"
+    },
+    {
+      "repository": "empires_reconstruction",
+      "path": "tools/discover_relocation_groups.py",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "79ceea46243dc7f947cd104b4e249c5c044231fd21c467c1483235281c06aa70",
+      "state": "frozen_git_blob"
+    }
+  ]
+}

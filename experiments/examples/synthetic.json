@@ -1,0 +1,137 @@
+[
+  {
+    "id": "synthetic-a",
+    "project": "synthetic",
+    "target": "f",
+    "compiler_context": {
+      "identity": "fixture-context",
+      "flags": [
+        "-O1"
+      ],
+      "evidence_status": "synthetic; no compiler was run"
+    },
+    "parent_candidate": null,
+    "hypothesis": "Synthetic fixture: alternate spellings may share a metadata identity",
+    "prediction": "same output",
+    "falsifier": "different output",
+    "changed_dimensions": [
+      "spelling"
+    ],
+    "compiler_process": {
+      "status": "success"
+    },
+    "effective_output_identity": {
+      "algorithm": "sha256",
+      "digest": "a4452d57a13cf8a260978e92d40bea483ffe5915cb83f02ec6ba6c03572e30cf",
+      "scope": "object+fixups",
+      "normalizer": "none"
+    },
+    "structured_delta": {
+      "candidate_vs_parent": {},
+      "candidate_vs_oracle": {},
+      "protected_neighbors": []
+    },
+    "strict_result": {
+      "status": "not_run"
+    },
+    "facts_learned": [],
+    "stop_reason": "continue",
+    "artifacts": [
+      {
+        "role": "synthetic_fixture",
+        "path": "experiments/examples/synthetic.json",
+        "content_kind": "test_data"
+      }
+    ]
+  },
+  {
+    "id": "synthetic-b",
+    "project": "synthetic",
+    "target": "f",
+    "compiler_context": {
+      "identity": "fixture-context",
+      "flags": [
+        "-O1"
+      ],
+      "evidence_status": "synthetic; no compiler was run"
+    },
+    "parent_candidate": "synthetic-a",
+    "hypothesis": "Synthetic fixture: alternate spellings may share a metadata identity",
+    "prediction": "same output",
+    "falsifier": "different output",
+    "changed_dimensions": [
+      "alternate spelling"
+    ],
+    "compiler_process": {
+      "status": "success"
+    },
+    "effective_output_identity": {
+      "algorithm": "sha256",
+      "digest": "a4452d57a13cf8a260978e92d40bea483ffe5915cb83f02ec6ba6c03572e30cf",
+      "scope": "object+fixups",
+      "normalizer": "none"
+    },
+    "structured_delta": {
+      "candidate_vs_parent": {},
+      "candidate_vs_oracle": {},
+      "protected_neighbors": []
+    },
+    "strict_result": {
+      "status": "not_run"
+    },
+    "facts_learned": [],
+    "stop_reason": "search_converged",
+    "artifacts": [
+      {
+        "role": "synthetic_fixture",
+        "path": "experiments/examples/synthetic.json",
+        "content_kind": "test_data"
+      }
+    ]
+  },
+  {
+    "id": "synthetic-c",
+    "project": "synthetic",
+    "target": "f",
+    "compiler_context": {
+      "identity": "fixture-context",
+      "flags": [
+        "-O2"
+      ],
+      "evidence_status": "synthetic; no compiler was run"
+    },
+    "parent_candidate": null,
+    "hypothesis": "Synthetic fixture: alternate spellings may share a metadata identity",
+    "prediction": "same output",
+    "falsifier": "different output",
+    "changed_dimensions": [
+      "spelling"
+    ],
+    "compiler_process": {
+      "status": "success"
+    },
+    "effective_output_identity": {
+      "algorithm": "sha256",
+      "digest": "a4452d57a13cf8a260978e92d40bea483ffe5915cb83f02ec6ba6c03572e30cf",
+      "scope": "object+fixups",
+      "normalizer": "none"
+    },
+    "structured_delta": {
+      "candidate_vs_parent": {},
+      "candidate_vs_oracle": {},
+      "protected_neighbors": []
+    },
+    "strict_result": {
+      "status": "not_run"
+    },
+    "facts_learned": [],
+    "stop_reason": "continue",
+    "artifacts": [
+      {
+        "role": "synthetic_fixture",
+        "path": "experiments/examples/synthetic.json",
+        "content_kind": "test_data"
+      }
+    ]
+  }
+]

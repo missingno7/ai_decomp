@@ -1,0 +1,1253 @@
+# Source index
+
+These identities pin the inspected evidence. A local-file link opens the current file and may differ from the cited snapshot.
+For immutable content use the stated commit with `git show COMMIT:path` in the named sibling repository.
+Working-tree hashes identify observations but do not archive their contents.
+
+## empires-src-3cbb23225b06
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `layout/toolchain.json`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `e649f35ab5479327da9373dbfb4b4b6f261f7d47d056a6ad3f99876c7beb44f0`
+
+[Current local file (may differ)](../../empires_reconstruction/layout/toolchain.json)
+
+## empires-src-9fd4ecf8eeed
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `docs/current/status.json`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `d05650faa9b2a2739add7cebbe130a377a103f28c8afa69a725e933563d5ab84`
+
+[Current local file (may differ)](../../empires_reconstruction/docs/current/status.json)
+
+## empires-src-e7eb7bf0084c
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `docs/current/closure-frontier.md`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `51bdaaed025cc3114c6fd4a1d3efa1850e05185afda705d7f566d08ddb760d6b`
+
+[Current local file (may differ)](../../empires_reconstruction/docs/current/closure-frontier.md)
+
+## empires-src-2e83285a4c1c
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `docs/current/grinder-instructions.md`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `491266ce5abef74ee2d0a5a15103a4692f863cb68be594fd8bfc0e01cdac44b9`
+
+[Current local file (may differ)](../../empires_reconstruction/docs/current/grinder-instructions.md)
+
+## empires-src-5b7cf2dde588
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `docs/current/supervisor-instructions.md`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `be924fecea280cd626c9a7e0937f5f81129affcaf71b1435e0152dfb5943493c`
+
+[Current local file (may differ)](../../empires_reconstruction/docs/current/supervisor-instructions.md)
+
+## empires-src-f4a5acd7f619
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `docs/current/tu-structure.md`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `e4ce58b9db430a9de40ce9a3223ed2a563b5b6fe8b61bc7b0489408b3fcbac88`
+
+[Current local file (may differ)](../../empires_reconstruction/docs/current/tu-structure.md)
+
+## empires-src-0502ff01d23b
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `tools/audit_relocation_topology.py`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `75a321a597d3eed4ea81236df6d7f58550a97dd37300deb579dc585d410a87da`
+
+[Current local file (may differ)](../../empires_reconstruction/tools/audit_relocation_topology.py)
+
+## empires-src-f826913e70b3
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `src/MUSIC.C`
+
+**Ref:** `562905916f6aefe007a94cc605b2405610247c44`; base commit `562905916f6aefe007a94cc605b2405610247c44`
+
+**Content:** git_blob; SHA-256 `c07354509ca4cbab9f24e39fb82c83e67cea35a9b7d3397fd3aa408fc3bd4e75`
+
+[Current local file (may differ)](../../empires_reconstruction/src/MUSIC.C)
+
+## empires-src-52636fd94b2d
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `layout/production-plan.json`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `34c145b05229811200f6e120db5b0740b4690b82bbd4d7ed7509313292726ca7`
+
+[Current local file (may differ)](../../empires_reconstruction/layout/production-plan.json)
+
+## empires-src-73ad44eed692
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `docs/current/asm-provenance.md`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `cab29f8fb7f2faf9558f82d53842dc8364eaef6a9c7c3b540af0a0d529a47fb6`
+
+[Current local file (may differ)](../../empires_reconstruction/docs/current/asm-provenance.md)
+
+## empires-src-45cc7b345cd3
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `tools/build_production.py`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `a4f736bb4a3ff5032f7a1314992707e4f591833822e599fe24df2a8c17860c05`
+
+[Current local file (may differ)](../../empires_reconstruction/tools/build_production.py)
+
+## empires-src-e3a07a74275b
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `tools/object_cache.py`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `8d1c9a232cdbf39165f00004017394d8576b7863f9e8c9e180c309c74df25398`
+
+[Current local file (may differ)](../../empires_reconstruction/tools/object_cache.py)
+
+## empires-src-eb9a397c4ba3
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `docs/exact-structural-link.md`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `c6034b69a44966809283d6e95d8d6e3ed7006138184cf1d5d20b2f0e600e3750`
+
+[Current local file (may differ)](../../empires_reconstruction/docs/exact-structural-link.md)
+
+## empires-src-6c1a9c760467
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `docs/linker-adapter-ledger.md`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `f39becee5427c7b2481e94ee2f9b6491f469960594ab5144bba335d0774286e4`
+
+[Current local file (may differ)](../../empires_reconstruction/docs/linker-adapter-ledger.md)
+
+## empires-src-42ae8f8ac1d0
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `docs/history/probes/neg-ax-forms.C`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `86f019c1e5bf2e5f2aa86d7c84c16b92d80cc0bc8b446fe1e749cef9fe360ecc`
+
+[Current local file (may differ)](../../empires_reconstruction/docs/history/probes/neg-ax-forms.C)
+
+## empires-src-869276ee9754
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `tools/probe_tu.py`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `821eaa5f3676562d30dc77be32e1d3509e6b9f1fe2455df3dbdb1c20a443ea5d`
+
+[Current local file (may differ)](../../empires_reconstruction/tools/probe_tu.py)
+
+## empires-src-de5f08712288
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `tools/probe_module.py`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `4d460e36970694c4ac322cf4182b9713fa5c4b781ff18d4f0ec4213de2767b2c`
+
+[Current local file (may differ)](../../empires_reconstruction/tools/probe_module.py)
+
+## empires-src-8ea8a1ea9951
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `tools/audit_tu_flags.py`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `1a708ced1c5c680ddbe1e195e45615c55d922969959adbf566114aee4fce68d5`
+
+[Current local file (may differ)](../../empires_reconstruction/tools/audit_tu_flags.py)
+
+## empires-src-585f2f7689d1
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `tools/factory_inputs.py`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `7d0cc85bf5a926ceb25ea72e129e31ee88961210fc96ce4af90081afbd79bd75`
+
+[Current local file (may differ)](../../empires_reconstruction/tools/factory_inputs.py)
+
+## empires-src-120338389bca
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `tools/check_candidate.py`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `1765b71a47e2ca0dfaf781b1531f20b63965c762d26008e0288cebe72ac6585d`
+
+[Current local file (may differ)](../../empires_reconstruction/tools/check_candidate.py)
+
+## empires-src-aaa17885ef43
+
+**Repository:** `empires_reconstruction`
+
+**Path:** `tools/discover_relocation_groups.py`
+
+**Ref:** `873d1df0f505601d760c6880cdea0c6ae3d81405`; base commit `873d1df0f505601d760c6880cdea0c6ae3d81405`
+
+**Content:** git_blob; SHA-256 `79ceea46243dc7f947cd104b4e249c5c044231fd21c467c1483235281c06aa70`
+
+[Current local file (may differ)](../../empires_reconstruction/tools/discover_relocation_groups.py)
+
+## stunts-src-2822ed9ca670
+
+**Repository:** `stunts_recon`
+
+**Path:** `docs/current/status.json`
+
+**Ref:** `working-tree`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** working_tree; SHA-256 `654a87c5a778c6c7e5d6e58d7cabd7d81ad7fedcbea394d2e671c0834377612f`
+
+[Current local file (may differ)](../../stunts_recon/docs/current/status.json)
+
+## stunts-src-751997278a68
+
+**Repository:** `stunts_recon`
+
+**Path:** `docs/current/validation.json`
+
+**Ref:** `working-tree`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** working_tree; SHA-256 `3fd69d5918fe5266f59dab49ccf46972826f82a8309547fad94bd7a5d872d176`
+
+[Current local file (may differ)](../../stunts_recon/docs/current/validation.json)
+
+## stunts-src-3f7f26d672ca
+
+**Repository:** `stunts_recon`
+
+**Path:** `docs/current/worker-research.md`
+
+**Ref:** `working-tree`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** working_tree; SHA-256 `7a5807ecf03a2fcbc75195e7030ed79729255e8665d4b239a6fc3eb77f4a6208`
+
+[Current local file (may differ)](../../stunts_recon/docs/current/worker-research.md)
+
+## stunts-src-331d37292052
+
+**Repository:** `stunts_recon`
+
+**Path:** `docs/current/supervisor-instructions.md`
+
+**Ref:** `working-tree`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** working_tree; SHA-256 `8c6f4d22c3b410155fc9af6e586681508d8a347bef6ccdc18c5cce9004785e33`
+
+[Current local file (may differ)](../../stunts_recon/docs/current/supervisor-instructions.md)
+
+## stunts-src-763c07cddc94
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/blockers.json`
+
+**Ref:** `working-tree`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** working_tree; SHA-256 `4a52aa0e39a9baa517efde845d38d11bf9a482e921c997be1507c38ce3ea9c42`
+
+[Current local file (may differ)](../../stunts_recon/recovery/blockers.json)
+
+## stunts-src-435992191ca3
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/experiments/is_facing_camera/declaration-order-20260923.md`
+
+**Ref:** `working-tree`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** working_tree; SHA-256 `af21a262332912f977f7207794b9c40b1c84c9841b2a04f3ab4cd484ff35bcfd`
+
+[Current local file (may differ)](../../stunts_recon/recovery/experiments/is_facing_camera/declaration-order-20260923.md)
+
+## stunts-src-1b46d38619e0
+
+**Repository:** `stunts_recon`
+
+**Path:** `tools/research_batch.py`
+
+**Ref:** `working-tree`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** working_tree; SHA-256 `434b80efdf3569afd8a88fee56737153ac87d71cb569d0cdaff3d0a9960e617f`
+
+[Current local file (may differ)](../../stunts_recon/tools/research_batch.py)
+
+## stunts-src-b952d44f21ac
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/evaluation/model-routing/decision.md`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `faa65f54889ae2ac1dd7fc40c9d05ab05d103f2adb59693eb3da334ba33e92be`
+
+[Current local file (may differ)](../../stunts_recon/recovery/evaluation/model-routing/decision.md)
+
+## stunts-src-8cbe4caead6b
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/evaluation/model-routing/batching-decision.md`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `25fdeb09ffffa2dc7ef4c8093440f5693ebfb08ae5a7eb104c7004b3ba1ac7b1`
+
+[Current local file (may differ)](../../stunts_recon/recovery/evaluation/model-routing/batching-decision.md)
+
+## stunts-src-cb6b11074fad
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/evaluation/model-routing/batching-retrospective.md`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `2439f7bc3929f5017058973cca8b95e235c22bc9ef50cfd3390463139f4f91ff`
+
+[Current local file (may differ)](../../stunts_recon/recovery/evaluation/model-routing/batching-retrospective.md)
+
+## stunts-src-e649d1b0311c
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/evaluation/model-routing/results.json`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `fb803ad91fad49da0085c25c5d49aa56d210670c24c65878f5fc4d369ce5b4bd`
+
+[Current local file (may differ)](../../stunts_recon/recovery/evaluation/model-routing/results.json)
+
+## stunts-src-794e153ccdd3
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/corpus/endurance-001/handoff.md`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `0de5a0008e12e8b1c25625f1b3ca1ef46e8cb0fbe3cd4439dc76ccb138cc021c`
+
+[Current local file (may differ)](../../stunts_recon/recovery/corpus/endurance-001/handoff.md)
+
+## stunts-src-0fc0f3a1d744
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/corpus/endurance-001/final-audit.md`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `3159053ad6929df70f02c8da0b4bef517a9fef30deea0168747b15c1da8a6046`
+
+[Current local file (may differ)](../../stunts_recon/recovery/corpus/endurance-001/final-audit.md)
+
+## stunts-src-e9b681928b47
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/corpus/endurance-001/cost-checkpoint.md`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `c495d73855e50b76455ee346ea115899559e74375a26a5564e3d5de8b4530ca1`
+
+[Current local file (may differ)](../../stunts_recon/recovery/corpus/endurance-001/cost-checkpoint.md)
+
+## stunts-src-560f8e2b45d6
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/corpus/batch-001/audit.md`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `95f17986b653c0bcc92dc0e83f4f04d3402d931a50a10992a18cbafc79da74d9`
+
+[Current local file (may differ)](../../stunts_recon/recovery/corpus/batch-001/audit.md)
+
+## stunts-src-b5d04cafa334
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/compiler-evidence/boolean-return-placement/README.md`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `c7ab49dfeb5d48f90d350e23d68531578cd49bf659b7053f5cafdc5be21ffe9e`
+
+[Current local file (may differ)](../../stunts_recon/recovery/compiler-evidence/boolean-return-placement/README.md)
+
+## stunts-src-2facbd66586a
+
+**Repository:** `stunts_recon`
+
+**Path:** `docs/current/near-match-families.md`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `29a68054294a913c18808b9cbf1101fabf5bec1ea625cc3aa0eaf37d6485c425`
+
+[Current local file (may differ)](../../stunts_recon/docs/current/near-match-families.md)
+
+## stunts-src-a50e39e12237
+
+**Repository:** `stunts_recon`
+
+**Path:** `tools/coordinates.py`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `732ff4889873bff0a6c7b8344d9dacd36a12b11fb132b70531068f8d74643e96`
+
+[Current local file (may differ)](../../stunts_recon/tools/coordinates.py)
+
+## stunts-src-ad637d16775d
+
+**Repository:** `stunts_recon`
+
+**Path:** `tools/diagnostics.py`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `a5df723b30e4581e53434d32dea82798c625c34e84bf55330c56a7f81c23ccc3`
+
+[Current local file (may differ)](../../stunts_recon/tools/diagnostics.py)
+
+## stunts-src-8d5b85ee6620
+
+**Repository:** `stunts_recon`
+
+**Path:** `tools/check_candidate.py`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `166fdcc6ff1c18d1729f1ccf213d4250071aca44e9c8f1a7d09aee0fd485d33a`
+
+[Current local file (may differ)](../../stunts_recon/tools/check_candidate.py)
+
+## stunts-src-c4ceae488459
+
+**Repository:** `stunts_recon`
+
+**Path:** `tools/oracle.py`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `01c57bb2b64f9cd7107a49d0bc1b050cab4014406590ffc7b24f51b5874fc3b5`
+
+[Current local file (may differ)](../../stunts_recon/tools/oracle.py)
+
+## stunts-src-2fc663b6dc57
+
+**Repository:** `stunts_recon`
+
+**Path:** `tools/inspect_object.py`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `871967faddd0b17b2ec2ab7c9ea78ef50f3b701aef5cde02a7b6eff64ed9c884`
+
+[Current local file (may differ)](../../stunts_recon/tools/inspect_object.py)
+
+## stunts-src-025bb1bafcdd
+
+**Repository:** `stunts_recon`
+
+**Path:** `tools/probe_tu.py`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `1f5dd0bb237734e5873fceeb94ca21314fbe97fd84e8bdc37bd928d01bf17dbc`
+
+[Current local file (may differ)](../../stunts_recon/tools/probe_tu.py)
+
+## stunts-src-0099966f0e5d
+
+**Repository:** `stunts_recon`
+
+**Path:** `tools/grind.py`
+
+**Ref:** `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** git_blob; SHA-256 `a2e2d37e9d398fca73ca0e3db492bcfac436931883bba0105aee47d2ceaaab76`
+
+[Current local file (may differ)](../../stunts_recon/tools/grind.py)
+
+## simantw-src-be11f9a479d8
+
+**Repository:** `simantw_recon`
+
+**Path:** `AGENTS.md`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `235a6fbd9eb5d2b7ba8b8f73dd710e88ce2341fe9196b1463905dca5e90d30e9`
+
+[Current local file (may differ)](../../simantw_recon/AGENTS.md)
+
+## simantw-src-28415d4f6c1c
+
+**Repository:** `simantw_recon`
+
+**Path:** `docs/factory.md`
+
+**Ref:** `working-tree`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** working_tree; SHA-256 `8fa9113ddd578a0bad8af847c22c7b372e8bfce9f34977366cd46695f6b09952`
+
+[Current local file (may differ)](../../simantw_recon/docs/factory.md)
+
+## simantw-src-ff521355e6a4
+
+**Repository:** `simantw_recon`
+
+**Path:** `docs/production-queue.json`
+
+**Ref:** `working-tree`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** working_tree; SHA-256 `2c4ead8543efb230ff5d6e1b6df9c73a401d3ae6d76c5de711563925f1f8b06c`
+
+[Current local file (may differ)](../../simantw_recon/docs/production-queue.json)
+
+## simantw-src-faf185b1fa1d
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/experiments/flood-nest-mapb/README.md`
+
+**Ref:** `working-tree`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** working_tree; SHA-256 `05819db8fa1650f658402ec958794d59c65ab37ab23c07f1ac76fe72914e5b55`
+
+[Current local file (may differ)](../../simantw_recon/evidence/experiments/flood-nest-mapb/README.md)
+
+## simantw-src-97d9aa655d43
+
+**Repository:** `simantw_recon`
+
+**Path:** `docs/grinder-lessons.md`
+
+**Ref:** `working-tree`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** working_tree; SHA-256 `70f01eeb43c3b9057d78ec0ba4d179c6ab2601488241fcc5945305ece833e81d`
+
+[Current local file (may differ)](../../simantw_recon/docs/grinder-lessons.md)
+
+## simantw-src-4caa686b51f6
+
+**Repository:** `simantw_recon`
+
+**Path:** `layout/declaration-order.json`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `e92c024a6264aed56af5f39e2915c0c9ebd2c657ba37aed46319519d612ece72`
+
+[Current local file (may differ)](../../simantw_recon/layout/declaration-order.json)
+
+## simantw-src-47f5c8a50659
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/recovery/batch105/results.json`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `4d9fe06b0611365be72ea17037db90a057959ea50d6365b454f11a69071cf787`
+
+[Current local file (may differ)](../../simantw_recon/evidence/recovery/batch105/results.json)
+
+## simantw-src-db1245e440b9
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/recovery/batch114/results.json`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `e6622ce64e7796bf96d81097e5202ef15fb99b83a160eaf666e6dd39ddf2c96a`
+
+[Current local file (may differ)](../../simantw_recon/evidence/recovery/batch114/results.json)
+
+## simantw-src-d047b00272c6
+
+**Repository:** `simantw_recon`
+
+**Path:** `docs/build-topology.md`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `28a292ab5a43b031039111f28cd98aaf9b92f6e6542ed9d44ae1a4b3324e112f`
+
+[Current local file (may differ)](../../simantw_recon/docs/build-topology.md)
+
+## simantw-src-12c92ff6a3bb
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/job.json`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `e7c2bfded1e11cf7c3dfb301433e8b7c76559f27ab9d6dcc790672aacc31aa99`
+
+[Current local file (may differ)](../../simantw_recon/evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/job.json)
+
+## simantw-src-08ff8a83cd4a
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/attempt01/results.json`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `091879a58099e37edf65e809268e3a1743c6c05a490a5f03d3cd2ee7c27a57cf`
+
+[Current local file (may differ)](../../simantw_recon/evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/attempt01/results.json)
+
+## simantw-src-a7ff369a2aa8
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/attempt02/results.json`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `025f161c8ea25f53857dd4fc00ad61b298886b58b78a3a282c6e6c0892e19b28`
+
+[Current local file (may differ)](../../simantw_recon/evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/attempt02/results.json)
+
+## simantw-src-09e28abce707
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/attempt03/results.json`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `06c36265113625b64471e40e7faa536ed50d173749ddca8d1d395c89c568ddf0`
+
+[Current local file (may differ)](../../simantw_recon/evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/attempt03/results.json)
+
+## simantw-src-8442db997518
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/promotion.json`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `67f38edd9e2fdcfd04d89bce28306900193a3711b4cfb3928aad03a8f57b7ea1`
+
+[Current local file (may differ)](../../simantw_recon/evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/promotion.json)
+
+## simantw-src-b18777f42c27
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/recovery/workflow/jobs/MagnifyMenu-51f69a1a04/job.json`
+
+**Ref:** `working-tree`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** working_tree; SHA-256 `92c73b59bacf8010e067f1b1073f9a99c565d4ed8251842c9a3ec8b2e02fe21b`
+
+[Current local file (may differ)](../../simantw_recon/evidence/recovery/workflow/jobs/MagnifyMenu-51f69a1a04/job.json)
+
+## simantw-src-beaae9153adb
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/recovery/workflow/jobs/MagnifyMenu-51f69a1a04/mechanism.json`
+
+**Ref:** `working-tree`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** working_tree; SHA-256 `212c586914b6800daf06c3f257828c608959a18dd004ba2c9987567b02772b8a`
+
+[Current local file (may differ)](../../simantw_recon/evidence/recovery/workflow/jobs/MagnifyMenu-51f69a1a04/mechanism.json)
+
+## simantw-src-f4529e5a4623
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/recovery/workflow/jobs/MagnifyMenu-51f69a1a04/promotion.json`
+
+**Ref:** `working-tree`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** working_tree; SHA-256 `fcae061177110fb0234480f160d2711345f01f42b0212d052e61b6bce6604310`
+
+[Current local file (may differ)](../../simantw_recon/evidence/recovery/workflow/jobs/MagnifyMenu-51f69a1a04/promotion.json)
+
+## simantw-src-4ea9c1c85cac
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/experiments/change-directory/README.md`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `1e89b05a5b0e88f3f360b41e3bc70434431c0fd9c02dcde78364448ad913e0b3`
+
+[Current local file (may differ)](../../simantw_recon/evidence/experiments/change-directory/README.md)
+
+## simantw-src-4280bba8baf4
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/recovery/batch103/results.json`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `1833a5d1fd9327536c5fa3bcf8f2c0424a25105327d40f235593a0fc3cf8dac1`
+
+[Current local file (may differ)](../../simantw_recon/evidence/recovery/batch103/results.json)
+
+## simantw-src-a90096b5859f
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/experiments/optimizer-profile/README.md`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `ad187bec44d8f2b64d3e6a8cae0ee44144fa879929eda14262fa21f010d549cb`
+
+[Current local file (may differ)](../../simantw_recon/evidence/experiments/optimizer-profile/README.md)
+
+## simantw-src-a6d7985aa16a
+
+**Repository:** `simantw_recon`
+
+**Path:** `layout/compiler-service.json`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `cbcf08c9711e00643440c3bcc3c04d3f31bf73258f7449d0029b40d04d8a777a`
+
+[Current local file (may differ)](../../simantw_recon/layout/compiler-service.json)
+
+## simantw-src-6a26ddd43f5c
+
+**Repository:** `simantw_recon`
+
+**Path:** `docs/blocked-reclassification.md`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `45ac12a2a2f0821e1c93ba41045ebc2fd4556e655cbb68e40f57c9b036b53431`
+
+[Current local file (may differ)](../../simantw_recon/docs/blocked-reclassification.md)
+
+## simantw-src-8df1e02285b0
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/recovery/batch110/results.json`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `1c86f12a16d3d760126c5be9b74417290594fa61b48d4d8b89804cc045a34697`
+
+[Current local file (may differ)](../../simantw_recon/evidence/recovery/batch110/results.json)
+
+## simantw-src-1d9821e62051
+
+**Repository:** `simantw_recon`
+
+**Path:** `tools/mirror_pairs.py`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `d1573c35f1c9a3db45b9a6c701e0bddd1bbdec23ce713b0132d38d80f4ccfe16`
+
+[Current local file (may differ)](../../simantw_recon/tools/mirror_pairs.py)
+
+## simantw-src-071808eb1c6d
+
+**Repository:** `simantw_recon`
+
+**Path:** `tools/codegen_grinder.py`
+
+**Ref:** `working-tree`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** working_tree; SHA-256 `d7b361c7fe079414335747884717562bbb8e4544968cc38c7478b303a4f3ef62`
+
+[Current local file (may differ)](../../simantw_recon/tools/codegen_grinder.py)
+
+## simantw-src-ebb8d5ca8d31
+
+**Repository:** `simantw_recon`
+
+**Path:** `tools/codegen_cache.py`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `7b55ee272e38ed27cf0516c7255ad0ab395e3431f2463a0c39108d6f2492ec5d`
+
+[Current local file (may differ)](../../simantw_recon/tools/codegen_cache.py)
+
+## simantw-src-b9e6348f699a
+
+**Repository:** `simantw_recon`
+
+**Path:** `tools/codegen_diff.py`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `56943754bb2ff2ea040c5713549ac9f566a7cfae3e71da2daf06deaace576e7c`
+
+[Current local file (may differ)](../../simantw_recon/tools/codegen_diff.py)
+
+## simantw-src-7042abd78f7f
+
+**Repository:** `simantw_recon`
+
+**Path:** `tools/compiler_service.py`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `e9dd64f9f279526da6fbd5b6a51fa81eaf60125ba90136486b758eb3b504f5d6`
+
+[Current local file (may differ)](../../simantw_recon/tools/compiler_service.py)
+
+## simantw-src-db3807d912fa
+
+**Repository:** `simantw_recon`
+
+**Path:** `tools/omf.py`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `1406cce74ba52aaa9fe0f911fca63d78bc630c52f434efbe3cb833f6129d01a7`
+
+[Current local file (may differ)](../../simantw_recon/tools/omf.py)
+
+## simantw-src-c2fb20671d05
+
+**Repository:** `simantw_recon`
+
+**Path:** `tools/tu_assembly.py`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `7a4c1bddfa55c7b55101b978307dd2e389c2d1164c7ccbc614d05d65dad0f964`
+
+[Current local file (may differ)](../../simantw_recon/tools/tu_assembly.py)
+
+## simantw-src-58d39ac26e79
+
+**Repository:** `simantw_recon`
+
+**Path:** `tools/blocked_reclassification.py`
+
+**Ref:** `cdf6af62cc67608f02c574e805d79cb413e330ef`; base commit `cdf6af62cc67608f02c574e805d79cb413e330ef`
+
+**Content:** git_blob; SHA-256 `8f900b481f18dd8485d1bf252471a470711afd432735d8e983edff7cf08f3ae8`
+
+[Current local file (may differ)](../../simantw_recon/tools/blocked_reclassification.py)
+
+## icytower-src-c52e8cebd6cb
+
+**Repository:** `icytower_recon`
+
+**Path:** `README.md`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `a73b997b71028ff52d9416a34a1a855855507b20629614f3c30a4aba6f0a85b0`
+
+[Current local file (may differ)](../../icytower_recon/README.md)
+
+## icytower-src-3b40ad7aef43
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/progress.json`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `f7730cd7f76d657dfa0731828f69796b51df0eac93d16ee3c47e6d64279eee68`
+
+[Current local file (may differ)](../../icytower_recon/docs/progress.json)
+
+## icytower-src-c69f69a480e1
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/current/link-status.json`
+
+**Ref:** `working-tree`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** working_tree; SHA-256 `9754603aca1b7b95c10d514fca1f6588041870d9b5866a2053b3f0b93036053a`
+
+[Current local file (may differ)](../../icytower_recon/docs/current/link-status.json)
+
+## icytower-src-3b6e089d4c02
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/current/validation.json`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `375831ee8c47635a48b7f0a29fb99db800289b1d0f64d9c4f85e9ea787c6264c`
+
+[Current local file (may differ)](../../icytower_recon/docs/current/validation.json)
+
+## icytower-src-43f744d0a15f
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/compiler-context-evidence.md`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `0df1ce5b22a895dfd81c48cf0a4820cb4ba73d5989b86f381712c31467ca919b`
+
+[Current local file (may differ)](../../icytower_recon/docs/compiler-context-evidence.md)
+
+## icytower-src-2ed3389fb665
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/tu-context-analysis.md`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `c22919e18f40bd80573fdd2179ea3e7b71c81997a814089615c36fec702c8380`
+
+[Current local file (may differ)](../../icytower_recon/docs/tu-context-analysis.md)
+
+## icytower-src-037b8ea1908c
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/draw-frame-recovery.md`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `bd2439f5849d07dd6c1b1a3202a069e02379a6198c2f6ce5f0ce31845c259b96`
+
+[Current local file (may differ)](../../icytower_recon/docs/draw-frame-recovery.md)
+
+## icytower-src-4131d17dedce
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/play-recovery.md`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `ed9abf7da4ff74ea75b04ba0cf2bfe8b759a59455f599801e00f1b739b3ea413`
+
+[Current local file (may differ)](../../icytower_recon/docs/play-recovery.md)
+
+## icytower-src-0e77b5d3779f
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/proof-levels.md`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `22d8fa50257bfd72dde96f6585ed6f9bbe3cc7d7a7b8635fc347744d0aa79284`
+
+[Current local file (may differ)](../../icytower_recon/docs/proof-levels.md)
+
+## icytower-src-b2d9dc482859
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/production-line-audit.md`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `54f9f04bac855c212f2812937318f1b87152082668eb08b8eeaafff5c01d298e`
+
+[Current local file (may differ)](../../icytower_recon/docs/production-line-audit.md)
+
+## icytower-src-6ab42ab0e653
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/storage-scope-evidence.md`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `934b284ca674644231e20d01c9620e660c1e8721465d9500d15a834089cbe18b`
+
+[Current local file (may differ)](../../icytower_recon/docs/storage-scope-evidence.md)
+
+## icytower-src-22231bb443b7
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/research-luna-draw/status-pose-independent-20260923.md`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `c55e778daec2f76339556502c0159672e7b1a2c31bc3f64d5dda30497a5265d2`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/research-luna-draw/status-pose-independent-20260923.md)
+
+## icytower-src-c517626b278f
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/research-supervisor-play/play-summary-rtl-common-tail-20260923.md`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `c92bf81c8e25bd5d4b592f140b0af9216c4ac66d35e508b13d1ba24531a2d485`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/research-supervisor-play/play-summary-rtl-common-tail-20260923.md)
+
+## icytower-src-e48ebf518372
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/game-main/play-control-flow-20260923.md`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `35c8aa6837daad845c3f9bf9c601dd292e0e089c2d651468d5a828a46de9d803`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/game-main/play-control-flow-20260923.md)
+
+## icytower-src-c4d4e6eddf66
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/compiler-context/game-httpget/HTTPFetchInternal.json`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `39e0c2c2faba06ed76e10eaab3af699f90ee8832aff73aeedd240ea8e61095aa`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/compiler-context/game-httpget/HTTPFetchInternal.json)
+
+## icytower-src-13acb948125f
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/compiler-context/game-scroller/draw_scroller.json`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `93ed95106760fb3315d854e2436f6f6c7938098ed22a83583caff6941b9a185e`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/compiler-context/game-scroller/draw_scroller.json)
+
+## icytower-src-c196ae83cab0
+
+**Repository:** `icytower_recon`
+
+**Path:** `tools/dwarf_locations.py`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `f7b1ac4bff5d408822c8f03d6e2e6f075ca60ac7a29f193d61d45fb8f99e6c4f`
+
+[Current local file (may differ)](../../icytower_recon/tools/dwarf_locations.py)
+
+## icytower-src-5603b15defea
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/current/source-order-tasks.json`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `d98cbad2073765e6c44de225100209230b1918553c3cca7dd60b1722dce163a0`
+
+[Current local file (may differ)](../../icytower_recon/docs/current/source-order-tasks.json)
+
+## icytower-src-9f47c890bb6a
+
+**Repository:** `icytower_recon`
+
+**Path:** `tools/source_order.py`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `01c8132a08fa3cbd1647fc49a0795a0bcb524d5cf998c9379afaa60cd13fa78c`
+
+[Current local file (may differ)](../../icytower_recon/tools/source_order.py)
+
+## icytower-src-24b8112b067b
+
+**Repository:** `icytower_recon`
+
+**Path:** `tools/rtl_evidence.py`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `0ecd31167fb944b059a8aed3a2682a93a835afca8411911899d4173f5dca9e0d`
+
+[Current local file (may differ)](../../icytower_recon/tools/rtl_evidence.py)
+
+## icytower-src-1a800deb70fe
+
+**Repository:** `icytower_recon`
+
+**Path:** `tools/promote_function.py`
+
+**Ref:** `working-tree`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** working_tree; SHA-256 `e9bb554aaddc79d63d02556273165c3f3a3041af12593d8f5cdac51c8ea1105c`
+
+[Current local file (may differ)](../../icytower_recon/tools/promote_function.py)
+
+## icytower-src-3bc4c6e9989c
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/interfaces/scope_fld_adspot_localFilename.jsonl`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `c6d2db1cc19ed8b947e6152599e48667f9e7b1ebd1e01475e51e5485bf290904`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/interfaces/scope_fld_adspot_localFilename.jsonl)
+
+## icytower-src-a40c933cb927
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/interfaces/scope_main_face.jsonl`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `e594413ed075f2335e43d82d0f60ad69d545ddefc25cf0da580a7ec8f8f5cb09`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/interfaces/scope_main_face.jsonl)
+
+## icytower-src-4e248a49d0c7
+
+**Repository:** `icytower_recon`
+
+**Path:** `tools/effective_outcomes.py`
+
+**Ref:** `working-tree`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** working_tree; SHA-256 `d1ca72809ff1ff48af7d0339039ec3fb4130febf944ba7daceb53f7092ec80cc`
+
+[Current local file (may differ)](../../icytower_recon/tools/effective_outcomes.py)
+
+## icytower-src-5691234f1115
+
+**Repository:** `icytower_recon`
+
+**Path:** `tools/compiler_probe.py`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `31283d854db2042684c3cead8f3d6343b596f3813644f33c6426246a2ff13346`
+
+[Current local file (may differ)](../../icytower_recon/tools/compiler_probe.py)
+
+## icytower-src-93277837d0f9
+
+**Repository:** `icytower_recon`
+
+**Path:** `tools/tu_context_probe.py`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `9ffd1726cfaba409666c4f2d028ccde396cf5be925590328a6d729f76fe39c5e`
+
+[Current local file (may differ)](../../icytower_recon/tools/tu_context_probe.py)
+
+## icytower-src-0b2777a52740
+
+**Repository:** `icytower_recon`
+
+**Path:** `tools/instruction_alignment.py`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `3ed060a7fb841191907c8a938257d82d827c80c53a0230f353992ed8eb29ad15`
+
+[Current local file (may differ)](../../icytower_recon/tools/instruction_alignment.py)
+
+## icytower-src-3f1ce3a5c386
+
+**Repository:** `icytower_recon`
+
+**Path:** `tools/check_function.py`
+
+**Ref:** `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** git_blob; SHA-256 `6e9f784b28c4369c2108e27df75719762b3480f46d520e996ed595fdcf75f2b1`
+
+[Current local file (may differ)](../../icytower_recon/tools/check_function.py)

@@ -1,0 +1,128 @@
+{
+  "schema": "ai-decomp.stunts-research.v1",
+  "project": {
+    "id": "stunts_recon",
+    "repository": "D:/Prog/stunts_recon",
+    "head": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+    "branch": "main",
+    "dirty": {
+      "working_tree": true,
+      "tracked_unstaged_files": 620,
+      "untracked_files": 16,
+      "staged_files": 0,
+      "proof": "git status --porcelain=v1 and git diff --numstat observed 2026-09-23; source repository was read only"
+    },
+    "status": {
+      "compiler": "MSC 5.0/5.1 medium-model optimized; production pins 5.1, historical version/flags not unique",
+      "architecture": "DOS real mode / 16-bit x86",
+      "formats": ["MZ executable/load image", "Microsoft OMF object", "EXEPACK-packed oracle input"],
+      "acceptance": "HYBRID_EXACT; pristine oracle plus object/fixup/binding evidence and fresh whole-image validation",
+      "current_validation": "Latest validation receipt: PASS, HYBRID_EXACT, 139 tests and 11 independently compiled active C functions. Separate generated status: full_image_status NOT_CURRENTLY_VERIFIED; 408 matching C bytes, 0 matching ASM bytes, 725 pinned runtime bytes; 605 supervisor tasks."
+    },
+    "proof_overview": "Strict promotion is serial and needs fresh candidate and whole-image checks. Isolated research may preserve parser-readable objects that the strict production reader rejects, but cannot promote them.",
+    "workflow_overview": "Compact diagnosis -> machine-level prediction/falsifier -> bounded batch or adaptive experiment -> effective-output grouping -> change analysis level on repeated outcomes -> strict grind/whole-image validation for promotion.",
+    "examined_at": "2026-09-23 (re-examined after live-evidence drift alert)",
+    "sources": ["docs/current/status.json", "docs/current/validation.json", "docs/current/worker-research.md", "recovery/corpus/endurance-001/handoff.md"]
+  },
+  "mechanisms": [
+    {
+      "id": "hybrid-proof-separation",
+      "kind": ["PROJECT FACT", "GENERIC METHOD"],
+      "claim": "Useful compiler/object evidence and strict recovery are different states; promotion requires immutable oracle inputs and fresh whole-image proof.",
+      "scope": "Method is reusable; Stunts MZ/OMF and queue contracts are not.",
+      "sources": ["docs/current/validation.json#L1-L32", "tools/check_candidate.py#L13-L103", "recovery/corpus/endurance-001/handoff.md#L1-L24"]
+    },
+    {
+      "id": "effective-output-convergence",
+      "kind": ["PROJECT FACT", "GENERIC METHOD"],
+      "claim": "After two source hypotheses yield the same profile/context-aware effective output, move to a different analysis level; changed source text is not progress.",
+      "scope": "Observed in Stunts; identity definition includes recipe context.",
+      "sources": ["docs/current/worker-research.md#L13-L17", "recovery/evaluation/model-routing/batching-retrospective.md#L3-L11"]
+    },
+    {
+      "id": "candidate-pair-diagnostics",
+      "kind": ["PROJECT FACT", "CONCEPTUALLY REUSABLE"],
+      "claim": "Candidate-vs-candidate deltas can isolate a coherent BP-home allocation effect without asserting source causality or acceptance.",
+      "scope": "The declaration-order result is one MSC 5.1 source/profile case.",
+      "sources": ["recovery/experiments/is_facing_camera/declaration-order-20260923.md#L1-L6", "tools/diagnostics.py#L227-L457"]
+    },
+    {
+      "id": "mismatch-islands-with-contradictions",
+      "kind": ["PROJECT FACT", "GENERIC METHOD"],
+      "claim": "Report anchors, islands, operand mappings, contradicting uses and residuals separately; a pattern is not variable identity or a repair.",
+      "scope": "Implementation assumes x86-16 decoding but evidence discipline is portable.",
+      "sources": ["docs/current/near-match-families.md#L9-L15", "tools/diagnostics.py#L410-L457"]
+    },
+    {
+      "id": "capability-and-binding-boundaries",
+      "kind": ["PROJECT FACT"],
+      "claim": "Pinned compiler syntax limits and strict parser/binder omissions can be demonstrated blockers, distinct from a source-search or model limitation.",
+      "scope": "MSC 5.10 named based-segment and Stunts B4/B6 cases only.",
+      "sources": ["recovery/corpus/endurance-001/handoff.md#L1-L24", "docs/current/supervisor-instructions.md#L15-L16"]
+    }
+  ],
+  "trajectories": [
+    {
+      "id": "matched-luna-astra-routing",
+      "outcome": "Mixed controls succeeded in both arms; unresolved cases remained unresolved; retain Luna/high first as an engineering decision, not capability proof.",
+      "sequence": ["four fresh matched high/high capsules", "two known-solvable replays strict in both arms", "two unresolved tasks no strict receipt", "separate tooling/preflight failures", "cost accounting found supervisor overhead dominant", "no Astra-first class asserted"],
+      "evidence": ["recovery/evaluation/model-routing/decision.md#L1-L29", "recovery/evaluation/model-routing/results.json#L1-L2956"]
+    },
+    {
+      "id": "unknown-libname-batch-v-sequential",
+      "outcome": "Batch reduced worker requests/time/cost in one pair but produced fewer unique outputs and no strict recovery; use small independent batches only.",
+      "sequence": ["same frozen seed/caps", "adaptive sequential candidates", "predeclared three-candidate batch", "effective identity grouping", "both fail strict", "retain sequential feedback for dependent pivots"],
+      "evidence": ["recovery/evaluation/model-routing/batching-decision.md#L1-L28"]
+    },
+    {
+      "id": "camera-declaration-and-return-negative",
+      "outcome": "Declaration order explained BP-home mapping but left 194/200 extent gap; independent return-label fixture refuted a simple epilogue-placement hypothesis.",
+      "sequence": ["194 vs 200 symptom", "declaration-order prediction", "BP mapping/anchors improve", "extent and branch gap remain", "negative-polarity form remains 194 and loses anchors", "early-return versus trailing-label fixture", "identical 38-byte output", "blocked pending new boolean/TU evidence"],
+      "evidence": ["recovery/experiments/is_facing_camera/declaration-order-20260923.md#L1-L17", "recovery/compiler-evidence/boolean-return-placement/README.md#L1-L7", "docs/current/supervisor-instructions.md#L9-L13"]
+    }
+  ],
+  "negatives": [
+    {"id":"astra-first-unproven","claim":"No Astra-only strict solve in four matched pairs; no Astra-first class or population solve curve follows.","scope":"selected pilot only","sources":["recovery/evaluation/model-routing/decision.md#L1-L29"]},
+    {"id":"worker-cost-not-e2e","claim":"Direct worker cost omits material supervision/auto-review overhead; do not report it as end-to-end recovery economics.","scope":"recorded pilot/cohort accounting","sources":["recovery/evaluation/model-routing/decision.md#L18-L29","docs/current/worker-research.md#L39-L45"]},
+    {"id":"batching-productivity-unproven","claim":"One batch pair saved worker resources but found fewer outputs and no strict match; optimal batch size is unknown.","scope":"unknown_libname_1 pair","sources":["recovery/evaluation/model-routing/batching-decision.md#L13-L28"]},
+    {"id":"trailing-label-refuted","claim":"Early return and explicit trailing zero-return label emitted identical 38-byte MSC 5.1 fixtures.","scope":"two complete fixtures, not all control-flow spellings","sources":["recovery/compiler-evidence/boolean-return-placement/README.md#L1-L7"]},
+    {"id":"camera-negative-polarity","claim":"With declaration order fixed, the tested negative-polarity condition emitted a third 194-byte output, lost two late anchors and did not reach the AL/CBW target sequence.","scope":"one source form under pinned MSC 5.1, not all return expressions or TU contexts","sources":["recovery/experiments/is_facing_camera/declaration-order-20260923.md#L13-L17"]},
+    {"id":"based-segment-unavailable","claim":"Tested _based/_segname forms were rejected by pinned MSC 5.10 and did not select the needed CODE-segment access.","scope":"sub_35DE6 tested forms/profile","sources":["recovery/corpus/endurance-001/handoff.md#L1-L24"]}
+  ],
+  "tools": [
+    {"path":"tools/coordinates.py","classification":"adapter_required","purpose":"checked explicit coordinate-space conversion","inputs":"coordinate, named space, optional segment, decompression mapping","outputs":"load-image or named-space coordinate","dependencies":"Python dataclasses; local common.require","assumptions":"specific spaces/header/base and the assertion dependency must be supplied by an adapter","license_review":"No repository LICENSE/COPYING/NOTICE found; reference only, no copying reviewed.","sources":["tools/coordinates.py#L1-L48"]},
+    {"path":"tools/diagnostics.py","classification":"conceptually_reusable","purpose":"pure stream alignment, anchors, mismatch islands and operand-family diagnostics","inputs":"target/candidate bytes, fixups, binding/context flags","outputs":"structured comparison and compact summary","dependencies":"Capstone 5.0.3; local common","assumptions":"x86 16-bit decoding and Stunts fixup meanings","license_review":"No repository LICENSE/COPYING/NOTICE found; reference only, no copying reviewed.","sources":["tools/diagnostics.py#L23-L28","tools/diagnostics.py#L410-L457"]},
+    {"path":"tools/research_batch.py","classification":"adapter_required","purpose":"archive preregistered hypotheses, ceiling compiler launches, cluster effective outputs and compare candidates","inputs":"Stunts context-index/card plus JSON manifest of 2-32 hypotheses/predictions/falsifiers","outputs":"private receipts, outcome matrix and pairwise diagnostic summary","dependencies":"Stunts compiler, MZ/oracle, context index/workflow/cards, diagnostics","assumptions":"Stunts evidence extent, recipe/snapshot/context-index and private build root","license_review":"Untracked working-tree tool; no repository license found; reference only.","sources":["tools/research_batch.py#L67-L223","docs/current/worker-research.md#L15-L17"]},
+    {"path":"tools/check_candidate.py","classification":"project_specific","purpose":"fresh FAST/staged/canonical candidate acceptance and promotion guard","inputs":"task, candidate source, workflow snapshot","outputs":"receipt or archived failure","dependencies":"Stunts exact build, workflow and oracle","assumptions":"serial Stunts promotion and manifest locks","license_review":"No repository license found; reference only.","sources":["tools/check_candidate.py#L13-L103"]},
+    {"path":"tools/oracle.py","classification":"adapter_required","purpose":"find, hash, lock and materialize pristine oracle inputs","inputs":"configured MCGA/oracle assets and lock file","outputs":"identity report and optional oracle materialization","dependencies":"Stunts assets, EXEPACK/MZ modules, layout lock","assumptions":"case-insensitive asset names and Stunts oracle layout","license_review":"No repository license found; reference only.","sources":["tools/oracle.py#L33-L76"]},
+    {"path":"tools/inspect_object.py","classification":"project_specific","purpose":"inspect OMF code/fixups and archive a private research receipt","inputs":"OMF object, target bytes, Stunts evidence JSON","outputs":"research-object-inspection.json","dependencies":"Stunts omf reader/evidence/private-root policy","assumptions":"Microsoft OMF and Stunts segment semantics","license_review":"No repository license found; reference only.","sources":["tools/inspect_object.py#L22-L25","tools/inspect_object.py#L142-L252"]},
+    {"path":"tools/probe_tu.py","classification":"adapter_required","purpose":"controlled translation-unit compiler probe","inputs":"probe source and Stunts compiler/oracle context","outputs":"candidate/oracle comparison result","dependencies":"Stunts compiler.py and oracle.py","assumptions":"MSC runner and MZ oracle","license_review":"No repository license found; reference only.","sources":["tools/probe_tu.py#L1-L35"]},
+    {"path":"tools/grind.py","classification":"project_specific","purpose":"budgeted attempt archival and guarded serial promotion workflow","inputs":"Stunts recovery candidate/card and command","outputs":"attempt ledger/report/promotion state","dependencies":"check_candidate, build_exact, reconstruction_factory, workflow","assumptions":"Stunts queue and recovery/candidates layout","license_review":"No repository license found; reference only.","sources":["tools/grind.py#L1-L113"]}
+  ],
+  "source_manifest": [
+    {"path":"docs/current/status.json","ref":"working-tree","sha256":"654a87c5a778c6c7e5d6e58d7cabd7d81ad7fedcbea394d2e671c0834377612f","working_tree":true,"status":"modified","anchors":"L1-L60"},
+    {"path":"docs/current/validation.json","ref":"working-tree","sha256":"3fd69d5918fe5266f59dab49ccf46972826f82a8309547fad94bd7a5d872d176","working_tree":true,"status":"modified","anchors":"L1-L32"},
+    {"path":"docs/current/worker-research.md","ref":"working-tree","sha256":"7a5807ecf03a2fcbc75195e7030ed79729255e8665d4b239a6fc3eb77f4a6208","working_tree":true,"status":"modified","anchors":"L3-L17,L41-L45"},
+    {"path":"docs/current/supervisor-instructions.md","ref":"working-tree","sha256":"8c6f4d22c3b410155fc9af6e586681508d8a347bef6ccdc18c5cce9004785e33","working_tree":true,"status":"modified","anchors":"L5-L16"},
+    {"path":"recovery/blockers.json","ref":"working-tree","sha256":"4a52aa0e39a9baa517efde845d38d11bf9a482e921c997be1507c38ce3ea9c42","working_tree":true,"status":"modified","anchors":"L1-L79"},
+    {"path":"recovery/experiments/is_facing_camera/declaration-order-20260923.md","ref":"working-tree","sha256":"af21a262332912f977f7207794b9c40b1c84c9841b2a04f3ab4cd484ff35bcfd","working_tree":true,"status":"untracked","anchors":"L1-L17"},
+    {"path":"tools/research_batch.py","ref":"working-tree","sha256":"434b80efdf3569afd8a88fee56737153ac87d71cb569d0cdaff3d0a9960e617f","working_tree":true,"status":"untracked","anchors":"L67-L223"},
+    {"path":"recovery/evaluation/model-routing/decision.md","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"faa65f54889ae2ac1dd7fc40c9d05ab05d103f2adb59693eb3da334ba33e92be","working_tree":false,"status":"tracked-clean","anchors":"L1-L29"},
+    {"path":"recovery/evaluation/model-routing/batching-decision.md","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"25fdeb09ffffa2dc7ef4c8093440f5693ebfb08ae5a7eb104c7004b3ba1ac7b1","working_tree":false,"status":"tracked-clean","anchors":"L1-L28"},
+    {"path":"recovery/evaluation/model-routing/batching-retrospective.md","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"2439f7bc3929f5017058973cca8b95e235c22bc9ef50cfd3390463139f4f91ff","working_tree":false,"status":"tracked-clean","anchors":"L3-L15"},
+    {"path":"recovery/evaluation/model-routing/results.json","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"fb803ad91fad49da0085c25c5d49aa56d210670c24c65878f5fc4d369ce5b4bd","working_tree":false,"status":"tracked-clean","anchors":"L1-L2956"},
+    {"path":"recovery/corpus/endurance-001/handoff.md","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"0de5a0008e12e8b1c25625f1b3ca1ef46e8cb0fbe3cd4439dc76ccb138cc021c","working_tree":false,"status":"tracked-clean","anchors":"L1-L24"},
+    {"path":"recovery/corpus/endurance-001/final-audit.md","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"3159053ad6929df70f02c8da0b4bef517a9fef30deea0168747b15c1da8a6046","working_tree":false,"status":"tracked-clean","anchors":"L1-L5"},
+    {"path":"recovery/corpus/endurance-001/cost-checkpoint.md","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"c495d73855e50b76455ee346ea115899559e74375a26a5564e3d5de8b4530ca1","working_tree":false,"status":"tracked-clean","anchors":"L1-L9"},
+    {"path":"recovery/corpus/batch-001/audit.md","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"95f17986b653c0bcc92dc0e83f4f04d3402d931a50a10992a18cbafc79da74d9","working_tree":false,"status":"tracked-clean","anchors":"L1-L16"},
+    {"path":"recovery/compiler-evidence/boolean-return-placement/README.md","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"c7ab49dfeb5d48f90d350e23d68531578cd49bf659b7053f5cafdc5be21ffe9e","working_tree":false,"status":"tracked-clean","anchors":"L1-L7"},
+    {"path":"docs/current/near-match-families.md","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"29a68054294a913c18808b9cbf1101fabf5bec1ea625cc3aa0eaf37d6485c425","working_tree":false,"status":"tracked-clean","anchors":"L9-L15,L28-L36,L62-L68"},
+    {"path":"tools/coordinates.py","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"732ff4889873bff0a6c7b8344d9dacd36a12b11fb132b70531068f8d74643e96","working_tree":false,"status":"tracked-clean","anchors":"L1-L48"},
+    {"path":"tools/diagnostics.py","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"a5df723b30e4581e53434d32dea82798c625c34e84bf55330c56a7f81c23ccc3","working_tree":false,"status":"tracked-clean","anchors":"L23-L28,L227-L457"},
+    {"path":"tools/check_candidate.py","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"166fdcc6ff1c18d1729f1ccf213d4250071aca44e9c8f1a7d09aee0fd485d33a","working_tree":false,"status":"tracked-clean","anchors":"L13-L103"},
+    {"path":"tools/oracle.py","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"01c57bb2b64f9cd7107a49d0bc1b050cab4014406590ffc7b24f51b5874fc3b5","working_tree":false,"status":"tracked-clean","anchors":"L33-L76"},
+    {"path":"tools/inspect_object.py","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"871967faddd0b17b2ec2ab7c9ea78ef50f3b701aef5cde02a7b6eff64ed9c884","working_tree":false,"status":"tracked-clean","anchors":"L22-L25,L142-L252"},
+    {"path":"tools/probe_tu.py","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"1f5dd0bb237734e5873fceeb94ca21314fbe97fd84e8bdc37bd928d01bf17dbc","working_tree":false,"status":"tracked-clean","anchors":"L1-L35"},
+    {"path":"tools/grind.py","ref":"068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d","sha256":"a2e2d37e9d398fca73ca0e3db492bcfac436931883bba0105aee47d2ceaaab76","working_tree":false,"status":"tracked-clean","anchors":"L1-L113"}
+  ]
+}

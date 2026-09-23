@@ -1,0 +1,271 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ai_decomp experiment export v1",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "artifacts",
+      "changed_dimensions",
+      "compiler_context",
+      "compiler_process",
+      "effective_output_identity",
+      "facts_learned",
+      "falsifier",
+      "hypothesis",
+      "id",
+      "parent_candidate",
+      "prediction",
+      "project",
+      "stop_reason",
+      "strict_result",
+      "structured_delta",
+      "target"
+    ],
+    "properties": {
+      "effective_output_identity": {
+        "oneOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "object",
+            "required": [
+              "algorithm",
+              "digest",
+              "scope",
+              "normalizer"
+            ],
+            "properties": {
+              "algorithm": {
+                "const": "sha256"
+              },
+              "digest": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1
+              },
+              "normalizer": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      },
+      "artifacts": {
+        "type": "array"
+      },
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "prediction": {
+        "type": "string",
+        "minLength": 1
+      },
+      "stop_reason": {
+        "enum": [
+          "accepted",
+          "budget_censored",
+          "continue",
+          "evidence_blocked",
+          "hypothesis_rejected",
+          "search_converged",
+          "tooling_blocked",
+          "unknown"
+        ]
+      },
+      "falsifier": {
+        "type": "string",
+        "minLength": 1
+      },
+      "strict_result": {
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "enum": [
+              "pass",
+              "fail",
+              "not_run",
+              "unknown"
+            ]
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "verifier": {
+            "type": "string",
+            "minLength": 1
+          },
+          "receipt": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "enum": [
+                    "pass",
+                    "fail"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "scope",
+                "verifier",
+                "receipt"
+              ]
+            }
+          }
+        ]
+      },
+      "hypothesis": {
+        "type": "string",
+        "minLength": 1
+      },
+      "parent_candidate": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "project": {
+        "type": "string",
+        "minLength": 1
+      },
+      "facts_learned": {
+        "type": "array"
+      },
+      "changed_dimensions": {
+        "type": "array"
+      },
+      "target": {
+        "type": "string",
+        "minLength": 1
+      },
+      "structured_delta": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "compiler_process": {
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "enum": [
+              "success",
+              "failed",
+              "not_run",
+              "unknown"
+            ]
+          }
+        },
+        "additionalProperties": true
+      },
+      "compiler_context": {
+        "type": "object",
+        "required": [
+          "identity"
+        ],
+        "properties": {
+          "identity": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": true
+      },
+      "extensions": {
+        "type": "object"
+      }
+    },
+    "additionalProperties": true,
+    "allOf": [
+      {
+        "if": {
+          "properties": {
+            "stop_reason": {
+              "const": "accepted"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "strict_result": {
+              "properties": {
+                "status": {
+                  "const": "pass"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "strict_result": {
+              "properties": {
+                "status": {
+                  "const": "pass"
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "compiler_process": {
+              "properties": {
+                "status": {
+                  "const": "success"
+                }
+              }
+            },
+            "effective_output_identity": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "effective_output_identity": {
+              "type": "object"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "compiler_process": {
+              "properties": {
+                "status": {
+                  "const": "success"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "$comment": "Unique IDs and nonfinite-number rejection are also enforced by the stdlib validator. Metadata is self-reported; schema validity is not a verifier receipt."
+}
