@@ -133,6 +133,30 @@
     "examined_at": "2026-09-23 (re-examined after live-evidence drift alert)",
     "sources": [
       {
+        "source_id": "stunts-src-8ec7f74c7641",
+        "anchor": null
+      },
+      {
+        "source_id": "stunts-src-37ac24d79202",
+        "anchor": null
+      },
+      {
+        "source_id": "stunts-src-030918fff5c1",
+        "anchor": null
+      },
+      {
+        "source_id": "stunts-src-051495b37736",
+        "anchor": null
+      },
+      {
+        "source_id": "stunts-src-a7c42a356437",
+        "anchor": null
+      },
+      {
+        "source_id": "stunts-src-149ace5a5b82",
+        "anchor": null
+      },
+      {
         "source_id": "stunts-src-2822ed9ca670",
         "anchor": "L1-L60"
       },
@@ -286,6 +310,18 @@
         "anchor": 42
       },
       {
+        "source_id": "simantw-src-5290b3d8281a",
+        "anchor": null
+      },
+      {
+        "source_id": "simantw-src-8d001b6cebe9",
+        "anchor": null
+      },
+      {
+        "source_id": "simantw-src-1d942703c696",
+        "anchor": null
+      },
+      {
         "source_id": "simantw-src-12c92ff6a3bb",
         "anchor": 300
       },
@@ -352,6 +388,10 @@
         "anchor": [
           77
         ]
+      },
+      {
+        "source_id": "simantw-src-071808eb1c6d",
+        "anchor": null
       }
     ],
     "dossier": "research/simantw/dossier.md",
@@ -414,6 +454,34 @@
     "snapshot_date": "2026-09-23",
     "sources": [
       {
+        "source_id": "icytower-src-a6d2705932f2",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-4b11fe70b020",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-e4fcf892f0aa",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-173ed847c96d",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-b1f485b90a9a",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-943f991dec12",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-d4fe4c31dfe4",
+        "anchor": null
+      },
+      {
         "source_id": "icytower-src-c52e8cebd6cb",
         "anchor": null
       },
@@ -475,6 +543,14 @@
       },
       {
         "source_id": "icytower-src-13acb948125f",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-1a800deb70fe",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-4e248a49d0c7",
         "anchor": null
       }
     ]

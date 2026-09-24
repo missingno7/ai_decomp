@@ -92,3 +92,24 @@ rankings inferred from project throughput. The next three discriminating tests a
 The compact cross-project response replay remains the next integration experiment.
 The new region inventory is a smaller read-only evidence diagnostic, not a competing
 scheduler or new source solver. Retain native oracles and project mutation boundaries.
+
+## September 24: adjust priorities to completed native work
+
+The [new receipts](../research/updates/20260924/review.md) show that Stunts has
+already implemented several proposed capability transfers. Mapping repairs,
+address aliases and bounded mixed binding now have measured strict yield.
+Review the one sampled nonfixup-exact callback candidate's ownership and LINK
+obligations before another binder extension; most sampled unresolved objects
+still have wrong source extents.
+
+SimAnt ClearHistory shows why independent source/data names should be checked
+before assuming a larger TU is necessary. The fresh native body gate excludes
+four wrong-binding cases. Prioritize only the five currently eligible exact-body
+rows for this layout investigation, retain source/profile alternatives and avoid
+reissuing every ABI warning.
+
+Icy's accepted load_replay gain now supports historically grounded neighbor
+repairs, while its late-header transaction preserves exact peers during interface
+repair. Neither result establishes independent regions. Retain the planned
+region influence test and precise pass negatives; do not substitute arbitrary
+cursor perturbations for historical source evidence.

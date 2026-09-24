@@ -5,6 +5,11 @@ decompilation. It preserves mechanisms, failed experiments and discovery paths
 already established in four sibling projects. It is an initial evidence layer,
 not a universal compiler framework or a replacement acceptance system.
 
+Latest: the [September 24 project update](research/updates/20260924/review.md)
+records new Stunts binding/mapping capabilities and strict wins, SimAnt named-data
+and profile recoveries, and Icy's accepted neighbor-mediated load_replay match.
+Earlier snapshots remain intact; new evidence has a separate dated manifest.
+
 Start with the [cross-project comparison](knowledge/comparison.md), then choose
 a precedent from the [mechanism catalog](knowledge/mechanisms.md) or
 [recovery trajectories](knowledge/trajectories.md). For a new binary, use the

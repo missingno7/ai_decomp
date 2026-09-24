@@ -133,3 +133,25 @@ blocker per function, throughput-based historical model ranking, or Empires'
 convergence as proof that its entire post-bootstrap problem was easy. Retain
 scoped response maps, stage/seed confounders and the separation between artifact
 equality and natural source/topology closure instead.
+
+## September 24 evidence update
+
+**CROSS-PROJECT PATTERN — repeated evidence defects can hide viable work.**
+Stunts' byte-qualified importer corrections and SimAnt's 16-bit call-target
+normalization have measured diagnostic fan-out. Stunts subsequently promoted
+four newly released small tasks; naming/mapping the rest earns no source credit.
+Test the repeated evidence defect before interpreting a queue as model failure.
+
+**CROSS-PROJECT PATTERN, strengthened — select the missing obligation, not just
+the closest body.** Independent data names solve SimAnt ClearHistory without a
+TU/scaffold; bounded historical-LINK parity enables Stunts mixed binding; an
+evidenced incomplete-neighbor repair enables Icy's strict load_replay. These
+are different mechanisms supporting a common investigation procedure.
+
+**GENERIC METHOD — retain candidate/context pairs.** SimAnt's newer source still
+fails under a reviewed new profile while a preserved older source succeeds.
+Icy's research branch with more exact functions is not necessarily admissible
+under production ownership/protected-state constraints. Preserve branches and
+context-qualified negatives; a cost-effective multi-context beam remains a
+working hypothesis. See the [dated review](../research/updates/20260924/review.md)
+for controls, counterexamples and source identities.

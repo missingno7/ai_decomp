@@ -92,3 +92,11 @@ The first viable shared extraction is a pure-data effective-output/experiment-ma
 ## Sources and freshness
 
 `records.json` is the machine-readable dossier.  Its source manifest stores each cited source's repository-relative path, ref (`HEAD` or `working-tree`), SHA-256, working-tree flag/status and useful line anchors.  In particular, the live generated status/workflow documents and two untracked research artifacts are recorded by working-tree hashes; their content may not be reconstructed from `068ff2e` alone.
+
+
+## September 24 follow-up
+
+The [dated project update](../updates/20260924/review.md) and its separate
+[evidence manifest](../updates/20260924/evidence.json) preserve newer observations
+without changing this dossier's earlier snapshot. New catalog claims are scoped
+project facts; diagnostic coverage and strict recovery remain separate.

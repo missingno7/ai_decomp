@@ -88,3 +88,11 @@ given. Relevant source implementations were inspected, not merely their names.
 No upstream scripts, original source, oracle bytes, assets or historical tools
 were copied. No top-level source-tool license was found in the inventory;
 reference rather than extraction is the decision for every Empires script here.
+
+
+## September 24 follow-up
+
+The [dated project update](../updates/20260924/review.md) and its separate
+[evidence manifest](../updates/20260924/evidence.json) preserve newer observations
+without changing this dossier's earlier snapshot. New catalog claims are scoped
+project facts; diagnostic coverage and strict recovery remain separate.

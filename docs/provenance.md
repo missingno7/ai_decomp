@@ -83,3 +83,12 @@ reported populations without copying source or oracle bytes. Derived region
 observations are marked as curated, and missing instruction/liveness mappings
 stay unknown. Historical replay proposals pin actual parent commits and available
 tools; they are not compiler reproductions. Old catalog hashes are not refreshed.
+
+
+Dated follow-ups live under `research/updates/`, indexed by `catalog/updates/`.
+New authored catalog citations may provide `observed_base_commit` for a later
+working-tree observation without changing the initial project snapshot. Three
+formerly implicit tool references are explicitly pinned to their previously
+published identities; their old hashes are retained even where current files
+have drifted. Regeneration checks must preserve earlier source records byte-for-
+byte at the metadata level, not infer their past dirty/clean state from today.

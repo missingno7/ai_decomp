@@ -1,0 +1,3683 @@
+{
+  "format": "ai-decomp-project-update-v1",
+  "captured_at_utc": "2026-09-24T05:33:52.551975+00:00",
+  "baseline": "e000ca43f380184385b7bb14be29266fb6c78dda",
+  "projects": {
+    "icytower_recon": {
+      "head": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "dirty_paths_reported": 945,
+      "latest_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce 2026-09-24 07:10:34 +0200 Repair historical HTTP and menu interfaces without exact regressions"
+    },
+    "simantw_recon": {
+      "head": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "dirty_paths_reported": 3,
+      "latest_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5 2026-09-24 07:14:33 +0200 Recover ClearHistory with MAPSYM history arrays"
+    },
+    "stunts_recon": {
+      "head": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "dirty_paths_reported": 1179,
+      "latest_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d 2026-09-23 21:03:36 +0200 Document matched model and bounded batching evaluation results"
+    },
+    "empires_reconstruction": {
+      "head": "9f9adaf8c5c2b503eeecee7aa1291df5097ef77c",
+      "dirty_paths_reported": 0,
+      "latest_commit": "9f9adaf8c5c2b503eeecee7aa1291df5097ef77c 2026-09-22 19:37:06 +0200 portable: synchronize map reveal presentation"
+    }
+  },
+  "source_manifest": [
+    {
+      "id": "icytower_recon:docs/attempts/research-20260924-gcc-peephole2-systemic/README.md:c4afc3edc865",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-20260924-gcc-peephole2-systemic/README.md",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "c4afc3edc865f231a97126d970aa28abd4dbafcb02deb1a9f3c4988f98c4c98c"
+    },
+    {
+      "id": "icytower_recon:docs/attempts/research-20260924-peephole-cursor-diagnostic/README.md:679ad1f47d37",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-20260924-peephole-cursor-diagnostic/README.md",
+      "content_kind": "working_tree",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "679ad1f47d3736242b295544083c2f252946535aed1a755603fa1b9aeb3e2fc7"
+    },
+    {
+      "id": "icytower_recon:docs/attempts/research-20260924-gcc-peephole2-systemic/play-collision-pre-20260924.md:1ac310c73f38",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-20260924-gcc-peephole2-systemic/play-collision-pre-20260924.md",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "1ac310c73f3879d8148539db91c02c6b2e20f1899470556f24d3375af1e5aac7"
+    },
+    {
+      "id": "simantw_recon:docs/grinder-lessons.md:06fc180bbdec",
+      "repository": "simantw_recon",
+      "path": "docs/grinder-lessons.md",
+      "content_kind": "git_blob",
+      "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "sha256": "06fc180bbdec5adbe0bcb2ebb09980e97cf39b0657af8eacd3d4c8dcce3ad18f"
+    },
+    {
+      "id": "simantw_recon:evidence/orchestration/luna-foreman-checkpoint.md:cce55cdcc2af",
+      "repository": "simantw_recon",
+      "path": "evidence/orchestration/luna-foreman-checkpoint.md",
+      "content_kind": "git_blob",
+      "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "sha256": "cce55cdcc2af84c39b712cdcc305405fd933f9cf6b6ef10ca944d36a5e5e7b91"
+    },
+    {
+      "id": "stunts_recon:docs/current/status.json:8854da3b0656",
+      "repository": "stunts_recon",
+      "path": "docs/current/status.json",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "8854da3b0656e7ac78cbead9fd750af78a5b1bccf6d86dcefe2cb190b3129b08"
+    },
+    {
+      "id": "stunts_recon:docs/current/validation.json:59fceae569bf",
+      "repository": "stunts_recon",
+      "path": "docs/current/validation.json",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "59fceae569bfcfaf83757945ebacf1ac5403a376448d0e27b1f001944a041ea5"
+    },
+    {
+      "id": "stunts_recon:recovery/queue.json:321202037584",
+      "repository": "stunts_recon",
+      "path": "recovery/queue.json",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "3212020375846185250721dfa9a561f2f7b391c8c40d71447eccfd26673501cc"
+    },
+    {
+      "id": "stunts_recon:recovery/blocker-census.json:8cf7cb6777bb",
+      "repository": "stunts_recon",
+      "path": "recovery/blocker-census.json",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "8cf7cb6777bb3730e444a360fa12d26da0edde43a1686e04261ef067e00bf67a"
+    },
+    {
+      "id": "simantw_recon:docs/progress.json:d9c7cd3ab2ae",
+      "repository": "simantw_recon",
+      "path": "docs/progress.json",
+      "content_kind": "git_blob",
+      "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "sha256": "d9c7cd3ab2aeb6b3aa5fe2dabd18c5a8452de4ddf24ed28ad1f92a82febca36d"
+    },
+    {
+      "id": "simantw_recon:evidence/recovery/workflow/validation.json:0fff03c49315",
+      "repository": "simantw_recon",
+      "path": "evidence/recovery/workflow/validation.json",
+      "content_kind": "git_blob",
+      "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "sha256": "0fff03c49315defaea93b3bad56de1924a60a56ce6fba12de69b00d1bef7bb65"
+    },
+    {
+      "id": "icytower_recon:src/recovery.json:b0c97c70d62a",
+      "repository": "icytower_recon",
+      "path": "src/recovery.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "b0c97c70d62aa1819c9469031a39de52efbf1aeae52f3446f2aaf0e8538ba8bd"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-beta.json:91c0f00513fe",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-beta.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "91c0f00513fe855b15059ecee1f587e606729765f523bb26f3c328728e53e9d5"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-control.json:791e507445f6",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-control.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "791e507445f6de2494f87521e67c4f40c5c462880b365dffe46426b502b2ed0a"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-csv.json:5c326cd324f1",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-csv.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "5c326cd324f173a0c96de0d4af96d94c0f98c10b3c875f079153ecc204cc2c90"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-custom.json:76201c45ead1",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-custom.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "76201c45ead178d545e78b934416314a157dc4f638440c291bc8847c64649099"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-directories.json:af721685eaf1",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-directories.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "af721685eaf1614556f35b5de6a38abccfa715b8b14057d21bd82d38ed629fc6"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-fld-adspot.json:4d5af343e2a5",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-fld-adspot.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "4d5af343e2a52ed89484c350f210a80c9cf726fc894c65d7d1cc1b4f2520a2b2"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-game-data.json:01a1323f997e",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-game-data.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "01a1323f997effcfd1de6f7f93bcd2e6fde8f4eda6d3afc0e6e5207767740f47"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-hisc.json:ecc7042d0b2b",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-hisc.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "ecc7042d0b2beae1da017b37bdafb226a228ad67e21d36334688fb37a0599720"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-main.json:60e25f7ceaa8",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-main.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "60e25f7ceaa8fa93c6cec149dd688ac7278d7d18daf3d8e5fd9f2fa7e81ab84a"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-map.json:3e6bfaf74fad",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-map.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "3e6bfaf74fadc83971e338f9f49f01de442cf5b177deff6504237d5b86e23935"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-menu.json:c4a236e38f6a",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-menu.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "c4a236e38f6a1da6fd1fa8ad618b6a3aaf4346900f1521c8e99ff6c3e4438279"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-options.json:7e95bacfba12",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-options.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "7e95bacfba12a872d81609103028a81941eba125ea16b66b4b6e5ea4ec449751"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-particle.json:8213cec33a8b",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-particle.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "8213cec33a8bfb6e36001fa550227ebc8b395fc4948e8d646afa1b62862bdd96"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-replay.json:c986f6b19ace",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-replay.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "c986f6b19aced1e5ac44ce2dc8da7a1c18710b1235dbf2f6ad31308a3efabbe5"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-profile.json:dfe7db1f15ca",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-profile.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "dfe7db1f15ca08c2e9a5179c1da371fd01eb61b4af7b82861bf0afdfd92a0e21"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-scroller.json:827455a62547",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-scroller.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "827455a625476aab4fbeb130941387f6f82e2a7c224c56fc8cb3afcc62474211"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-stars.json:3c4f3e06a81b",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-stars.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "3c4f3e06a81b22c98aaa1fefc3e8b0e59f5ed46fbc3dd65622aac118373adc3e"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-timer.json:85ac091cdf60",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-timer.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "85ac091cdf608268264caaeb5045e417ade13bed0deff21aabf1103447f3ea0f"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-player.json:ecb4b2f92498",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-player.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "ecb4b2f9249830596459ef8e5e70ab7bc2bc1a87443668d68bb28894eebc9bef"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-httpget.json:04d373903c50",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-httpget.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "04d373903c50f549dc014579fbca57f1c0ba19abf4956641e3066aa6f1a81b27"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-loadpng.json:58a749cb395c",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-loadpng.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "58a749cb395ca3b1ab279a58e527793f4fea31f8f812ea24e08e3e18aaae1051"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-savepng.json:1a706b2e76f4",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-savepng.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "1a706b2e76f4abaf2e15f3406a49f2d87d5cc5489cb27dd780acd560a9cf93d5"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-regpng.json:4ee6e1178374",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-regpng.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "4ee6e11783743ba7978edb080c1ddc60658c2e2b066f08da5843b65da58ba688"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-strptime.json:b148810cd26d",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-strptime.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "b148810cd26d5757f31dc4306b58672e365848a2babf5d5ccb49637d1e4d9acd"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-timecompat.json:4ecdd1bc4bcf",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-timecompat.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "4ecdd1bc4bcf332e6bc62fc20b1a2013b48081cfb04db34478f150032530ef5d"
+    },
+    {
+      "id": "stunts_recon:recovery/experiments/code-address-leverage-20260924.md:fab849d206cb",
+      "repository": "stunts_recon",
+      "path": "recovery/experiments/code-address-leverage-20260924.md",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "fab849d206cba1f490f547c717f53b6b3751c4e5fd77ae5431f84994d953948d"
+    },
+    {
+      "id": "stunts_recon:recovery/experiments/far-wrapper-promotions-20260924.md:2e57d15748ce",
+      "repository": "stunts_recon",
+      "path": "recovery/experiments/far-wrapper-promotions-20260924.md",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "2e57d15748cea6d6939683daa192349230651493cb2a200b655e0f53b6e3fabe"
+    },
+    {
+      "id": "stunts_recon:recovery/experiments/mixed-far-data-link-20260924.md:7b1d44216375",
+      "repository": "stunts_recon",
+      "path": "recovery/experiments/mixed-far-data-link-20260924.md",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "7b1d44216375aa424010d8540f3c9883855b88fc463d3325d7cabe432906fc7f"
+    },
+    {
+      "id": "stunts_recon:recovery/experiments/candidate-shape-census-20260924.md:bd761d5040bd",
+      "repository": "stunts_recon",
+      "path": "recovery/experiments/candidate-shape-census-20260924.md",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "bd761d5040bdc97f478917bd8d584a84be5f39b95abcc2a466068b749f0dae2c"
+    },
+    {
+      "id": "icytower_recon:docs/attempts/research-20260924-load-replay-owner-context/README.md:8646fd1ddbeb",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-20260924-load-replay-owner-context/README.md",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "8646fd1ddbeb00b0b2183c4f3668c824a49ec5c9c00affa9f7c6716e77d9dc4f"
+    },
+    {
+      "id": "icytower_recon:docs/attempts/research-20260924-profile-late-transaction/README.md:d3d646a42bd8",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-20260924-profile-late-transaction/README.md",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "d3d646a42bd87c1225c3a78e16d0f7a7c38f662860e62bf297319703be886072"
+    },
+    {
+      "id": "icytower_recon:docs/attempts/research-20260924-profile-interface-gate-audit/README.md:c5fecff440d9",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-20260924-profile-interface-gate-audit/README.md",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "c5fecff440d95044a156f7e95af0800003410c6ebd6f9f6082dd24dc4da277d3"
+    },
+    {
+      "id": "simantw_recon:evidence/experiments/near-call-ip-wrap/README.md:ae5d4b58d0b9",
+      "repository": "simantw_recon",
+      "path": "evidence/experiments/near-call-ip-wrap/README.md",
+      "content_kind": "git_blob",
+      "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "sha256": "ae5d4b58d0b93fb6afd701b086052cb49220def33e03394a5430b1752417faa4"
+    },
+    {
+      "id": "simantw_recon:docs/progress.json:2cbb0e7e552f",
+      "repository": "simantw_recon",
+      "path": "docs/progress.json",
+      "content_kind": "git_blob",
+      "ref": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "base_commit": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "sha256": "2cbb0e7e552f350be2b84dd5c726ff6d85959c937bb3e82410e809a9ecc9e585"
+    },
+    {
+      "id": "icytower_recon:docs/attempts/research-20260924-load-replay-min-context/README.md:1a3cc2a7efb3",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-20260924-load-replay-min-context/README.md",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "1a3cc2a7efb34213723339b1e826a9800d804210a67d957c70d458939944e71a"
+    },
+    {
+      "id": "icytower_recon:docs/attempts/research-20260924-context-replay-followup/README.md:7b74516f7146",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-20260924-context-replay-followup/README.md",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "7b74516f7146b8cd00aeb22cce939ccf296139039caa3fa63ec255f337314d50"
+    },
+    {
+      "id": "icytower_recon:docs/attempts/research-20260924-play-collision-predecessors/README.md:f30d096557a4",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-20260924-play-collision-predecessors/README.md",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "f30d096557a40f3aa32ed6cfda58baee91c6402bb4dba7dd4a215f898b132a71"
+    },
+    {
+      "id": "simantw_recon:tools/blocked_reclassification.py:166a692a235b",
+      "repository": "simantw_recon",
+      "path": "tools/blocked_reclassification.py",
+      "content_kind": "git_blob",
+      "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "sha256": "166a692a235be9fcfbec1029db27c03146607793a2e39c61a05b97da956a6119"
+    },
+    {
+      "id": "simantw_recon:tools/analysis.py:1cdfd3be4991",
+      "repository": "simantw_recon",
+      "path": "tools/analysis.py",
+      "content_kind": "git_blob",
+      "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "sha256": "1cdfd3be49912d5bb5a9eb200bc1e5ee5dd9235128e22dcd78b3d63753b02518"
+    },
+    {
+      "id": "stunts_recon:tools/derive_code_aliases.py:5b56ef79d92d",
+      "repository": "stunts_recon",
+      "path": "tools/derive_code_aliases.py",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "5b56ef79d92d1b2fccb77dee59c4c493537d14f2df0281cdf2253ba96eb02227"
+    },
+    {
+      "id": "stunts_recon:tools/binder.py:a56c880d6356",
+      "repository": "stunts_recon",
+      "path": "tools/binder.py",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "a56c880d6356d38ba1bff3dc7bc3af2ac1e2b0a9d8ce5753d5615649e0f4c170"
+    },
+    {
+      "id": "simantw_recon:evidence/recovery/workflow/jobs/ClearHistory-2a7aae3cf9/promotion.json:9f4d853b54ab",
+      "repository": "simantw_recon",
+      "path": "evidence/recovery/workflow/jobs/ClearHistory-2a7aae3cf9/promotion.json",
+      "content_kind": "git_blob",
+      "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "sha256": "9f4d853b54ab6dc39cd1f947229653ffaaa082822fb2ed48a70582f051b8ce33"
+    },
+    {
+      "id": "simantw_recon:evidence/recovery/workflow/jobs/ConvertMonoMaskToTandy-4e3e71229c/promotion.json:3ba3e65332a9",
+      "repository": "simantw_recon",
+      "path": "evidence/recovery/workflow/jobs/ConvertMonoMaskToTandy-4e3e71229c/promotion.json",
+      "content_kind": "git_blob",
+      "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "sha256": "3ba3e65332a9cc5c2511274e4a00c58ec13459669c8e40cec7fb62b9497928dd"
+    },
+    {
+      "id": "simantw_recon:evidence/recovery/blocked-reclassification.json:23419ba43518",
+      "repository": "simantw_recon",
+      "path": "evidence/recovery/blocked-reclassification.json",
+      "content_kind": "git_blob",
+      "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "sha256": "23419ba435189e49362c347a6477f50b15502d5d68932f66551f4a47d100d471"
+    },
+    {
+      "id": "icytower_recon:docs/attempts/research-20260924-draw-selector-residual/README.md:f65a4c76f6f8",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/research-20260924-draw-selector-residual/README.md",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "f65a4c76f6f86d39bfb8163ba4a8559ffceef75180dc08afa34824cece3c9347"
+    },
+    {
+      "id": "icytower_recon:docs/attempts/tu-context/transactions/replay_load_draw_historical_20260924.json:40ef5b14ab5d",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/tu-context/transactions/replay_load_draw_historical_20260924.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "40ef5b14ab5d08bd91155f6e91d85321cf737e304bd9346b310328b4947e651d"
+    },
+    {
+      "id": "stunts_recon:recovery/attempts/free_sdgame2/0002/report.json:06bbaceef7a1",
+      "repository": "stunts_recon",
+      "path": "recovery/attempts/free_sdgame2/0002/report.json",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "06bbaceef7a15d9bc63eb01d76cd278de45fdc7e73f3e6b428110ca7ca7a08fc"
+    },
+    {
+      "id": "stunts_recon:recovery/attempts/locate_text_res/0002/report.json:1a56502a7c65",
+      "repository": "stunts_recon",
+      "path": "recovery/attempts/locate_text_res/0002/report.json",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "1a56502a7c652ab1f64c868582788e8c4e664dc8942414acd2be5eaa018355ea"
+    },
+    {
+      "id": "stunts_recon:build/mixed-linker-probe.json:1458f38132a7",
+      "repository": "stunts_recon",
+      "path": "build/mixed-linker-probe.json",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "1458f38132a78e06cb975eebb8e9e58ef125ddf94d070b6c60e0bc389ff2aabb"
+    },
+    {
+      "id": "stunts_recon:recovery/partial-mapping-census.json:db0ad875c5a9",
+      "repository": "stunts_recon",
+      "path": "recovery/partial-mapping-census.json",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "db0ad875c5a91d70e33318a18ff2da0bef0e1e39c7ff83b838c9f6c441d5027e"
+    },
+    {
+      "id": "stunts_recon:recovery/experiments/systemic-capabilities-20260923.md:45bda4506db5",
+      "repository": "stunts_recon",
+      "path": "recovery/experiments/systemic-capabilities-20260923.md",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "45bda4506db571a44b1f5610930a701e75150d7ec22fc68272507a38404c3472"
+    },
+    {
+      "id": "simantw_recon:evidence/experiments/call-abi-audit/README.md:2360ad0dd1c5",
+      "repository": "simantw_recon",
+      "path": "evidence/experiments/call-abi-audit/README.md",
+      "content_kind": "git_blob",
+      "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "sha256": "2360ad0dd1c5a2d3808a61c55527c1b554016c7b5e43834701eb4253f4d59526"
+    },
+    {
+      "id": "stunts_recon:recovery/blocker-census.json:a1862150c314",
+      "repository": "stunts_recon",
+      "path": "recovery/blocker-census.json",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "a1862150c314fe1d837407b2d02b4d1fd0a2e00d605fea1343e079bea592f7bc"
+    },
+    {
+      "id": "icytower_recon:tools/tu_context_task.py:4f90acd43e93",
+      "repository": "icytower_recon",
+      "path": "tools/tu_context_task.py",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "4f90acd43e93402e9680b2c220cfc09e231c5aa8fbb6ca17d39e319de3f3a40e"
+    },
+    {
+      "id": "icytower_recon:docs/attempts/tu-context/transactions/profile_late_typed_selectors_20260924.json:d7ab571f76d2",
+      "repository": "icytower_recon",
+      "path": "docs/attempts/tu-context/transactions/profile_late_typed_selectors_20260924.json",
+      "content_kind": "git_blob",
+      "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+      "sha256": "d7ab571f76d2e7bfc15bd9dd42b9aa75314b05f9681b9fb09bcf6d039ef7e2e7"
+    },
+    {
+      "id": "empires_reconstruction:docs/current/status.json:d05650faa9b2",
+      "repository": "empires_reconstruction",
+      "path": "docs/current/status.json",
+      "content_kind": "git_blob",
+      "ref": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "base_commit": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "sha256": "d05650faa9b2a2739add7cebbe130a377a103f28c8afa69a725e933563d5ab84"
+    },
+    {
+      "id": "simantw_recon:evidence/recovery/workflow/jobs/YardToMap-2e5b0deea5/promotion.json:94cc7dd65d21",
+      "repository": "simantw_recon",
+      "path": "evidence/recovery/workflow/jobs/YardToMap-2e5b0deea5/promotion.json",
+      "content_kind": "git_blob",
+      "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+      "sha256": "94cc7dd65d21ae65052d057b10b2a4d4bd211f7957ccbd4646fa14dab653e9db"
+    },
+    {
+      "id": "icytower_recon:src/recovery.json:6a4cc22cdcf8",
+      "repository": "icytower_recon",
+      "path": "src/recovery.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "6a4cc22cdcf804e0bb4f9957514fe9aca38b29c58917a78e5c6fee3f5b062065"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-beta.json:91c0f00513fe",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-beta.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "91c0f00513fe855b15059ecee1f587e606729765f523bb26f3c328728e53e9d5"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-control.json:791e507445f6",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-control.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "791e507445f6de2494f87521e67c4f40c5c462880b365dffe46426b502b2ed0a"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-csv.json:5c326cd324f1",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-csv.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "5c326cd324f173a0c96de0d4af96d94c0f98c10b3c875f079153ecc204cc2c90"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-custom.json:76201c45ead1",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-custom.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "76201c45ead178d545e78b934416314a157dc4f638440c291bc8847c64649099"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-directories.json:af721685eaf1",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-directories.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "af721685eaf1614556f35b5de6a38abccfa715b8b14057d21bd82d38ed629fc6"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-fld-adspot.json:4d5af343e2a5",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-fld-adspot.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "4d5af343e2a52ed89484c350f210a80c9cf726fc894c65d7d1cc1b4f2520a2b2"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-game-data.json:01a1323f997e",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-game-data.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "01a1323f997effcfd1de6f7f93bcd2e6fde8f4eda6d3afc0e6e5207767740f47"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-hisc.json:2a582da1cbd8",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-hisc.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "2a582da1cbd848c0b6a961907de18f10bd90d78574f2dc177a78b6d67dbd41c9"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-main.json:60e25f7ceaa8",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-main.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "60e25f7ceaa8fa93c6cec149dd688ac7278d7d18daf3d8e5fd9f2fa7e81ab84a"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-map.json:3e6bfaf74fad",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-map.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "3e6bfaf74fadc83971e338f9f49f01de442cf5b177deff6504237d5b86e23935"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-menu.json:c4a236e38f6a",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-menu.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "c4a236e38f6a1da6fd1fa8ad618b6a3aaf4346900f1521c8e99ff6c3e4438279"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-options.json:7e95bacfba12",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-options.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "7e95bacfba12a872d81609103028a81941eba125ea16b66b4b6e5ea4ec449751"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-particle.json:8213cec33a8b",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-particle.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "8213cec33a8bfb6e36001fa550227ebc8b395fc4948e8d646afa1b62862bdd96"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-replay.json:c986f6b19ace",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-replay.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "c986f6b19aced1e5ac44ce2dc8da7a1c18710b1235dbf2f6ad31308a3efabbe5"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-profile.json:dfe7db1f15ca",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-profile.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "dfe7db1f15ca08c2e9a5179c1da371fd01eb61b4af7b82861bf0afdfd92a0e21"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-scroller.json:827455a62547",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-scroller.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "827455a625476aab4fbeb130941387f6f82e2a7c224c56fc8cb3afcc62474211"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-stars.json:3c4f3e06a81b",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-stars.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "3c4f3e06a81b22c98aaa1fefc3e8b0e59f5ed46fbc3dd65622aac118373adc3e"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-timer.json:85ac091cdf60",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-timer.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "85ac091cdf608268264caaeb5045e417ade13bed0deff21aabf1103447f3ea0f"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-player.json:ecb4b2f92498",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-player.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "ecb4b2f9249830596459ef8e5e70ab7bc2bc1a87443668d68bb28894eebc9bef"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-httpget.json:04d373903c50",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-httpget.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "04d373903c50f549dc014579fbca57f1c0ba19abf4956641e3066aa6f1a81b27"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-loadpng.json:58a749cb395c",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-loadpng.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "58a749cb395ca3b1ab279a58e527793f4fea31f8f812ea24e08e3e18aaae1051"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-savepng.json:1a706b2e76f4",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-savepng.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "1a706b2e76f4abaf2e15f3406a49f2d87d5cc5489cb27dd780acd560a9cf93d5"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-regpng.json:4ee6e1178374",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-regpng.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "4ee6e11783743ba7978edb080c1ddc60658c2e2b066f08da5843b65da58ba688"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-strptime.json:b148810cd26d",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-strptime.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "b148810cd26d5757f31dc4306b58672e365848a2babf5d5ccb49637d1e4d9acd"
+    },
+    {
+      "id": "icytower_recon:docs/current/reports/game-timecompat.json:4ecdd1bc4bcf",
+      "repository": "icytower_recon",
+      "path": "docs/current/reports/game-timecompat.json",
+      "content_kind": "git_blob",
+      "ref": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "base_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+      "sha256": "4ecdd1bc4bcf332e6bc62fc20b1a2013b48081cfb04db34478f150032530ef5d"
+    },
+    {
+      "id": "stunts_recon:docs/current/status.json:3129f5a66bde",
+      "repository": "stunts_recon",
+      "path": "docs/current/status.json",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "3129f5a66bde795c0b4d29c4d570b3dc3153d24d26f7742166524159f97c098f"
+    },
+    {
+      "id": "stunts_recon:docs/current/validation.json:a2ef28ae8147",
+      "repository": "stunts_recon",
+      "path": "docs/current/validation.json",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "a2ef28ae81478977da58ea5507c1d2faf1a4e61fbc0bf1b8fd857f3daa06c070"
+    },
+    {
+      "id": "stunts_recon:recovery/queue.json:5173ab356d58",
+      "repository": "stunts_recon",
+      "path": "recovery/queue.json",
+      "content_kind": "working_tree",
+      "ref": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+      "sha256": "5173ab356d58ce3d2d3e3388f3398d79bba5594e73a4e860aac80ec56d28698d"
+    }
+  ],
+  "observations": {
+    "icy_census": {
+      "functions": 253,
+      "matched": 210,
+      "matched_bytes": 43012,
+      "total_bytes": 125641,
+      "report_checks": [
+        {
+          "report": "docs/current/reports/game-beta.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-control.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-csv.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-custom.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-directories.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-fld-adspot.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-game-data.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-hisc.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-main.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-map.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-menu.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-options.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-particle.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-replay.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-profile.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-scroller.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-stars.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-timer.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-player.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-httpget.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-loadpng.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-savepng.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-regpng.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-strptime.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        },
+        {
+          "report": "docs/current/reports/game-timecompat.json",
+          "ledger_matches_live": true,
+          "git_live_text_equal": true
+        }
+      ],
+      "changed": [
+        {
+          "before": {
+            "source": "src/main.c",
+            "report_source_id": "icy-census-09",
+            "target": "game-main",
+            "name": "get_string",
+            "va": 4242500,
+            "original_size": 790,
+            "candidate_size": 790,
+            "status": "DIFFER"
+          },
+          "after": {
+            "source": "src/main.c",
+            "name": "get_string",
+            "va": 4242500,
+            "status": "DIFFER",
+            "original_size": 790,
+            "candidate_size": 784
+          }
+        },
+        {
+          "before": {
+            "source": "src/main.c",
+            "report_source_id": "icy-census-09",
+            "target": "game-main",
+            "name": "init_game",
+            "va": 4253660,
+            "original_size": 5788,
+            "candidate_size": 5666,
+            "status": "DIFFER"
+          },
+          "after": {
+            "source": "src/main.c",
+            "name": "init_game",
+            "va": 4253660,
+            "status": "DIFFER",
+            "original_size": 5788,
+            "candidate_size": 5688
+          }
+        },
+        {
+          "before": {
+            "source": "src/main.c",
+            "report_source_id": "icy-census-09",
+            "target": "game-main",
+            "name": "do_replay_menu",
+            "va": 4263832,
+            "original_size": 2661,
+            "candidate_size": 2643,
+            "status": "DIFFER"
+          },
+          "after": {
+            "source": "src/main.c",
+            "name": "do_replay_menu",
+            "va": 4263832,
+            "status": "DIFFER",
+            "original_size": 2661,
+            "candidate_size": 2657
+          }
+        },
+        {
+          "before": {
+            "source": "src/replay.c",
+            "report_source_id": "icy-census-14",
+            "target": "game-replay",
+            "name": "draw_replay_selector",
+            "va": 4308568,
+            "original_size": 3726,
+            "candidate_size": 2751,
+            "status": "DIFFER"
+          },
+          "after": {
+            "source": "src/replay.c",
+            "name": "draw_replay_selector",
+            "va": 4308568,
+            "status": "DIFFER",
+            "original_size": 3726,
+            "candidate_size": 3772
+          }
+        },
+        {
+          "before": {
+            "source": "src/replay.c",
+            "report_source_id": "icy-census-14",
+            "target": "game-replay",
+            "name": "load_replay",
+            "va": 4312552,
+            "original_size": 1136,
+            "candidate_size": 1148,
+            "status": "DIFFER"
+          },
+          "after": {
+            "source": "src/replay.c",
+            "name": "load_replay",
+            "va": 4312552,
+            "status": "FUNCTION_MATCH",
+            "original_size": 1136,
+            "candidate_size": 1136
+          }
+        },
+        {
+          "before": {
+            "source": "src/profile.c",
+            "report_source_id": "icy-census-15",
+            "target": "game-profile",
+            "name": "draw_profile_selector",
+            "va": 4295892,
+            "original_size": 1268,
+            "candidate_size": 1242,
+            "status": "DIFFER"
+          },
+          "after": {
+            "source": "src/profile.c",
+            "name": "draw_profile_selector",
+            "va": 4295892,
+            "status": "DIFFER",
+            "original_size": 1268,
+            "candidate_size": 1250
+          }
+        },
+        {
+          "before": {
+            "source": "src/profile.c",
+            "report_source_id": "icy-census-15",
+            "target": "game-profile",
+            "name": "view_profile",
+            "va": 4299500,
+            "original_size": 2249,
+            "candidate_size": 2160,
+            "status": "DIFFER"
+          },
+          "after": {
+            "source": "src/profile.c",
+            "name": "view_profile",
+            "va": 4299500,
+            "status": "DIFFER",
+            "original_size": 2249,
+            "candidate_size": 2168
+          }
+        },
+        {
+          "before": {
+            "source": "src/profile.c",
+            "report_source_id": "icy-census-15",
+            "target": "game-profile",
+            "name": "select_profile",
+            "va": 4304064,
+            "original_size": 3070,
+            "candidate_size": 2706,
+            "status": "DIFFER"
+          },
+          "after": {
+            "source": "src/profile.c",
+            "name": "select_profile",
+            "va": 4304064,
+            "status": "DIFFER",
+            "original_size": 3070,
+            "candidate_size": 3115
+          }
+        }
+      ],
+      "rows": [
+        {
+          "source": "src/beta.c",
+          "name": "garble_string",
+          "va": 4199192,
+          "status": "FUNCTION_MATCH",
+          "original_size": 41,
+          "candidate_size": 41
+        },
+        {
+          "source": "src/beta.c",
+          "name": "save_garbled_data",
+          "va": 4199236,
+          "status": "FUNCTION_MATCH",
+          "original_size": 283,
+          "candidate_size": 283
+        },
+        {
+          "source": "src/beta.c",
+          "name": "read_line",
+          "va": 4199520,
+          "status": "FUNCTION_MATCH",
+          "original_size": 80,
+          "candidate_size": 80
+        },
+        {
+          "source": "src/beta.c",
+          "name": "destroy_all",
+          "va": 4199600,
+          "status": "FUNCTION_MATCH",
+          "original_size": 59,
+          "candidate_size": 59
+        },
+        {
+          "source": "src/beta.c",
+          "name": "create_post",
+          "va": 4199660,
+          "status": "FUNCTION_MATCH",
+          "original_size": 157,
+          "candidate_size": 157
+        },
+        {
+          "source": "src/beta.c",
+          "name": "load_garbled_data",
+          "va": 4199820,
+          "status": "FUNCTION_MATCH",
+          "original_size": 313,
+          "candidate_size": 313
+        },
+        {
+          "source": "src/beta.c",
+          "name": "load_plain_data",
+          "va": 4200136,
+          "status": "FUNCTION_MATCH",
+          "original_size": 197,
+          "candidate_size": 197
+        },
+        {
+          "source": "src/control.c",
+          "name": "init_control",
+          "va": 4200336,
+          "status": "FUNCTION_MATCH",
+          "original_size": 67,
+          "candidate_size": 67
+        },
+        {
+          "source": "src/control.c",
+          "name": "set_control",
+          "va": 4200404,
+          "status": "FUNCTION_MATCH",
+          "original_size": 38,
+          "candidate_size": 38
+        },
+        {
+          "source": "src/control.c",
+          "name": "get_gamepad",
+          "va": 4200444,
+          "status": "FUNCTION_MATCH",
+          "original_size": 10,
+          "candidate_size": 10
+        },
+        {
+          "source": "src/control.c",
+          "name": "check_control_key",
+          "va": 4200456,
+          "status": "FUNCTION_MATCH",
+          "original_size": 58,
+          "candidate_size": 58
+        },
+        {
+          "source": "src/control.c",
+          "name": "is_up",
+          "va": 4200516,
+          "status": "FUNCTION_MATCH",
+          "original_size": 22,
+          "candidate_size": 22
+        },
+        {
+          "source": "src/control.c",
+          "name": "is_down",
+          "va": 4200540,
+          "status": "FUNCTION_MATCH",
+          "original_size": 22,
+          "candidate_size": 22
+        },
+        {
+          "source": "src/control.c",
+          "name": "is_left",
+          "va": 4200564,
+          "status": "FUNCTION_MATCH",
+          "original_size": 17,
+          "candidate_size": 17
+        },
+        {
+          "source": "src/control.c",
+          "name": "is_right",
+          "va": 4200584,
+          "status": "FUNCTION_MATCH",
+          "original_size": 22,
+          "candidate_size": 22
+        },
+        {
+          "source": "src/control.c",
+          "name": "is_fire",
+          "va": 4200608,
+          "status": "FUNCTION_MATCH",
+          "original_size": 22,
+          "candidate_size": 22
+        },
+        {
+          "source": "src/control.c",
+          "name": "is_pause",
+          "va": 4200632,
+          "status": "FUNCTION_MATCH",
+          "original_size": 22,
+          "candidate_size": 22
+        },
+        {
+          "source": "src/control.c",
+          "name": "is_enter",
+          "va": 4200656,
+          "status": "FUNCTION_MATCH",
+          "original_size": 22,
+          "candidate_size": 22
+        },
+        {
+          "source": "src/control.c",
+          "name": "is_any",
+          "va": 4200680,
+          "status": "FUNCTION_MATCH",
+          "original_size": 22,
+          "candidate_size": 22
+        },
+        {
+          "source": "src/control.c",
+          "name": "load_control",
+          "va": 4200704,
+          "status": "FUNCTION_MATCH",
+          "original_size": 42,
+          "candidate_size": 42
+        },
+        {
+          "source": "src/control.c",
+          "name": "save_control",
+          "va": 4200748,
+          "status": "FUNCTION_MATCH",
+          "original_size": 42,
+          "candidate_size": 42
+        },
+        {
+          "source": "src/control.c",
+          "name": "poll_control",
+          "va": 4200792,
+          "status": "FUNCTION_MATCH",
+          "original_size": 294,
+          "candidate_size": 294
+        },
+        {
+          "source": "src/csv.c",
+          "name": "csv_rewind",
+          "va": 4201088,
+          "status": "FUNCTION_MATCH",
+          "original_size": 24,
+          "candidate_size": 24
+        },
+        {
+          "source": "src/csv.c",
+          "name": "csv_add_field",
+          "va": 4201112,
+          "status": "FUNCTION_MATCH",
+          "original_size": 86,
+          "candidate_size": 86
+        },
+        {
+          "source": "src/csv.c",
+          "name": "csv_next",
+          "va": 4201200,
+          "status": "FUNCTION_MATCH",
+          "original_size": 197,
+          "candidate_size": 197
+        },
+        {
+          "source": "src/csv.c",
+          "name": "csv_destroy",
+          "va": 4201400,
+          "status": "FUNCTION_MATCH",
+          "original_size": 54,
+          "candidate_size": 54
+        },
+        {
+          "source": "src/csv.c",
+          "name": "csv_begin",
+          "va": 4201456,
+          "status": "FUNCTION_MATCH",
+          "original_size": 106,
+          "candidate_size": 106
+        },
+        {
+          "source": "src/csv.c",
+          "name": "csv_open",
+          "va": 4201564,
+          "status": "FUNCTION_MATCH",
+          "original_size": 204,
+          "candidate_size": 204
+        },
+        {
+          "source": "src/custom.c",
+          "name": "init_custom",
+          "va": 4201768,
+          "status": "FUNCTION_MATCH",
+          "original_size": 175,
+          "candidate_size": 175
+        },
+        {
+          "source": "src/custom.c",
+          "name": "destroy_custom_data",
+          "va": 4201944,
+          "status": "FUNCTION_MATCH",
+          "original_size": 486,
+          "candidate_size": 486
+        },
+        {
+          "source": "src/custom.c",
+          "name": "loadCustomSoundFILE",
+          "va": 4202432,
+          "status": "FUNCTION_MATCH",
+          "original_size": 128,
+          "candidate_size": 128
+        },
+        {
+          "source": "src/custom.c",
+          "name": "loadCustomSoundDF",
+          "va": 4202560,
+          "status": "FUNCTION_MATCH",
+          "original_size": 54,
+          "candidate_size": 54
+        },
+        {
+          "source": "src/custom.c",
+          "name": "clear_trailing_whitespace",
+          "va": 4202616,
+          "status": "FUNCTION_MATCH",
+          "original_size": 90,
+          "candidate_size": 90
+        },
+        {
+          "source": "src/custom.c",
+          "name": "get_string_data",
+          "va": 4202708,
+          "status": "FUNCTION_MATCH",
+          "original_size": 86,
+          "candidate_size": 86
+        },
+        {
+          "source": "src/custom.c",
+          "name": "load_sounds",
+          "va": 4202796,
+          "status": "FUNCTION_MATCH",
+          "original_size": 1729,
+          "candidate_size": 1729
+        },
+        {
+          "source": "src/custom.c",
+          "name": "custom_alert",
+          "va": 4204528,
+          "status": "FUNCTION_MATCH",
+          "original_size": 132,
+          "candidate_size": 132
+        },
+        {
+          "source": "src/custom.c",
+          "name": "load_frames",
+          "va": 4204660,
+          "status": "FUNCTION_MATCH",
+          "original_size": 2392,
+          "candidate_size": 2392
+        },
+        {
+          "source": "src/custom.c",
+          "name": "load_character_bmp",
+          "va": 4207052,
+          "status": "DIFFER",
+          "original_size": 1992,
+          "candidate_size": 1993
+        },
+        {
+          "source": "src/directories.c",
+          "name": "get_custom_characters_dir",
+          "va": 4209044,
+          "status": "FUNCTION_MATCH",
+          "original_size": 13,
+          "candidate_size": 13
+        },
+        {
+          "source": "src/directories.c",
+          "name": "get_adcache_dir",
+          "va": 4209060,
+          "status": "FUNCTION_MATCH",
+          "original_size": 39,
+          "candidate_size": 39
+        },
+        {
+          "source": "src/directories.c",
+          "name": "get_configfile_path",
+          "va": 4209100,
+          "status": "FUNCTION_MATCH",
+          "original_size": 39,
+          "candidate_size": 39
+        },
+        {
+          "source": "src/directories.c",
+          "name": "get_logfile_path",
+          "va": 4209140,
+          "status": "FUNCTION_MATCH",
+          "original_size": 39,
+          "candidate_size": 39
+        },
+        {
+          "source": "src/directories.c",
+          "name": "get_profiles_dir",
+          "va": 4209180,
+          "status": "FUNCTION_MATCH",
+          "original_size": 39,
+          "candidate_size": 39
+        },
+        {
+          "source": "src/directories.c",
+          "name": "get_profile_dir_for_profile",
+          "va": 4209220,
+          "status": "FUNCTION_MATCH",
+          "original_size": 63,
+          "candidate_size": 63
+        },
+        {
+          "source": "src/directories.c",
+          "name": "get_character_dir",
+          "va": 4209284,
+          "status": "FUNCTION_MATCH",
+          "original_size": 67,
+          "candidate_size": 67
+        },
+        {
+          "source": "src/fld_adspot.c",
+          "name": "fldads_start",
+          "va": 4209352,
+          "status": "FUNCTION_MATCH",
+          "original_size": 45,
+          "candidate_size": 45
+        },
+        {
+          "source": "src/fld_adspot.c",
+          "name": "fldads_get_random_ad",
+          "va": 4209400,
+          "status": "FUNCTION_MATCH",
+          "original_size": 192,
+          "candidate_size": 192
+        },
+        {
+          "source": "src/fld_adspot.c",
+          "name": "fldads_destroy_cache",
+          "va": 4209592,
+          "status": "FUNCTION_MATCH",
+          "original_size": 138,
+          "candidate_size": 138
+        },
+        {
+          "source": "src/fld_adspot.c",
+          "name": "fldads_get_local_cache_name",
+          "va": 4209732,
+          "status": "FUNCTION_MATCH",
+          "original_size": 64,
+          "candidate_size": 64
+        },
+        {
+          "source": "src/fld_adspot.c",
+          "name": "fldads_dump_local_cache",
+          "va": 4209796,
+          "status": "FUNCTION_MATCH",
+          "original_size": 156,
+          "candidate_size": 156
+        },
+        {
+          "source": "src/fld_adspot.c",
+          "name": "get_url_filename",
+          "va": 4209952,
+          "status": "FUNCTION_MATCH",
+          "original_size": 42,
+          "candidate_size": 42
+        },
+        {
+          "source": "src/fld_adspot.c",
+          "name": "fldads_get_local_filename_from_url",
+          "va": 4209996,
+          "status": "FUNCTION_MATCH",
+          "original_size": 26,
+          "candidate_size": 26
+        },
+        {
+          "source": "src/fld_adspot.c",
+          "name": "fldads_load_cache_from_csv",
+          "va": 4210024,
+          "status": "FUNCTION_MATCH",
+          "original_size": 282,
+          "candidate_size": 282
+        },
+        {
+          "source": "src/fld_adspot.c",
+          "name": "fldads_load_local_cache",
+          "va": 4210308,
+          "status": "FUNCTION_MATCH",
+          "original_size": 55,
+          "candidate_size": 55
+        },
+        {
+          "source": "src/fld_adspot.c",
+          "name": "fldads_update_local_adimg",
+          "va": 4210364,
+          "status": "FUNCTION_MATCH",
+          "original_size": 230,
+          "candidate_size": 230
+        },
+        {
+          "source": "src/fld_adspot.c",
+          "name": "fldads_update_cache",
+          "va": 4210596,
+          "status": "FUNCTION_MATCH",
+          "original_size": 110,
+          "candidate_size": 110
+        },
+        {
+          "source": "src/fld_adspot.c",
+          "name": "fldads_threadmain",
+          "va": 4210708,
+          "status": "DIFFER",
+          "original_size": 223,
+          "candidate_size": 223
+        },
+        {
+          "source": "src/game_data.c",
+          "name": "add_jump_sequence",
+          "va": 4210932,
+          "status": "FUNCTION_MATCH",
+          "original_size": 87,
+          "candidate_size": 87
+        },
+        {
+          "source": "src/game_data.c",
+          "name": "add_combo",
+          "va": 4211020,
+          "status": "FUNCTION_MATCH",
+          "original_size": 62,
+          "candidate_size": 62
+        },
+        {
+          "source": "src/game_data.c",
+          "name": "destroy_game_data",
+          "va": 4211084,
+          "status": "FUNCTION_MATCH",
+          "original_size": 12,
+          "candidate_size": 12
+        },
+        {
+          "source": "src/game_data.c",
+          "name": "create_game_data",
+          "va": 4211096,
+          "status": "FUNCTION_MATCH",
+          "original_size": 186,
+          "candidate_size": 186
+        },
+        {
+          "source": "src/game_data.c",
+          "name": "getGameDataXML",
+          "va": 4211284,
+          "status": "FUNCTION_MATCH",
+          "original_size": 1855,
+          "candidate_size": 1855
+        },
+        {
+          "source": "src/hisc.c",
+          "name": "qualify_hisc_table",
+          "va": 4213140,
+          "status": "FUNCTION_MATCH",
+          "original_size": 39,
+          "candidate_size": 39
+        },
+        {
+          "source": "src/hisc.c",
+          "name": "sort_hisc_table",
+          "va": 4213180,
+          "status": "FUNCTION_MATCH",
+          "original_size": 147,
+          "candidate_size": 147
+        },
+        {
+          "source": "src/hisc.c",
+          "name": "generate_checksum",
+          "va": 4213328,
+          "status": "FUNCTION_MATCH",
+          "original_size": 44,
+          "candidate_size": 44
+        },
+        {
+          "source": "src/hisc.c",
+          "name": "draw_table",
+          "va": 4213372,
+          "status": "FUNCTION_MATCH",
+          "original_size": 441,
+          "candidate_size": 441
+        },
+        {
+          "source": "src/hisc.c",
+          "name": "view_scores",
+          "va": 4213816,
+          "status": "DIFFER",
+          "original_size": 2552,
+          "candidate_size": 2498
+        },
+        {
+          "source": "src/hisc.c",
+          "name": "save_hisc_table",
+          "va": 4216368,
+          "status": "FUNCTION_MATCH",
+          "original_size": 129,
+          "candidate_size": 129
+        },
+        {
+          "source": "src/hisc.c",
+          "name": "load_hisc_table",
+          "va": 4216500,
+          "status": "FUNCTION_MATCH",
+          "original_size": 155,
+          "candidate_size": 155
+        },
+        {
+          "source": "src/hisc.c",
+          "name": "reset_hisc_table",
+          "va": 4216656,
+          "status": "FUNCTION_MATCH",
+          "original_size": 64,
+          "candidate_size": 64
+        },
+        {
+          "source": "src/hisc.c",
+          "name": "enter_hisc_table",
+          "va": 4216720,
+          "status": "FUNCTION_MATCH",
+          "original_size": 136,
+          "candidate_size": 136
+        },
+        {
+          "source": "src/hisc.c",
+          "name": "destroy_hisc_table",
+          "va": 4216856,
+          "status": "FUNCTION_MATCH",
+          "original_size": 34,
+          "candidate_size": 34
+        },
+        {
+          "source": "src/hisc.c",
+          "name": "make_hisc_table",
+          "va": 4216892,
+          "status": "FUNCTION_MATCH",
+          "original_size": 84,
+          "candidate_size": 84
+        },
+        {
+          "source": "src/main.c",
+          "name": "get_version_str",
+          "va": 4221280,
+          "status": "FUNCTION_MATCH",
+          "original_size": 10,
+          "candidate_size": 10
+        },
+        {
+          "source": "src/main.c",
+          "name": "get_demo",
+          "va": 4221292,
+          "status": "FUNCTION_MATCH",
+          "original_size": 10,
+          "candidate_size": 10
+        },
+        {
+          "source": "src/main.c",
+          "name": "get_controls",
+          "va": 4221304,
+          "status": "FUNCTION_MATCH",
+          "original_size": 10,
+          "candidate_size": 10
+        },
+        {
+          "source": "src/main.c",
+          "name": "new_rand",
+          "va": 4221316,
+          "status": "FUNCTION_MATCH",
+          "original_size": 128,
+          "candidate_size": 128
+        },
+        {
+          "source": "src/main.c",
+          "name": "new_srand",
+          "va": 4221444,
+          "status": "FUNCTION_MATCH",
+          "original_size": 14,
+          "candidate_size": 14
+        },
+        {
+          "source": "src/main.c",
+          "name": "syncProfileFromOptions",
+          "va": 4221460,
+          "status": "FUNCTION_MATCH",
+          "original_size": 58,
+          "candidate_size": 58
+        },
+        {
+          "source": "src/main.c",
+          "name": "ok_to_play",
+          "va": 4221520,
+          "status": "FUNCTION_MATCH",
+          "original_size": 10,
+          "candidate_size": 10
+        },
+        {
+          "source": "src/main.c",
+          "name": "switchedFromProgram",
+          "va": 4221532,
+          "status": "FUNCTION_MATCH",
+          "original_size": 15,
+          "candidate_size": 15
+        },
+        {
+          "source": "src/main.c",
+          "name": "switchedToProgram",
+          "va": 4221548,
+          "status": "FUNCTION_MATCH",
+          "original_size": 15,
+          "candidate_size": 15
+        },
+        {
+          "source": "src/main.c",
+          "name": "clickedCloseButton",
+          "va": 4221564,
+          "status": "FUNCTION_MATCH",
+          "original_size": 15,
+          "candidate_size": 15
+        },
+        {
+          "source": "src/main.c",
+          "name": "update_reward",
+          "va": 4221580,
+          "status": "FUNCTION_MATCH",
+          "original_size": 55,
+          "candidate_size": 55
+        },
+        {
+          "source": "src/main.c",
+          "name": "update_frame",
+          "va": 4221636,
+          "status": "FUNCTION_MATCH",
+          "original_size": 120,
+          "candidate_size": 120
+        },
+        {
+          "source": "src/main.c",
+          "name": "is_custom_replay",
+          "va": 4221756,
+          "status": "FUNCTION_MATCH",
+          "original_size": 66,
+          "candidate_size": 66
+        },
+        {
+          "source": "src/main.c",
+          "name": "line_intersect",
+          "va": 4221824,
+          "status": "FUNCTION_MATCH",
+          "original_size": 302,
+          "candidate_size": 302
+        },
+        {
+          "source": "src/main.c",
+          "name": "WinMain",
+          "va": 4222128,
+          "status": "FUNCTION_MATCH",
+          "original_size": 50,
+          "candidate_size": 50
+        },
+        {
+          "source": "src/main.c",
+          "name": "set_current_avatar",
+          "va": 4222180,
+          "status": "FUNCTION_MATCH",
+          "original_size": 96,
+          "candidate_size": 96
+        },
+        {
+          "source": "src/main.c",
+          "name": "show_name",
+          "va": 4222276,
+          "status": "FUNCTION_MATCH",
+          "original_size": 36,
+          "candidate_size": 36
+        },
+        {
+          "source": "src/main.c",
+          "name": "startMenuMusic",
+          "va": 4222312,
+          "status": "FUNCTION_MATCH",
+          "original_size": 59,
+          "candidate_size": 59
+        },
+        {
+          "source": "src/main.c",
+          "name": "play_sound",
+          "va": 4222372,
+          "status": "FUNCTION_MATCH",
+          "original_size": 215,
+          "candidate_size": 215
+        },
+        {
+          "source": "src/main.c",
+          "name": "play_menu_select",
+          "va": 4222588,
+          "status": "FUNCTION_MATCH",
+          "original_size": 37,
+          "candidate_size": 37
+        },
+        {
+          "source": "src/main.c",
+          "name": "play_menu_move",
+          "va": 4222628,
+          "status": "FUNCTION_MATCH",
+          "original_size": 37,
+          "candidate_size": 37
+        },
+        {
+          "source": "src/main.c",
+          "name": "play_jump_sound",
+          "va": 4222668,
+          "status": "FUNCTION_MATCH",
+          "original_size": 141,
+          "candidate_size": 141
+        },
+        {
+          "source": "src/main.c",
+          "name": "stopMenuMusic",
+          "va": 4222812,
+          "status": "FUNCTION_MATCH",
+          "original_size": 25,
+          "candidate_size": 25
+        },
+        {
+          "source": "src/main.c",
+          "name": "checkMenuFocus",
+          "va": 4222840,
+          "status": "FUNCTION_MATCH",
+          "original_size": 59,
+          "candidate_size": 59
+        },
+        {
+          "source": "src/main.c",
+          "name": "drawSlot",
+          "va": 4222900,
+          "status": "FUNCTION_MATCH",
+          "original_size": 328,
+          "candidate_size": 328
+        },
+        {
+          "source": "src/main.c",
+          "name": "draw_reward",
+          "va": 4223228,
+          "status": "FUNCTION_MATCH",
+          "original_size": 581,
+          "candidate_size": 581
+        },
+        {
+          "source": "src/main.c",
+          "name": "replaceBadCharacters",
+          "va": 4223812,
+          "status": "FUNCTION_MATCH",
+          "original_size": 125,
+          "candidate_size": 125
+        },
+        {
+          "source": "src/main.c",
+          "name": "pwd_garble_string",
+          "va": 4223940,
+          "status": "FUNCTION_MATCH",
+          "original_size": 52,
+          "candidate_size": 52
+        },
+        {
+          "source": "src/main.c",
+          "name": "replay_menu_callback",
+          "va": 4223992,
+          "status": "FUNCTION_MATCH",
+          "original_size": 712,
+          "candidate_size": 712
+        },
+        {
+          "source": "src/main.c",
+          "name": "draw_results",
+          "va": 4224704,
+          "status": "CODEGEN_SIMILAR",
+          "original_size": 839,
+          "candidate_size": 839
+        },
+        {
+          "source": "src/main.c",
+          "name": "draw_progress_bar",
+          "va": 4225544,
+          "status": "FUNCTION_MATCH",
+          "original_size": 486,
+          "candidate_size": 486
+        },
+        {
+          "source": "src/main.c",
+          "name": "datafile_callback_slow",
+          "va": 4226032,
+          "status": "FUNCTION_MATCH",
+          "original_size": 33,
+          "candidate_size": 33
+        },
+        {
+          "source": "src/main.c",
+          "name": "datafile_callback",
+          "va": 4226068,
+          "status": "FUNCTION_MATCH",
+          "original_size": 12,
+          "candidate_size": 12
+        },
+        {
+          "source": "src/main.c",
+          "name": "color_map_callback",
+          "va": 4226080,
+          "status": "FUNCTION_MATCH",
+          "original_size": 22,
+          "candidate_size": 22
+        },
+        {
+          "source": "src/main.c",
+          "name": "start_reward",
+          "va": 4226104,
+          "status": "FUNCTION_MATCH",
+          "original_size": 472,
+          "candidate_size": 472
+        },
+        {
+          "source": "src/main.c",
+          "name": "handle_player_collision_original",
+          "va": 4226576,
+          "status": "DIFFER",
+          "original_size": 456,
+          "candidate_size": 449
+        },
+        {
+          "source": "src/main.c",
+          "name": "handle_player_collision_old",
+          "va": 4227032,
+          "status": "DIFFER",
+          "original_size": 894,
+          "candidate_size": 961
+        },
+        {
+          "source": "src/main.c",
+          "name": "handle_player_collision_combo",
+          "va": 4227928,
+          "status": "DIFFER",
+          "original_size": 1390,
+          "candidate_size": 1381
+        },
+        {
+          "source": "src/main.c",
+          "name": "handle_player_collision_vector_2",
+          "va": 4229320,
+          "status": "DIFFER",
+          "original_size": 1086,
+          "candidate_size": 1057
+        },
+        {
+          "source": "src/main.c",
+          "name": "handle_player_collision_vector",
+          "va": 4230408,
+          "status": "DIFFER",
+          "original_size": 1071,
+          "candidate_size": 1021
+        },
+        {
+          "source": "src/main.c",
+          "name": "line_alert",
+          "va": 4231480,
+          "status": "FUNCTION_MATCH",
+          "original_size": 353,
+          "candidate_size": 353
+        },
+        {
+          "source": "src/main.c",
+          "name": "draw_frame",
+          "va": 4231836,
+          "status": "DIFFER",
+          "original_size": 8518,
+          "candidate_size": 8203
+        },
+        {
+          "source": "src/main.c",
+          "name": "handle_player_input",
+          "va": 4240356,
+          "status": "DIFFER",
+          "original_size": 728,
+          "candidate_size": 728
+        },
+        {
+          "source": "src/main.c",
+          "name": "blit_to_screen",
+          "va": 4241084,
+          "status": "DIFFER",
+          "original_size": 1415,
+          "candidate_size": 1239
+        },
+        {
+          "source": "src/main.c",
+          "name": "get_string",
+          "va": 4242500,
+          "status": "DIFFER",
+          "original_size": 790,
+          "candidate_size": 784
+        },
+        {
+          "source": "src/main.c",
+          "name": "fadeOut",
+          "va": 4243292,
+          "status": "FUNCTION_MATCH",
+          "original_size": 609,
+          "candidate_size": 609
+        },
+        {
+          "source": "src/main.c",
+          "name": "fadeIn",
+          "va": 4243904,
+          "status": "FUNCTION_MATCH",
+          "original_size": 424,
+          "candidate_size": 424
+        },
+        {
+          "source": "src/main.c",
+          "name": "show_instructions",
+          "va": 4244328,
+          "status": "FUNCTION_MATCH",
+          "original_size": 370,
+          "candidate_size": 370
+        },
+        {
+          "source": "src/main.c",
+          "name": "show_credits",
+          "va": 4244700,
+          "status": "DIFFER",
+          "original_size": 634,
+          "candidate_size": 654
+        },
+        {
+          "source": "src/main.c",
+          "name": "rebuild_profile_list",
+          "va": 4245336,
+          "status": "FUNCTION_MATCH",
+          "original_size": 198,
+          "candidate_size": 198
+        },
+        {
+          "source": "src/main.c",
+          "name": "syncOptionsFromProfile",
+          "va": 4245536,
+          "status": "FUNCTION_MATCH",
+          "original_size": 157,
+          "candidate_size": 157
+        },
+        {
+          "source": "src/main.c",
+          "name": "add_profile",
+          "va": 4245696,
+          "status": "FUNCTION_MATCH",
+          "original_size": 195,
+          "candidate_size": 195
+        },
+        {
+          "source": "src/main.c",
+          "name": "get_gamepad_value",
+          "va": 4245892,
+          "status": "FUNCTION_MATCH",
+          "original_size": 166,
+          "candidate_size": 166
+        },
+        {
+          "source": "src/main.c",
+          "name": "getSampleFromOggDatafile",
+          "va": 4246060,
+          "status": "FUNCTION_MATCH",
+          "original_size": 32,
+          "candidate_size": 32
+        },
+        {
+          "source": "src/main.c",
+          "name": "load_sound",
+          "va": 4246092,
+          "status": "FUNCTION_MATCH",
+          "original_size": 166,
+          "candidate_size": 166
+        },
+        {
+          "source": "src/main.c",
+          "name": "stopGameMusic",
+          "va": 4246260,
+          "status": "FUNCTION_MATCH",
+          "original_size": 58,
+          "candidate_size": 58
+        },
+        {
+          "source": "src/main.c",
+          "name": "startGameMusic",
+          "va": 4246320,
+          "status": "FUNCTION_MATCH",
+          "original_size": 144,
+          "candidate_size": 144
+        },
+        {
+          "source": "src/main.c",
+          "name": "for_each_directory",
+          "va": 4246464,
+          "status": "FUNCTION_MATCH",
+          "original_size": 109,
+          "candidate_size": 109
+        },
+        {
+          "source": "src/main.c",
+          "name": "loadScrambled",
+          "va": 4246576,
+          "status": "FUNCTION_MATCH",
+          "original_size": 247,
+          "candidate_size": 247
+        },
+        {
+          "source": "src/main.c",
+          "name": "myDeleteFile",
+          "va": 4246824,
+          "status": "FUNCTION_MATCH",
+          "original_size": 63,
+          "candidate_size": 63
+        },
+        {
+          "source": "src/main.c",
+          "name": "my_alert",
+          "va": 4246888,
+          "status": "DIFFER",
+          "original_size": 1770,
+          "candidate_size": 1774
+        },
+        {
+          "source": "src/main.c",
+          "name": "force_create_profile",
+          "va": 4248660,
+          "status": "DIFFER",
+          "original_size": 1538,
+          "candidate_size": 1458
+        },
+        {
+          "source": "src/main.c",
+          "name": "log2file",
+          "va": 4250200,
+          "status": "FUNCTION_MATCH",
+          "original_size": 189,
+          "candidate_size": 189
+        },
+        {
+          "source": "src/main.c",
+          "name": "testWindowResolution",
+          "va": 4250392,
+          "status": "FUNCTION_MATCH",
+          "original_size": 388,
+          "candidate_size": 388
+        },
+        {
+          "source": "src/main.c",
+          "name": "new_game",
+          "va": 4250780,
+          "status": "FUNCTION_MATCH",
+          "original_size": 1139,
+          "candidate_size": 1139
+        },
+        {
+          "source": "src/main.c",
+          "name": "end_game",
+          "va": 4251920,
+          "status": "FUNCTION_MATCH",
+          "original_size": 32,
+          "candidate_size": 32
+        },
+        {
+          "source": "src/main.c",
+          "name": "save_config",
+          "va": 4251952,
+          "status": "FUNCTION_MATCH",
+          "original_size": 154,
+          "candidate_size": 154
+        },
+        {
+          "source": "src/main.c",
+          "name": "change_profile",
+          "va": 4252108,
+          "status": "FUNCTION_MATCH",
+          "original_size": 188,
+          "candidate_size": 188
+        },
+        {
+          "source": "src/main.c",
+          "name": "uninit_game",
+          "va": 4252296,
+          "status": "FUNCTION_MATCH",
+          "original_size": 646,
+          "candidate_size": 646
+        },
+        {
+          "source": "src/main.c",
+          "name": "open_web_browser",
+          "va": 4252944,
+          "status": "FUNCTION_MATCH",
+          "original_size": 111,
+          "candidate_size": 111
+        },
+        {
+          "source": "src/main.c",
+          "name": "check_beta_tester",
+          "va": 4253056,
+          "status": "FUNCTION_MATCH",
+          "original_size": 254,
+          "candidate_size": 254
+        },
+        {
+          "source": "src/main.c",
+          "name": "check_characters",
+          "va": 4253312,
+          "status": "FUNCTION_MATCH",
+          "original_size": 345,
+          "candidate_size": 345
+        },
+        {
+          "source": "src/main.c",
+          "name": "init_game",
+          "va": 4253660,
+          "status": "DIFFER",
+          "original_size": 5788,
+          "candidate_size": 5688
+        },
+        {
+          "source": "src/main.c",
+          "name": "load_character",
+          "va": 4259448,
+          "status": "DIFFER",
+          "original_size": 330,
+          "candidate_size": 330
+        },
+        {
+          "source": "src/main.c",
+          "name": "check_dir",
+          "va": 4259780,
+          "status": "FUNCTION_MATCH",
+          "original_size": 103,
+          "candidate_size": 103
+        },
+        {
+          "source": "src/main.c",
+          "name": "take_screenshot",
+          "va": 4259884,
+          "status": "FUNCTION_MATCH",
+          "original_size": 203,
+          "candidate_size": 203
+        },
+        {
+          "source": "src/main.c",
+          "name": "main_menu_callback",
+          "va": 4260088,
+          "status": "DIFFER",
+          "original_size": 3741,
+          "candidate_size": 2903
+        },
+        {
+          "source": "src/main.c",
+          "name": "do_replay_menu",
+          "va": 4263832,
+          "status": "DIFFER",
+          "original_size": 2661,
+          "candidate_size": 2657
+        },
+        {
+          "source": "src/main.c",
+          "name": "play",
+          "va": 4266496,
+          "status": "DIFFER",
+          "original_size": 17420,
+          "candidate_size": 17400
+        },
+        {
+          "source": "src/main.c",
+          "name": "run_demo",
+          "va": 4283916,
+          "status": "FUNCTION_MATCH",
+          "original_size": 159,
+          "candidate_size": 159
+        },
+        {
+          "source": "src/main.c",
+          "name": "load_new_ad_image",
+          "va": 4284076,
+          "status": "FUNCTION_MATCH",
+          "original_size": 100,
+          "candidate_size": 100
+        },
+        {
+          "source": "src/main.c",
+          "name": "_mangled_main",
+          "va": 4284176,
+          "status": "DIFFER",
+          "original_size": 1938,
+          "candidate_size": 1730
+        },
+        {
+          "source": "src/map.c",
+          "name": "reset_map",
+          "va": 4286116,
+          "status": "FUNCTION_MATCH",
+          "original_size": 53,
+          "candidate_size": 53
+        },
+        {
+          "source": "src/map.c",
+          "name": "is_solid",
+          "va": 4286172,
+          "status": "FUNCTION_MATCH",
+          "original_size": 107,
+          "candidate_size": 107
+        },
+        {
+          "source": "src/map.c",
+          "name": "get_level",
+          "va": 4286280,
+          "status": "FUNCTION_MATCH",
+          "original_size": 40,
+          "candidate_size": 40
+        },
+        {
+          "source": "src/map.c",
+          "name": "getFloorData",
+          "va": 4286320,
+          "status": "FUNCTION_MATCH",
+          "original_size": 107,
+          "candidate_size": 107
+        },
+        {
+          "source": "src/map.c",
+          "name": "add_floor",
+          "va": 4286428,
+          "status": "DIFFER",
+          "original_size": 608,
+          "candidate_size": 608
+        },
+        {
+          "source": "src/menu.c",
+          "name": "get_slider_value",
+          "va": 4287036,
+          "status": "FUNCTION_MATCH",
+          "original_size": 10,
+          "candidate_size": 10
+        },
+        {
+          "source": "src/menu.c",
+          "name": "set_slider_value",
+          "va": 4287048,
+          "status": "FUNCTION_MATCH",
+          "original_size": 33,
+          "candidate_size": 33
+        },
+        {
+          "source": "src/menu.c",
+          "name": "get_selection_value",
+          "va": 4287084,
+          "status": "FUNCTION_MATCH",
+          "original_size": 10,
+          "candidate_size": 10
+        },
+        {
+          "source": "src/menu.c",
+          "name": "set_selection_value",
+          "va": 4287096,
+          "status": "FUNCTION_MATCH",
+          "original_size": 33,
+          "candidate_size": 33
+        },
+        {
+          "source": "src/menu.c",
+          "name": "key_to_str",
+          "va": 4287132,
+          "status": "FUNCTION_MATCH",
+          "original_size": 2543,
+          "candidate_size": 2543
+        },
+        {
+          "source": "src/menu.c",
+          "name": "reset_menu",
+          "va": 4289676,
+          "status": "FUNCTION_MATCH",
+          "original_size": 79,
+          "candidate_size": 79
+        },
+        {
+          "source": "src/menu.c",
+          "name": "build_menu_string",
+          "va": 4289756,
+          "status": "FUNCTION_MATCH",
+          "original_size": 415,
+          "candidate_size": 415
+        },
+        {
+          "source": "src/menu.c",
+          "name": "draw_menu",
+          "va": 4290172,
+          "status": "DIFFER",
+          "original_size": 1118,
+          "candidate_size": 956
+        },
+        {
+          "source": "src/menu.c",
+          "name": "update_game_menu",
+          "va": 4291292,
+          "status": "DIFFER",
+          "original_size": 583,
+          "candidate_size": 582
+        },
+        {
+          "source": "src/menu.c",
+          "name": "handle_menu",
+          "va": 4291876,
+          "status": "DIFFER",
+          "original_size": 1120,
+          "candidate_size": 1066
+        },
+        {
+          "source": "src/options.c",
+          "name": "hash3",
+          "va": 4292996,
+          "status": "FUNCTION_MATCH",
+          "original_size": 71,
+          "candidate_size": 71
+        },
+        {
+          "source": "src/options.c",
+          "name": "generate_options_checksum",
+          "va": 4293068,
+          "status": "FUNCTION_MATCH",
+          "original_size": 254,
+          "candidate_size": 254
+        },
+        {
+          "source": "src/options.c",
+          "name": "reset_options",
+          "va": 4293324,
+          "status": "FUNCTION_MATCH",
+          "original_size": 205,
+          "candidate_size": 205
+        },
+        {
+          "source": "src/options.c",
+          "name": "load_options",
+          "va": 4293532,
+          "status": "FUNCTION_MATCH",
+          "original_size": 70,
+          "candidate_size": 70
+        },
+        {
+          "source": "src/options.c",
+          "name": "save_options",
+          "va": 4293604,
+          "status": "FUNCTION_MATCH",
+          "original_size": 58,
+          "candidate_size": 58
+        },
+        {
+          "source": "src/particle.c",
+          "name": "reset_particles",
+          "va": 4293664,
+          "status": "FUNCTION_MATCH",
+          "original_size": 27,
+          "candidate_size": 27
+        },
+        {
+          "source": "src/particle.c",
+          "name": "update_particle",
+          "va": 4293692,
+          "status": "FUNCTION_MATCH",
+          "original_size": 83,
+          "candidate_size": 83
+        },
+        {
+          "source": "src/particle.c",
+          "name": "create_particle",
+          "va": 4293776,
+          "status": "FUNCTION_MATCH",
+          "original_size": 192,
+          "candidate_size": 192
+        },
+        {
+          "source": "src/replay.c",
+          "name": "get_sort_method",
+          "va": 4307372,
+          "status": "FUNCTION_MATCH",
+          "original_size": 10,
+          "candidate_size": 10
+        },
+        {
+          "source": "src/replay.c",
+          "name": "set_sort_method",
+          "va": 4307384,
+          "status": "FUNCTION_MATCH",
+          "original_size": 13,
+          "candidate_size": 13
+        },
+        {
+          "source": "src/replay.c",
+          "name": "hash",
+          "va": 4307400,
+          "status": "FUNCTION_MATCH",
+          "original_size": 71,
+          "candidate_size": 71
+        },
+        {
+          "source": "src/replay.c",
+          "name": "calc_replay_checksum_131",
+          "va": 4307472,
+          "status": "DIFFER",
+          "original_size": 177,
+          "candidate_size": 177
+        },
+        {
+          "source": "src/replay.c",
+          "name": "calc_replay_checksum",
+          "va": 4307652,
+          "status": "DIFFER",
+          "original_size": 676,
+          "candidate_size": 675
+        },
+        {
+          "source": "src/replay.c",
+          "name": "destroy_replay",
+          "va": 4308328,
+          "status": "FUNCTION_MATCH",
+          "original_size": 54,
+          "candidate_size": 54
+        },
+        {
+          "source": "src/replay.c",
+          "name": "update_file_list",
+          "va": 4308384,
+          "status": "FUNCTION_MATCH",
+          "original_size": 184,
+          "candidate_size": 184
+        },
+        {
+          "source": "src/replay.c",
+          "name": "draw_replay_selector",
+          "va": 4308568,
+          "status": "DIFFER",
+          "original_size": 3726,
+          "candidate_size": 3772
+        },
+        {
+          "source": "src/replay.c",
+          "name": "create_replay",
+          "va": 4312296,
+          "status": "CODEGEN_SIMILAR",
+          "original_size": 254,
+          "candidate_size": 254
+        },
+        {
+          "source": "src/replay.c",
+          "name": "load_replay",
+          "va": 4312552,
+          "status": "FUNCTION_MATCH",
+          "original_size": 1136,
+          "candidate_size": 1136
+        },
+        {
+          "source": "src/replay.c",
+          "name": "replay_selector",
+          "va": 4313688,
+          "status": "DIFFER",
+          "original_size": 2845,
+          "candidate_size": 2485
+        },
+        {
+          "source": "src/replay.c",
+          "name": "save_replay",
+          "va": 4316536,
+          "status": "DIFFER",
+          "original_size": 1227,
+          "candidate_size": 1227
+        },
+        {
+          "source": "src/replay.c",
+          "name": "get_replay_property",
+          "va": 4317764,
+          "status": "FUNCTION_MATCH",
+          "original_size": 1147,
+          "candidate_size": 1147
+        },
+        {
+          "source": "src/replay.c",
+          "name": "my_strcmp",
+          "va": 4318912,
+          "status": "DIFFER",
+          "original_size": 128,
+          "candidate_size": 123
+        },
+        {
+          "source": "src/replay.c",
+          "name": "add_itr_file",
+          "va": 4319040,
+          "status": "DIFFER",
+          "original_size": 360,
+          "candidate_size": 357
+        },
+        {
+          "source": "src/profile.c",
+          "name": "hash2",
+          "va": 4295116,
+          "status": "FUNCTION_MATCH",
+          "original_size": 71,
+          "candidate_size": 71
+        },
+        {
+          "source": "src/profile.c",
+          "name": "generate_profile_checksum",
+          "va": 4295188,
+          "status": "FUNCTION_MATCH",
+          "original_size": 112,
+          "candidate_size": 112
+        },
+        {
+          "source": "src/profile.c",
+          "name": "get_rank_id",
+          "va": 4295300,
+          "status": "FUNCTION_MATCH",
+          "original_size": 75,
+          "candidate_size": 75
+        },
+        {
+          "source": "src/profile.c",
+          "name": "get_rank",
+          "va": 4295376,
+          "status": "FUNCTION_MATCH",
+          "original_size": 82,
+          "candidate_size": 82
+        },
+        {
+          "source": "src/profile.c",
+          "name": "set_next_rank_message",
+          "va": 4295460,
+          "status": "FUNCTION_MATCH",
+          "original_size": 431,
+          "candidate_size": 431
+        },
+        {
+          "source": "src/profile.c",
+          "name": "draw_profile_selector",
+          "va": 4295892,
+          "status": "DIFFER",
+          "original_size": 1268,
+          "candidate_size": 1250
+        },
+        {
+          "source": "src/profile.c",
+          "name": "draw_buffer",
+          "va": 4297160,
+          "status": "DIFFER",
+          "original_size": 185,
+          "candidate_size": 181
+        },
+        {
+          "source": "src/profile.c",
+          "name": "profile_data_page_advanced",
+          "va": 4297348,
+          "status": "FUNCTION_MATCH",
+          "original_size": 332,
+          "candidate_size": 332
+        },
+        {
+          "source": "src/profile.c",
+          "name": "profile_data_page_basic",
+          "va": 4297680,
+          "status": "FUNCTION_MATCH",
+          "original_size": 637,
+          "candidate_size": 637
+        },
+        {
+          "source": "src/profile.c",
+          "name": "profile_data_page_extra",
+          "va": 4298320,
+          "status": "FUNCTION_MATCH",
+          "original_size": 85,
+          "candidate_size": 85
+        },
+        {
+          "source": "src/profile.c",
+          "name": "profile_data_page_general",
+          "va": 4298408,
+          "status": "DIFFER",
+          "original_size": 1091,
+          "candidate_size": 1082
+        },
+        {
+          "source": "src/profile.c",
+          "name": "view_profile",
+          "va": 4299500,
+          "status": "DIFFER",
+          "original_size": 2249,
+          "candidate_size": 2168
+        },
+        {
+          "source": "src/profile.c",
+          "name": "save_profile",
+          "va": 4301752,
+          "status": "FUNCTION_MATCH",
+          "original_size": 1073,
+          "candidate_size": 1073
+        },
+        {
+          "source": "src/profile.c",
+          "name": "load_profile",
+          "va": 4302828,
+          "status": "FUNCTION_MATCH",
+          "original_size": 188,
+          "candidate_size": 188
+        },
+        {
+          "source": "src/profile.c",
+          "name": "delete_profile",
+          "va": 4303016,
+          "status": "FUNCTION_MATCH",
+          "original_size": 222,
+          "candidate_size": 222
+        },
+        {
+          "source": "src/profile.c",
+          "name": "create_profile",
+          "va": 4303240,
+          "status": "DIFFER",
+          "original_size": 823,
+          "candidate_size": 823
+        },
+        {
+          "source": "src/profile.c",
+          "name": "select_profile",
+          "va": 4304064,
+          "status": "DIFFER",
+          "original_size": 3070,
+          "candidate_size": 3115
+        },
+        {
+          "source": "src/scroller.c",
+          "name": "scroll_scroller",
+          "va": 4321472,
+          "status": "FUNCTION_MATCH",
+          "original_size": 14,
+          "candidate_size": 14
+        },
+        {
+          "source": "src/scroller.c",
+          "name": "restart_scroller",
+          "va": 4321488,
+          "status": "FUNCTION_MATCH",
+          "original_size": 28,
+          "candidate_size": 28
+        },
+        {
+          "source": "src/scroller.c",
+          "name": "draw_scroller",
+          "va": 4321516,
+          "status": "DIFFER",
+          "original_size": 396,
+          "candidate_size": 396
+        },
+        {
+          "source": "src/scroller.c",
+          "name": "init_scroller",
+          "va": 4321912,
+          "status": "FUNCTION_MATCH",
+          "original_size": 200,
+          "candidate_size": 200
+        },
+        {
+          "source": "src/stars.c",
+          "name": "draw_star_field",
+          "va": 4322112,
+          "status": "FUNCTION_MATCH",
+          "original_size": 199,
+          "candidate_size": 199
+        },
+        {
+          "source": "src/stars.c",
+          "name": "scroll_star_field",
+          "va": 4322312,
+          "status": "FUNCTION_MATCH",
+          "original_size": 290,
+          "candidate_size": 290
+        },
+        {
+          "source": "src/stars.c",
+          "name": "init_star_field",
+          "va": 4322604,
+          "status": "FUNCTION_MATCH",
+          "original_size": 151,
+          "candidate_size": 151
+        },
+        {
+          "source": "src/timer.c",
+          "name": "fps_counter",
+          "va": 4325028,
+          "status": "FUNCTION_MATCH",
+          "original_size": 45,
+          "candidate_size": 45
+        },
+        {
+          "source": "src/timer.c",
+          "name": "cycle_counter",
+          "va": 4325076,
+          "status": "FUNCTION_MATCH",
+          "original_size": 16,
+          "candidate_size": 16
+        },
+        {
+          "source": "src/timer.c",
+          "name": "install_timers",
+          "va": 4325092,
+          "status": "FUNCTION_MATCH",
+          "original_size": 88,
+          "candidate_size": 88
+        },
+        {
+          "source": "src/player.c",
+          "name": "reset_player",
+          "va": 4293968,
+          "status": "FUNCTION_MATCH",
+          "original_size": 296,
+          "candidate_size": 296
+        },
+        {
+          "source": "src/player.c",
+          "name": "jump_player",
+          "va": 4294264,
+          "status": "FUNCTION_MATCH",
+          "original_size": 198,
+          "candidate_size": 198
+        },
+        {
+          "source": "src/player.c",
+          "name": "update_player",
+          "va": 4294464,
+          "status": "FUNCTION_MATCH",
+          "original_size": 651,
+          "candidate_size": 651
+        },
+        {
+          "source": "src/httpget.c",
+          "name": "httpGetLastModified",
+          "va": 4216976,
+          "status": "FUNCTION_MATCH",
+          "original_size": 126,
+          "candidate_size": 126
+        },
+        {
+          "source": "src/httpget.c",
+          "name": "destroyHTTPResponse",
+          "va": 4217104,
+          "status": "FUNCTION_MATCH",
+          "original_size": 116,
+          "candidate_size": 116
+        },
+        {
+          "source": "src/httpget.c",
+          "name": "SplitURL",
+          "va": 4217220,
+          "status": "FUNCTION_MATCH",
+          "original_size": 267,
+          "candidate_size": 267
+        },
+        {
+          "source": "src/httpget.c",
+          "name": "extractHTTPResponse",
+          "va": 4217488,
+          "status": "DIFFER",
+          "original_size": 923,
+          "candidate_size": 924
+        },
+        {
+          "source": "src/httpget.c",
+          "name": "dumpHTTPResponse",
+          "va": 4218412,
+          "status": "FUNCTION_MATCH",
+          "original_size": 99,
+          "candidate_size": 99
+        },
+        {
+          "source": "src/httpget.c",
+          "name": "getSocketError",
+          "va": 4218512,
+          "status": "FUNCTION_MATCH",
+          "original_size": 12,
+          "candidate_size": 12
+        },
+        {
+          "source": "src/httpget.c",
+          "name": "HTTPFetchInternal",
+          "va": 4218524,
+          "status": "FUNCTION_MATCH",
+          "original_size": 594,
+          "candidate_size": 594
+        },
+        {
+          "source": "src/httpget.c",
+          "name": "HTTPRequest",
+          "va": 4219120,
+          "status": "FUNCTION_MATCH",
+          "original_size": 136,
+          "candidate_size": 136
+        },
+        {
+          "source": "src/httpget.c",
+          "name": "HTTPHead",
+          "va": 4219256,
+          "status": "FUNCTION_MATCH",
+          "original_size": 27,
+          "candidate_size": 27
+        },
+        {
+          "source": "src/httpget.c",
+          "name": "HTTPGet",
+          "va": 4219284,
+          "status": "FUNCTION_MATCH",
+          "original_size": 27,
+          "candidate_size": 27
+        },
+        {
+          "source": "src/loadpng.c",
+          "name": "really_load_png",
+          "va": 4219312,
+          "status": "FUNCTION_MATCH",
+          "original_size": 1106,
+          "candidate_size": 1106
+        },
+        {
+          "source": "src/loadpng.c",
+          "name": "load_memory_png",
+          "va": 4220420,
+          "status": "FUNCTION_MATCH",
+          "original_size": 308,
+          "candidate_size": 308
+        },
+        {
+          "source": "src/loadpng.c",
+          "name": "read_data_memory",
+          "va": 4220728,
+          "status": "FUNCTION_MATCH",
+          "original_size": 80,
+          "candidate_size": 80
+        },
+        {
+          "source": "src/loadpng.c",
+          "name": "load_png_pf",
+          "va": 4220808,
+          "status": "FUNCTION_MATCH",
+          "original_size": 316,
+          "candidate_size": 316
+        },
+        {
+          "source": "src/loadpng.c",
+          "name": "read_data",
+          "va": 4221124,
+          "status": "FUNCTION_MATCH",
+          "original_size": 76,
+          "candidate_size": 76
+        },
+        {
+          "source": "src/loadpng.c",
+          "name": "load_png",
+          "va": 4221200,
+          "status": "FUNCTION_MATCH",
+          "original_size": 79,
+          "candidate_size": 79
+        },
+        {
+          "source": "src/savepng.c",
+          "name": "flush_data",
+          "va": 4319400,
+          "status": "FUNCTION_MATCH",
+          "original_size": 5,
+          "candidate_size": 5
+        },
+        {
+          "source": "src/savepng.c",
+          "name": "really_save_png",
+          "va": 4319408,
+          "status": "FUNCTION_MATCH",
+          "original_size": 1870,
+          "candidate_size": 1870
+        },
+        {
+          "source": "src/savepng.c",
+          "name": "save_png",
+          "va": 4321280,
+          "status": "FUNCTION_MATCH",
+          "original_size": 115,
+          "candidate_size": 115
+        },
+        {
+          "source": "src/savepng.c",
+          "name": "write_data",
+          "va": 4321396,
+          "status": "FUNCTION_MATCH",
+          "original_size": 76,
+          "candidate_size": 76
+        },
+        {
+          "source": "src/regpng.c",
+          "name": "register_png_datafile_object",
+          "va": 4307136,
+          "status": "FUNCTION_MATCH",
+          "original_size": 35,
+          "candidate_size": 35
+        },
+        {
+          "source": "src/regpng.c",
+          "name": "destroy_datafile_png",
+          "va": 4307172,
+          "status": "FUNCTION_MATCH",
+          "original_size": 22,
+          "candidate_size": 22
+        },
+        {
+          "source": "src/regpng.c",
+          "name": "load_datafile_png",
+          "va": 4307196,
+          "status": "FUNCTION_MATCH",
+          "original_size": 109,
+          "candidate_size": 109
+        },
+        {
+          "source": "src/regpng.c",
+          "name": "register_png_file_type",
+          "va": 4307308,
+          "status": "FUNCTION_MATCH",
+          "original_size": 36,
+          "candidate_size": 36
+        },
+        {
+          "source": "src/regpng.c",
+          "name": "loadpng_init",
+          "va": 4307344,
+          "status": "FUNCTION_MATCH",
+          "original_size": 27,
+          "candidate_size": 27
+        },
+        {
+          "source": "src/strptime.c",
+          "name": "first_day",
+          "va": 4322756,
+          "status": "FUNCTION_MATCH",
+          "original_size": 20,
+          "candidate_size": 20
+        },
+        {
+          "source": "src/strptime.c",
+          "name": "match_string",
+          "va": 4322776,
+          "status": "FUNCTION_MATCH",
+          "original_size": 103,
+          "candidate_size": 103
+        },
+        {
+          "source": "src/strptime.c",
+          "name": "_strptime",
+          "va": 4322880,
+          "status": "DIFFER",
+          "original_size": 2028,
+          "candidate_size": 2005
+        },
+        {
+          "source": "src/strptime.c",
+          "name": "strptime",
+          "va": 4324908,
+          "status": "FUNCTION_MATCH",
+          "original_size": 35,
+          "candidate_size": 35
+        },
+        {
+          "source": "src/timecompat.c",
+          "name": "timegm",
+          "va": 4324944,
+          "status": "FUNCTION_MATCH",
+          "original_size": 84,
+          "candidate_size": 84
+        }
+      ],
+      "byte_completion_percent": 34.2340478028669
+    },
+    "stunts": {
+      "status": {
+        "blockers": [
+          "Supported: external DGROUP offset16 and reviewed zero-addend external far CALLs; general/self-relative linking and multi-public production remain open",
+          "QuickC BAKPAT rejected; full compiler/version fingerprint remains open",
+          "Archived CRT startup checksum anomaly and general runtime linking remain unresolved",
+          "Unmapped functions and internal code/data ambiguity remain"
+        ],
+        "classification_bytes": {
+          "code_evidence_excluding_library": 131599,
+          "data_evidence": 21968,
+          "library_identified": 725,
+          "unknown": 45708
+        },
+        "compiler": "MSC5.0/5.1 medium-model optimized, stack checking off; production pins MSC5.1; unique version/flags not proven",
+        "full_image_status": "HYBRID_EXACT",
+        "identified_library_bytes_still_raw": 0,
+        "library_production_bytes": 725,
+        "mapped_functions": 497,
+        "matching_asm_bytes": 0,
+        "matching_c_bytes": 1090,
+        "oracle": {
+          "load_image": {
+            "sha256": "4fc3340e2dc5d139a95a9a92278ef09902003d2c6857e5d9cdf0112870f3789e",
+            "size": 200000
+          },
+          "packed": {
+            "sha256": "f57ac2775b6156b0413775eb61a1c48743f64248f72d13ca970dc645029eb41d",
+            "size": 199125
+          },
+          "unpacked": {
+            "sha256": "1adb8259b3f6634062b94826e1f167649d9f2deeb6cedc9989127fc37e9ce615",
+            "size": 210384
+          }
+        },
+        "procedures": 619,
+        "promoted_game_functions": [
+          "audio_enable_flag2",
+          "audioresource_get_dword",
+          "audioresource_get_word",
+          "copy_string",
+          "file_combine_and_find",
+          "font_op2_alt",
+          "free_sdgame2",
+          "get_0",
+          "locate_many_resources",
+          "locate_shape_alt",
+          "locate_text_res",
+          "nopsub_26552",
+          "nopsub_378AE",
+          "nopsub_378BC",
+          "nullsub_1",
+          "nullsub_2",
+          "parse_shape2d_helper3",
+          "rect_compare_point",
+          "rect_intersect",
+          "rect_is_inside",
+          "rect_is_overlapping",
+          "rect_union",
+          "shape3d_init_shape",
+          "toupper",
+          "unload_resource"
+        ],
+        "queue_counts": {
+          "CHEAP": 0,
+          "MEDIUM": 5,
+          "SUPERVISOR": 585
+        },
+        "raw_executable_bytes_confirmed_minimum": 130509,
+        "raw_executable_bytes_exact": "unknown until all code/data boundaries are established",
+        "raw_initialized_bytes": 198185,
+        "segment_frames_proven": 36,
+        "source_code_segments": 38,
+        "source_data_segments": 3
+      },
+      "queue_counts": {
+        "MEDIUM": 5,
+        "SUPERVISOR": 585
+      },
+      "queue_workflow_fingerprint": "83a13ee68e35f425c54b81bb3b1ca91fff1f311a15ee09d6890f60cacad31c2d",
+      "validation_workflow_fingerprint": "83a13ee68e35f425c54b81bb3b1ca91fff1f311a15ee09d6890f60cacad31c2d",
+      "census_queue_fingerprint": "83a13ee68e35f425c54b81bb3b1ca91fff1f311a15ee09d6890f60cacad31c2d",
+      "validation_summary": {
+        "status": "PASS",
+        "full_image": "HYBRID_EXACT",
+        "independent_compiler": {
+          "active_functions": 25,
+          "status": "PASS"
+        },
+        "tests": {
+          "failed": 0,
+          "log": "build/validation/tests.log",
+          "passed": 157,
+          "skipped": 0
+        }
+      },
+      "families_overlapping": {
+        "ABI_OR_DECLARATION": {
+          "affected_tasks_upper_bound": 16,
+          "current_testability": "research compiler available",
+          "exact_target_bytes": 501,
+          "shared_capability_cost": "medium",
+          "single_change_production_unlock": "UNKNOWN; overlapping blockers and untested source remain",
+          "smallest_discriminating_experiment": "bounded compiler fixture for observed register/interrupt form",
+          "tasks": 16,
+          "unlock_confidence": "low to medium",
+          "verified_tasks": 16
+        },
+        "BINDING_OR_FIXUP_CANDIDATE": {
+          "affected_tasks_upper_bound": 281,
+          "current_testability": "direct call target addresses available",
+          "exact_target_bytes": 112961,
+          "shared_capability_cost": "medium",
+          "single_change_production_unlock": "UNKNOWN; overlapping blockers and untested source remain",
+          "smallest_discriminating_experiment": "review target public/frame, then complete candidate object",
+          "tasks": 281,
+          "unlock_confidence": "medium for target addressing; low for whole-function unlock",
+          "verified_tasks": 281
+        },
+        "BINDING_OR_FIXUP_MODE_UNKNOWN": {
+          "affected_tasks_upper_bound": 289,
+          "current_testability": "MZ context available; OMF mode requires candidate source",
+          "exact_target_bytes": 113481,
+          "shared_capability_cost": "medium",
+          "single_change_production_unlock": "UNKNOWN; overlapping blockers and untested source remain",
+          "smallest_discriminating_experiment": "compile one complete candidate and compare historical LINK fixups",
+          "tasks": 289,
+          "unlock_confidence": "unknown until OMF modes sampled",
+          "verified_tasks": 289
+        },
+        "BOUNDARY_OR_EXTENT": {
+          "affected_tasks_upper_bound": 122,
+          "current_testability": "available for partial-label rows; no-anchor rows require an independent address",
+          "exact_target_bytes": 0,
+          "shared_capability_cost": "high",
+          "single_change_production_unlock": "UNKNOWN; overlapping blockers and untested source remain",
+          "smallest_discriminating_experiment": "partial-label mismatch localization",
+          "tasks": 122,
+          "unlock_confidence": "medium for exact opcode aliases; low for the remaining mixed residuals",
+          "verified_tasks": 0
+        },
+        "BOUNDARY_OR_EXTENT_CANDIDATE": {
+          "affected_tasks_upper_bound": 34,
+          "current_testability": "pristine decode available",
+          "exact_target_bytes": 937,
+          "shared_capability_cost": "medium",
+          "single_change_production_unlock": "UNKNOWN; overlapping blockers and untested source remain",
+          "smallest_discriminating_experiment": "review external jump target and full contribution",
+          "tasks": 34,
+          "unlock_confidence": "medium",
+          "verified_tasks": 34
+        },
+        "CODE_SEGMENT_DATA_OWNERSHIP": {
+          "affected_tasks_upper_bound": 5,
+          "current_testability": "bounded existing CS-data evidence",
+          "exact_target_bytes": 165,
+          "shared_capability_cost": "high",
+          "single_change_production_unlock": "UNKNOWN; overlapping blockers and untested source remain",
+          "smallest_discriminating_experiment": "prove same-CODE data contribution and access form",
+          "tasks": 5,
+          "unlock_confidence": "low",
+          "verified_tasks": 5
+        },
+        "DATA_OR_GLOBAL_OWNERSHIP": {
+          "affected_tasks_upper_bound": 55,
+          "current_testability": "pristine operands available; ownership review manual",
+          "exact_target_bytes": 1930,
+          "shared_capability_cost": "medium",
+          "single_change_production_unlock": "UNKNOWN; overlapping blockers and untested source remain",
+          "smallest_discriminating_experiment": "prove address from independent instruction/storage evidence",
+          "tasks": 55,
+          "unlock_confidence": "medium",
+          "verified_tasks": 55
+        },
+        "INSTRUCTION_EVIDENCE_MISSING": {
+          "affected_tasks_upper_bound": 346,
+          "current_testability": "complete research decode available",
+          "exact_target_bytes": 126615,
+          "shared_capability_cost": "low",
+          "single_change_production_unlock": "UNKNOWN; overlapping blockers and untested source remain",
+          "smallest_discriminating_experiment": "review pristine linear decode and CFG/ownership",
+          "tasks": 346,
+          "unlock_confidence": "high for diagnostic unlock; low for production alone",
+          "verified_tasks": 346
+        },
+        "LOCAL_SOURCE_SHAPE_OR_UNTESTED": {
+          "affected_tasks_upper_bound": 12,
+          "current_testability": "research_batch.py available",
+          "exact_target_bytes": 529,
+          "shared_capability_cost": "low",
+          "single_change_production_unlock": "UNKNOWN; overlapping blockers and untested source remain",
+          "smallest_discriminating_experiment": "prepare reviewed source and compare complete object",
+          "tasks": 12,
+          "unlock_confidence": "medium",
+          "verified_tasks": 12
+        },
+        "MAPPING_OR_CODE_DATA_CLASSIFICATION": {
+          "affected_tasks_upper_bound": 50,
+          "current_testability": "not available for these no-anchor rows",
+          "exact_target_bytes": 0,
+          "shared_capability_cost": "high",
+          "single_change_production_unlock": "UNKNOWN; overlapping blockers and untested source remain",
+          "smallest_discriminating_experiment": "independent address anchor",
+          "tasks": 50,
+          "unlock_confidence": "low",
+          "verified_tasks": 0
+        },
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE": {
+          "affected_tasks_upper_bound": 135,
+          "current_testability": "tu_context.py available where source exists",
+          "exact_target_bytes": 73628,
+          "shared_capability_cost": "medium",
+          "single_change_production_unlock": "UNKNOWN; overlapping blockers and untested source remain",
+          "smallest_discriminating_experiment": "frozen-body predecessor/order probe",
+          "tasks": 135,
+          "unlock_confidence": "medium for research; low for production alone",
+          "verified_tasks": 135
+        }
+      },
+      "primary_family_counts": {
+        "ABI_OR_DECLARATION": 9,
+        "BINDING_OR_FIXUP_CANDIDATE": 2,
+        "BINDING_OR_FIXUP_MODE_UNKNOWN": 289,
+        "BOUNDARY_OR_EXTENT": 122,
+        "BOUNDARY_OR_EXTENT_CANDIDATE": 20,
+        "CODE_SEGMENT_DATA_OWNERSHIP": 2,
+        "DATA_OR_GLOBAL_OWNERSHIP": 23,
+        "INSTRUCTION_EVIDENCE_MISSING": 58,
+        "LOCAL_SOURCE_SHAPE_OR_UNTESTED": 12,
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE": 14,
+        "UNKNOWN": 34
+      },
+      "mixed_link_controls": [
+        {
+          "profile": "msc510-medium",
+          "library_first": false,
+          "historical_link_equal": true,
+          "object_identity": {
+            "sha256": "b871f0db93399cdf4f38c425f3e69256973a04828e9ca55a630bb12890232ab8",
+            "size": 300
+          },
+          "linked_text_length": 32,
+          "relocation_count": 1
+        },
+        {
+          "profile": "msc510-medium",
+          "library_first": true,
+          "historical_link_equal": true,
+          "object_identity": {
+            "sha256": "b871f0db93399cdf4f38c425f3e69256973a04828e9ca55a630bb12890232ab8",
+            "size": 300
+          },
+          "linked_text_length": 32,
+          "relocation_count": 1
+        },
+        {
+          "profile": "msc500-medium",
+          "library_first": false,
+          "historical_link_equal": true,
+          "object_identity": {
+            "sha256": "662d094d5f999edbb70197f6d1c35fc087c6294bb1fc77b9d2225d113ff5b51d",
+            "size": 300
+          },
+          "linked_text_length": 32,
+          "relocation_count": 1
+        },
+        {
+          "profile": "msc500-medium",
+          "library_first": true,
+          "historical_link_equal": true,
+          "object_identity": {
+            "sha256": "662d094d5f999edbb70197f6d1c35fc087c6294bb1fc77b9d2225d113ff5b51d",
+            "size": 300
+          },
+          "linked_text_length": 32,
+          "relocation_count": 1
+        }
+      ],
+      "partial_mapping_counts": {
+        "partial_tasks": 72,
+        "first_failure_kinds": {
+          "DECODE_COUNT_DIFFERS": 1,
+          "FIRST_SOURCE_INSTRUCTION_DISAGREES": 68,
+          "PREFIX_OR_UNCLASSIFIED": 3
+        },
+        "limitation": "Importer agreement checks mnemonic, explicit GPR and literal immediate. A first mismatch may reflect earlier source/emission drift; this does not establish a repaired boundary or code/data class."
+      },
+      "all_far_addresses_reviewed_tasks": 77,
+      "boundaries": {
+        "BOUNDARIES_AND_INSTRUCTION_ANCHORS_VERIFIED": 490,
+        "BOUNDARIES_AND_EMISSION_BYTES_VERIFIED": 46,
+        "PARTIAL_UNMAPPED": 33,
+        "UNMAPPED_NO_ADDRESS_ANCHOR": 7
+      },
+      "mapping_experiment": {
+        "native_baseline_verified": 234,
+        "after_verified": 497,
+        "new_code_evidence_bytes": 112875,
+        "four_initial_promotions_bytes": 28,
+        "remaining_partial": 72,
+        "remaining_no_anchor": 50,
+        "remaining_partial_db_vs_add": 42,
+        "strict_baseline_functions_reported_in_stage_note": 14,
+        "strict_current_functions": 25,
+        "strict_code_bytes_before": 834,
+        "strict_code_bytes_after": 1090,
+        "proof_limit": "Native mapping-stage baseline differs from prior status snapshot mapped count 237; do not conflate mapping and code ownership."
+      }
+    },
+    "simant": {
+      "before_progress_commit": "105963ffe35ee4e801f8e1e56ea207cc3b16ee81",
+      "before_progress": {
+        "phase": "MATCHED_OBJECT_RECOVERY",
+        "game_functions": 517,
+        "game_code_bytes": 55123,
+        "runtime_members": 77,
+        "runtime_code_bytes": 12960,
+        "whole_executable_build": false
+      },
+      "after_progress": {
+        "phase": "MATCHED_OBJECT_RECOVERY",
+        "game_functions": 520,
+        "game_code_bytes": 56136,
+        "runtime_members": 77,
+        "runtime_code_bytes": 12960,
+        "whole_executable_build": false
+      },
+      "fresh_classification_generated": "2026-09-24T05:09:21.213321+00:00",
+      "fresh_classification_counts": {
+        "TRUE_SOURCE_SHAPE_MISMATCH": 446,
+        "UNKNOWN": 21,
+        "ABI_TYPE_INFERENCE": 22,
+        "SOURCE_BINDING_INELIGIBLE": 4,
+        "BODY_EXACT_LAYOUT_BLOCKED": 5,
+        "MIRRORED_SOURCE_PAIR": 1
+      },
+      "changed_old_labels": 102,
+      "selected_promotions": [
+        {
+          "job": "ClearHistory-2a7aae3cf9",
+          "admitted": true,
+          "result": "STRONGLY_SUPPORTED_MEMBER",
+          "issues": [],
+          "literal_equal": 182,
+          "literal_compared": 182,
+          "fixups_equal": 84,
+          "fixups_total": 84,
+          "profile": {
+            "name": "baseline",
+            "basis": "DEFAULT",
+            "assignment": null,
+            "context": null,
+            "evidence": null,
+            "component": "simant:8A76",
+            "refuted_profiles": [],
+            "flags": [
+              "/AL",
+              "/G2",
+              "/Gs",
+              "/Oelw",
+              "/NTSIMANT_MODULE"
+            ]
+          },
+          "compile_command": "CAPCL /c /FoOUTPUT.OBJ /AL /G2 /Gs /Oelw /NTSIMANT_MODULE INPUT.C > OUTPUT.LOG",
+          "unit": null,
+          "scaffold": null,
+          "source_identity": {
+            "size": 2692,
+            "sha256": "6a5bcdf153573e3f3c705c8fe5ccc411bdde759f62d2062fc5986d64d781a47a"
+          }
+        },
+        {
+          "job": "ConvertMonoMaskToTandy-4e3e71229c",
+          "admitted": true,
+          "result": "STRONGLY_SUPPORTED_MEMBER",
+          "issues": [],
+          "literal_equal": 208,
+          "literal_compared": 208,
+          "fixups_equal": 11,
+          "fixups_total": 11,
+          "profile": {
+            "name": "og",
+            "basis": "ASSIGNED",
+            "assignment": "asg-gr-5e30-og",
+            "context": "gr:5E30",
+            "evidence": [
+              "evidence/experiments/optimizer-profile/probes/ConvertMonoMaskToTandy-4e3e71229c.json"
+            ],
+            "component": "gr:5E30",
+            "refuted_profiles": [],
+            "flags": [
+              "/AL",
+              "/G2",
+              "/Gs",
+              "/Oeglw",
+              "/NTGR_MODULE"
+            ]
+          },
+          "compile_command": "CAPCL /c /FoOUTPUT.OBJ /AL /G2 /Gs /Oeglw /NTGR_MODULE INPUT.C > OUTPUT.LOG",
+          "unit": null,
+          "scaffold": null,
+          "source_identity": {
+            "size": 2374,
+            "sha256": "4914bd3c8d2a45e3068e76c3711bb32f905f2aedc3601534ce5f7eba354d9537"
+          }
+        }
+      ],
+      "third_promotion": {
+        "path": "evidence/recovery/workflow/jobs/YardToMap-2e5b0deea5/promotion.json",
+        "admitted": true,
+        "result": "STRONGLY_SUPPORTED_MEMBER",
+        "symbols": [
+          "_YardToMap"
+        ]
+      }
+    },
+    "empires": {
+      "portable_head_unchanged_from_prior_audit": true,
+      "historical_frozen_tag_commit": "873d1df0f505601d760c6880cdea0c6ae3d81405",
+      "historical_tag_unchanged": true,
+      "dirty_paths": 0,
+      "new_matching_evidence_found": false
+    },
+    "closing_check": {
+      "checked_at_utc": "2026-09-24T05:55:59.977624+00:00",
+      "icytower_recon": {
+        "head": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa",
+        "latest_commit": "6c00daad4e6729b066fa47699f267a3fd9e7a0fa 2026-09-24 07:46:56 +0200 Restore DWARF declaration positions in high-score view",
+        "matched_functions": 210,
+        "matched_bytes": 43012,
+        "total_functions": 253,
+        "total_bytes": 125641
+      },
+      "stunts_recon": {
+        "head": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+        "latest_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d 2026-09-23 21:03:36 +0200 Document matched model and bounded batching evaluation results",
+        "matched_c_bytes": 1090,
+        "active_functions": 25,
+        "mapped_functions": 527,
+        "queue_counts": {
+          "MEDIUM": 8,
+          "SUPERVISOR": 576
+        },
+        "queue_validation_equal": false,
+        "validation_status": "PASS",
+        "full_image": "HYBRID_EXACT"
+      }
+    }
+  }
+}

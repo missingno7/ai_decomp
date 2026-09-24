@@ -1,0 +1,14 @@
+{
+  "format": "ai-decomp-dated-updates-v1",
+  "updates": [
+    {
+      "date": "2026-09-24",
+      "report": "research/updates/20260924/review.md",
+      "evidence": "research/updates/20260924/evidence.json",
+      "baseline_commit": "e000ca43f380184385b7bb14be29266fb6c78dda",
+      "source_field": "source_manifest",
+      "authority": "source_and_retained_receipt_inspection_not_fresh_compilation",
+      "validation": "research/updates/20260924/validation.md"
+    }
+  ]
+}

@@ -59,6 +59,66 @@
       "claim": "Pinned compiler syntax limits and strict parser/binder omissions can be demonstrated blockers, distinct from a source-search or model limitation.",
       "scope": "MSC 5.10 named based-segment and Stunts B4/B6 cases only.",
       "sources": ["recovery/corpus/endurance-001/handoff.md#L1-L24", "docs/current/supervisor-instructions.md#L15-L16"]
+    },
+    {
+      "id": "byte-qualified-importer-unlocks",
+      "kind": "PROJECT FACT",
+      "claim": "Byte-qualified importer corrections expand verified code evidence and release a small strictly recovered subset.",
+      "scope": "MSC5.0/5.1 Stunts listing/pristine-image mapping. Mapping is not C ownership; unclassified DB/data remains rejected.",
+      "experiments": "234 to 497 verified mappings and 112875 newly mapped code-evidence bytes; nine medium tasks, four strict promotions/28 C bytes. All prior verified intervals retain identities.",
+      "snapshot_date": "2026-09-24",
+      "sources": [
+        {
+          "path": "recovery/experiments/systemic-capabilities-20260923.md",
+          "ref": "working-tree",
+          "sha256": "45bda4506db571a44b1f5610930a701e75150d7ec22fc68272507a38404c3472",
+          "working_tree": true,
+          "observed_base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+          "state": "working_tree"
+        }
+      ]
+    },
+    {
+      "id": "mixed-far-data-link-parity",
+      "kind": "PROJECT FACT",
+      "claim": "Historical LINK parity for a bounded mixed far-CALL/DGROUP-offset object enables two independently bound strict contributions.",
+      "scope": "One public/full UNIT_TEXT; one zero-addend external target-frame pointer32 CALL plus reviewed external DGROUP offset16 obligations; no extra contributions, arbitrary frames or callback pointers.",
+      "experiments": "Four historical LINK controls: two orders within each MSC5.00/5.10 profile; complete 32-byte parity. Independent data evidence then admits free_sdgame2 18 bytes and locate_text_res 52 bytes through whole-image proof.",
+      "snapshot_date": "2026-09-24",
+      "sources": [
+        {
+          "path": "recovery/experiments/mixed-far-data-link-20260924.md",
+          "ref": "working-tree",
+          "sha256": "7b1d44216375aa424010d8540f3c9883855b88fc463d3325d7cabe432906fc7f",
+          "working_tree": true,
+          "observed_base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+          "state": "working_tree"
+        },
+        {
+          "path": "build/mixed-linker-probe.json",
+          "ref": "working-tree",
+          "sha256": "1458f38132a78e06cb975eebb8e9e58ef125ddf94d070b6c60e0bc389ff2aabb",
+          "working_tree": true,
+          "observed_base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+          "state": "working_tree"
+        },
+        {
+          "path": "recovery/attempts/free_sdgame2/0002/report.json",
+          "ref": "working-tree",
+          "sha256": "06bbaceef7a15d9bc63eb01d76cd278de45fdc7e73f3e6b428110ca7ca7a08fc",
+          "working_tree": true,
+          "observed_base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+          "state": "working_tree"
+        },
+        {
+          "path": "recovery/attempts/locate_text_res/0002/report.json",
+          "ref": "working-tree",
+          "sha256": "1a56502a7c652ab1f64c868582788e8c4e664dc8942414acd2be5eaa018355ea",
+          "working_tree": true,
+          "observed_base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+          "state": "working_tree"
+        }
+      ]
     }
   ],
   "trajectories": [
@@ -87,7 +147,24 @@
     {"id":"batching-productivity-unproven","claim":"One batch pair saved worker resources but found fewer outputs and no strict match; optimal batch size is unknown.","scope":"unknown_libname_1 pair","sources":["recovery/evaluation/model-routing/batching-decision.md#L13-L28"]},
     {"id":"trailing-label-refuted","claim":"Early return and explicit trailing zero-return label emitted identical 38-byte MSC 5.1 fixtures.","scope":"two complete fixtures, not all control-flow spellings","sources":["recovery/compiler-evidence/boolean-return-placement/README.md#L1-L7"]},
     {"id":"camera-negative-polarity","claim":"With declaration order fixed, the tested negative-polarity condition emitted a third 194-byte output, lost two late anchors and did not reach the AL/CBW target sequence.","scope":"one source form under pinned MSC 5.1, not all return expressions or TU contexts","sources":["recovery/experiments/is_facing_camera/declaration-order-20260923.md#L13-L17"]},
-    {"id":"based-segment-unavailable","claim":"Tested _based/_segname forms were rejected by pinned MSC 5.10 and did not select the needed CODE-segment access.","scope":"sub_35DE6 tested forms/profile","sources":["recovery/corpus/endurance-001/handoff.md#L1-L24"]}
+    {"id":"based-segment-unavailable","claim":"Tested _based/_segname forms were rejected by pinned MSC 5.10 and did not select the needed CODE-segment access.","scope":"sub_35DE6 tested forms/profile","sources":["recovery/corpus/endurance-001/handoff.md#L1-L24"]},
+    {
+      "id": "binder-expansion-not-source-recovery",
+      "kind": "PROJECT FACT",
+      "claim": "Broader binding cannot repair the observed wrong source extents in the selected current candidate archive.",
+      "scope": "64 distinct task/object payloads across 28 remaining supervisor tasks; not a population estimate.",
+      "result": "60 have different extents; only set_frame_callback is equal-extent and fully nonfixup-exact among four equal-size candidates. Callback/data ownership remains unproved.",
+      "sources": [
+        {
+          "path": "recovery/experiments/candidate-shape-census-20260924.md",
+          "ref": "working-tree",
+          "sha256": "bd761d5040bdc97f478917bd8d584a84be5f39b95abcc2a466068b749f0dae2c",
+          "working_tree": true,
+          "observed_base_commit": "068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d",
+          "state": "working_tree"
+        }
+      ]
+    }
   ],
   "tools": [
     {"path":"tools/coordinates.py","classification":"adapter_required","purpose":"checked explicit coordinate-space conversion","inputs":"coordinate, named space, optional segment, decompression mapping","outputs":"load-image or named-space coordinate","dependencies":"Python dataclasses; local common.require","assumptions":"specific spaces/header/base and the assertion dependency must be supplied by an adapter","license_review":"No repository LICENSE/COPYING/NOTICE found; reference only, no copying reviewed.","sources":["tools/coordinates.py#L1-L48"]},

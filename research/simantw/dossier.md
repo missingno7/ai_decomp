@@ -238,3 +238,11 @@ commit plus the working-tree hashes for files whose live state was used. These
 are **project facts** unless explicitly marked generic method/working
 hypothesis. The repository's license was not established in this pass, so tool
 entries are reference-only and require a license review before copying.
+
+
+## September 24 follow-up
+
+The [dated project update](../updates/20260924/review.md) and its separate
+[evidence manifest](../updates/20260924/evidence.json) preserve newer observations
+without changing this dossier's earlier snapshot. New catalog claims are scoped
+project facts; diagnostic coverage and strict recovery remain separate.

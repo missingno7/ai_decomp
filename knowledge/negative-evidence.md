@@ -146,6 +146,18 @@ The [later adversarial review](../research/adversarial-synthesis-20260923.md) ad
 
 **Sources:** [recovery/corpus/endurance-001/handoff.md](source-index.md#stunts-src-794e153ccdd3) (anchor 1-L24)
 
+## stunts-binder-expansion-not-source-recovery
+
+**PROJECT FACT — stunts.** Broader binding cannot repair the observed wrong source extents in the selected current candidate archive.
+
+[Project dossier](../research/stunts/dossier.md).
+
+**Result:** 60 have different extents; only set_frame_callback is equal-extent and fully nonfixup-exact among four equal-size candidates. Callback/data ownership remains unproved.
+
+**Scope:** 64 distinct task/object payloads across 28 remaining supervisor tasks; not a population estimate.
+
+**Sources:** [recovery/experiments/candidate-shape-census-20260924.md](source-index.md#stunts-src-149ace5a5b82)
+
 ## simantw-flood-nest-row-cell
 
 **PROJECT FACT — simantw.** Ordinary/register row-cell forms collapse in this baseline isolated MSC7 probe; reversing order differs but does not match.
@@ -245,3 +257,15 @@ The [later adversarial review](../research/adversarial-synthesis-20260923.md) ad
 **Scope:** main_menu_callback declaration-only trial.
 
 **Sources:** [docs/storage-scope-evidence.md](source-index.md#icytower-src-6ab42ab0e653) (anchor 29-46)
+
+## icytower-play-explicit-checks-pre-convergence
+
+**PROJECT FACT — icytower.** Three explicit two-predecessor check forms fail to retain the independent collision dispatch reload.
+
+[Project dossier](../research/icytower/dossier.md).
+
+**Result:** Three forms yield two effective outputs, all 17444 versus 17420 bytes, 63 exact peers and only two selector references. First observed forwarding is 084t.pre; late historical duplication remains an inference.
+
+**Scope:** Retained GCC4.4.1 game-main whole-TU candidates; candidate-side pass evidence, not a historical pass trace.
+
+**Sources:** [docs/attempts/research-20260924-play-collision-predecessors/README.md](source-index.md#icytower-src-943f991dec12); [docs/attempts/research-20260924-gcc-peephole2-systemic/play-collision-pre-20260924.md](source-index.md#icytower-src-d4fe4c31dfe4)

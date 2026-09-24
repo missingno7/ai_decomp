@@ -256,6 +256,78 @@ Working-tree hashes identify observations but do not archive their contents.
 
 [Current local file (may differ)](../../empires_reconstruction/tools/discover_relocation_groups.py)
 
+## stunts-src-8ec7f74c7641
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/experiments/systemic-capabilities-20260923.md`
+
+**Ref:** `working-tree`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** working_tree; SHA-256 `45bda4506db571a44b1f5610930a701e75150d7ec22fc68272507a38404c3472`
+
+[Current local file (may differ)](../../stunts_recon/recovery/experiments/systemic-capabilities-20260923.md)
+
+## stunts-src-37ac24d79202
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/experiments/mixed-far-data-link-20260924.md`
+
+**Ref:** `working-tree`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** working_tree; SHA-256 `7b1d44216375aa424010d8540f3c9883855b88fc463d3325d7cabe432906fc7f`
+
+[Current local file (may differ)](../../stunts_recon/recovery/experiments/mixed-far-data-link-20260924.md)
+
+## stunts-src-030918fff5c1
+
+**Repository:** `stunts_recon`
+
+**Path:** `build/mixed-linker-probe.json`
+
+**Ref:** `working-tree`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** working_tree; SHA-256 `1458f38132a78e06cb975eebb8e9e58ef125ddf94d070b6c60e0bc389ff2aabb`
+
+[Current local file (may differ)](../../stunts_recon/build/mixed-linker-probe.json)
+
+## stunts-src-051495b37736
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/attempts/free_sdgame2/0002/report.json`
+
+**Ref:** `working-tree`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** working_tree; SHA-256 `06bbaceef7a15d9bc63eb01d76cd278de45fdc7e73f3e6b428110ca7ca7a08fc`
+
+[Current local file (may differ)](../../stunts_recon/recovery/attempts/free_sdgame2/0002/report.json)
+
+## stunts-src-a7c42a356437
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/attempts/locate_text_res/0002/report.json`
+
+**Ref:** `working-tree`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** working_tree; SHA-256 `1a56502a7c652ab1f64c868582788e8c4e664dc8942414acd2be5eaa018355ea`
+
+[Current local file (may differ)](../../stunts_recon/recovery/attempts/locate_text_res/0002/report.json)
+
+## stunts-src-149ace5a5b82
+
+**Repository:** `stunts_recon`
+
+**Path:** `recovery/experiments/candidate-shape-census-20260924.md`
+
+**Ref:** `working-tree`; base commit `068ff2e67d7b0ef9865ec1a4d60651eb8c830d0d`
+
+**Content:** working_tree; SHA-256 `bd761d5040bdc97f478917bd8d584a84be5f39b95abcc2a466068b749f0dae2c`
+
+[Current local file (may differ)](../../stunts_recon/recovery/experiments/candidate-shape-census-20260924.md)
+
 ## stunts-src-2822ed9ca670
 
 **Repository:** `stunts_recon`
@@ -652,6 +724,42 @@ Working-tree hashes identify observations but do not archive their contents.
 
 [Current local file (may differ)](../../simantw_recon/docs/build-topology.md)
 
+## simantw-src-5290b3d8281a
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/experiments/near-call-ip-wrap/README.md`
+
+**Ref:** `effd40611757871eb0add8c26c58f2c3d65e96d5`; base commit `effd40611757871eb0add8c26c58f2c3d65e96d5`
+
+**Content:** git_blob; SHA-256 `ae5d4b58d0b93fb6afd701b086052cb49220def33e03394a5430b1752417faa4`
+
+[Current local file (may differ)](../../simantw_recon/evidence/experiments/near-call-ip-wrap/README.md)
+
+## simantw-src-8d001b6cebe9
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/recovery/workflow/jobs/ClearHistory-2a7aae3cf9/promotion.json`
+
+**Ref:** `effd40611757871eb0add8c26c58f2c3d65e96d5`; base commit `effd40611757871eb0add8c26c58f2c3d65e96d5`
+
+**Content:** git_blob; SHA-256 `9f4d853b54ab6dc39cd1f947229653ffaaa082822fb2ed48a70582f051b8ce33`
+
+[Current local file (may differ)](../../simantw_recon/evidence/recovery/workflow/jobs/ClearHistory-2a7aae3cf9/promotion.json)
+
+## simantw-src-1d942703c696
+
+**Repository:** `simantw_recon`
+
+**Path:** `evidence/orchestration/luna-foreman-checkpoint.md`
+
+**Ref:** `effd40611757871eb0add8c26c58f2c3d65e96d5`; base commit `effd40611757871eb0add8c26c58f2c3d65e96d5`
+
+**Content:** git_blob; SHA-256 `cce55cdcc2af84c39b712cdcc305405fd933f9cf6b6ef10ca944d36a5e5e7b91`
+
+[Current local file (may differ)](../../simantw_recon/evidence/orchestration/luna-foreman-checkpoint.md)
+
 ## simantw-src-12c92ff6a3bb
 
 **Repository:** `simantw_recon`
@@ -916,6 +1024,90 @@ Working-tree hashes identify observations but do not archive their contents.
 
 [Current local file (may differ)](../../simantw_recon/tools/blocked_reclassification.py)
 
+## icytower-src-a6d2705932f2
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/research-20260924-load-replay-min-context/README.md`
+
+**Ref:** `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`; base commit `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`
+
+**Content:** git_blob; SHA-256 `1a3cc2a7efb34213723339b1e826a9800d804210a67d957c70d458939944e71a`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/research-20260924-load-replay-min-context/README.md)
+
+## icytower-src-4b11fe70b020
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/research-20260924-draw-selector-residual/README.md`
+
+**Ref:** `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`; base commit `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`
+
+**Content:** git_blob; SHA-256 `f65a4c76f6f86d39bfb8163ba4a8559ffceef75180dc08afa34824cece3c9347`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/research-20260924-draw-selector-residual/README.md)
+
+## icytower-src-e4fcf892f0aa
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/tu-context/transactions/replay_load_draw_historical_20260924.json`
+
+**Ref:** `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`; base commit `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`
+
+**Content:** git_blob; SHA-256 `40ef5b14ab5d08bd91155f6e91d85321cf737e304bd9346b310328b4947e651d`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/tu-context/transactions/replay_load_draw_historical_20260924.json)
+
+## icytower-src-173ed847c96d
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/research-20260924-profile-late-transaction/README.md`
+
+**Ref:** `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`; base commit `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`
+
+**Content:** git_blob; SHA-256 `d3d646a42bd87c1225c3a78e16d0f7a7c38f662860e62bf297319703be886072`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/research-20260924-profile-late-transaction/README.md)
+
+## icytower-src-b1f485b90a9a
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/tu-context/transactions/profile_late_typed_selectors_20260924.json`
+
+**Ref:** `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`; base commit `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`
+
+**Content:** git_blob; SHA-256 `d7ab571f76d2e7bfc15bd9dd42b9aa75314b05f9681b9fb09bcf6d039ef7e2e7`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/tu-context/transactions/profile_late_typed_selectors_20260924.json)
+
+## icytower-src-943f991dec12
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/research-20260924-play-collision-predecessors/README.md`
+
+**Ref:** `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`; base commit `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`
+
+**Content:** git_blob; SHA-256 `f30d096557a40f3aa32ed6cfda58baee91c6402bb4dba7dd4a215f898b132a71`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/research-20260924-play-collision-predecessors/README.md)
+
+## icytower-src-d4fe4c31dfe4
+
+**Repository:** `icytower_recon`
+
+**Path:** `docs/attempts/research-20260924-gcc-peephole2-systemic/play-collision-pre-20260924.md`
+
+**Ref:** `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`; base commit `e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce`
+
+**Content:** git_blob; SHA-256 `1ac310c73f3879d8148539db91c02c6b2e20f1899470556f24d3375af1e5aac7`
+
+[Current local file (may differ)](../../icytower_recon/docs/attempts/research-20260924-gcc-peephole2-systemic/play-collision-pre-20260924.md)
+
 ## icytower-src-c52e8cebd6cb
 
 **Repository:** `icytower_recon`
@@ -1108,6 +1300,30 @@ Working-tree hashes identify observations but do not archive their contents.
 
 [Current local file (may differ)](../../icytower_recon/docs/attempts/compiler-context/game-scroller/draw_scroller.json)
 
+## icytower-src-1a800deb70fe
+
+**Repository:** `icytower_recon`
+
+**Path:** `tools/promote_function.py`
+
+**Ref:** `working-tree`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** working_tree; SHA-256 `e9bb554aaddc79d63d02556273165c3f3a3041af12593d8f5cdac51c8ea1105c`
+
+[Current local file (may differ)](../../icytower_recon/tools/promote_function.py)
+
+## icytower-src-4e248a49d0c7
+
+**Repository:** `icytower_recon`
+
+**Path:** `tools/effective_outcomes.py`
+
+**Ref:** `working-tree`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
+
+**Content:** working_tree; SHA-256 `d1ca72809ff1ff48af7d0339039ec3fb4130febf944ba7daceb53f7092ec80cc`
+
+[Current local file (may differ)](../../icytower_recon/tools/effective_outcomes.py)
+
 ## icytower-src-c196ae83cab0
 
 **Repository:** `icytower_recon`
@@ -1156,18 +1372,6 @@ Working-tree hashes identify observations but do not archive their contents.
 
 [Current local file (may differ)](../../icytower_recon/tools/rtl_evidence.py)
 
-## icytower-src-1a800deb70fe
-
-**Repository:** `icytower_recon`
-
-**Path:** `tools/promote_function.py`
-
-**Ref:** `working-tree`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
-
-**Content:** working_tree; SHA-256 `e9bb554aaddc79d63d02556273165c3f3a3041af12593d8f5cdac51c8ea1105c`
-
-[Current local file (may differ)](../../icytower_recon/tools/promote_function.py)
-
 ## icytower-src-3bc4c6e9989c
 
 **Repository:** `icytower_recon`
@@ -1191,18 +1395,6 @@ Working-tree hashes identify observations but do not archive their contents.
 **Content:** git_blob; SHA-256 `e594413ed075f2335e43d82d0f60ad69d545ddefc25cf0da580a7ec8f8f5cb09`
 
 [Current local file (may differ)](../../icytower_recon/docs/attempts/interfaces/scope_main_face.jsonl)
-
-## icytower-src-4e248a49d0c7
-
-**Repository:** `icytower_recon`
-
-**Path:** `tools/effective_outcomes.py`
-
-**Ref:** `working-tree`; base commit `e0522729b98f53e8afb50eca46bdd6a9fbd4f777`
-
-**Content:** working_tree; SHA-256 `d1ca72809ff1ff48af7d0339039ec3fb4130febf944ba7daceb53f7092ec80cc`
-
-[Current local file (may differ)](../../icytower_recon/tools/effective_outcomes.py)
 
 ## icytower-src-5691234f1115
 

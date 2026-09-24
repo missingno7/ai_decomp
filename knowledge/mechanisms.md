@@ -194,6 +194,30 @@ The [later adversarial review](../research/adversarial-synthesis-20260923.md) ad
 
 **Sources:** [recovery/corpus/endurance-001/handoff.md](source-index.md#stunts-src-794e153ccdd3) (anchor 1-L24); [docs/current/supervisor-instructions.md](source-index.md#stunts-src-331d37292052) (anchor 15-L16)
 
+## stunts-byte-qualified-importer-unlocks
+
+**PROJECT FACT — stunts.** Byte-qualified importer corrections expand verified code evidence and release a small strictly recovered subset.
+
+[Project dossier](../research/stunts/dossier.md).
+
+**Experiments:** 234 to 497 verified mappings and 112875 newly mapped code-evidence bytes; nine medium tasks, four strict promotions/28 C bytes. All prior verified intervals retain identities.
+
+**Scope:** MSC5.0/5.1 Stunts listing/pristine-image mapping. Mapping is not C ownership; unclassified DB/data remains rejected.
+
+**Sources:** [recovery/experiments/systemic-capabilities-20260923.md](source-index.md#stunts-src-8ec7f74c7641)
+
+## stunts-mixed-far-data-link-parity
+
+**PROJECT FACT — stunts.** Historical LINK parity for a bounded mixed far-CALL/DGROUP-offset object enables two independently bound strict contributions.
+
+[Project dossier](../research/stunts/dossier.md).
+
+**Experiments:** Four historical LINK controls: two orders within each MSC5.00/5.10 profile; complete 32-byte parity. Independent data evidence then admits free_sdgame2 18 bytes and locate_text_res 52 bytes through whole-image proof.
+
+**Scope:** One public/full UNIT_TEXT; one zero-addend external target-frame pointer32 CALL plus reviewed external DGROUP offset16 obligations; no extra contributions, arbitrary frames or callback pointers.
+
+**Sources:** [recovery/experiments/mixed-far-data-link-20260924.md](source-index.md#stunts-src-37ac24d79202); [build/mixed-linker-probe.json](source-index.md#stunts-src-030918fff5c1); [recovery/attempts/free_sdgame2/0002/report.json](source-index.md#stunts-src-051495b37736); [recovery/attempts/locate_text_res/0002/report.json](source-index.md#stunts-src-a7c42a356437)
+
 ## simantw-effective-output-collapse
 
 **GENERIC METHOD — simantw.** Cluster bounded candidate searches by compiler-output identity and use surviving deltas to choose the next analysis level.
@@ -301,6 +325,30 @@ The [later adversarial review](../research/adversarial-synthesis-20260923.md) ad
 **Related tools:** [simantw-tu-assembly](tools.md#simantw-tu-assembly), [simantw-blocked-reclassification](tools.md#simantw-blocked-reclassification), [simantw-mirror-pairs](tools.md#simantw-mirror-pairs)
 
 **Sources:** [docs/factory.md](source-index.md#simantw-src-28415d4f6c1c) (anchor 8); [docs/grinder-lessons.md](source-index.md#simantw-src-97d9aa655d43) (anchor 115)
+
+## simantw-near-call-ip-wrap-repair
+
+**PROJECT FACT — simantw.** 16-bit direct near-call target normalization resolves false unnamed-helper references without changing source acceptance.
+
+[Project dossier](../research/simantw/dossier.md).
+
+**Experiments:** 85 previously out-of-range call references across 31 callers become named; unnamed calls 148 to 63; all 2155 near calls retained. No recovery credit follows from naming alone.
+
+**Scope:** MSC7 Win16 direct near-call research decoding; direct-jump audit found no analogous out-of-range case in this inventory.
+
+**Sources:** [evidence/experiments/near-call-ip-wrap/README.md](source-index.md#simantw-src-5290b3d8281a)
+
+## simantw-clear-history-named-data
+
+**PROJECT FACT — simantw.** Independent MAPSYM names remove an apparent private-layout blocker without TU/scaffold assembly.
+
+[Project dossier](../research/simantw/dossier.md).
+
+**Experiments:** Replace invented names for nine 64-word PACK arrays using HistUpdate evidence. Native attempt06 admits 299 code bytes, 182/182 ordinary literals, 84/84 fixups; unit/scaffold null.
+
+**Scope:** ClearHistory under MSC7 baseline /AL /G2 /Gs /Oelw /NTSIMANT_MODULE; no universal claim that layout residues are naming errors.
+
+**Sources:** [evidence/recovery/workflow/jobs/ClearHistory-2a7aae3cf9/promotion.json](source-index.md#simantw-src-8d001b6cebe9); [evidence/orchestration/luna-foreman-checkpoint.md](source-index.md#simantw-src-1d942703c696)
 
 ## icytower-dwarf-source-structure
 
@@ -411,3 +459,27 @@ The [later adversarial review](../research/adversarial-synthesis-20260923.md) ad
 **Related trajectories:** [icytower-localfilename-scope](trajectories.md#icytower-localfilename-scope)
 
 **Sources:** [docs/proof-levels.md](source-index.md#icytower-src-0e77b5d3779f) (anchor 3-48); [docs/storage-scope-evidence.md](source-index.md#icytower-src-6ab42ab0e653) (anchor 11-46); [tools/promote_function.py](source-index.md#icytower-src-1a800deb70fe) (anchor 19-128)
+
+## icytower-replay-peer-repair-strict-target
+
+**PROJECT FACT — icytower.** Evidence-backed repairs to incomplete draw_replay_selector enable strict load_replay recovery under protected whole-TU acceptance.
+
+[Project dossier](../research/icytower/dossier.md).
+
+**Experiments:** Selected-row assignments change target from DIFFER to FUNCTION_MATCH; double-type controls alone do not. Final TU transaction preserves six exact peers and adds 1136-byte load_replay; draw remains DIFFER.
+
+**Scope:** Locked TDM-2 GCC4.4.1 -O2 game-replay. The typed target body is held fixed across discriminating draw controls; internal GCC cause is not established.
+
+**Sources:** [docs/attempts/research-20260924-load-replay-min-context/README.md](source-index.md#icytower-src-a6d2705932f2); [docs/attempts/research-20260924-draw-selector-residual/README.md](source-index.md#icytower-src-4b11fe70b020); [docs/attempts/tu-context/transactions/replay_load_draw_historical_20260924.json](source-index.md#icytower-src-e4fcf892f0aa)
+
+## icytower-late-header-visibility-protected-peer
+
+**PROJECT FACT — icytower.** A narrow late typed declaration block repairs historical interfaces while preserving an exact preceding function.
+
+[Project dossier](../research/icytower/dossier.md).
+
+**Experiments:** Early generated header loses profile_data_page_advanced; late inclusion preserves 11/17 exact functions. Native structured transaction promotes interface/source evidence with no strict function gains.
+
+**Scope:** GCC4.4.1 game-profile; does not prove original header position or selector function equality.
+
+**Sources:** [docs/attempts/research-20260924-profile-late-transaction/README.md](source-index.md#icytower-src-173ed847c96d); [docs/attempts/tu-context/transactions/profile_late_typed_selectors_20260924.json](source-index.md#icytower-src-b1f485b90a9a)

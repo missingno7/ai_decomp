@@ -78,7 +78,7 @@ def main():
                 # Active sibling agents may change files while this importer runs.
                 # Keep the inspected identity; the checker reports later drift.
                 all_sources[key] = dict(id=ident, project=project, repository=repo_name,
-                    path=path, ref=ref, base_commit=head if working else ref,
+                    path=path, ref=ref, base_commit=meta.get('observed_base_commit',head) if working else ref,
                     content_kind='working_tree' if working else 'git_blob', sha256=digest,
                     inspected_worktree_sha256=claimed if claimed and claimed != digest else None,
                     retention='Hash identifies but does not archive uncommitted content' if working else 'Retrieve with git show <ref>:<path>')

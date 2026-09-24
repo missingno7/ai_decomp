@@ -21,7 +21,51 @@
     {"id":"msc7-declaration-order","kind":"PROJECT_FACT","claim":"Recorded MSC7 declaration order can select operands after source expression form has converged: global extern order for documented unit pairs, and local stack order for MagnifyMenu.","observed_in":"PreDrawSpider, EatFood/TryEatFood, antedit balloons; MagnifyMenu locals","symptom":"Expression rewrites collapse while one declaration order changes the selected memory/stack operand.","causal_mechanism":"Two separately scoped MSC7 observations; do not assume identical causation.","experiments":"Recorded global before/after pairs; MagnifyMenu's final local reorder after seven controlled attempts and collapsed expression variants.","scope":"Only evidence-backed pairs and unit/function contexts; no general compiler rule.","reusable_diagnostic":"Try an explicit, bounded declaration-order pair after semantic shape converges.","automated":true,"related_tools":["declaration_order","tu_assembly","codegen_grinder"],"evidence":[{"path":"docs/grinder-lessons.md","ref":"working-tree","base_ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":129,"sha256":"70f01eeb43c3b9057d78ec0ba4d179c6ab2601488241fcc5945305ece833e81d","working_tree":true},{"path":"docs/grinder-lessons.md","ref":"working-tree","base_ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":211,"sha256":"70f01eeb43c3b9057d78ec0ba4d179c6ab2601488241fcc5945305ece833e81d","working_tree":true},{"path":"layout/declaration-order.json","ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":1}]},
     {"id":"complete-member-proof","kind":"PROJECT_FACT","claim":"A body match is not a recovery: OMF/NE semantic fixups, private data, placement and full member extent remain acceptance obligations.","observed_in":"SimAnt OMF/NE member matcher","symptom":"Aligned instructions can coexist with wrong selector, data or member extent.","causal_mechanism":"Strict member matcher validates entire contribution and loader obligations.","experiments":"db_UnhookObject/db_PurgeObject complete matches; ProcMenuHelp rejected for one alignment byte.","scope":"Acceptance principle portable; exact OMF/NE rules project-specific.","reusable_diagnostic":"Report body diagnostics separately from unresolved member obligations.","automated":true,"related_tools":["codegen_diff","omf","library_match"],"evidence":[{"path":"docs/factory.md","ref":"working-tree","anchor":41,"sha256":"8fa9113ddd578a0bad8af847c22c7b372e8bfce9f34977366cd46695f6b09952","working_tree":true},{"path":"evidence/recovery/batch105/results.json","ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":4},{"path":"evidence/recovery/batch114/results.json","ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":8}]},
     {"id":"selector-pool-and-pointer-evidence","kind":"PROJECT_FACT","claim":"Private CONST selector pools and pointer representation expose object/TU context, but equal selector or offset evidence alone does not establish object identity.","observed_in":"Win16 MSC7 large-model SimAnt","symptom":"Exact bodies fail because selector spacing/order or far/near/based spelling differs.","causal_mechanism":"Per-object first-use selector pool plus Win16 ABI and private DGROUP contributions.","experiments":"Named far-object probes; multimedia based-segment admissions; InitTree far-pointer contrast.","scope":"Win16 MSC7 ABI/object model only.","reusable_diagnostic":"Separate segment selector, offset, identity, and whole-contribution evidence.","automated":true,"related_tools":["build_topology","tu_assembly","memory_model"],"evidence":[{"path":"docs/build-topology.md","ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":42},{"path":"docs/grinder-lessons.md","ref":"working-tree","base_ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":51,"sha256":"70f01eeb43c3b9057d78ec0ba4d179c6ab2601488241fcc5945305ece833e81d","working_tree":true}]},
-    {"id":"scaffolded-unit-assembly","kind":"PROJECT_FACT","claim":"Measured noncredited stand-ins can reconstruct missing selector-pool order so independently exact claimed bodies are admitted with strict checks.","observed_in":"SimAnt topology units","symptom":"Body is exact except unresolved selector/private binding contributions in an incomplete object.","causal_mechanism":"Unit composer reproduces observed pool order and retains claimed-member proof.","experiments":"31 conversion events reported; checkpoint total moved from 417 to 447 while supersessions/removals make that a +30 net, not one-to-one accounting.","scope":"Requires trustworthy topology/selector evidence and strict claimed-member matching; does not recover stand-ins or unique historical filenames.","reusable_diagnostic":"Classify exact-body binding blockers and assemble an evidence-bounded unit.","automated":true,"related_tools":["tu_assembly","blocked_reclassification","mirror_pairs"],"evidence":[{"path":"docs/factory.md","ref":"working-tree","base_ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":8,"sha256":"8fa9113ddd578a0bad8af847c22c7b372e8bfce9f34977366cd46695f6b09952","working_tree":true},{"path":"docs/grinder-lessons.md","ref":"working-tree","base_ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":115,"sha256":"70f01eeb43c3b9057d78ec0ba4d179c6ab2601488241fcc5945305ece833e81d","working_tree":true}]}
+    {"id":"scaffolded-unit-assembly","kind":"PROJECT_FACT","claim":"Measured noncredited stand-ins can reconstruct missing selector-pool order so independently exact claimed bodies are admitted with strict checks.","observed_in":"SimAnt topology units","symptom":"Body is exact except unresolved selector/private binding contributions in an incomplete object.","causal_mechanism":"Unit composer reproduces observed pool order and retains claimed-member proof.","experiments":"31 conversion events reported; checkpoint total moved from 417 to 447 while supersessions/removals make that a +30 net, not one-to-one accounting.","scope":"Requires trustworthy topology/selector evidence and strict claimed-member matching; does not recover stand-ins or unique historical filenames.","reusable_diagnostic":"Classify exact-body binding blockers and assemble an evidence-bounded unit.","automated":true,"related_tools":["tu_assembly","blocked_reclassification","mirror_pairs"],"evidence":[{"path":"docs/factory.md","ref":"working-tree","base_ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":8,"sha256":"8fa9113ddd578a0bad8af847c22c7b372e8bfce9f34977366cd46695f6b09952","working_tree":true},{"path":"docs/grinder-lessons.md","ref":"working-tree","base_ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":115,"sha256":"70f01eeb43c3b9057d78ec0ba4d179c6ab2601488241fcc5945305ece833e81d","working_tree":true}]},
+    {
+      "id": "near-call-ip-wrap-repair",
+      "kind": "PROJECT FACT",
+      "claim": "16-bit direct near-call target normalization resolves false unnamed-helper references without changing source acceptance.",
+      "scope": "MSC7 Win16 direct near-call research decoding; direct-jump audit found no analogous out-of-range case in this inventory.",
+      "experiments": "85 previously out-of-range call references across 31 callers become named; unnamed calls 148 to 63; all 2155 near calls retained. No recovery credit follows from naming alone.",
+      "snapshot_date": "2026-09-24",
+      "sources": [
+        {
+          "path": "evidence/experiments/near-call-ip-wrap/README.md",
+          "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+          "sha256": "ae5d4b58d0b93fb6afd701b086052cb49220def33e03394a5430b1752417faa4",
+          "working_tree": false,
+          "observed_base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+          "state": "git_blob"
+        }
+      ]
+    },
+    {
+      "id": "clear-history-named-data",
+      "kind": "PROJECT FACT",
+      "claim": "Independent MAPSYM names remove an apparent private-layout blocker without TU/scaffold assembly.",
+      "scope": "ClearHistory under MSC7 baseline /AL /G2 /Gs /Oelw /NTSIMANT_MODULE; no universal claim that layout residues are naming errors.",
+      "experiments": "Replace invented names for nine 64-word PACK arrays using HistUpdate evidence. Native attempt06 admits 299 code bytes, 182/182 ordinary literals, 84/84 fixups; unit/scaffold null.",
+      "snapshot_date": "2026-09-24",
+      "sources": [
+        {
+          "path": "evidence/recovery/workflow/jobs/ClearHistory-2a7aae3cf9/promotion.json",
+          "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+          "sha256": "9f4d853b54ab6dc39cd1f947229653ffaaa082822fb2ed48a70582f051b8ce33",
+          "working_tree": false,
+          "observed_base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+          "state": "git_blob"
+        },
+        {
+          "path": "evidence/orchestration/luna-foreman-checkpoint.md",
+          "ref": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+          "sha256": "cce55cdcc2af84c39b712cdcc305405fd933f9cf6b6ef10ca944d36a5e5e7b91",
+          "working_tree": false,
+          "observed_base_commit": "effd40611757871eb0add8c26c58f2c3d65e96d5",
+          "state": "git_blob"
+        }
+      ]
+    }
   ],
   "trajectories": [
     {"id":"draw-for-sale-sequential-private-state-success","outcome":"success","chain":["attempt 1: instruction-shape plus external binding mismatch (35/54 literals, 3/7 fixups)","attempt 2: ordinary/control body converges (46/52, 4/7) while external-vs-private DGROUP word remains","recorded next experiment: private initialized cached handle, -1 sentinel","attempt 3: 48/48 literals and 7/7 fixups","fresh STRONGLY_SUPPORTED_MEMBER admission"],"scope":"DrawForSale under the ANTEDIT baseline profile; private-state hypothesis was evidence-backed, not a default declaration rule.","evidence":[{"path":"evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/job.json","ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":300,"sha256":"e7c2bfded1e11cf7c3dfb301433e8b7c76559f27ab9d6dcc790672aacc31aa99"},{"path":"evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/attempt01/results.json","ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":1,"sha256":"459fc19a1c505880d2b710d6e6b98a45662773bd92ea2091f93d192f5e2ceb74"},{"path":"evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/attempt02/results.json","ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":1,"sha256":"8db5c60165be3966fd44add84c74250138557dbc2496040f38e832bc6f735029"},{"path":"evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/attempt03/results.json","ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":1,"sha256":"1742611f47e4d5352b4b3b036030a73a920b2b8d820e6fd181dfe943aca91033"},{"path":"evidence/recovery/workflow/jobs/DrawForSale-956dc12b43/promotion.json","ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchor":2,"sha256":"75f8f31960434d27d9daef6594b24fa9cfcbc7141359b857fb6964442aa151ee"}]},
@@ -69,5 +113,15 @@
     {"path":"evidence/recovery/workflow/jobs/MagnifyMenu-51f69a1a04/job.json","ref":"working-tree","base_ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchors":[1],"sha256":"92c73b59bacf8010e067f1b1073f9a99c565d4ed8251842c9a3ec8b2e02fe21b","working_tree":true},
     {"path":"evidence/recovery/workflow/jobs/MagnifyMenu-51f69a1a04/mechanism.json","ref":"working-tree","base_ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchors":[1],"sha256":"212c586914b6800daf06c3f257828c608959a18dd004ba2c9987567b02772b8a","working_tree":true},
     {"path":"evidence/recovery/workflow/jobs/MagnifyMenu-51f69a1a04/promotion.json","ref":"working-tree","base_ref":"cdf6af62cc67608f02c574e805d79cb413e330ef","anchors":[1],"sha256":"fcae061177110fb0234480f160d2711345f01f42b0212d052e61b6bce6604310","working_tree":true}
+  ],
+  "retained_catalog_pins": [
+    {
+      "path": "tools/codegen_grinder.py",
+      "ref": "working-tree",
+      "sha256": "d7b361c7fe079414335747884717562bbb8e4544968cc38c7478b303a4f3ef62",
+      "working_tree": true,
+      "observed_base_commit": "cdf6af62cc67608f02c574e805d79cb413e330ef",
+      "note": "Preserves the previously published source identity; do not infer historical dirty/clean state from the current checkout."
+    }
   ]
 }

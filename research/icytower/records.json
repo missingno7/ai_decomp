@@ -31,7 +31,67 @@
     {"id":"historical_definition_order","claim_kind":"PROJECT_FACT","statement":"Original DWARF declaration order restored scroller natural offsets while target register mismatch remained unresolved.","symptom":"Function extents/order differ despite retained body source, or a source-order task is proposed from executable address order.","discriminating_experiment":"Build a no-body-change full-CU overlay in unique DWARF definition order and compare target, full contribution, and exact neighbors.","negative_alternatives":"Historical order did not repair draw_scroller’s six register differences; another order task can lose accidental matches while predecessor code differs.","tool_ids":["source_order","tu_context_probe","promote_function"],"scope":"GCC 4.4.1 full-CU source order; no per-function linker placement.","diagnostic":"Whole-CU historical-order overlay with body and exact-neighbor preservation checks.","sources":["docs/compiler-context-evidence.md:38-51","docs/current/source-order-tasks.json","tools/source_order.py:9-107"]},
     {"id":"predecessor_context_dependency","claim_kind":"PROJECT_FACT","statement":"Changing earlier definitions can change an unchanged downstream target body in GCC 4.4.1 diagnostic full-CU probes.","symptom":"Register/instruction residue persists after local body hypotheses converge, while a target body is textually unchanged.","discriminating_experiment":"Reproduce a full-CU baseline hash, then omit one explicit predecessor or vary one type/flag and compare target bytes and protected neighbors.","negative_alternatives":"HTTPFetchInternal peer/type alternatives and draw_scroller init/scheduling/unit-at-a-time trials did not repair their target residue; one trial caused collateral regressions.","tool_ids":["compiler_probe","tu_context_probe","rtl_evidence"],"causal_status":"effect_observed; internal cause is a WORKING_HYPOTHESIS","cause_hypothesis":"GCC i386 peephole2 scratch-register search state retained across successful allocations; compatible with dumps and upstream source, not isolated by the probe.","scope":"Observed for HTTPFetchInternal and draw_scroller; neither the observed dependency nor the causal hypothesis is a universal register-mismatch attribution.","diagnostic":"Baseline-hash full-CU peer omission/type/flag overlays, then target and neighbor comparison.","sources":["docs/compiler-context-evidence.md:8-36,53-65","docs/attempts/compiler-context/game-httpget/HTTPFetchInternal.json","docs/attempts/compiler-context/game-scroller/draw_scroller.json"]},
     {"id":"pass_stage_convergence","claim_kind":"PROJECT_FACT","statement":"A play source split retained seven calls through 179r.dse2; at 181r.csa one call disappeared and the surviving label gained a use, leaving CFG/liveness/context rather than spelling as the next hypothesis.","symptom":"Original/candidate call multiplicity differs after source duplication, and local spelling variants are no longer informative.","discriminating_experiment":"Compile the production-equivalent TU with diagnostic dumps; compare GIMPLE/RTL around both arms to locate the first observed convergence stage.","negative_alternatives":"Explicit duplicated non-guest hint arms still emit six final calls; a more precise optimizer-subpass cause and the historical non-merging distinction are not established.","tool_ids":["rtl_evidence","tu_context_probe","effective_outcomes"],"causal_status":"pass-stage observation; common-tail explanation is supported but exact internal subpass is not identified","scope":"GCC 4.4.1 diagnostic dump result, not matching proof or generic pass behavior.","diagnostic":"Locate first divergent/convergent normalized compiler pass after source variants stop separating.","sources":["docs/attempts/research-supervisor-play/play-summary-rtl-common-tail-20260923.md:7-25","tools/rtl_evidence.py:8-29"]},
-    {"id":"body_layout_neighbor_separation","claim_kind":"GENERIC_METHOD","statement":"Keep resolved body proof, relocation/owner proof, same-CU layout, and collateral exact-neighbor preservation as separate acceptance dimensions.","symptom":"A body is byte-equal under resolved relocations but layout operands, ownership, or neighboring contributions remain unresolved or differ.","discriminating_experiment":"Run before/after contribution and protected-neighbor comparison, then require the explicit layout-blocked claim only when its narrow proof contract holds.","negative_alternatives":"Masked equality, size proximity, link closure, or a scope change that reorders BSS/text do not establish the needed proof level.","tool_ids":["check_function","promote_function","instruction_alignment"],"scope":"The terminology and implementation are project-specific; separation of evidence is portable process advice.","diagnostic":"Before/after contribution plus protected-neighbor comparison; require explicit layout proof for a layout-blocked body.","sources":["docs/proof-levels.md:3-48","docs/storage-scope-evidence.md:11-46","tools/promote_function.py:19-128"]}
+    {"id":"body_layout_neighbor_separation","claim_kind":"GENERIC_METHOD","statement":"Keep resolved body proof, relocation/owner proof, same-CU layout, and collateral exact-neighbor preservation as separate acceptance dimensions.","symptom":"A body is byte-equal under resolved relocations but layout operands, ownership, or neighboring contributions remain unresolved or differ.","discriminating_experiment":"Run before/after contribution and protected-neighbor comparison, then require the explicit layout-blocked claim only when its narrow proof contract holds.","negative_alternatives":"Masked equality, size proximity, link closure, or a scope change that reorders BSS/text do not establish the needed proof level.","tool_ids":["check_function","promote_function","instruction_alignment"],"scope":"The terminology and implementation are project-specific; separation of evidence is portable process advice.","diagnostic":"Before/after contribution plus protected-neighbor comparison; require explicit layout proof for a layout-blocked body.","sources":["docs/proof-levels.md:3-48","docs/storage-scope-evidence.md:11-46","tools/promote_function.py:19-128"]},
+    {
+      "id": "replay-peer-repair-strict-target",
+      "kind": "PROJECT FACT",
+      "claim": "Evidence-backed repairs to incomplete draw_replay_selector enable strict load_replay recovery under protected whole-TU acceptance.",
+      "scope": "Locked TDM-2 GCC4.4.1 -O2 game-replay. The typed target body is held fixed across discriminating draw controls; internal GCC cause is not established.",
+      "experiments": "Selected-row assignments change target from DIFFER to FUNCTION_MATCH; double-type controls alone do not. Final TU transaction preserves six exact peers and adds 1136-byte load_replay; draw remains DIFFER.",
+      "snapshot_date": "2026-09-24",
+      "sources": [
+        {
+          "path": "docs/attempts/research-20260924-load-replay-min-context/README.md",
+          "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "sha256": "1a3cc2a7efb34213723339b1e826a9800d804210a67d957c70d458939944e71a",
+          "working_tree": false,
+          "observed_base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "state": "git_blob"
+        },
+        {
+          "path": "docs/attempts/research-20260924-draw-selector-residual/README.md",
+          "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "sha256": "f65a4c76f6f86d39bfb8163ba4a8559ffceef75180dc08afa34824cece3c9347",
+          "working_tree": false,
+          "observed_base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "state": "git_blob"
+        },
+        {
+          "path": "docs/attempts/tu-context/transactions/replay_load_draw_historical_20260924.json",
+          "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "sha256": "40ef5b14ab5d08bd91155f6e91d85321cf737e304bd9346b310328b4947e651d",
+          "working_tree": false,
+          "observed_base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "state": "git_blob"
+        }
+      ]
+    },
+    {
+      "id": "late-header-visibility-protected-peer",
+      "kind": "PROJECT FACT",
+      "claim": "A narrow late typed declaration block repairs historical interfaces while preserving an exact preceding function.",
+      "scope": "GCC4.4.1 game-profile; does not prove original header position or selector function equality.",
+      "experiments": "Early generated header loses profile_data_page_advanced; late inclusion preserves 11/17 exact functions. Native structured transaction promotes interface/source evidence with no strict function gains.",
+      "snapshot_date": "2026-09-24",
+      "sources": [
+        {
+          "path": "docs/attempts/research-20260924-profile-late-transaction/README.md",
+          "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "sha256": "d3d646a42bd87c1225c3a78e16d0f7a7c38f662860e62bf297319703be886072",
+          "working_tree": false,
+          "observed_base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "state": "git_blob"
+        },
+        {
+          "path": "docs/attempts/tu-context/transactions/profile_late_typed_selectors_20260924.json",
+          "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "sha256": "d7ab571f76d2e7bfc15bd9dd42b9aa75314b05f9681b9fb09bcf6d039ef7e2e7",
+          "working_tree": false,
+          "observed_base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "state": "git_blob"
+        }
+      ]
+    }
   ],
   "trajectories": [
     {"id":"scroller_order","result":"partial_success","chain":["six draw_scroller register differences","DWARF declaration-order evidence","historical-order whole-CU overlay","natural offsets and contribution converge","six mismatches remain","HISTORICAL_SOURCE_ORDER only"],"sources":["docs/compiler-context-evidence.md:30-51","docs/current/source-order-tasks.json"]},
@@ -44,7 +104,32 @@
     {"id":"scroller_flag_trials","statement":"Omitting init_scroller, disabling scheduling, and disabling unit-at-a-time did not repair draw_scroller; one trial worsened neighbor exactness.","scope":"Recorded GCC 4.4.1 scroller TU probes.","sources":["docs/compiler-context-evidence.md:30-36"]},
     {"id":"draw_frame_surface_cfg","statement":"Independent status tests and signed speed arms did not create the fifth frame-zero load.","scope":"Historical-order overlay candidates only.","sources":["docs/attempts/research-luna-draw/status-pose-independent-20260923.md:11-38"]},
     {"id":"play_textual_duplication","statement":"Duplicating random-hint source paths still produced six calls because RTL common-tail convergence removed one.","scope":"GCC 4.4.1 -O2 diagnostic probe.","sources":["docs/attempts/research-supervisor-play/play-summary-rtl-common-tail-20260923.md:7-25"]},
-    {"id":"face_scope_move","statement":"A similar lexical-scope move reordered BSS and text operands; gate restored source and marked the task blocked.","scope":"main_menu_callback declaration-only trial.","sources":["docs/storage-scope-evidence.md:29-46"]}
+    {"id":"face_scope_move","statement":"A similar lexical-scope move reordered BSS and text operands; gate restored source and marked the task blocked.","scope":"main_menu_callback declaration-only trial.","sources":["docs/storage-scope-evidence.md:29-46"]},
+    {
+      "id": "play-explicit-checks-pre-convergence",
+      "kind": "PROJECT FACT",
+      "claim": "Three explicit two-predecessor check forms fail to retain the independent collision dispatch reload.",
+      "scope": "Retained GCC4.4.1 game-main whole-TU candidates; candidate-side pass evidence, not a historical pass trace.",
+      "result": "Three forms yield two effective outputs, all 17444 versus 17420 bytes, 63 exact peers and only two selector references. First observed forwarding is 084t.pre; late historical duplication remains an inference.",
+      "sources": [
+        {
+          "path": "docs/attempts/research-20260924-play-collision-predecessors/README.md",
+          "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "sha256": "f30d096557a40f3aa32ed6cfda58baee91c6402bb4dba7dd4a215f898b132a71",
+          "working_tree": false,
+          "observed_base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "state": "git_blob"
+        },
+        {
+          "path": "docs/attempts/research-20260924-gcc-peephole2-systemic/play-collision-pre-20260924.md",
+          "ref": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "sha256": "1ac310c73f3879d8148539db91c02c6b2e20f1899470556f24d3375af1e5aac7",
+          "working_tree": false,
+          "observed_base_commit": "e3780ebdc01c4db7d1d6fef53bd4c4c89169d0ce",
+          "state": "git_blob"
+        }
+      ]
+    }
   ],
   "tools": [
     {"path":"tools/dwarf_locations.py","purpose":"decode and annotate DWARF local locations","inputs":"location lists, PC, frame/scopes","outputs":"location/scope annotations","dependencies":"DWARF expression format and project census","classification":"adapter_required","license_review":"reference_only; inspect parser provenance before extraction","sources":["tools/dwarf_locations.py:15-96","README.md:98-103"]},
@@ -86,5 +171,23 @@
       "docs/attempts/tu-context/game-main/luna-play-pass-summary-split-repro-20260923.json"
     ],
     "modified_generated_evidence_observed":"docs/current/link-status.json plus 21 docs/experiments/*.json paths; full status was deliberately not normalized or written back."
-  }
+  },
+  "retained_catalog_pins": [
+    {
+      "path": "tools/promote_function.py",
+      "ref": "working-tree",
+      "sha256": "e9bb554aaddc79d63d02556273165c3f3a3041af12593d8f5cdac51c8ea1105c",
+      "working_tree": true,
+      "observed_base_commit": "e0522729b98f53e8afb50eca46bdd6a9fbd4f777",
+      "note": "Preserves the previously published source identity; do not infer historical dirty/clean state from the current checkout."
+    },
+    {
+      "path": "tools/effective_outcomes.py",
+      "ref": "working-tree",
+      "sha256": "d1ca72809ff1ff48af7d0339039ec3fb4130febf944ba7daceb53f7092ec80cc",
+      "working_tree": true,
+      "observed_base_commit": "e0522729b98f53e8afb50eca46bdd6a9fbd4f777",
+      "note": "Preserves the previously published source identity; do not infer historical dirty/clean state from the current checkout."
+    }
+  ]
 }

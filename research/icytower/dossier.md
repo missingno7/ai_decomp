@@ -129,3 +129,11 @@ The only clearly shareable initial abstraction suggested here is an **adapter-ne
 Icy Tower is the strongest current precedent for a DWARF-rich GCC reconstruction where source facts, lexical lifetimes, source order, and predecessor context must be kept separate from strict equality.  Consult it for (1) deriving bounded source hypotheses from DWARF locals/types/scopes, (2) detecting context-sensitive compiler behavior with overlay probes, (3) pass-dump escalation after source experiments converge, and (4) protecting exact bodies while resolving layout/ownership independently.
 
 Do **not** generalize GCC 4.4.1 peephole state, RTL tail merging, source-order effects, or the exact proof schema as universal compiler behavior.  The transferable method is the controlled experiment: freeze identities, vary one declared axis in a whole-context reproduction, record effective output and collateral changes, and escalate the analysis level when variants stop separating.
+
+
+## September 24 follow-up
+
+The [dated project update](../updates/20260924/review.md) and its separate
+[evidence manifest](../updates/20260924/evidence.json) preserve newer observations
+without changing this dossier's earlier snapshot. New catalog claims are scoped
+project facts; diagnostic coverage and strict recovery remain separate.

@@ -179,6 +179,23 @@
     "original_record_id": "based-segment-unavailable"
   },
   {
+    "id": "stunts-binder-expansion-not-source-recovery",
+    "kind": "PROJECT FACT",
+    "claim": "Broader binding cannot repair the observed wrong source extents in the selected current candidate archive.",
+    "scope": "64 distinct task/object payloads across 28 remaining supervisor tasks; not a population estimate.",
+    "result": "60 have different extents; only set_frame_callback is equal-extent and fully nonfixup-exact among four equal-size candidates. Callback/data ownership remains unproved.",
+    "sources": [
+      {
+        "source_id": "stunts-src-149ace5a5b82",
+        "anchor": null
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "binder-expansion-not-source-recovery"
+  },
+  {
     "id": "simantw-flood-nest-row-cell",
     "claim": "Ordinary/register row-cell forms collapse in this baseline isolated MSC7 probe; reversing order differs but does not match.",
     "scope": "FloodNestB only.",
@@ -327,5 +344,26 @@
     "epistemic_class": "PROJECT FACT",
     "dossier": "research/icytower/dossier.md",
     "original_record_id": "face_scope_move"
+  },
+  {
+    "id": "icytower-play-explicit-checks-pre-convergence",
+    "kind": "PROJECT FACT",
+    "claim": "Three explicit two-predecessor check forms fail to retain the independent collision dispatch reload.",
+    "scope": "Retained GCC4.4.1 game-main whole-TU candidates; candidate-side pass evidence, not a historical pass trace.",
+    "result": "Three forms yield two effective outputs, all 17444 versus 17420 bytes, 63 exact peers and only two selector references. First observed forwarding is 084t.pre; late historical duplication remains an inference.",
+    "sources": [
+      {
+        "source_id": "icytower-src-943f991dec12",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-d4fe4c31dfe4",
+        "anchor": null
+      }
+    ],
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "play-explicit-checks-pre-convergence"
   }
 ]

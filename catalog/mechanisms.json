@@ -391,6 +391,60 @@
     ]
   },
   {
+    "id": "stunts-byte-qualified-importer-unlocks",
+    "kind": "PROJECT FACT",
+    "claim": "Byte-qualified importer corrections expand verified code evidence and release a small strictly recovered subset.",
+    "scope": "MSC5.0/5.1 Stunts listing/pristine-image mapping. Mapping is not C ownership; unclassified DB/data remains rejected.",
+    "experiments": "234 to 497 verified mappings and 112875 newly mapped code-evidence bytes; nine medium tasks, four strict promotions/28 C bytes. All prior verified intervals retain identities.",
+    "snapshot_date": "2026-09-24",
+    "sources": [
+      {
+        "source_id": "stunts-src-8ec7f74c7641",
+        "anchor": null
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "byte-qualified-importer-unlocks",
+    "related_tool_names": [],
+    "related_tools": [],
+    "related_trajectories": []
+  },
+  {
+    "id": "stunts-mixed-far-data-link-parity",
+    "kind": "PROJECT FACT",
+    "claim": "Historical LINK parity for a bounded mixed far-CALL/DGROUP-offset object enables two independently bound strict contributions.",
+    "scope": "One public/full UNIT_TEXT; one zero-addend external target-frame pointer32 CALL plus reviewed external DGROUP offset16 obligations; no extra contributions, arbitrary frames or callback pointers.",
+    "experiments": "Four historical LINK controls: two orders within each MSC5.00/5.10 profile; complete 32-byte parity. Independent data evidence then admits free_sdgame2 18 bytes and locate_text_res 52 bytes through whole-image proof.",
+    "snapshot_date": "2026-09-24",
+    "sources": [
+      {
+        "source_id": "stunts-src-37ac24d79202",
+        "anchor": null
+      },
+      {
+        "source_id": "stunts-src-030918fff5c1",
+        "anchor": null
+      },
+      {
+        "source_id": "stunts-src-051495b37736",
+        "anchor": null
+      },
+      {
+        "source_id": "stunts-src-a7c42a356437",
+        "anchor": null
+      }
+    ],
+    "project": "stunts",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/stunts/dossier.md",
+    "original_record_id": "mixed-far-data-link-parity",
+    "related_tool_names": [],
+    "related_tools": [],
+    "related_trajectories": []
+  },
+  {
     "id": "simantw-effective-output-collapse",
     "kind": "GENERIC_METHOD",
     "claim": "Cluster bounded candidate searches by compiler-output identity and use surviving deltas to choose the next analysis level.",
@@ -584,6 +638,52 @@
       "blocked_reclassification",
       "mirror_pairs"
     ],
+    "related_trajectories": []
+  },
+  {
+    "id": "simantw-near-call-ip-wrap-repair",
+    "kind": "PROJECT FACT",
+    "claim": "16-bit direct near-call target normalization resolves false unnamed-helper references without changing source acceptance.",
+    "scope": "MSC7 Win16 direct near-call research decoding; direct-jump audit found no analogous out-of-range case in this inventory.",
+    "experiments": "85 previously out-of-range call references across 31 callers become named; unnamed calls 148 to 63; all 2155 near calls retained. No recovery credit follows from naming alone.",
+    "snapshot_date": "2026-09-24",
+    "sources": [
+      {
+        "source_id": "simantw-src-5290b3d8281a",
+        "anchor": null
+      }
+    ],
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "near-call-ip-wrap-repair",
+    "related_tool_names": [],
+    "related_tools": [],
+    "related_trajectories": []
+  },
+  {
+    "id": "simantw-clear-history-named-data",
+    "kind": "PROJECT FACT",
+    "claim": "Independent MAPSYM names remove an apparent private-layout blocker without TU/scaffold assembly.",
+    "scope": "ClearHistory under MSC7 baseline /AL /G2 /Gs /Oelw /NTSIMANT_MODULE; no universal claim that layout residues are naming errors.",
+    "experiments": "Replace invented names for nine 64-word PACK arrays using HistUpdate evidence. Native attempt06 admits 299 code bytes, 182/182 ordinary literals, 84/84 fixups; unit/scaffold null.",
+    "snapshot_date": "2026-09-24",
+    "sources": [
+      {
+        "source_id": "simantw-src-8d001b6cebe9",
+        "anchor": null
+      },
+      {
+        "source_id": "simantw-src-1d942703c696",
+        "anchor": null
+      }
+    ],
+    "project": "simantw",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/simantw/dossier.md",
+    "original_record_id": "clear-history-named-data",
+    "related_tool_names": [],
+    "related_tools": [],
     "related_trajectories": []
   },
   {
@@ -813,5 +913,59 @@
     "related_trajectories": [
       "icytower-localfilename-scope"
     ]
+  },
+  {
+    "id": "icytower-replay-peer-repair-strict-target",
+    "kind": "PROJECT FACT",
+    "claim": "Evidence-backed repairs to incomplete draw_replay_selector enable strict load_replay recovery under protected whole-TU acceptance.",
+    "scope": "Locked TDM-2 GCC4.4.1 -O2 game-replay. The typed target body is held fixed across discriminating draw controls; internal GCC cause is not established.",
+    "experiments": "Selected-row assignments change target from DIFFER to FUNCTION_MATCH; double-type controls alone do not. Final TU transaction preserves six exact peers and adds 1136-byte load_replay; draw remains DIFFER.",
+    "snapshot_date": "2026-09-24",
+    "sources": [
+      {
+        "source_id": "icytower-src-a6d2705932f2",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-4b11fe70b020",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-e4fcf892f0aa",
+        "anchor": null
+      }
+    ],
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "replay-peer-repair-strict-target",
+    "related_tool_names": [],
+    "related_tools": [],
+    "related_trajectories": []
+  },
+  {
+    "id": "icytower-late-header-visibility-protected-peer",
+    "kind": "PROJECT FACT",
+    "claim": "A narrow late typed declaration block repairs historical interfaces while preserving an exact preceding function.",
+    "scope": "GCC4.4.1 game-profile; does not prove original header position or selector function equality.",
+    "experiments": "Early generated header loses profile_data_page_advanced; late inclusion preserves 11/17 exact functions. Native structured transaction promotes interface/source evidence with no strict function gains.",
+    "snapshot_date": "2026-09-24",
+    "sources": [
+      {
+        "source_id": "icytower-src-173ed847c96d",
+        "anchor": null
+      },
+      {
+        "source_id": "icytower-src-b1f485b90a9a",
+        "anchor": null
+      }
+    ],
+    "project": "icytower",
+    "epistemic_class": "PROJECT FACT",
+    "dossier": "research/icytower/dossier.md",
+    "original_record_id": "late-header-visibility-protected-peer",
+    "related_tool_names": [],
+    "related_tools": [],
+    "related_trajectories": []
   }
 ]

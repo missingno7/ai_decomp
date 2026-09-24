@@ -1,0 +1,1123 @@
+{
+  "format": "ai-decomp-update-validation-v1",
+  "checked_at_utc": "2026-09-24T05:57:18.674246+00:00",
+  "tests_passed": 19,
+  "workspace_errors": [],
+  "catalog_regeneration": {
+    "mechanisms": 26,
+    "negative_evidence": 23,
+    "sources": 120,
+    "original_104_source_records_unchanged": true
+  },
+  "catalog_provenance_cli_exit": 1,
+  "catalog_provenance": {
+    "format": "ai-decomp-provenance-check-v1",
+    "authority": "reference_integrity_only",
+    "checked": 120,
+    "verified": 109,
+    "results": [
+      {
+        "id": "empires-src-3cbb23225b06",
+        "status": "verified",
+        "actual_sha256": "e649f35ab5479327da9373dbfb4b4b6f261f7d47d056a6ad3f99876c7beb44f0"
+      },
+      {
+        "id": "empires-src-9fd4ecf8eeed",
+        "status": "verified",
+        "actual_sha256": "d05650faa9b2a2739add7cebbe130a377a103f28c8afa69a725e933563d5ab84"
+      },
+      {
+        "id": "empires-src-e7eb7bf0084c",
+        "status": "verified",
+        "actual_sha256": "51bdaaed025cc3114c6fd4a1d3efa1850e05185afda705d7f566d08ddb760d6b"
+      },
+      {
+        "id": "empires-src-2e83285a4c1c",
+        "status": "verified",
+        "actual_sha256": "491266ce5abef74ee2d0a5a15103a4692f863cb68be594fd8bfc0e01cdac44b9"
+      },
+      {
+        "id": "empires-src-5b7cf2dde588",
+        "status": "verified",
+        "actual_sha256": "be924fecea280cd626c9a7e0937f5f81129affcaf71b1435e0152dfb5943493c"
+      },
+      {
+        "id": "empires-src-f4a5acd7f619",
+        "status": "verified",
+        "actual_sha256": "e4ce58b9db430a9de40ce9a3223ed2a563b5b6fe8b61bc7b0489408b3fcbac88"
+      },
+      {
+        "id": "empires-src-0502ff01d23b",
+        "status": "verified",
+        "actual_sha256": "75a321a597d3eed4ea81236df6d7f58550a97dd37300deb579dc585d410a87da"
+      },
+      {
+        "id": "empires-src-f826913e70b3",
+        "status": "verified",
+        "actual_sha256": "c07354509ca4cbab9f24e39fb82c83e67cea35a9b7d3397fd3aa408fc3bd4e75"
+      },
+      {
+        "id": "empires-src-52636fd94b2d",
+        "status": "verified",
+        "actual_sha256": "34c145b05229811200f6e120db5b0740b4690b82bbd4d7ed7509313292726ca7"
+      },
+      {
+        "id": "empires-src-73ad44eed692",
+        "status": "verified",
+        "actual_sha256": "cab29f8fb7f2faf9558f82d53842dc8364eaef6a9c7c3b540af0a0d529a47fb6"
+      },
+      {
+        "id": "empires-src-45cc7b345cd3",
+        "status": "verified",
+        "actual_sha256": "a4f736bb4a3ff5032f7a1314992707e4f591833822e599fe24df2a8c17860c05"
+      },
+      {
+        "id": "empires-src-e3a07a74275b",
+        "status": "verified",
+        "actual_sha256": "8d1c9a232cdbf39165f00004017394d8576b7863f9e8c9e180c309c74df25398"
+      },
+      {
+        "id": "empires-src-eb9a397c4ba3",
+        "status": "verified",
+        "actual_sha256": "c6034b69a44966809283d6e95d8d6e3ed7006138184cf1d5d20b2f0e600e3750"
+      },
+      {
+        "id": "empires-src-6c1a9c760467",
+        "status": "verified",
+        "actual_sha256": "f39becee5427c7b2481e94ee2f9b6491f469960594ab5144bba335d0774286e4"
+      },
+      {
+        "id": "empires-src-42ae8f8ac1d0",
+        "status": "verified",
+        "actual_sha256": "86f019c1e5bf2e5f2aa86d7c84c16b92d80cc0bc8b446fe1e749cef9fe360ecc"
+      },
+      {
+        "id": "empires-src-869276ee9754",
+        "status": "verified",
+        "actual_sha256": "821eaa5f3676562d30dc77be32e1d3509e6b9f1fe2455df3dbdb1c20a443ea5d"
+      },
+      {
+        "id": "empires-src-de5f08712288",
+        "status": "verified",
+        "actual_sha256": "4d460e36970694c4ac322cf4182b9713fa5c4b781ff18d4f0ec4213de2767b2c"
+      },
+      {
+        "id": "empires-src-8ea8a1ea9951",
+        "status": "verified",
+        "actual_sha256": "1a708ced1c5c680ddbe1e195e45615c55d922969959adbf566114aee4fce68d5"
+      },
+      {
+        "id": "empires-src-585f2f7689d1",
+        "status": "verified",
+        "actual_sha256": "7d0cc85bf5a926ceb25ea72e129e31ee88961210fc96ce4af90081afbd79bd75"
+      },
+      {
+        "id": "empires-src-120338389bca",
+        "status": "verified",
+        "actual_sha256": "1765b71a47e2ca0dfaf781b1531f20b63965c762d26008e0288cebe72ac6585d"
+      },
+      {
+        "id": "empires-src-aaa17885ef43",
+        "status": "verified",
+        "actual_sha256": "79ceea46243dc7f947cd104b4e249c5c044231fd21c467c1483235281c06aa70"
+      },
+      {
+        "id": "stunts-src-8ec7f74c7641",
+        "status": "verified",
+        "actual_sha256": "45bda4506db571a44b1f5610930a701e75150d7ec22fc68272507a38404c3472"
+      },
+      {
+        "id": "stunts-src-37ac24d79202",
+        "status": "verified",
+        "actual_sha256": "7b1d44216375aa424010d8540f3c9883855b88fc463d3325d7cabe432906fc7f"
+      },
+      {
+        "id": "stunts-src-030918fff5c1",
+        "status": "verified",
+        "actual_sha256": "1458f38132a78e06cb975eebb8e9e58ef125ddf94d070b6c60e0bc389ff2aabb"
+      },
+      {
+        "id": "stunts-src-051495b37736",
+        "status": "verified",
+        "actual_sha256": "06bbaceef7a15d9bc63eb01d76cd278de45fdc7e73f3e6b428110ca7ca7a08fc"
+      },
+      {
+        "id": "stunts-src-a7c42a356437",
+        "status": "verified",
+        "actual_sha256": "1a56502a7c652ab1f64c868582788e8c4e664dc8942414acd2be5eaa018355ea"
+      },
+      {
+        "id": "stunts-src-149ace5a5b82",
+        "status": "verified",
+        "actual_sha256": "bd761d5040bdc97f478917bd8d584a84be5f39b95abcc2a466068b749f0dae2c"
+      },
+      {
+        "id": "stunts-src-2822ed9ca670",
+        "status": "drifted",
+        "actual_sha256": "3129f5a66bde795c0b4d29c4d570b3dc3153d24d26f7742166524159f97c098f"
+      },
+      {
+        "id": "stunts-src-751997278a68",
+        "status": "drifted",
+        "actual_sha256": "a2ef28ae81478977da58ea5507c1d2faf1a4e61fbc0bf1b8fd857f3daa06c070"
+      },
+      {
+        "id": "stunts-src-3f7f26d672ca",
+        "status": "verified",
+        "actual_sha256": "7a5807ecf03a2fcbc75195e7030ed79729255e8665d4b239a6fc3eb77f4a6208"
+      },
+      {
+        "id": "stunts-src-331d37292052",
+        "status": "drifted",
+        "actual_sha256": "1004b0fc1c2d27a5334b3d08625a855136b0d62a7d8a1371a42a68ec0a822191"
+      },
+      {
+        "id": "stunts-src-763c07cddc94",
+        "status": "drifted",
+        "actual_sha256": "28749c48fbae86ac19ca431c59f328ae2ca3e0b1ef2622afcf2938797aaac126"
+      },
+      {
+        "id": "stunts-src-435992191ca3",
+        "status": "drifted",
+        "actual_sha256": "3adf015a78125c0f94ad13ee8a750ce604e0334b7864d78fdd7c88c86039a905"
+      },
+      {
+        "id": "stunts-src-1b46d38619e0",
+        "status": "verified",
+        "actual_sha256": "434b80efdf3569afd8a88fee56737153ac87d71cb569d0cdaff3d0a9960e617f"
+      },
+      {
+        "id": "stunts-src-b952d44f21ac",
+        "status": "verified",
+        "actual_sha256": "faa65f54889ae2ac1dd7fc40c9d05ab05d103f2adb59693eb3da334ba33e92be"
+      },
+      {
+        "id": "stunts-src-8cbe4caead6b",
+        "status": "verified",
+        "actual_sha256": "25fdeb09ffffa2dc7ef4c8093440f5693ebfb08ae5a7eb104c7004b3ba1ac7b1"
+      },
+      {
+        "id": "stunts-src-cb6b11074fad",
+        "status": "verified",
+        "actual_sha256": "2439f7bc3929f5017058973cca8b95e235c22bc9ef50cfd3390463139f4f91ff"
+      },
+      {
+        "id": "stunts-src-e649d1b0311c",
+        "status": "verified",
+        "actual_sha256": "fb803ad91fad49da0085c25c5d49aa56d210670c24c65878f5fc4d369ce5b4bd"
+      },
+      {
+        "id": "stunts-src-794e153ccdd3",
+        "status": "verified",
+        "actual_sha256": "0de5a0008e12e8b1c25625f1b3ca1ef46e8cb0fbe3cd4439dc76ccb138cc021c"
+      },
+      {
+        "id": "stunts-src-0fc0f3a1d744",
+        "status": "verified",
+        "actual_sha256": "3159053ad6929df70f02c8da0b4bef517a9fef30deea0168747b15c1da8a6046"
+      },
+      {
+        "id": "stunts-src-e9b681928b47",
+        "status": "verified",
+        "actual_sha256": "c495d73855e50b76455ee346ea115899559e74375a26a5564e3d5de8b4530ca1"
+      },
+      {
+        "id": "stunts-src-560f8e2b45d6",
+        "status": "verified",
+        "actual_sha256": "95f17986b653c0bcc92dc0e83f4f04d3402d931a50a10992a18cbafc79da74d9"
+      },
+      {
+        "id": "stunts-src-b5d04cafa334",
+        "status": "verified",
+        "actual_sha256": "c7ab49dfeb5d48f90d350e23d68531578cd49bf659b7053f5cafdc5be21ffe9e"
+      },
+      {
+        "id": "stunts-src-2facbd66586a",
+        "status": "verified",
+        "actual_sha256": "29a68054294a913c18808b9cbf1101fabf5bec1ea625cc3aa0eaf37d6485c425"
+      },
+      {
+        "id": "stunts-src-a50e39e12237",
+        "status": "verified",
+        "actual_sha256": "732ff4889873bff0a6c7b8344d9dacd36a12b11fb132b70531068f8d74643e96"
+      },
+      {
+        "id": "stunts-src-ad637d16775d",
+        "status": "verified",
+        "actual_sha256": "a5df723b30e4581e53434d32dea82798c625c34e84bf55330c56a7f81c23ccc3"
+      },
+      {
+        "id": "stunts-src-8d5b85ee6620",
+        "status": "verified",
+        "actual_sha256": "166fdcc6ff1c18d1729f1ccf213d4250071aca44e9c8f1a7d09aee0fd485d33a"
+      },
+      {
+        "id": "stunts-src-c4ceae488459",
+        "status": "verified",
+        "actual_sha256": "01c57bb2b64f9cd7107a49d0bc1b050cab4014406590ffc7b24f51b5874fc3b5"
+      },
+      {
+        "id": "stunts-src-2fc663b6dc57",
+        "status": "verified",
+        "actual_sha256": "871967faddd0b17b2ec2ab7c9ea78ef50f3b701aef5cde02a7b6eff64ed9c884"
+      },
+      {
+        "id": "stunts-src-025bb1bafcdd",
+        "status": "verified",
+        "actual_sha256": "1f5dd0bb237734e5873fceeb94ca21314fbe97fd84e8bdc37bd928d01bf17dbc"
+      },
+      {
+        "id": "stunts-src-0099966f0e5d",
+        "status": "verified",
+        "actual_sha256": "a2e2d37e9d398fca73ca0e3db492bcfac436931883bba0105aee47d2ceaaab76"
+      },
+      {
+        "id": "simantw-src-be11f9a479d8",
+        "status": "verified",
+        "actual_sha256": "235a6fbd9eb5d2b7ba8b8f73dd710e88ce2341fe9196b1463905dca5e90d30e9"
+      },
+      {
+        "id": "simantw-src-28415d4f6c1c",
+        "status": "drifted",
+        "actual_sha256": "7a6ae1ca45ab9be09af9f8c7604027ca2577acd1bb0e587e7e9aa9785d542214"
+      },
+      {
+        "id": "simantw-src-ff521355e6a4",
+        "status": "drifted",
+        "actual_sha256": "11a6d289a4b13a473ee43df56b550d269280cf0cd1ebb8c172d33551f8fa3ae7"
+      },
+      {
+        "id": "simantw-src-faf185b1fa1d",
+        "status": "verified",
+        "actual_sha256": "05819db8fa1650f658402ec958794d59c65ab37ab23c07f1ac76fe72914e5b55"
+      },
+      {
+        "id": "simantw-src-97d9aa655d43",
+        "status": "drifted",
+        "actual_sha256": "22d8fc3178522094ef86ab71d4e922cba16e3d7a01e3b2452494680dbe6b38fd"
+      },
+      {
+        "id": "simantw-src-4caa686b51f6",
+        "status": "verified",
+        "actual_sha256": "e92c024a6264aed56af5f39e2915c0c9ebd2c657ba37aed46319519d612ece72"
+      },
+      {
+        "id": "simantw-src-47f5c8a50659",
+        "status": "verified",
+        "actual_sha256": "4d9fe06b0611365be72ea17037db90a057959ea50d6365b454f11a69071cf787"
+      },
+      {
+        "id": "simantw-src-db1245e440b9",
+        "status": "verified",
+        "actual_sha256": "e6622ce64e7796bf96d81097e5202ef15fb99b83a160eaf666e6dd39ddf2c96a"
+      },
+      {
+        "id": "simantw-src-d047b00272c6",
+        "status": "verified",
+        "actual_sha256": "28a292ab5a43b031039111f28cd98aaf9b92f6e6542ed9d44ae1a4b3324e112f"
+      },
+      {
+        "id": "simantw-src-5290b3d8281a",
+        "status": "verified",
+        "actual_sha256": "ae5d4b58d0b93fb6afd701b086052cb49220def33e03394a5430b1752417faa4"
+      },
+      {
+        "id": "simantw-src-8d001b6cebe9",
+        "status": "verified",
+        "actual_sha256": "9f4d853b54ab6dc39cd1f947229653ffaaa082822fb2ed48a70582f051b8ce33"
+      },
+      {
+        "id": "simantw-src-1d942703c696",
+        "status": "verified",
+        "actual_sha256": "cce55cdcc2af84c39b712cdcc305405fd933f9cf6b6ef10ca944d36a5e5e7b91"
+      },
+      {
+        "id": "simantw-src-12c92ff6a3bb",
+        "status": "verified",
+        "actual_sha256": "e7c2bfded1e11cf7c3dfb301433e8b7c76559f27ab9d6dcc790672aacc31aa99"
+      },
+      {
+        "id": "simantw-src-08ff8a83cd4a",
+        "status": "verified",
+        "actual_sha256": "091879a58099e37edf65e809268e3a1743c6c05a490a5f03d3cd2ee7c27a57cf"
+      },
+      {
+        "id": "simantw-src-a7ff369a2aa8",
+        "status": "verified",
+        "actual_sha256": "025f161c8ea25f53857dd4fc00ad61b298886b58b78a3a282c6e6c0892e19b28"
+      },
+      {
+        "id": "simantw-src-09e28abce707",
+        "status": "verified",
+        "actual_sha256": "06c36265113625b64471e40e7faa536ed50d173749ddca8d1d395c89c568ddf0"
+      },
+      {
+        "id": "simantw-src-8442db997518",
+        "status": "verified",
+        "actual_sha256": "67f38edd9e2fdcfd04d89bce28306900193a3711b4cfb3928aad03a8f57b7ea1"
+      },
+      {
+        "id": "simantw-src-b18777f42c27",
+        "status": "verified",
+        "actual_sha256": "92c73b59bacf8010e067f1b1073f9a99c565d4ed8251842c9a3ec8b2e02fe21b"
+      },
+      {
+        "id": "simantw-src-beaae9153adb",
+        "status": "drifted",
+        "actual_sha256": "9c14017cb5c7c6ef6575fba5accfff41dcab1c99a4da3874290096237acf97e9"
+      },
+      {
+        "id": "simantw-src-f4529e5a4623",
+        "status": "verified",
+        "actual_sha256": "fcae061177110fb0234480f160d2711345f01f42b0212d052e61b6bce6604310"
+      },
+      {
+        "id": "simantw-src-4ea9c1c85cac",
+        "status": "verified",
+        "actual_sha256": "1e89b05a5b0e88f3f360b41e3bc70434431c0fd9c02dcde78364448ad913e0b3"
+      },
+      {
+        "id": "simantw-src-4280bba8baf4",
+        "status": "verified",
+        "actual_sha256": "1833a5d1fd9327536c5fa3bcf8f2c0424a25105327d40f235593a0fc3cf8dac1"
+      },
+      {
+        "id": "simantw-src-a90096b5859f",
+        "status": "verified",
+        "actual_sha256": "ad187bec44d8f2b64d3e6a8cae0ee44144fa879929eda14262fa21f010d549cb"
+      },
+      {
+        "id": "simantw-src-a6d7985aa16a",
+        "status": "verified",
+        "actual_sha256": "cbcf08c9711e00643440c3bcc3c04d3f31bf73258f7449d0029b40d04d8a777a"
+      },
+      {
+        "id": "simantw-src-6a26ddd43f5c",
+        "status": "verified",
+        "actual_sha256": "45ac12a2a2f0821e1c93ba41045ebc2fd4556e655cbb68e40f57c9b036b53431"
+      },
+      {
+        "id": "simantw-src-8df1e02285b0",
+        "status": "verified",
+        "actual_sha256": "1c86f12a16d3d760126c5be9b74417290594fa61b48d4d8b89804cc045a34697"
+      },
+      {
+        "id": "simantw-src-1d9821e62051",
+        "status": "verified",
+        "actual_sha256": "d1573c35f1c9a3db45b9a6c701e0bddd1bbdec23ce713b0132d38d80f4ccfe16"
+      },
+      {
+        "id": "simantw-src-071808eb1c6d",
+        "status": "verified",
+        "actual_sha256": "d7b361c7fe079414335747884717562bbb8e4544968cc38c7478b303a4f3ef62"
+      },
+      {
+        "id": "simantw-src-ebb8d5ca8d31",
+        "status": "verified",
+        "actual_sha256": "7b55ee272e38ed27cf0516c7255ad0ab395e3431f2463a0c39108d6f2492ec5d"
+      },
+      {
+        "id": "simantw-src-b9e6348f699a",
+        "status": "verified",
+        "actual_sha256": "56943754bb2ff2ea040c5713549ac9f566a7cfae3e71da2daf06deaace576e7c"
+      },
+      {
+        "id": "simantw-src-7042abd78f7f",
+        "status": "verified",
+        "actual_sha256": "e9dd64f9f279526da6fbd5b6a51fa81eaf60125ba90136486b758eb3b504f5d6"
+      },
+      {
+        "id": "simantw-src-db3807d912fa",
+        "status": "verified",
+        "actual_sha256": "1406cce74ba52aaa9fe0f911fca63d78bc630c52f434efbe3cb833f6129d01a7"
+      },
+      {
+        "id": "simantw-src-c2fb20671d05",
+        "status": "verified",
+        "actual_sha256": "7a4c1bddfa55c7b55101b978307dd2e389c2d1164c7ccbc614d05d65dad0f964"
+      },
+      {
+        "id": "simantw-src-58d39ac26e79",
+        "status": "verified",
+        "actual_sha256": "8f900b481f18dd8485d1bf252471a470711afd432735d8e983edff7cf08f3ae8"
+      },
+      {
+        "id": "icytower-src-a6d2705932f2",
+        "status": "verified",
+        "actual_sha256": "1a3cc2a7efb34213723339b1e826a9800d804210a67d957c70d458939944e71a"
+      },
+      {
+        "id": "icytower-src-4b11fe70b020",
+        "status": "verified",
+        "actual_sha256": "f65a4c76f6f86d39bfb8163ba4a8559ffceef75180dc08afa34824cece3c9347"
+      },
+      {
+        "id": "icytower-src-e4fcf892f0aa",
+        "status": "verified",
+        "actual_sha256": "40ef5b14ab5d08bd91155f6e91d85321cf737e304bd9346b310328b4947e651d"
+      },
+      {
+        "id": "icytower-src-173ed847c96d",
+        "status": "verified",
+        "actual_sha256": "d3d646a42bd87c1225c3a78e16d0f7a7c38f662860e62bf297319703be886072"
+      },
+      {
+        "id": "icytower-src-b1f485b90a9a",
+        "status": "verified",
+        "actual_sha256": "d7ab571f76d2e7bfc15bd9dd42b9aa75314b05f9681b9fb09bcf6d039ef7e2e7"
+      },
+      {
+        "id": "icytower-src-943f991dec12",
+        "status": "verified",
+        "actual_sha256": "f30d096557a40f3aa32ed6cfda58baee91c6402bb4dba7dd4a215f898b132a71"
+      },
+      {
+        "id": "icytower-src-d4fe4c31dfe4",
+        "status": "verified",
+        "actual_sha256": "1ac310c73f3879d8148539db91c02c6b2e20f1899470556f24d3375af1e5aac7"
+      },
+      {
+        "id": "icytower-src-c52e8cebd6cb",
+        "status": "verified",
+        "actual_sha256": "a73b997b71028ff52d9416a34a1a855855507b20629614f3c30a4aba6f0a85b0"
+      },
+      {
+        "id": "icytower-src-3b40ad7aef43",
+        "status": "verified",
+        "actual_sha256": "f7730cd7f76d657dfa0731828f69796b51df0eac93d16ee3c47e6d64279eee68"
+      },
+      {
+        "id": "icytower-src-c69f69a480e1",
+        "status": "drifted",
+        "actual_sha256": "76a89f3ef8e837e03af867eef7d6e65382c014505d2c428fe1f3ca4a8bd93045"
+      },
+      {
+        "id": "icytower-src-3b6e089d4c02",
+        "status": "verified",
+        "actual_sha256": "375831ee8c47635a48b7f0a29fb99db800289b1d0f64d9c4f85e9ea787c6264c"
+      },
+      {
+        "id": "icytower-src-43f744d0a15f",
+        "status": "verified",
+        "actual_sha256": "0df1ce5b22a895dfd81c48cf0a4820cb4ba73d5989b86f381712c31467ca919b"
+      },
+      {
+        "id": "icytower-src-2ed3389fb665",
+        "status": "verified",
+        "actual_sha256": "c22919e18f40bd80573fdd2179ea3e7b71c81997a814089615c36fec702c8380"
+      },
+      {
+        "id": "icytower-src-037b8ea1908c",
+        "status": "verified",
+        "actual_sha256": "bd2439f5849d07dd6c1b1a3202a069e02379a6198c2f6ce5f0ce31845c259b96"
+      },
+      {
+        "id": "icytower-src-4131d17dedce",
+        "status": "verified",
+        "actual_sha256": "ed9abf7da4ff74ea75b04ba0cf2bfe8b759a59455f599801e00f1b739b3ea413"
+      },
+      {
+        "id": "icytower-src-0e77b5d3779f",
+        "status": "verified",
+        "actual_sha256": "22d8fa50257bfd72dde96f6585ed6f9bbe3cc7d7a7b8635fc347744d0aa79284"
+      },
+      {
+        "id": "icytower-src-b2d9dc482859",
+        "status": "verified",
+        "actual_sha256": "54f9f04bac855c212f2812937318f1b87152082668eb08b8eeaafff5c01d298e"
+      },
+      {
+        "id": "icytower-src-6ab42ab0e653",
+        "status": "verified",
+        "actual_sha256": "934b284ca674644231e20d01c9620e660c1e8721465d9500d15a834089cbe18b"
+      },
+      {
+        "id": "icytower-src-22231bb443b7",
+        "status": "verified",
+        "actual_sha256": "c55e778daec2f76339556502c0159672e7b1a2c31bc3f64d5dda30497a5265d2"
+      },
+      {
+        "id": "icytower-src-c517626b278f",
+        "status": "verified",
+        "actual_sha256": "c92bf81c8e25bd5d4b592f140b0af9216c4ac66d35e508b13d1ba24531a2d485"
+      },
+      {
+        "id": "icytower-src-e48ebf518372",
+        "status": "verified",
+        "actual_sha256": "35c8aa6837daad845c3f9bf9c601dd292e0e089c2d651468d5a828a46de9d803"
+      },
+      {
+        "id": "icytower-src-c4d4e6eddf66",
+        "status": "verified",
+        "actual_sha256": "39e0c2c2faba06ed76e10eaab3af699f90ee8832aff73aeedd240ea8e61095aa"
+      },
+      {
+        "id": "icytower-src-13acb948125f",
+        "status": "verified",
+        "actual_sha256": "93ed95106760fb3315d854e2436f6f6c7938098ed22a83583caff6941b9a185e"
+      },
+      {
+        "id": "icytower-src-1a800deb70fe",
+        "status": "verified",
+        "actual_sha256": "e9bb554aaddc79d63d02556273165c3f3a3041af12593d8f5cdac51c8ea1105c"
+      },
+      {
+        "id": "icytower-src-4e248a49d0c7",
+        "status": "drifted",
+        "actual_sha256": "c01a528779f43e485a2cdf87a1ba4bbf00e48c79c6f623f2f4b080df94e53f4e"
+      },
+      {
+        "id": "icytower-src-c196ae83cab0",
+        "status": "verified",
+        "actual_sha256": "f7b1ac4bff5d408822c8f03d6e2e6f075ca60ac7a29f193d61d45fb8f99e6c4f"
+      },
+      {
+        "id": "icytower-src-5603b15defea",
+        "status": "verified",
+        "actual_sha256": "d98cbad2073765e6c44de225100209230b1918553c3cca7dd60b1722dce163a0"
+      },
+      {
+        "id": "icytower-src-9f47c890bb6a",
+        "status": "verified",
+        "actual_sha256": "01c8132a08fa3cbd1647fc49a0795a0bcb524d5cf998c9379afaa60cd13fa78c"
+      },
+      {
+        "id": "icytower-src-24b8112b067b",
+        "status": "verified",
+        "actual_sha256": "0ecd31167fb944b059a8aed3a2682a93a835afca8411911899d4173f5dca9e0d"
+      },
+      {
+        "id": "icytower-src-3bc4c6e9989c",
+        "status": "verified",
+        "actual_sha256": "c6d2db1cc19ed8b947e6152599e48667f9e7b1ebd1e01475e51e5485bf290904"
+      },
+      {
+        "id": "icytower-src-a40c933cb927",
+        "status": "verified",
+        "actual_sha256": "e594413ed075f2335e43d82d0f60ad69d545ddefc25cf0da580a7ec8f8f5cb09"
+      },
+      {
+        "id": "icytower-src-5691234f1115",
+        "status": "verified",
+        "actual_sha256": "31283d854db2042684c3cead8f3d6343b596f3813644f33c6426246a2ff13346"
+      },
+      {
+        "id": "icytower-src-93277837d0f9",
+        "status": "verified",
+        "actual_sha256": "9ffd1726cfaba409666c4f2d028ccde396cf5be925590328a6d729f76fe39c5e"
+      },
+      {
+        "id": "icytower-src-0b2777a52740",
+        "status": "verified",
+        "actual_sha256": "3ed060a7fb841191907c8a938257d82d827c80c53a0230f353992ed8eb29ad15"
+      },
+      {
+        "id": "icytower-src-3f1ce3a5c386",
+        "status": "verified",
+        "actual_sha256": "6e9f784b28c4369c2108e27df75719762b3480f46d520e996ed595fdcf75f2b1"
+      }
+    ],
+    "limitation": "Hash/ref verification is not independent reproduction of a compiler claim."
+  },
+  "update_provenance": {
+    "format": "ai-decomp-provenance-check-v1",
+    "authority": "reference_integrity_only",
+    "checked": 98,
+    "verified": 92,
+    "results": [
+      {
+        "id": "icytower_recon:docs/attempts/research-20260924-gcc-peephole2-systemic/README.md:c4afc3edc865",
+        "status": "verified",
+        "actual_sha256": "c4afc3edc865f231a97126d970aa28abd4dbafcb02deb1a9f3c4988f98c4c98c"
+      },
+      {
+        "id": "icytower_recon:docs/attempts/research-20260924-peephole-cursor-diagnostic/README.md:679ad1f47d37",
+        "status": "verified",
+        "actual_sha256": "679ad1f47d3736242b295544083c2f252946535aed1a755603fa1b9aeb3e2fc7"
+      },
+      {
+        "id": "icytower_recon:docs/attempts/research-20260924-gcc-peephole2-systemic/play-collision-pre-20260924.md:1ac310c73f38",
+        "status": "verified",
+        "actual_sha256": "1ac310c73f3879d8148539db91c02c6b2e20f1899470556f24d3375af1e5aac7"
+      },
+      {
+        "id": "simantw_recon:docs/grinder-lessons.md:06fc180bbdec",
+        "status": "verified",
+        "actual_sha256": "06fc180bbdec5adbe0bcb2ebb09980e97cf39b0657af8eacd3d4c8dcce3ad18f"
+      },
+      {
+        "id": "simantw_recon:evidence/orchestration/luna-foreman-checkpoint.md:cce55cdcc2af",
+        "status": "verified",
+        "actual_sha256": "cce55cdcc2af84c39b712cdcc305405fd933f9cf6b6ef10ca944d36a5e5e7b91"
+      },
+      {
+        "id": "stunts_recon:docs/current/status.json:8854da3b0656",
+        "status": "drifted",
+        "actual_sha256": "3129f5a66bde795c0b4d29c4d570b3dc3153d24d26f7742166524159f97c098f"
+      },
+      {
+        "id": "stunts_recon:docs/current/validation.json:59fceae569bf",
+        "status": "drifted",
+        "actual_sha256": "a2ef28ae81478977da58ea5507c1d2faf1a4e61fbc0bf1b8fd857f3daa06c070"
+      },
+      {
+        "id": "stunts_recon:recovery/queue.json:321202037584",
+        "status": "drifted",
+        "actual_sha256": "5173ab356d58ce3d2d3e3388f3398d79bba5594e73a4e860aac80ec56d28698d"
+      },
+      {
+        "id": "stunts_recon:recovery/blocker-census.json:8cf7cb6777bb",
+        "status": "drifted",
+        "actual_sha256": "3fa71cfb24769d43ba5cfc0b9f2e7d78c90c2913b6b2defd3ba4de3dc2e7386c"
+      },
+      {
+        "id": "simantw_recon:docs/progress.json:d9c7cd3ab2ae",
+        "status": "verified",
+        "actual_sha256": "d9c7cd3ab2aeb6b3aa5fe2dabd18c5a8452de4ddf24ed28ad1f92a82febca36d"
+      },
+      {
+        "id": "simantw_recon:evidence/recovery/workflow/validation.json:0fff03c49315",
+        "status": "verified",
+        "actual_sha256": "0fff03c49315defaea93b3bad56de1924a60a56ce6fba12de69b00d1bef7bb65"
+      },
+      {
+        "id": "icytower_recon:src/recovery.json:b0c97c70d62a",
+        "status": "verified",
+        "actual_sha256": "b0c97c70d62aa1819c9469031a39de52efbf1aeae52f3446f2aaf0e8538ba8bd"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-beta.json:91c0f00513fe",
+        "status": "verified",
+        "actual_sha256": "91c0f00513fe855b15059ecee1f587e606729765f523bb26f3c328728e53e9d5"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-control.json:791e507445f6",
+        "status": "verified",
+        "actual_sha256": "791e507445f6de2494f87521e67c4f40c5c462880b365dffe46426b502b2ed0a"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-csv.json:5c326cd324f1",
+        "status": "verified",
+        "actual_sha256": "5c326cd324f173a0c96de0d4af96d94c0f98c10b3c875f079153ecc204cc2c90"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-custom.json:76201c45ead1",
+        "status": "verified",
+        "actual_sha256": "76201c45ead178d545e78b934416314a157dc4f638440c291bc8847c64649099"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-directories.json:af721685eaf1",
+        "status": "verified",
+        "actual_sha256": "af721685eaf1614556f35b5de6a38abccfa715b8b14057d21bd82d38ed629fc6"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-fld-adspot.json:4d5af343e2a5",
+        "status": "verified",
+        "actual_sha256": "4d5af343e2a52ed89484c350f210a80c9cf726fc894c65d7d1cc1b4f2520a2b2"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-game-data.json:01a1323f997e",
+        "status": "verified",
+        "actual_sha256": "01a1323f997effcfd1de6f7f93bcd2e6fde8f4eda6d3afc0e6e5207767740f47"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-hisc.json:ecc7042d0b2b",
+        "status": "verified",
+        "actual_sha256": "ecc7042d0b2beae1da017b37bdafb226a228ad67e21d36334688fb37a0599720"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-main.json:60e25f7ceaa8",
+        "status": "verified",
+        "actual_sha256": "60e25f7ceaa8fa93c6cec149dd688ac7278d7d18daf3d8e5fd9f2fa7e81ab84a"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-map.json:3e6bfaf74fad",
+        "status": "verified",
+        "actual_sha256": "3e6bfaf74fadc83971e338f9f49f01de442cf5b177deff6504237d5b86e23935"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-menu.json:c4a236e38f6a",
+        "status": "verified",
+        "actual_sha256": "c4a236e38f6a1da6fd1fa8ad618b6a3aaf4346900f1521c8e99ff6c3e4438279"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-options.json:7e95bacfba12",
+        "status": "verified",
+        "actual_sha256": "7e95bacfba12a872d81609103028a81941eba125ea16b66b4b6e5ea4ec449751"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-particle.json:8213cec33a8b",
+        "status": "verified",
+        "actual_sha256": "8213cec33a8bfb6e36001fa550227ebc8b395fc4948e8d646afa1b62862bdd96"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-replay.json:c986f6b19ace",
+        "status": "verified",
+        "actual_sha256": "c986f6b19aced1e5ac44ce2dc8da7a1c18710b1235dbf2f6ad31308a3efabbe5"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-profile.json:dfe7db1f15ca",
+        "status": "verified",
+        "actual_sha256": "dfe7db1f15ca08c2e9a5179c1da371fd01eb61b4af7b82861bf0afdfd92a0e21"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-scroller.json:827455a62547",
+        "status": "verified",
+        "actual_sha256": "827455a625476aab4fbeb130941387f6f82e2a7c224c56fc8cb3afcc62474211"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-stars.json:3c4f3e06a81b",
+        "status": "verified",
+        "actual_sha256": "3c4f3e06a81b22c98aaa1fefc3e8b0e59f5ed46fbc3dd65622aac118373adc3e"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-timer.json:85ac091cdf60",
+        "status": "verified",
+        "actual_sha256": "85ac091cdf608268264caaeb5045e417ade13bed0deff21aabf1103447f3ea0f"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-player.json:ecb4b2f92498",
+        "status": "verified",
+        "actual_sha256": "ecb4b2f9249830596459ef8e5e70ab7bc2bc1a87443668d68bb28894eebc9bef"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-httpget.json:04d373903c50",
+        "status": "verified",
+        "actual_sha256": "04d373903c50f549dc014579fbca57f1c0ba19abf4956641e3066aa6f1a81b27"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-loadpng.json:58a749cb395c",
+        "status": "verified",
+        "actual_sha256": "58a749cb395ca3b1ab279a58e527793f4fea31f8f812ea24e08e3e18aaae1051"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-savepng.json:1a706b2e76f4",
+        "status": "verified",
+        "actual_sha256": "1a706b2e76f4abaf2e15f3406a49f2d87d5cc5489cb27dd780acd560a9cf93d5"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-regpng.json:4ee6e1178374",
+        "status": "verified",
+        "actual_sha256": "4ee6e11783743ba7978edb080c1ddc60658c2e2b066f08da5843b65da58ba688"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-strptime.json:b148810cd26d",
+        "status": "verified",
+        "actual_sha256": "b148810cd26d5757f31dc4306b58672e365848a2babf5d5ccb49637d1e4d9acd"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-timecompat.json:4ecdd1bc4bcf",
+        "status": "verified",
+        "actual_sha256": "4ecdd1bc4bcf332e6bc62fc20b1a2013b48081cfb04db34478f150032530ef5d"
+      },
+      {
+        "id": "stunts_recon:recovery/experiments/code-address-leverage-20260924.md:fab849d206cb",
+        "status": "verified",
+        "actual_sha256": "fab849d206cba1f490f547c717f53b6b3751c4e5fd77ae5431f84994d953948d"
+      },
+      {
+        "id": "stunts_recon:recovery/experiments/far-wrapper-promotions-20260924.md:2e57d15748ce",
+        "status": "verified",
+        "actual_sha256": "2e57d15748cea6d6939683daa192349230651493cb2a200b655e0f53b6e3fabe"
+      },
+      {
+        "id": "stunts_recon:recovery/experiments/mixed-far-data-link-20260924.md:7b1d44216375",
+        "status": "verified",
+        "actual_sha256": "7b1d44216375aa424010d8540f3c9883855b88fc463d3325d7cabe432906fc7f"
+      },
+      {
+        "id": "stunts_recon:recovery/experiments/candidate-shape-census-20260924.md:bd761d5040bd",
+        "status": "verified",
+        "actual_sha256": "bd761d5040bdc97f478917bd8d584a84be5f39b95abcc2a466068b749f0dae2c"
+      },
+      {
+        "id": "icytower_recon:docs/attempts/research-20260924-load-replay-owner-context/README.md:8646fd1ddbeb",
+        "status": "verified",
+        "actual_sha256": "8646fd1ddbeb00b0b2183c4f3668c824a49ec5c9c00affa9f7c6716e77d9dc4f"
+      },
+      {
+        "id": "icytower_recon:docs/attempts/research-20260924-profile-late-transaction/README.md:d3d646a42bd8",
+        "status": "verified",
+        "actual_sha256": "d3d646a42bd87c1225c3a78e16d0f7a7c38f662860e62bf297319703be886072"
+      },
+      {
+        "id": "icytower_recon:docs/attempts/research-20260924-profile-interface-gate-audit/README.md:c5fecff440d9",
+        "status": "verified",
+        "actual_sha256": "c5fecff440d95044a156f7e95af0800003410c6ebd6f9f6082dd24dc4da277d3"
+      },
+      {
+        "id": "simantw_recon:evidence/experiments/near-call-ip-wrap/README.md:ae5d4b58d0b9",
+        "status": "verified",
+        "actual_sha256": "ae5d4b58d0b93fb6afd701b086052cb49220def33e03394a5430b1752417faa4"
+      },
+      {
+        "id": "simantw_recon:docs/progress.json:2cbb0e7e552f",
+        "status": "verified",
+        "actual_sha256": "2cbb0e7e552f350be2b84dd5c726ff6d85959c937bb3e82410e809a9ecc9e585"
+      },
+      {
+        "id": "icytower_recon:docs/attempts/research-20260924-load-replay-min-context/README.md:1a3cc2a7efb3",
+        "status": "verified",
+        "actual_sha256": "1a3cc2a7efb34213723339b1e826a9800d804210a67d957c70d458939944e71a"
+      },
+      {
+        "id": "icytower_recon:docs/attempts/research-20260924-context-replay-followup/README.md:7b74516f7146",
+        "status": "verified",
+        "actual_sha256": "7b74516f7146b8cd00aeb22cce939ccf296139039caa3fa63ec255f337314d50"
+      },
+      {
+        "id": "icytower_recon:docs/attempts/research-20260924-play-collision-predecessors/README.md:f30d096557a4",
+        "status": "verified",
+        "actual_sha256": "f30d096557a40f3aa32ed6cfda58baee91c6402bb4dba7dd4a215f898b132a71"
+      },
+      {
+        "id": "simantw_recon:tools/blocked_reclassification.py:166a692a235b",
+        "status": "verified",
+        "actual_sha256": "166a692a235be9fcfbec1029db27c03146607793a2e39c61a05b97da956a6119"
+      },
+      {
+        "id": "simantw_recon:tools/analysis.py:1cdfd3be4991",
+        "status": "verified",
+        "actual_sha256": "1cdfd3be49912d5bb5a9eb200bc1e5ee5dd9235128e22dcd78b3d63753b02518"
+      },
+      {
+        "id": "stunts_recon:tools/derive_code_aliases.py:5b56ef79d92d",
+        "status": "verified",
+        "actual_sha256": "5b56ef79d92d1b2fccb77dee59c4c493537d14f2df0281cdf2253ba96eb02227"
+      },
+      {
+        "id": "stunts_recon:tools/binder.py:a56c880d6356",
+        "status": "verified",
+        "actual_sha256": "a56c880d6356d38ba1bff3dc7bc3af2ac1e2b0a9d8ce5753d5615649e0f4c170"
+      },
+      {
+        "id": "simantw_recon:evidence/recovery/workflow/jobs/ClearHistory-2a7aae3cf9/promotion.json:9f4d853b54ab",
+        "status": "verified",
+        "actual_sha256": "9f4d853b54ab6dc39cd1f947229653ffaaa082822fb2ed48a70582f051b8ce33"
+      },
+      {
+        "id": "simantw_recon:evidence/recovery/workflow/jobs/ConvertMonoMaskToTandy-4e3e71229c/promotion.json:3ba3e65332a9",
+        "status": "verified",
+        "actual_sha256": "3ba3e65332a9cc5c2511274e4a00c58ec13459669c8e40cec7fb62b9497928dd"
+      },
+      {
+        "id": "simantw_recon:evidence/recovery/blocked-reclassification.json:23419ba43518",
+        "status": "verified",
+        "actual_sha256": "23419ba435189e49362c347a6477f50b15502d5d68932f66551f4a47d100d471"
+      },
+      {
+        "id": "icytower_recon:docs/attempts/research-20260924-draw-selector-residual/README.md:f65a4c76f6f8",
+        "status": "verified",
+        "actual_sha256": "f65a4c76f6f86d39bfb8163ba4a8559ffceef75180dc08afa34824cece3c9347"
+      },
+      {
+        "id": "icytower_recon:docs/attempts/tu-context/transactions/replay_load_draw_historical_20260924.json:40ef5b14ab5d",
+        "status": "verified",
+        "actual_sha256": "40ef5b14ab5d08bd91155f6e91d85321cf737e304bd9346b310328b4947e651d"
+      },
+      {
+        "id": "stunts_recon:recovery/attempts/free_sdgame2/0002/report.json:06bbaceef7a1",
+        "status": "verified",
+        "actual_sha256": "06bbaceef7a15d9bc63eb01d76cd278de45fdc7e73f3e6b428110ca7ca7a08fc"
+      },
+      {
+        "id": "stunts_recon:recovery/attempts/locate_text_res/0002/report.json:1a56502a7c65",
+        "status": "verified",
+        "actual_sha256": "1a56502a7c652ab1f64c868582788e8c4e664dc8942414acd2be5eaa018355ea"
+      },
+      {
+        "id": "stunts_recon:build/mixed-linker-probe.json:1458f38132a7",
+        "status": "verified",
+        "actual_sha256": "1458f38132a78e06cb975eebb8e9e58ef125ddf94d070b6c60e0bc389ff2aabb"
+      },
+      {
+        "id": "stunts_recon:recovery/partial-mapping-census.json:db0ad875c5a9",
+        "status": "drifted",
+        "actual_sha256": "fe8f2fff77d301d3fc5eb87914b4629efee006c9b3af20db6e6353e960865766"
+      },
+      {
+        "id": "stunts_recon:recovery/experiments/systemic-capabilities-20260923.md:45bda4506db5",
+        "status": "verified",
+        "actual_sha256": "45bda4506db571a44b1f5610930a701e75150d7ec22fc68272507a38404c3472"
+      },
+      {
+        "id": "simantw_recon:evidence/experiments/call-abi-audit/README.md:2360ad0dd1c5",
+        "status": "verified",
+        "actual_sha256": "2360ad0dd1c5a2d3808a61c55527c1b554016c7b5e43834701eb4253f4d59526"
+      },
+      {
+        "id": "stunts_recon:recovery/blocker-census.json:a1862150c314",
+        "status": "drifted",
+        "actual_sha256": "3fa71cfb24769d43ba5cfc0b9f2e7d78c90c2913b6b2defd3ba4de3dc2e7386c"
+      },
+      {
+        "id": "icytower_recon:tools/tu_context_task.py:4f90acd43e93",
+        "status": "verified",
+        "actual_sha256": "4f90acd43e93402e9680b2c220cfc09e231c5aa8fbb6ca17d39e319de3f3a40e"
+      },
+      {
+        "id": "icytower_recon:docs/attempts/tu-context/transactions/profile_late_typed_selectors_20260924.json:d7ab571f76d2",
+        "status": "verified",
+        "actual_sha256": "d7ab571f76d2e7bfc15bd9dd42b9aa75314b05f9681b9fb09bcf6d039ef7e2e7"
+      },
+      {
+        "id": "empires_reconstruction:docs/current/status.json:d05650faa9b2",
+        "status": "verified",
+        "actual_sha256": "d05650faa9b2a2739add7cebbe130a377a103f28c8afa69a725e933563d5ab84"
+      },
+      {
+        "id": "simantw_recon:evidence/recovery/workflow/jobs/YardToMap-2e5b0deea5/promotion.json:94cc7dd65d21",
+        "status": "verified",
+        "actual_sha256": "94cc7dd65d21ae65052d057b10b2a4d4bd211f7957ccbd4646fa14dab653e9db"
+      },
+      {
+        "id": "icytower_recon:src/recovery.json:6a4cc22cdcf8",
+        "status": "verified",
+        "actual_sha256": "6a4cc22cdcf804e0bb4f9957514fe9aca38b29c58917a78e5c6fee3f5b062065"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-beta.json:91c0f00513fe",
+        "status": "verified",
+        "actual_sha256": "91c0f00513fe855b15059ecee1f587e606729765f523bb26f3c328728e53e9d5"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-control.json:791e507445f6",
+        "status": "verified",
+        "actual_sha256": "791e507445f6de2494f87521e67c4f40c5c462880b365dffe46426b502b2ed0a"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-csv.json:5c326cd324f1",
+        "status": "verified",
+        "actual_sha256": "5c326cd324f173a0c96de0d4af96d94c0f98c10b3c875f079153ecc204cc2c90"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-custom.json:76201c45ead1",
+        "status": "verified",
+        "actual_sha256": "76201c45ead178d545e78b934416314a157dc4f638440c291bc8847c64649099"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-directories.json:af721685eaf1",
+        "status": "verified",
+        "actual_sha256": "af721685eaf1614556f35b5de6a38abccfa715b8b14057d21bd82d38ed629fc6"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-fld-adspot.json:4d5af343e2a5",
+        "status": "verified",
+        "actual_sha256": "4d5af343e2a52ed89484c350f210a80c9cf726fc894c65d7d1cc1b4f2520a2b2"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-game-data.json:01a1323f997e",
+        "status": "verified",
+        "actual_sha256": "01a1323f997effcfd1de6f7f93bcd2e6fde8f4eda6d3afc0e6e5207767740f47"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-hisc.json:2a582da1cbd8",
+        "status": "verified",
+        "actual_sha256": "2a582da1cbd848c0b6a961907de18f10bd90d78574f2dc177a78b6d67dbd41c9"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-main.json:60e25f7ceaa8",
+        "status": "verified",
+        "actual_sha256": "60e25f7ceaa8fa93c6cec149dd688ac7278d7d18daf3d8e5fd9f2fa7e81ab84a"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-map.json:3e6bfaf74fad",
+        "status": "verified",
+        "actual_sha256": "3e6bfaf74fadc83971e338f9f49f01de442cf5b177deff6504237d5b86e23935"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-menu.json:c4a236e38f6a",
+        "status": "verified",
+        "actual_sha256": "c4a236e38f6a1da6fd1fa8ad618b6a3aaf4346900f1521c8e99ff6c3e4438279"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-options.json:7e95bacfba12",
+        "status": "verified",
+        "actual_sha256": "7e95bacfba12a872d81609103028a81941eba125ea16b66b4b6e5ea4ec449751"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-particle.json:8213cec33a8b",
+        "status": "verified",
+        "actual_sha256": "8213cec33a8bfb6e36001fa550227ebc8b395fc4948e8d646afa1b62862bdd96"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-replay.json:c986f6b19ace",
+        "status": "verified",
+        "actual_sha256": "c986f6b19aced1e5ac44ce2dc8da7a1c18710b1235dbf2f6ad31308a3efabbe5"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-profile.json:dfe7db1f15ca",
+        "status": "verified",
+        "actual_sha256": "dfe7db1f15ca08c2e9a5179c1da371fd01eb61b4af7b82861bf0afdfd92a0e21"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-scroller.json:827455a62547",
+        "status": "verified",
+        "actual_sha256": "827455a625476aab4fbeb130941387f6f82e2a7c224c56fc8cb3afcc62474211"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-stars.json:3c4f3e06a81b",
+        "status": "verified",
+        "actual_sha256": "3c4f3e06a81b22c98aaa1fefc3e8b0e59f5ed46fbc3dd65622aac118373adc3e"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-timer.json:85ac091cdf60",
+        "status": "verified",
+        "actual_sha256": "85ac091cdf608268264caaeb5045e417ade13bed0deff21aabf1103447f3ea0f"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-player.json:ecb4b2f92498",
+        "status": "verified",
+        "actual_sha256": "ecb4b2f9249830596459ef8e5e70ab7bc2bc1a87443668d68bb28894eebc9bef"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-httpget.json:04d373903c50",
+        "status": "verified",
+        "actual_sha256": "04d373903c50f549dc014579fbca57f1c0ba19abf4956641e3066aa6f1a81b27"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-loadpng.json:58a749cb395c",
+        "status": "verified",
+        "actual_sha256": "58a749cb395ca3b1ab279a58e527793f4fea31f8f812ea24e08e3e18aaae1051"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-savepng.json:1a706b2e76f4",
+        "status": "verified",
+        "actual_sha256": "1a706b2e76f4abaf2e15f3406a49f2d87d5cc5489cb27dd780acd560a9cf93d5"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-regpng.json:4ee6e1178374",
+        "status": "verified",
+        "actual_sha256": "4ee6e11783743ba7978edb080c1ddc60658c2e2b066f08da5843b65da58ba688"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-strptime.json:b148810cd26d",
+        "status": "verified",
+        "actual_sha256": "b148810cd26d5757f31dc4306b58672e365848a2babf5d5ccb49637d1e4d9acd"
+      },
+      {
+        "id": "icytower_recon:docs/current/reports/game-timecompat.json:4ecdd1bc4bcf",
+        "status": "verified",
+        "actual_sha256": "4ecdd1bc4bcf332e6bc62fc20b1a2013b48081cfb04db34478f150032530ef5d"
+      },
+      {
+        "id": "stunts_recon:docs/current/status.json:3129f5a66bde",
+        "status": "verified",
+        "actual_sha256": "3129f5a66bde795c0b4d29c4d570b3dc3153d24d26f7742166524159f97c098f"
+      },
+      {
+        "id": "stunts_recon:docs/current/validation.json:a2ef28ae8147",
+        "status": "verified",
+        "actual_sha256": "a2ef28ae81478977da58ea5507c1d2faf1a4e61fbc0bf1b8fd857f3daa06c070"
+      },
+      {
+        "id": "stunts_recon:recovery/queue.json:5173ab356d58",
+        "status": "verified",
+        "actual_sha256": "5173ab356d58ce3d2d3e3388f3398d79bba5594e73a4e860aac80ec56d28698d"
+      }
+    ],
+    "limitation": "Hash/ref verification is not independent reproduction of a compiler claim."
+  },
+  "scope": "Source/metadata checks only. No sibling build, refresh, test, promotion or model trial.",
+  "closing_state_note": "Icy strict count unchanged at newer commit; Stunts mapping/queue advanced but newest queue is not covered by retained workflow fingerprint."
+}
