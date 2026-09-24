@@ -1,0 +1,789 @@
+{
+  "authority": "READ_ONLY_RESEARCH; no compiler execution or acceptance",
+  "observed_utc": "2026-09-24T20:21:11.658794+00:00",
+  "source_base": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+  "sources": [
+    {
+      "repository": "stunts_recon",
+      "path": "tools/import_restunts.py",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "a383cd0f6fb502dc0f99e79d3dcf885849518083bbab722ee9cf69b84fea35cd",
+      "size": 10860
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "tools/reconstruction_factory.py",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "31f759fec24188add0441744bcf2a6be9cb4a977cf8eb6c12bd48ae072e6e5fd",
+      "size": 14485
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "tools/triage.py",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "12b5fd59f055aacb4602943001b1feb3746c26fdc46cdcd8fa544ed34a147bbc",
+      "size": 4036
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "tools/function_evidence.py",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "99b07ae5f4f411e1c9b4a71efd19ff3a0306dc002a77ea7d4de9b1793e35e424",
+      "size": 2832
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "tools/research_batch.py",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "434b80efdf3569afd8a88fee56737153ac87d71cb569d0cdaff3d0a9960e617f",
+      "size": 12266
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "tools/prepare_candidate.py",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "6f8a040db07d517145d014dcdcb4f7f0d57b7278b7d34d1c7ea26cd6a9b93db1",
+      "size": 2197
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "tools/prepare_far_call_candidate.py",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "c0d158c67164929935797f7f5beaed8dd97dd69b98d54fc9dbd98b6cb989a379",
+      "size": 9468
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "recovery/queue.json",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "6dfc765ee5dd8ddef10d012b128240131cf169d75eddee9e259dba7a5e434c49",
+      "size": 474889
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "recovery/blocker-census.json",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "5d97d95e3b650d67658c6de90065516cf93afd96ebddec37aeef4ee4e95bbc70",
+      "size": 8647605
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "recovery/candidate-omf-census.json",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "06b33ab39e49a6567b7375c98dc73484e888eeea6d4653d302fdb415cfe4e23e",
+      "size": 150565
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "recovery/attempt-index.json",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "095acf5a5f6e2a6e8ffbed5dc823b4ecf0fc30bd525f91b201ac6a871c45efa4",
+      "size": 489053
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "docs/current/status.json",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "dc4e0468f44c97a24ecbbe1ea03eb6c03087703f982fb0d216207a13668325da",
+      "size": 2347
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "docs/current/validation.json",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "02195dcec49248581e08a0ccb596b03049930455f3aadfc3c0168a9a8f6f5623",
+      "size": 980
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "docs/current/worker-research.md",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "7a5807ecf03a2fcbc75195e7030ed79729255e8665d4b239a6fc3eb77f4a6208",
+      "size": 6801
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "docs/current/grinder-instructions.md",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "2c834b9727dad3a789037f8cd66bc9fa41864d8cb8dd8680c264024673107809",
+      "size": 9670
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "docs/current/toolchain-fingerprint.md",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "16cc229b5549cd6936e77b1eff8d202b4c6e924003b338926a327e8bdac75fd0",
+      "size": 4530
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "recovery/experiments/shape3d-init-shape-20260923.md",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "076794066e45acae70c49fce7d27778cf2b4d2309a6d24c42aecd15a0e453930",
+      "size": 2949
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "recovery/experiments/frame-callback-promotion-20260924.md",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "747009838508e6a8bbbcf49db8f3a2a21617d4eb4803d0a15c4b5a7641997ee6",
+      "size": 2981
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "recovery/experiments/audio-timer-tu-context-20260924.md",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "d29b2c3a995a29aeaceb86316aa56db9dd698896d9ba32255ce7a41e99acc931",
+      "size": 3928
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "recovery/experiments/sin-fast-table-cfg-20260924.md",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "e696ccf4c79316e0cec1852485ac1218e23ed99be46b538cff2bf3e0d9892b65",
+      "size": 2222
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "recovery/corpus/endurance-001/handoff.md",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "0de5a0008e12e8b1c25625f1b3ca1ef46e8cb0fbe3cd4439dc76ccb138cc021c",
+      "size": 12712
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "recovery/compiler-evidence/adversarial-profile-20260924/plan.json",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "e9f885c77dd70fddbde439a6fd0620c33edae1968f150ea49a2c61dead4c57d9",
+      "size": 7105
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "build/references/restunts/src/restunts/c/math.c",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "a908e707367b560fd4b2b1746d29e908d58252fdcfccc9ddb50679310ffdc7ba",
+      "size": 27502
+    },
+    {
+      "repository": "stunts_recon",
+      "path": "build/references/restunts/src/restunts/c/fileio.c",
+      "kind": "working_tree",
+      "observed_base_commit": "5aa3a27f9f80a8c4f78ce8eb65042f73436b463c",
+      "sha256": "98b273062ef19a5e3f43850bd583a001344efe8e67b1a45c73447beae6f47567",
+      "size": 23075
+    }
+  ],
+  "metrics": {
+    "queue": {
+      "MEDIUM": 7,
+      "SUPERVISOR": 576
+    },
+    "supervisor_production_attempts_remaining": {
+      "2": 5,
+      "3": 566,
+      "0": 5
+    },
+    "supervisor_boundary_status": {
+      "BOUNDARIES_AND_INSTRUCTION_ANCHORS_VERIFIED": 494,
+      "BOUNDARIES_AND_EMISSION_BYTES_VERIFIED": 65,
+      "PARTIAL_UNMAPPED": 15,
+      "UNMAPPED_NO_ADDRESS_ANCHOR": 2
+    },
+    "missing_instruction_packet": 349,
+    "packet_gap_only_in_queue": 59,
+    "packet_gap_only_with_indexed_observations": 0,
+    "packet_gap_only_census_categories": {
+      "INSTRUCTION_EVIDENCE_MISSING": 59,
+      "BINDING_OR_FIXUP_CANDIDATE": 4,
+      "SINGLE_ENTRY_CFG_UNREACHABLE_CANDIDATE": 6,
+      "TU_OR_OBJECT_CONTEXT_CANDIDATE": 15
+    }
+  },
+  "packet_gap_only_rows": [
+    {
+      "name": "kb_reg_callback",
+      "id": "load_2045e",
+      "size": 81,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "copy_paras_reverse",
+      "id": "load_211d5",
+      "size": 83,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "mouse_multi_hittest",
+      "id": "load_18e90",
+      "size": 84,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "sub_2E290",
+      "id": "load_1e290",
+      "size": 86,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "nopsub_373FE",
+      "id": "load_273fe",
+      "size": 88,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "file_find",
+      "id": "load_1ffd4",
+      "size": 90,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "kb_parse_key",
+      "id": "load_20404",
+      "size": 90,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "BINDING_OR_FIXUP_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "sprite_1_unk2",
+      "id": "load_23578",
+      "size": 90,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "init_rect_arrays",
+      "id": "load_0a096",
+      "size": 94,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "vector_op_unk",
+      "id": "load_23014",
+      "size": 94,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "SINGLE_ENTRY_CFG_UNREACHABLE_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "sprite_clear_shape",
+      "id": "load_2477e",
+      "size": 94,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "__myalloc",
+      "id": "load_1d154",
+      "size": 98,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE",
+        "SINGLE_ENTRY_CFG_UNREACHABLE_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "__setenvp",
+      "id": "load_1d090",
+      "size": 110,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "_brkctl",
+      "id": "load_1e222",
+      "size": 110,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "sub_37470",
+      "id": "load_27470",
+      "size": 110,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "font_set_unk",
+      "id": "load_24b0c",
+      "size": 112,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "SINGLE_ENTRY_CFG_UNREACHABLE_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "nopsub_3320E",
+      "id": "load_2320e",
+      "size": 113,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "mmgr_alloc_resmem",
+      "id": "load_2107a",
+      "size": 119,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "_lseek",
+      "id": "load_1deae",
+      "size": 122,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "draw_unknown_lines",
+      "id": "load_23344",
+      "size": 124,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "getnum",
+      "id": "load_1de06",
+      "size": 128,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "mat_multiply",
+      "id": "load_229f2",
+      "size": 128,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "rect_is_adjacent",
+      "id": "load_169d0",
+      "size": 130,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "audioresource_get_chunk_index",
+      "id": "load_29b5a",
+      "size": 130,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "__stbuf",
+      "id": "load_1d42c",
+      "size": 132,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "plane_origin_op",
+      "id": "load_09926",
+      "size": 140,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "do_dea_textres",
+      "id": "load_1a118",
+      "size": 142,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "shape2d_render_bmp_as_mask",
+      "id": "load_23b02",
+      "size": 150,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "sub_34526",
+      "id": "load_24526",
+      "size": 150,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "SINGLE_ENTRY_CFG_UNREACHABLE_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "heapsort_by_order",
+      "id": "load_26be8",
+      "size": 150,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "preRender_helper",
+      "id": "load_219cd",
+      "size": 154,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "load_audio_finalize",
+      "id": "load_2717c",
+      "size": 154,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE",
+        "BINDING_OR_FIXUP_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "file_decomp_rle_seq",
+      "id": "load_20ccf",
+      "size": 170,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "replay_unk",
+      "id": "load_13a98",
+      "size": 180,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "shape2d_op_unk4",
+      "id": "load_242f6",
+      "size": 186,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "SINGLE_ENTRY_CFG_UNREACHABLE_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "insert_newest_poly_in_poly_linked_list_40ED6",
+      "id": "load_15e24",
+      "size": 190,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "fprint",
+      "id": "load_1db10",
+      "size": 190,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE",
+        "BINDING_OR_FIXUP_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "sprite_1_unk3",
+      "id": "load_2367a",
+      "size": 200,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "vector_to_point",
+      "id": "load_223d9",
+      "size": 209,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "font_draw_text",
+      "id": "load_23742",
+      "size": 212,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "SINGLE_ENTRY_CFG_UNREACHABLE_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "file_decomp_rle_single",
+      "id": "load_20bf8",
+      "size": 215,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "sub_38178",
+      "id": "load_28178",
+      "size": 220,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE",
+        "BINDING_OR_FIXUP_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "__amalloc",
+      "id": "load_1e0c1",
+      "size": 227,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "sprint",
+      "id": "load_1da24",
+      "size": 236,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "rectlist_add_rects",
+      "id": "load_16a52",
+      "size": 248,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "mat_mul_vector",
+      "id": "load_228ee",
+      "size": 260,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "audio_init_chunk",
+      "id": "load_27dbc",
+      "size": 260,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "subst_hillroad_track",
+      "id": "load_11a5a",
+      "size": 287,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "audio_check_flag",
+      "id": "load_2751a",
+      "size": 304,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "sprite_putimage",
+      "id": "load_23bda",
+      "size": 306,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "__setargv",
+      "id": "load_1cefe",
+      "size": 402,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "get_joy_flags",
+      "id": "load_205fc",
+      "size": 440,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "carState_rc_op",
+      "id": "load_085f6",
+      "size": 444,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "detect_penalty",
+      "id": "load_07816",
+      "size": 610,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "init_carstate_from_simd",
+      "id": "load_06898",
+      "size": 618,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "sub_2C9B4",
+      "id": "load_1c9b4",
+      "size": 670,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "rectlist_add_rect",
+      "id": "load_16670",
+      "size": 750,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING",
+        "TU_OR_OBJECT_CONTEXT_CANDIDATE"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "sub_18D60",
+      "id": "load_08d60",
+      "size": 788,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    },
+    {
+      "name": "bto_auxiliary1",
+      "id": "load_0fae4",
+      "size": 944,
+      "categories": [
+        "INSTRUCTION_EVIDENCE_MISSING"
+      ],
+      "has_indexed_observations": false
+    }
+  ],
+  "limitations": [
+    "Generated index is not a complete inventory of private research.",
+    "Working-tree hashes identify evidence; they do not archive original bytes/source.",
+    "Categories overlap and early triage returns hide additional obligations.",
+    "Readiness is a proposal; no new strict recovery or speedup is established."
+  ]
+}
